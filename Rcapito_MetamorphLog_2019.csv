@@ -1,0 +1,1263 @@
+﻿Species,ID_No,Tank_Density,Tank,Year,Date_of_metamorphosis,Mass_at_metamorphosis_g,Mark,Fate_Comments,Mortality,Facility
+Rcapito,246,50,4,,5/30/19,5.98, ,NDF, ,UGA
+Rcapito,247,50,4,,5/30/19,6.82, ,NDF,dead 6/4,UGA
+Rcapito,248,50,4,,5/30/19,6.31, ,NDF, ,UGA
+Rcapito,250,50,4,,5/30/19,8.85, ,NDF, ,UGA
+Rcapito,251,50,4,,5/30/19,3.74, ,NDF, ,UGA
+Rcapito,253,50,4,,5/30/19,5.98, ,NDF,dead 6/1,UGA
+Rcapito,254,50,4,,5/30/19,5.85, ,NDF, ,UGA
+Rcapito,257,50,4,,5/30/19,5.3, ,NDF,dead 5/31,UGA
+Rcapito,258,50,4,,5/30/19,5.31, ,NDF,dead 5/30,UGA
+Rcapito,375,50,4,,6/1/19,4.94, ,NDF, ,UGA
+Rcapito,400,50,4,,6/21/19,5.32, ,NDF, ,UGA
+Rcapito,401,50,4,,6/21/19,4.69, ,NDF, ,UGA
+Rcapito,499,50,4,,6/3/19,4.64,,NDF,,UGA
+Rcapito,501,50,4,,6/3/19,5.01,,NDF,,UGA
+Rcapito,604,50,4,,6/4/19,4.97,,NDF,,UGA
+Rcapito,606,50,4,,6/4/19,4.08,,NDF,,UGA
+Rcapito,659,50,4,,6/5/19,6.67,,NDF,DEAD 6/6,UGA
+Rcapito,966,50,4,,6/12/19,3.07,,NDF,,UGA
+Rcapito,605,50,4,,6/4/19,5.19,,"NDF ""RANA VIRUS?""",,UGA
+Rcapito,372,50,4,,6/1/19,4.61, ,NDF 0.25 CM TAIL,DEAD 6/2,UGA
+Rcapito,374,50,4,,6/1/19,5.05, ,NDF 0.5 CM TAIL,DEAD 6/4,UGA
+Rcapito,255,50,4,,5/30/19,5.25, ,NDF GILL,dead 5/30,UGA
+Rcapito,749,50,4,,6/7/19,4.21,,NDF GILL,,UGA
+Rcapito,249,50,4,,5/30/19,5.31, ,NDF NE, ,UGA
+Rcapito,256,50,4,,5/30/19,6.09, ,NDF NE,dead 5/31,UGA
+Rcapito,399,50,4,,6/21/19,4.44, ,NDF NE, ,UGA
+Rcapito,402,50,4,,6/21/19,5.82, ,NDF NE, ,UGA
+Rcapito,500,50,4,,6/3/19,5.2,,NDF NE,EUTHANIZED 6/4,UGA
+Rcapito,502,50,4,,6/3/19,4.97,,NDF NE,,UGA
+Rcapito,658,50,4,,6/5/19,4.41,,NDF NE,,UGA
+Rcapito,883,50,4,,6/10/19,4.57,,NDF NE,,UGA
+Rcapito,252,50,4,,5/30/19,3.68, ,"NDF NE ""sickly""",found dead 7/3,UGA
+Rcapito,373,50,4,,6/1/19,4.45, ,NDF NE GILL 1CM TAIL, ,UGA
+Rcapito,914,50,4,,6/11/19,5.26,,,,UGA
+Rcapito,982,50,4,,6/12/19,3.88,,,,UGA
+Rcapito,1002,50,4,,6/13/19,4.62,,,,UGA
+Rcapito,1094,50,4,,6/17/19,4.51,,,,UGA
+Rcapito,1209,50,4,,6/20/19,5.28,,,,UGA
+Rcapito,912,50,5,,6/10/19,4.34,,GILL,,UGA
+Rcapito,240,50,5,,5/30/19,6.13, ,NDF, ,UGA
+Rcapito,269,50,5,,5/31/19,4.33, ,NDF, ,UGA
+Rcapito,270,50,5,,5/31/19,5.21, ,NDF, ,UGA
+Rcapito,377,50,5,,6/1/19,5.14, ,NDF, ,UGA
+Rcapito,386,50,5,,6/21/19,3.99, ,NDF, ,UGA
+Rcapito,516,50,5,,6/3/19,4.41,,NDF,,UGA
+Rcapito,517,50,5,,6/3/19,4.25,,NDF,,UGA
+Rcapito,518,50,5,,6/3/19,4.41,,NDF,,UGA
+Rcapito,519,50,5,,6/3/19,4.91,,NDF,,UGA
+Rcapito,520,50,5,,6/3/19,5.14,,NDF,,UGA
+Rcapito,521,50,5,,6/3/19,5.03,,NDF,,UGA
+Rcapito,522,50,5,,6/3/19,5.13,,NDF,,UGA
+Rcapito,523,50,5,,6/3/19,4.55,,NDF,,UGA
+Rcapito,524,50,5,,6/3/19,5.51,,NDF,,UGA
+Rcapito,525,50,5,,6/3/19,4.91,,NDF,,UGA
+Rcapito,526,50,5,,6/3/19,4.96,,NDF,,UGA
+Rcapito,527,50,5,,6/3/19,4.51,,NDF,,UGA
+Rcapito,528,50,5,,6/3/19,5.37,,NDF,,UGA
+Rcapito,529,50,5,,6/3/19,4.1,,NDF,,UGA
+Rcapito,594,50,5,,6/4/19,4.61,,NDF,,UGA
+Rcapito,597,50,5,,6/4/19,4.01,,NDF,,UGA
+Rcapito,598,50,5,,6/4/19,4.86,,NDF,,UGA
+Rcapito,599,50,5,,6/4/19,3.97,,NDF,,UGA
+Rcapito,600,50,5,,6/4/19,3.77,,NDF,,UGA
+Rcapito,601,50,5,,6/4/19,3.46,,NDF,,UGA
+Rcapito,602,50,5,,6/4/19,4.17,,NDF,,UGA
+Rcapito,688,50,5,,6/6/19,4.91,,NDF,,UGA
+Rcapito,689,50,5,,6/6/19,4.11,,NDF,,UGA
+Rcapito,754,50,5,,6/7/19,4.46,,NDF,,UGA
+Rcapito,1000,50,5,,6/13/19,3.79,,NDF,,UGA
+Rcapito,1092,50,5,,6/16/19,3.25,,NDF,,UGA
+Rcapito,376,50,5,,6/1/19,4.78, ,NDF 0.5 CM TAIL,ESCAPED NEVER FOUND,UGA
+Rcapito,378,50,5,,6/1/19,5.13, ,NDF 0.5 CM TAIL, ,UGA
+Rcapito,784,50,5,,6/8/19,4.97,,NDF FOUND ON GROUND,,UGA
+Rcapito,596,50,5,,6/4/19,2.9,,NDF NE,,UGA
+Rcapito,1185,50,5,,6/20/19,4.42,,NDF NE,,UGA
+Rcapito,530,50,5,,6/3/19,4.85,,NDF NE GILL,,UGA
+Rcapito,595,50,5,,6/4/19,3.96,,,,UGA
+Rcapito,1136,50,5,,6/18/19,2.41,,,,UGA
+Rcapito,193,50,6,,5/30/19,4.75, , , ,UGA
+Rcapito,268,50,6,,5/30/19,4.77, , , ,UGA
+Rcapito,551,50,6,,6/4/19,4.17,,,,UGA
+Rcapito,552,50,6,,6/4/19,5.33,,,,UGA
+Rcapito,553,50,6,,6/4/19,4.6,,,,UGA
+Rcapito,554,50,6,,6/4/19,5.07,,,,UGA
+Rcapito,555,50,6,,6/4/19,5.12,,,,UGA
+Rcapito,556,50,6,,6/4/19,6.67,,,,UGA
+Rcapito,557,50,6,,6/4/19,5.76,,,,UGA
+Rcapito,558,50,6,,6/4/19,5.14,,,,UGA
+Rcapito,559,50,6,,6/4/19,5.57,,,,UGA
+Rcapito,560,50,6,,6/4/19,5.94,,,,UGA
+Rcapito,561,50,6,,6/4/19,5.25,,,,UGA
+Rcapito,562,50,6,,6/4/19,5.12,,,,UGA
+Rcapito,563,50,6,,6/4/19,5.45,,,,UGA
+Rcapito,564,50,6,,6/4/19,5.4,,,,UGA
+Rcapito,565,50,6,,6/4/19,5.09,,,,UGA
+Rcapito,566,50,6,,6/4/19,4.98,,,,UGA
+Rcapito,567,50,6,,6/4/19,4.91,,,,UGA
+Rcapito,568,50,6,,6/4/19,4.68,,,,UGA
+Rcapito,569,50,6,,6/4/19,5.34,,,,UGA
+Rcapito,570,50,6,,6/4/19,5.57,,,,UGA
+Rcapito,571,50,6,,6/4/19,4.04,,,,UGA
+Rcapito,572,50,6,,6/4/19,3.6,,,,UGA
+Rcapito,573,50,6,,6/4/19,5.06,,,,UGA
+Rcapito,574,50,6,,6/4/19,4.58,,,,UGA
+Rcapito,649,50,6,,6/5/19,6.64,,,,UGA
+Rcapito,650,50,6,,6/5/19,5.07,,,,UGA
+Rcapito,651,50,6,,6/5/19,4.61,,,,UGA
+Rcapito,652,50,6,,6/5/19,4.77,,,,UGA
+Rcapito,727,50,6,,6/6/19,4.76,,,,UGA
+Rcapito,839,50,6,,6/8/19,5.34,,,,UGA
+Rcapito,884,50,6,,6/10/19,4.1,,,,UGA
+Rcapito,930,50,6,,6/11/19,4.35,,,,UGA
+Rcapito,931,50,6,,6/11/19,5.65,,,,UGA
+Rcapito,932,50,6,,6/11/19,5.15,,,,UGA
+Rcapito,994,50,6,,6/13/19,6.28,,,,UGA
+Rcapito,995,50,6,,6/13/19,4.62,,,,UGA
+Rcapito,996,50,6,,6/13/19,5.68,,,,UGA
+Rcapito,997,50,6,,6/13/19,5.31,,,,UGA
+Rcapito,1024,50,6,,6/14/19,6.68,,,,UGA
+Rcapito,1061,50,6,,6/16/19,5.38,,,,UGA
+Rcapito,1111,50,6,,6/18/19,5.3,,,,UGA
+Rcapito,1112,50,6,,6/18/19,5.78,,,,UGA
+Rcapito,1113,50,6,,6/18/19,5.12,,,,UGA
+Rcapito,1114,50,6,,6/18/19,4.5,,,,UGA
+Rcapito,1140,50,6,,6/18/19,6.44,,,,UGA
+Rcapito,1183,50,6,,6/20/19,7.51,,,,UGA
+Rcapito,337,50,7,,6/1/19,5.55, , , ,UGA
+Rcapito,338,50,7,,6/1/19,5.63, , , ,UGA
+Rcapito,379,50,7,,6/21/19,5.6, , , ,UGA
+Rcapito,380,50,7,,6/21/19,6.08, , , ,UGA
+Rcapito,450,50,7,,6/3/19,5.56,,.5 CM TAIL,,UGA
+Rcapito,339,50,7,,6/1/19,6.29, ,0.5 CM TAIL, ,UGA
+Rcapito,336,50,7,,6/1/19,4.89, ,1 CM TAIL, ,UGA
+Rcapito,750,50,7,,6/7/19,5.04,,NDF,,UGA
+Rcapito,451,50,7,,6/3/19,5.58,,,,UGA
+Rcapito,584,50,7,,6/4/19,4.8,,,,UGA
+Rcapito,585,50,7,,6/4/19,5.13,,,,UGA
+Rcapito,586,50,7,,6/4/19,4.86,,,,UGA
+Rcapito,587,50,7,,6/4/19,5.22,,,,UGA
+Rcapito,644,50,7,,6/5/19,5.79,,,,UGA
+Rcapito,645,50,7,,6/5/19,5.13,,,,UGA
+Rcapito,646,50,7,,6/5/19,4.47,,,,UGA
+Rcapito,647,50,7,,6/5/19,5.15,,,,UGA
+Rcapito,648,50,7,,6/5/19,4.43,,,,UGA
+Rcapito,711,50,7,,6/6/19,5.8,,,,UGA
+Rcapito,712,50,7,,6/6/19,5.05,,,,UGA
+Rcapito,713,50,7,,6/6/19,5.28,,,,UGA
+Rcapito,714,50,7,,6/6/19,5.71,,,,UGA
+Rcapito,751,50,7,,6/7/19,5.42,,,,UGA
+Rcapito,833,50,7,,6/8/19,4.85,,,,UGA
+Rcapito,834,50,7,,6/8/19,5.29,,,,UGA
+Rcapito,835,50,7,,6/8/19,5.71,,,,UGA
+Rcapito,836,50,7,,6/8/19,4.97,,,,UGA
+Rcapito,837,50,7,,6/8/19,5.38,,,,UGA
+Rcapito,838,50,7,,6/8/19,4.7,,,,UGA
+Rcapito,865,50,7,,6/8/19,4.94,,,,UGA
+Rcapito,866,50,7,,6/8/19,5.11,,,,UGA
+Rcapito,867,50,7,,6/8/19,5.39,,,,UGA
+Rcapito,879,50,7,,6/6/19,4.62,,,,UGA
+Rcapito,937,50,7,,6/11/19,4.15,,,,UGA
+Rcapito,938,50,7,,6/11/19,4.88,,,,UGA
+Rcapito,939,50,7,,6/11/19,5.4,,,,UGA
+Rcapito,940,50,7,,6/11/19,4.65,,,,UGA
+Rcapito,941,50,7,,6/11/19,5.56,,,,UGA
+Rcapito,998,50,7,,6/13/19,4.76,,,,UGA
+Rcapito,999,50,7,,6/13/19,4.49,,,,UGA
+Rcapito,1025,50,7,,6/14/19,6.14,,,,UGA
+Rcapito,1026,50,7,,6/14/19,5.26,,,,UGA
+Rcapito,1027,50,7,,6/14/19,6.06,,,,UGA
+Rcapito,1066,50,7,,6/16/19,7.11,,,,UGA
+Rcapito,1067,50,7,,6/16/19,4.97,,,,UGA
+Rcapito,1123,50,7,,6/18/19,5.3,,,,UGA
+Rcapito,63,50,8,,5/27/19,5.65, , , ,UGA
+Rcapito,64,50,8,,5/27/19,4.84, , , ,UGA
+Rcapito,65,50,8,,5/27/19,5.02, , , ,UGA
+Rcapito,66,50,8,,5/27/19,5.13, , , ,UGA
+Rcapito,67,50,8,,5/27/19,4.6, , ,found dead 6/25 VT,UGA
+Rcapito,90,50,8,,5/27/19,5.45, , , ,UGA
+Rcapito,114,50,8,,5/28/19,5.06, , , ,UGA
+Rcapito,115,50,8,,5/28/19,6.4, , , ,UGA
+Rcapito,116,50,8,,5/28/19,4.62, , , ,UGA
+Rcapito,117,50,8,,5/28/19,5.73, , , ,UGA
+Rcapito,118,50,8,,5/28/19,4.39, , , ,UGA
+Rcapito,119,50,8,,5/28/19,6.01, , , ,UGA
+Rcapito,120,50,8,,5/28/19,5.69, , , ,UGA
+Rcapito,121,50,8,,5/28/19,5.74, , , ,UGA
+Rcapito,122,50,8,,5/28/19,6.06, , , ,UGA
+Rcapito,148,50,8,,5/29/19,5.36, , , ,UGA
+Rcapito,149,50,8,,5/29/19,4.71, , , ,UGA
+Rcapito,150,50,8,,5/29/19,5.09, , , ,UGA
+Rcapito,151,50,8,,5/29/19,4.59, , , ,UGA
+Rcapito,152,50,8,,5/29/19,5.55, , , ,UGA
+Rcapito,172,50,8,,5/29/19,6.92, , , ,UGA
+Rcapito,173,50,8,,5/29/19,5.72, , , ,UGA
+Rcapito,174,50,8,,5/29/19,6.39, , , ,UGA
+Rcapito,175,50,8,,5/29/19,5.92, , , ,UGA
+Rcapito,182,50,8,,5/29/19,5.74, , , ,UGA
+Rcapito,203,50,8,,5/30/19,5.11, , , ,UGA
+Rcapito,204,50,8,,5/30/19,5.17, , , ,UGA
+Rcapito,205,50,8,,5/30/19,5.54, , , ,UGA
+Rcapito,261,50,8,,5/30/19,5.72, , , ,UGA
+Rcapito,262,50,8,,5/30/19,5.52, , , ,UGA
+Rcapito,265,50,8,,5/30/19,5.03, , , ,UGA
+Rcapito,330,50,8,,6/1/19,4.4, , , ,UGA
+Rcapito,331,50,8,,6/1/19,5.23, , , ,UGA
+Rcapito,333,50,8,,6/1/19,4.99, , , ,UGA
+Rcapito,334,50,8,,6/1/19,5.51, , , ,UGA
+Rcapito,335,50,8,,6/1/19,4.87, , , ,UGA
+Rcapito,381,50,8,,6/21/19,5.77, , , ,UGA
+Rcapito,382,50,8,,6/21/19,4.86, , , ,UGA
+Rcapito,383,50,8,,6/21/19,5.05, , , ,UGA
+Rcapito,332,50,8,,6/1/19,5.89, ,1 CM TAIL, ,UGA
+Rcapito,575,50,8,,6/4/19,4.55,,,,UGA
+Rcapito,576,50,8,,6/4/19,5.91,,,,UGA
+Rcapito,841,50,8,,6/8/19,6.14,,,,UGA
+Rcapito,842,50,8,,6/8/19,4.42,,,,UGA
+Rcapito,1023,50,8,,6/14/19,6.91,,,,UGA
+Rcapito,279,50,9,,5/31/19,5.4, , NDF NE,dead 7/3,UGA
+Rcapito,88,50,9,,5/27/19,5.29, ,NDF, ,UGA
+Rcapito,89,50,9,,5/27/19,6.6, ,NDF, ,UGA
+Rcapito,194,50,9,,5/30/19,5.03, ,NDF, ,UGA
+Rcapito,237,50,9,,5/30/19,7.28, ,NDF, ,UGA
+Rcapito,271,50,9,,5/31/19,4.62, ,NDF, ,UGA
+Rcapito,274,50,9,,5/31/19,5.63, ,NDF, ,UGA
+Rcapito,277,50,9,,5/31/19,5.24, ,NDF , ,UGA
+Rcapito,41,50,9,,5/27/19,7.06, ,NDF eyes sunken, ,UGA
+Rcapito,74,50,9,,5/27/19,6.14, ,NDF NE,found dead 7/2,UGA
+Rcapito,75,50,9,,5/27/19,5.12, ,NDF NE,found dead 6/28,UGA
+Rcapito,77,50,9,,5/28/19,6.28, ,NDF NE, ,UGA
+Rcapito,78,50,9,,5/28/19,5.21, ,NDF NE,FOUND DEAD 7/4,UGA
+Rcapito,87,50,9,,5/27/19,5.75, ,NDF NE, ,UGA
+Rcapito,192,50,9,,5/29/19,5.91, ,NDF NE, ,UGA
+Rcapito,236,50,9,,5/30/19,5.59, ,NDF NE, ,UGA
+Rcapito,238,50,9,,5/30/19,5.18, ,NDF NE, ,UGA
+Rcapito,239,50,9,,5/30/19,6.12, ,NDF NE, ,UGA
+Rcapito,272,50,9,,5/31/19,4.68, ,NDF NE, ,UGA
+Rcapito,273,50,9,,5/31/19,5.6, ,NDF NE, ,UGA
+Rcapito,275,50,9,,5/31/19,5.17, ,NDF NE, ,UGA
+Rcapito,276,50,9,,5/31/19,4.07, ,NDF NE, ,UGA
+Rcapito,278,50,9,,5/31/19,4.73, ,NDF NE, ,UGA
+Rcapito,280,50,9,,5/31/19,6.12, ,NDF NE, ,UGA
+Rcapito,340,50,9,,6/1/19,4.95, ,NDF NE,dead 6/2,UGA
+Rcapito,341,50,9,,6/1/19,5.06, ,NDF NE, ,UGA
+Rcapito,342,50,9,,6/1/19,4.48, ,NDF NE, ,UGA
+Rcapito,343,50,9,,6/1/19,4.46, ,NDF NE, ,UGA
+Rcapito,508,50,9,,6/3/19,4.69,,NDF NE,,UGA
+Rcapito,510,50,9,,6/3/19,5.06,,NDF NE,,UGA
+Rcapito,512,50,9,,6/3/19,5.04,,NDF NE,,UGA
+Rcapito,514,50,9,,6/3/19,4.62,,NDF NE,,UGA
+Rcapito,579,50,9,,6/4/19,4.04,,NDF NE,,UGA
+Rcapito,690,50,9,,6/6/19,5,,NDF NE,,UGA
+Rcapito,786,50,9,,6/8/19,4.62,,NDF NE,,UGA
+Rcapito,983,50,9,,6/13/19,4.45,,NDF NE,,UGA
+Rcapito,984,50,9,,6/13/19,3.9,,NDF NE,,UGA
+Rcapito,985,50,9,,6/13/19,4.68,,NDF NE,,UGA
+Rcapito,989,50,9,,6/13/19,3.39,,NDF NE,,UGA
+Rcapito,1095,50,9,,6/10/19,4.42,,NDF NE,,UGA
+Rcapito,511,50,9,,6/3/19,4.66,,NDF NE ,,UGA
+Rcapito,509,50,9,,6/3/19,4.17,,NDF NE GILL,,UGA
+Rcapito,513,50,9,,6/3/19,4.27,,NDF NE GILL,,UGA
+Rcapito,515,50,9,,6/3/19,4.31,,NDF NE GILL,EUTHANIZED 6/4,UGA
+Rcapito,1192,50,9,,6/21/19,6.16,,NDF NE GILL,,UGA
+Rcapito,40,50,9,,5/27/19,6.67, ,NE, ,UGA
+Rcapito,625,50,9,,6/2/19,--,,NE GILLS (HEALED 6/4),,UGA
+Rcapito,981,50,9,,6/10/19,4.24,,,,UGA
+Rcapito,1193,50,9,,6/21/19,4.74,,,,UGA
+Rcapito,83,50,10,,5/28/19,7.32, , , ,UGA
+Rcapito,76,50,10,,5/27/19,5.29, ,NDF, ,UGA
+Rcapito,79,50,10,,5/28/19,7.38, ,NDF, ,UGA
+Rcapito,80,50,10,,5/28/19,6.17, ,NDF, ,UGA
+Rcapito,81,50,10,,5/28/19,5.75, ,NDF, ,UGA
+Rcapito,82,50,10,,5/28/19,5.74, ,NDF, ,UGA
+Rcapito,91,50,10,,5/27/19,5.02, ,NDF, ,UGA
+Rcapito,92,50,10,,5/28/19,6.35, ,NDF, ,UGA
+Rcapito,177,50,10,,5/29/19,4.96, ,NDF, ,UGA
+Rcapito,178,50,10,,5/29/19,5.28, ,NDF, ,UGA
+Rcapito,213,50,10,,5/30/19,6.1, ,NDF, ,UGA
+Rcapito,214,50,10,,5/30/19,5.4, ,NDF, ,UGA
+Rcapito,215,50,10,,5/30/19,5.52, ,NDF, ,UGA
+Rcapito,231,50,10,,5/30/19,6.12, ,NDF, ,UGA
+Rcapito,233,50,10,,5/30/19,5.4, ,NDF, ,UGA
+Rcapito,234,50,10,,5/30/19,6.03, ,NDF, ,UGA
+Rcapito,235,50,10,,5/30/19,6.5, ,NDF, ,UGA
+Rcapito,288,50,10,,5/31/19,6.22, ,NDF, ,UGA
+Rcapito,321,50,10,,5/31/19,5.89, ,NDF, ,UGA
+Rcapito,475,50,10,,6/3/19,5.06,,NDF,,UGA
+Rcapito,840,50,10,,6/8/19,4.25,,NDF,,UGA
+Rcapito,954,50,10,,6/11/19,4.2,,NDF,,UGA
+Rcapito,955,50,10,,6/11/19,4.26,,NDF,,UGA
+Rcapito,848,50,10,,6/8/19,6.09,,NDF GILL,,UGA
+Rcapito,232,50,10,,5/30/19,5.98, ,NDF NE, ,UGA
+Rcapito,391,50,10,,6/21/19,4.34, ,NDF NE, ,UGA
+Rcapito,392,50,10,,6/21/19,3.05, ,NDF NE,7/4 FOUND DEAD,UGA
+Rcapito,393,50,10,,6/21/19,4.07, ,NDF NE, ,UGA
+Rcapito,953,50,10,,6/11/19,4.06,,NDF NE,,UGA
+Rcapito,1048,50,10,,6/15/19,4.79,,NDF NE,,UGA
+Rcapito,675,50,10,,6/5/19,4.02,,NDF NE GILL,EUTHANIZED 6/5,UGA
+Rcapito,676,50,10,,6/5/19,2.8,,NDF NE GILL,EUTHANIZED 6/5,UGA
+Rcapito,846,50,10,,6/8/19,4.98,,NDF NE GILL,,UGA
+Rcapito,847,50,10,,6/8/19,3.78,,NDF NE GILL,,UGA
+Rcapito,289,50,10,,5/31/19,4.64, ,NDF NE healed 6/28, ,UGA
+Rcapito,674,50,10,,6/5/19,5.34,,"NDF, JAW UNDERDEVELOPED",,UGA
+Rcapito,603,50,10,,6/4/19,5.46,,,,UGA
+Rcapito,1195,50,10,,6/21/19,3.61,,,,UGA
+Rcapito,821,50,11,,6/8/19,6.08,,JUMPED ON FLOOR,,UGA
+Rcapito,447,50,11,,6/3/19,4.8,,,,UGA
+Rcapito,448,50,11,,6/3/19,6.1,,,,UGA
+Rcapito,449,50,11,,6/3/19,5.76,,,,UGA
+Rcapito,641,50,11,,6/5/19,5.36,,,,UGA
+Rcapito,642,50,11,,6/5/19,5,,,DEAD 6/13,UGA
+Rcapito,643,50,11,,6/5/19,5.31,,,,UGA
+Rcapito,738,50,11,,6/7/19,4.66,,,,UGA
+Rcapito,739,50,11,,6/7/19,6.25,,,,UGA
+Rcapito,740,50,11,,6/7/19,5.09,,,DEAD 6/12,UGA
+Rcapito,741,50,11,,6/7/19,5.55,,,,UGA
+Rcapito,742,50,11,,6/7/19,4.36,,,,UGA
+Rcapito,743,50,11,,6/7/19,4.96,,,,UGA
+Rcapito,744,50,11,,6/7/19,4.33,,,,UGA
+Rcapito,745,50,11,,6/7/19,5.63,,,,UGA
+Rcapito,822,50,11,,6/8/19,5.07,,,,UGA
+Rcapito,831,50,11,,6/8/19,4.9,,,,UGA
+Rcapito,832,50,11,,6/8/19,5.68,,,,UGA
+Rcapito,885,50,11,,6/10/19,6.26,,,,UGA
+Rcapito,924,50,11,,6/11/19,5.59,,,,UGA
+Rcapito,925,50,11,,6/11/19,5.39,,,,UGA
+Rcapito,967,50,11,,6/12/19,5.17,,,,UGA
+Rcapito,968,50,11,,6/12/19,5.27,,,,UGA
+Rcapito,1068,50,11,,6/16/19,6.38,,,,UGA
+Rcapito,1069,50,11,,6/16/19,4.99,,,,UGA
+Rcapito,1070,50,11,,6/16/19,7.4,,,,UGA
+Rcapito,1071,50,11,,6/16/19,5.46,,,,UGA
+Rcapito,1072,50,11,,6/16/19,6.09,,,DEAD 6/25,UGA
+Rcapito,1124,50,11,,6/18/19,5.57,,,,UGA
+Rcapito,1141,50,11,,6/18/19,7.29,,,,UGA
+Rcapito,1142,50,11,,6/18/19,6.84,,,,UGA
+Rcapito,1143,50,11,,6/18/19,6.67,,,,UGA
+Rcapito,1144,50,11,,6/18/19,6.19,,,,UGA
+Rcapito,1156,50,11,,6/20/19,8.68,,,,UGA
+Rcapito,1157,50,11,,6/20/19,6.51,,,,UGA
+Rcapito,1158,50,11,,6/20/19,8.22,,,,UGA
+Rcapito,1159,50,11,,6/20/19,9.73,,,,UGA
+Rcapito,1160,50,11,,6/20/19,7.17,,,,UGA
+Rcapito,1161,50,11,,6/20/19,6.41,,,,UGA
+Rcapito,1162,50,11,,6/20/19,6.86,,,,UGA
+Rcapito,1207,50,11,,6/22/19,9.06,,,,UGA
+Rcapito,1208,50,11,,6/22/19,9.67,,,DEAD 6/29,UGA
+Rcapito,1212,50,11,,6/18/19,6.53,,,,UGA
+Rcapito,1214,50,11,,6/23/19,10.8,,,,UGA
+Rcapito,1229,50,11,,6/23/19,8.31,,,,UGA
+Rcapito,1230,50,11,,6/27/19,7.65,,,,UGA
+Rcapito,1231,50,11,,6/27/19,8.32,,,,UGA
+Rcapito,1232,50,11,,6/27/19,6.08,,,,UGA
+Rcapito,1233,50,11,,6/27/19,8.68,,,DEAD 7/1,UGA
+Rcapito,1244,50,11,,7/1/19,9.77,,,,UGA
+Rcapito,1254,50,11,,7/3/19,7.36,,,,UGA
+Rcapito,1255,50,11,,7/3/19,6.43,,,,UGA
+Rcapito,1,50,12,,5/26/19,3.94, , , ,UGA
+Rcapito,2,50,12,,5/26/19,4.61, , , ,UGA
+Rcapito,42,50,12,,5/27/19,5.15, , , ,UGA
+Rcapito,43,50,12,,5/27/19,4.83, , , ,UGA
+Rcapito,44,50,12,,5/27/19,4.63, , , ,UGA
+Rcapito,45,50,12,,5/27/19,4.97, , , ,UGA
+Rcapito,46,50,12,,5/27/19,5.39, , , ,UGA
+Rcapito,94,50,12,,5/28/19,6.01, , , ,UGA
+Rcapito,95,50,12,,5/28/19,5.11, , , ,UGA
+Rcapito,96,50,12,,5/28/19,5.08, , , ,UGA
+Rcapito,97,50,12,,5/28/19,4.43, , , ,UGA
+Rcapito,98,50,12,,5/28/19,5.13, , , ,UGA
+Rcapito,99,50,12,,5/28/19,5.66, , , ,UGA
+Rcapito,100,50,12,,5/28/19,4.36, , , ,UGA
+Rcapito,101,50,12,,5/28/19,5.11, , , ,UGA
+Rcapito,102,50,12,,5/28/19,4.82, , , ,UGA
+Rcapito,153,50,12,,5/29/19,4.26, , ,dead 5/30,UGA
+Rcapito,168,50,12,,5/29/19,5.04, , ,Dead 5/30,UGA
+Rcapito,169,50,12,,5/29/19,5.04, , , ,UGA
+Rcapito,170,50,12,,5/29/19,4.74, , , ,UGA
+Rcapito,171,50,12,,5/29/19,4.03, , , ,UGA
+Rcapito,201,50,12,,5/30/19,4.73, , , ,UGA
+Rcapito,202,50,12,,5/30/19,4.53, , , ,UGA
+Rcapito,267,50,12,,5/30/19,5.36, , , ,UGA
+Rcapito,84,50,12,,5/28/19,5.11, ,NDF, ,UGA
+Rcapito,93,50,12,,5/28/19,6.3, ,NDF, ,UGA
+Rcapito,580,50,12,,6/4/19,4.38,,,,UGA
+Rcapito,581,50,12,,6/4/19,4.36,,,,UGA
+Rcapito,582,50,12,,6/4/19,4.1,,,,UGA
+Rcapito,583,50,12,,6/4/19,5.84,,,,UGA
+Rcapito,728,50,12,,6/6/19,5.47,,,,UGA
+Rcapito,729,50,12,,6/6/19,6.13,,,,UGA
+Rcapito,820,50,12,,6/8/19,4.39,,,,UGA
+Rcapito,886,50,12,,6/10/19,4.95,,,,UGA
+Rcapito,887,50,12,,6/10/19,4.39,,,,UGA
+Rcapito,969,50,12,,6/12/19,6.2,,,,UGA
+Rcapito,970,50,12,,6/12/19,4.16,,,,UGA
+Rcapito,1138,50,12,,6/18/19,7.38,,,,UGA
+Rcapito,1139,50,12,,6/18/19,6.53,,,,UGA
+Rcapito,1174,50,12,,6/20/19,8.11,,,,UGA
+Rcapito,1175,50,12,,6/20/19,6.35,,,,UGA
+Rcapito,3,50,13,,5/26/19,5.5, , , ,UGA
+Rcapito,4,50,13,,5/26/19,6.21, , , ,UGA
+Rcapito,5,50,13,,5/26/19,5.67, , , ,UGA
+Rcapito,7,50,13,,5/26/19,3.89, , , ,UGA
+Rcapito,27,50,13,,5/27/19,4.26, , , ,UGA
+Rcapito,28,50,13,,5/27/19,5.28, , , ,UGA
+Rcapito,30,50,13,,5/27/19,4.72, , , ,UGA
+Rcapito,103,50,13,,5/28/19,5.63, , , ,UGA
+Rcapito,141,50,13,,5/29/19,5.34, , , ,UGA
+Rcapito,144,50,13,,5/29/19,4.74, , , ,UGA
+Rcapito,297,50,13,,5/31/19,5.06, , , ,UGA
+Rcapito,1099,50,13,,6/17/19,6.55,,GILL,,UGA
+Rcapito,33,50,13,,5/27/19,5.6, ,healed by 5/30, ,UGA
+Rcapito,6,50,13,,5/26/19,4.92, ,NDF, ,UGA
+Rcapito,8,50,13,,5/26/19,5.9, ,NDF, ,UGA
+Rcapito,25,50,13,,5/27/19,4.42, ,NDF, ,UGA
+Rcapito,26,50,13,,5/27/19,4.53, ,NDF, ,UGA
+Rcapito,29,50,13,,5/27/19,4.59, ,NDF, ,UGA
+Rcapito,31,50,13,,5/27/19,5.82, ,NDF, ,UGA
+Rcapito,32,50,13,,5/27/19,5.76, ,NDF, ,UGA
+Rcapito,85,50,13,,5/28/19,4.91, ,NDF, ,UGA
+Rcapito,142,50,13,,5/29/19,5.13, ,NDF, ,UGA
+Rcapito,143,50,13,,5/29/19,5.22, ,NDF,Escaped - found dead,UGA
+Rcapito,145,50,13,,5/29/19,5.3, ,NDF, ,UGA
+Rcapito,146,50,13,,5/29/19,4.65, ,NDF, ,UGA
+Rcapito,147,50,13,,5/29/19,5.27, ,NDF, ,UGA
+Rcapito,212,50,13,,5/30/19,5.45, ,NDF, ,UGA
+Rcapito,217,50,13,,5/30/19,5.33, ,NDF, ,UGA
+Rcapito,218,50,13,,5/30/19,3.51, ,NDF, ,UGA
+Rcapito,219,50,13,,5/30/19,5.23, ,NDF, ,UGA
+Rcapito,245,50,13,,5/30/19,5.25, ,NDF, ,UGA
+Rcapito,296,50,13,,5/31/19,5.27, ,NDF, ,UGA
+Rcapito,298,50,13,,5/31/19,4, ,NDF, ,UGA
+Rcapito,299,50,13,,5/31/19,3.85, ,NDF, ,UGA
+Rcapito,359,50,13,,6/1/19,4.81, ,NDF, ,UGA
+Rcapito,592,50,13,,6/4/19,4.71,,NDF,,UGA
+Rcapito,668,50,13,,6/5/19,5.31,,NDF,,UGA
+Rcapito,752,50,13,,6/7/19,3.7,,NDF,,UGA
+Rcapito,753,50,13,,6/7/19,4.55,,NDF,,UGA
+Rcapito,958,50,13,,6/11/19,3.66,,NDF,,UGA
+Rcapito,360,50,13,,6/1/19,4.02, ,NDF , ,UGA
+Rcapito,361,50,13,,6/1/19,4.88, ,NDF 1CM TAIL, ,UGA
+Rcapito,474,50,13,,6/3/19,4.03,,NDF NE,,UGA
+Rcapito,1053,50,13,,6/15/19,4.88,,NDF NE,,UGA
+Rcapito,1098,50,13,,6/17/19,5.51,,NE,,UGA
+Rcapito,593,50,13,,6/4/19,4.52,,,,UGA
+Rcapito,869,50,13,,6/9/19,4.2,,,,UGA
+Rcapito,1096,50,13,,6/17/19,5.17,,,,UGA
+Rcapito,1097,50,13,,6/17/19,5.63,,,,UGA
+Rcapito,39,50,14,,5/27/19,6.03, , , ,UGA
+Rcapito,104,50,14,,5/28/19,4.58, , , ,UGA
+Rcapito,154,50,14,,5/29/19,3.75, , , ,UGA
+Rcapito,160,50,14,,5/29/19,5.75, , , ,UGA
+Rcapito,195,50,14,,5/30/19,4.9, , , ,UGA
+Rcapito,220,50,14,,5/30/19,5.34, , , ,UGA
+Rcapito,221,50,14,,5/30/19,5.33, , , ,UGA
+Rcapito,264,50,14,,5/30/19,6, , , ,UGA
+Rcapito,266,50,14,,5/30/19,3.17, , , ,UGA
+Rcapito,290,50,14,,5/31/19,4.73, , , ,UGA
+Rcapito,291,50,14,,5/31/19,4.78, , , ,UGA
+Rcapito,292,50,14,,5/31/19,5.27, , , ,UGA
+Rcapito,293,50,14,,5/31/19,4.92, , , ,UGA
+Rcapito,294,50,14,,5/31/19,5.82, , , ,UGA
+Rcapito,295,50,14,,5/31/19,3.85, , , ,UGA
+Rcapito,411,50,14,,6/21/19,5.71, , , ,UGA
+Rcapito,413,50,14,,6/21/19,4.78, , , ,UGA
+Rcapito,155,50,14,,5/29/19,5.51, ,Bloated,Found dead 5/31,UGA
+Rcapito,410,50,14,,6/21/19,3.71, ,NDF, ,UGA
+Rcapito,412,50,14,,6/21/19,4.06, ,NDF, ,UGA
+Rcapito,476,50,14,,6/3/19,4.31,,NDF,,UGA
+Rcapito,477,50,14,,6/3/19,5.31,,NDF,,UGA
+Rcapito,1033,50,14,,6/14/19,4.33,,NDF,,UGA
+Rcapito,1180,50,14,,6/20/19,4.82,,NDF,,UGA
+Rcapito,222,50,14,,5/30/19,4.97, ,NDF NE, ,UGA
+Rcapito,1181,50,14,,6/20/19,5.23,,NDF NE,,UGA
+Rcapito,546,50,14,,6/4/19,3.7,,,,UGA
+Rcapito,547,50,14,,6/4/19,4.2,,,,UGA
+Rcapito,548,50,14,,6/4/19,4.26,,,,UGA
+Rcapito,549,50,14,,6/4/19,3.99,,,,UGA
+Rcapito,550,50,14,,6/4/19,4.71,,,,UGA
+Rcapito,693,50,14,,6/6/19,4.5,,,,UGA
+Rcapito,811,50,14,,6/8/19,3.35,,,,UGA
+Rcapito,812,50,14,,6/8/19,4.79,,,,UGA
+Rcapito,813,50,14,,6/8/19,3.83,,,,UGA
+Rcapito,823,50,14,,6/8/19,4.67,,,,UGA
+Rcapito,824,50,14,,6/8/19,2.67,,,,UGA
+Rcapito,971,50,14,,6/12/19,4.79,,,,UGA
+Rcapito,107,50,15,,5/28/19,5.95, , , ,UGA
+Rcapito,108,50,15,,5/28/19,4.46, , , ,UGA
+Rcapito,109,50,15,,5/28/19,6.17, , , ,UGA
+Rcapito,110,50,15,,5/28/19,4.62, , , ,UGA
+Rcapito,111,50,15,,5/28/19,4.71, , , ,UGA
+Rcapito,112,50,15,,5/28/19,5.31, , , ,UGA
+Rcapito,113,50,15,,5/28/19,5.27, , , ,UGA
+Rcapito,106,50,15,,5/28/19,4.9, ,NDF, ,UGA
+Rcapito,478,50,15,,6/3/19,5.87,,NDF,,UGA
+Rcapito,756,50,15,,6/7/19,4.52,,NDF,,UGA
+Rcapito,228,50,15,,5/30/19,4.85, ,NDF NE, ,UGA
+Rcapito,229,50,15,,5/30/19,6.11, ,NDF NE, ,UGA
+Rcapito,305,50,15,,5/31/19,5.11, ,NDF NE, ,UGA
+Rcapito,306,50,15,,5/31/19,3.82, ,NDF NE, ,UGA
+Rcapito,307,50,15,,5/31/19,5.57, ,NDF NE, ,UGA
+Rcapito,308,50,15,,5/31/19,5.44, ,NDF NE,dead 6/4,UGA
+Rcapito,309,50,15,,5/31/19,6.28, ,NDF NE, ,UGA
+Rcapito,403,50,15,,6/21/19,4.92, ,NDF NE, ,UGA
+Rcapito,404,50,15,,6/21/19,5.26, ,NDF NE, ,UGA
+Rcapito,479,50,15,,6/3/19,2.71,,NDF NE,,UGA
+Rcapito,483,50,15,,6/3/19,3.99,,NDF NE,,UGA
+Rcapito,909,50,15,,6/10/19,3.79,,NDF NE,,UGA
+Rcapito,910,50,15,,6/10/19,3.16,,NDF NE,,UGA
+Rcapito,1050,50,15,,6/15/19,4.31,,NDF NE,,UGA
+Rcapito,1135,50,15,,6/16/19,3.86,,NDF NE,,UGA
+Rcapito,482,50,15,,6/3/19,3.54,,NDF NE 0.5 CM TAIL,,UGA
+Rcapito,484,50,15,,6/3/19,5.03,,NDF NE 0.5 CM TAIL,,UGA
+Rcapito,653,50,15,,6/5/19,3.23,,NDF NE GILL,EUTHANIZED 6/5,UGA
+Rcapito,654,50,15,,6/5/19,3.81,,NDF NE GILL,,UGA
+Rcapito,1101,50,15,,6/12/19,4.45,,NDF NE GILL,,UGA
+Rcapito,1102,50,15,,6/12/19,3.28,,NDF NE GILL,,UGA
+Rcapito,1103,50,15,,6/12/19,4.28,,NDF NE GILL,,UGA
+Rcapito,1205,50,15,,6/21/19,4.85,,NDF NE GILL,,UGA
+Rcapito,1206,50,15,,6/21/19,4.73,,NDF NE GILL,,UGA
+Rcapito,655,50,15,,6/5/19,4.1,,,,UGA
+Rcapito,936,50,15,,6/7/19,3.97,,,,UGA
+Rcapito,47,50,16,,5/27/19,4.32, , , ,UGA
+Rcapito,48,50,16,,5/27/19,4.7, , , ,UGA
+Rcapito,123,50,16,,5/28/19,4.97, , , ,UGA
+Rcapito,124,50,16,,5/28/19,5.06, , , ,UGA
+Rcapito,125,50,16,,5/28/19,5.12, , , ,UGA
+Rcapito,126,50,16,,5/28/19,4.03, , , ,UGA
+Rcapito,127,50,16,,5/28/19,5.65, , , ,UGA
+Rcapito,128,50,16,,5/28/19,4.87, , , ,UGA
+Rcapito,158,50,16,,5/29/19,4.58, , , ,UGA
+Rcapito,159,50,16,,5/29/19,4.69, , , ,UGA
+Rcapito,197,50,16,,5/30/19,4.42, , , ,UGA
+Rcapito,198,50,16,,5/30/19,4.48, , , ,UGA
+Rcapito,281,50,16,,5/31/19,4.37, , , ,UGA
+Rcapito,282,50,16,,5/31/19,3.66, , , ,UGA
+Rcapito,283,50,16,,5/31/19,5.25, , , ,UGA
+Rcapito,284,50,16,,5/31/19,5.32, , , ,UGA
+Rcapito,285,50,16,,5/31/19,3.9, , , ,UGA
+Rcapito,286,50,16,,5/31/19,5.68, , , ,UGA
+Rcapito,414,50,16,,6/3/19,4.26, , , ,UGA
+Rcapito,415,50,16,,6/3/19,4.45, , , ,UGA
+Rcapito,416,50,16,,6/3/19,3.96, , , ,UGA
+Rcapito,417,50,16,,6/3/19,4.26, , , ,UGA
+Rcapito,418,50,16,,6/3/19,3.18, , , ,UGA
+Rcapito,419,50,16,,6/3/19,4.17, , , ,UGA
+Rcapito,420,50,16,,6/3/19,4.32, , , ,UGA
+Rcapito,421,50,16,,6/3/19,4.72, , , ,UGA
+Rcapito,422,50,16,,6/3/19,4.85, , , ,UGA
+Rcapito,423,50,16,,6/3/19,4.72, , , ,UGA
+Rcapito,424,50,16,,6/3/19,3.75, , , ,UGA
+Rcapito,425,50,16,,6/3/19,4.15, , , ,UGA
+Rcapito,426,50,16,,6/3/19,4.32, , , ,UGA
+Rcapito,427,50,16,,6/3/19,4.65, , , ,UGA
+Rcapito,49,50,16,,5/27/19,4.68, ,NDF, ,UGA
+Rcapito,868,50,16,,6/8/19,3.65,,,,UGA
+Rcapito,1001,50,16,,6/13/19,4.86,,,,UGA
+Rcapito,1147,50,16,,6/19/19,5.73,,,,UGA
+Rcapito,1148,50,16,,6/19/19,4.65,,,,UGA
+Rcapito,16,50,17,,5/27/19,6.42, , , ,UGA
+Rcapito,130,50,17,,5/28/19,5.78, , , ,UGA
+Rcapito,14,50,17,,5/27/19,6.39, ,healed by 5/30, ,UGA
+Rcapito,24,50,17,,5/27/19,6.67, ,healed by 5/30, ,UGA
+Rcapito,9,50,17,,5/26/19,5.81, ,NDF, ,UGA
+Rcapito,10,50,17,,5/26/19,5.18, ,NDF, ,UGA
+Rcapito,11,50,17,,5/26/19,6.29, ,NDF, ,UGA
+Rcapito,12,50,17,,5/26/19,5.89, ,NDF, ,UGA
+Rcapito,15,50,17,,5/27/19,4.44, ,NDF, ,UGA
+Rcapito,18,50,17,,5/27/19,5.23, ,NDF, ,UGA
+Rcapito,19,50,17,,5/27/19,5.53, ,NDF, ,UGA
+Rcapito,20,50,17,,5/27/19,5.09, ,NDF, ,UGA
+Rcapito,21,50,17,,5/27/19,5.05, ,NDF, ,UGA
+Rcapito,22,50,17,,5/27/19,4.81, ,NDF, ,UGA
+Rcapito,23,50,17,,5/27/19,5.43, ,NDF, ,UGA
+Rcapito,129,50,17,,5/28/19,6.1, ,NDF, ,UGA
+Rcapito,131,50,17,,5/28/19,5.05, ,NDF, ,UGA
+Rcapito,241,50,17,,5/30/19,4.2, ,NDF, ,UGA
+Rcapito,242,50,17,,5/30/19,5.36, ,NDF, ,UGA
+Rcapito,302,50,17,,5/31/19,4.48, ,NDF, ,UGA
+Rcapito,303,50,17,,5/31/19,4.43, ,NDF, ,UGA
+Rcapito,370,50,17,,6/1/19,5.6, ,NDF, ,UGA
+Rcapito,371,50,17,,6/1/19,3.73, ,NDF, ,UGA
+Rcapito,387,50,17,,6/21/19,4.39, ,NDF, ,UGA
+Rcapito,660,50,17,,6/5/19,5.49,,NDF,,UGA
+Rcapito,662,50,17,,6/5/19,3.25,,NDF,,UGA
+Rcapito,664,50,17,,6/5/19,4.93,,NDF,,UGA
+Rcapito,667,50,17,,6/5/19,4.43,,NDF,,UGA
+Rcapito,761,50,17,,6/7/19,4.27,,NDF,,UGA
+Rcapito,911,50,17,,6/10/19,3.03,,NDF,,UGA
+Rcapito,1093,50,17,,6/16/19,7.03,,NDF,,UGA
+Rcapito,663,50,17,,6/5/19,2.65,,NDF GILL,EUTHANIZED 6/5,UGA
+Rcapito,665,50,17,,6/5/19,4.81,,NDF GILL,EUTHANIZED 6/5,UGA
+Rcapito,789,50,17,,6/8/19,3.5,,NDF GILL,,UGA
+Rcapito,1052,50,17,,6/15/19,6.01,,NDF GILL,,UGA
+Rcapito,156,50,17,,5/29/19,4.22, ,NDF NE, ,UGA
+Rcapito,157,50,17,,5/29/19,4.28, ,NDF NE, ,UGA
+Rcapito,216,50,17,,5/30/19,3.81, ,NDF NE, ,UGA
+Rcapito,369,50,17,,6/1/19,3.35, ,NDF NE, ,UGA
+Rcapito,661,50,17,,6/5/19,3.81,,NDF NE,,UGA
+Rcapito,790,50,17,,6/8/19,4.56,,NDF NE,,UGA
+Rcapito,666,50,17,,6/5/19,3.88,,"NDF, JAW UNDERDEVELOPED",EUTHANIZED 6/5,UGA
+Rcapito,17,50,17,,5/27/19,4.75, ,NE, ,UGA
+Rcapito,1145,50,17,,6/18/19,6.15,,,,UGA
+Rcapito,132,50,18,,5/28/19,5.35, , , ,UGA
+Rcapito,133,50,18,,5/28/19,7, , , ,UGA
+Rcapito,1047,50,18,,6/15/19,5.59,, NDF,,UGA
+Rcapito,34,50,18,,5/27/19,6.7, ,NDF, ,UGA
+Rcapito,35,50,18,,5/27/19,6.04, ,NDF, ,UGA
+Rcapito,36,50,18,,5/27/19,4.92, ,NDF, ,UGA
+Rcapito,134,50,18,,5/28/19,5.75, ,NDF, ,UGA
+Rcapito,230,50,18,,5/30/19,5.11, ,NDF, ,UGA
+Rcapito,243,50,18,,5/30/19,6.09, ,NDF, ,UGA
+Rcapito,244,50,18,,5/30/19,4.57, ,NDF, ,UGA
+Rcapito,317,50,18,,5/31/19,4.77, ,NDF, ,UGA
+Rcapito,318,50,18,,5/31/19,5.37, ,NDF, ,UGA
+Rcapito,319,50,18,,5/31/19,5.06, ,NDF, ,UGA
+Rcapito,366,50,18,,6/1/19,4.66, ,NDF,DEAD 6/2,UGA
+Rcapito,367,50,18,,6/1/19,5.28, ,NDF, ,UGA
+Rcapito,388,50,18,,6/21/19,4.78, ,NDF, ,UGA
+Rcapito,389,50,18,,6/21/19,4.25, ,NDF, ,UGA
+Rcapito,390,50,18,,6/21/19,5.1, ,NDF, ,UGA
+Rcapito,489,50,18,,6/3/19,5.13,,NDF,,UGA
+Rcapito,490,50,18,,6/3/19,3.4,,NDF,,UGA
+Rcapito,491,50,18,,6/3/19,3.59,,NDF,,UGA
+Rcapito,669,50,18,,6/5/19,5,,NDF,,UGA
+Rcapito,670,50,18,,6/5/19,4.45,,NDF,,UGA
+Rcapito,671,50,18,,6/5/19,2.9,,NDF,,UGA
+Rcapito,672,50,18,,6/5/19,3.84,,NDF,,UGA
+Rcapito,673,50,18,,6/5/19,3.98,,NDF,,UGA
+Rcapito,791,50,18,,6/8/19,3.7,,NDF,,UGA
+Rcapito,903,50,18,,6/10/19,3.48,,NDF,,UGA
+Rcapito,904,50,18,,6/10/19,3.78,,NDF,,UGA
+Rcapito,952,50,18,,6/11/19,3.88,,NDF,,UGA
+Rcapito,988,50,18,,6/13/19,4.35,,NDF,,UGA
+Rcapito,1149,50,18,,6/19/19,4.58,,NDF,,UGA
+Rcapito,368,50,18,,6/1/19,6.25, ,NDF 0.5 CM TAIL, ,UGA
+Rcapito,362,50,18,,6/1/19,4.46, ,NDF GILL, ,UGA
+Rcapito,492,50,18,,6/3/19,2.97,,NDF GILL,,UGA
+Rcapito,1204,50,18,,6/21/19,3.74,,NDF GILL,,UGA
+Rcapito,365,50,18,,6/1/19,3.69, ,NDF GILL 0.5 TAIL, ,UGA
+Rcapito,320,50,18,,5/31/19,4.18, ,NDF NE, ,UGA
+Rcapito,363,50,18,,6/1/19,4.07, ,NDF NE,DEAD 7/3,UGA
+Rcapito,364,50,18,,6/1/19,3.6, ,NDF NE, ,UGA
+Rcapito,792,50,18,,6/8/19,4.54,,NDF NE,,UGA
+Rcapito,905,50,18,,6/10/19,3.76,,NDF NE,,UGA
+Rcapito,1049,50,18,,6/15/19,4.72,,NDF NE,,UGA
+Rcapito,1051,50,18,,6/15/19,5.28,,NDF NE,,UGA
+Rcapito,1215,50,18,,6/23/19,6.31,,NDF NE,,UGA
+Rcapito,1216,50,18,,6/23/19,4.2,,NDF NE,,UGA
+Rcapito,1228,50,18,,6/25/19,4.41,,NDF NE,,UGA
+Rcapito,1243,50,18,,6/29/19,6.41,,NDF NE,,UGA
+Rcapito,1258,50,18,,7/9/19,7.05,,NDF NE,,UGA
+Rcapito,1150,50,18,,6/19/19,4.28,,NDF NE GILL,,UGA
+Rcapito,1203,50,18,,6/21/19,4.9,,NDF NE GILL,,UGA
+Rcapito,1242,50,18,,6/29/19,5.79,,NDF NE GILL,,UGA
+Rcapito,957,50,18,,6/11/19,4.52,,,,UGA
+Rcapito,1227,50,18,,6/25/19,4.7,,,,UGA
+Rcapito,1237,50,18,,6/25/19,5.5,,,,UGA
+Rcapito,226,50,19,,5/30/19,6.18, ,NDF,dead 6/2,UGA
+Rcapito,227,50,19,,5/30/19,6.8, ,NDF, ,UGA
+Rcapito,301,50,19,,5/31/19,6.68, ,NDF, ,UGA
+Rcapito,351,50,19,,6/1/19,6.31, ,NDF, ,UGA
+Rcapito,493,50,19,,6/3/19,5.75,,NDF,,UGA
+Rcapito,494,50,19,,6/3/19,6.18,,NDF,,UGA
+Rcapito,495,50,19,,6/3/19,5.85,,NDF,,UGA
+Rcapito,656,50,19,,6/5/19,4.98,,NDF,,UGA
+Rcapito,657,50,19,,6/5/19,4.71,,NDF,,UGA
+Rcapito,684,50,19,,6/6/19,6.08,,NDF,,UGA
+Rcapito,794,50,19,,6/8/19,3.86,,NDF,,UGA
+Rcapito,795,50,19,,6/8/19,3.65,,NDF,,UGA
+Rcapito,797,50,19,,6/8/19,4.42,,NDF,,UGA
+Rcapito,798,50,19,,6/8/19,4.74,,NDF,,UGA
+Rcapito,498,50,19,,6/3/19,4.64,,NDF GILL,,UGA
+Rcapito,799,50,19,,6/8/19,4.96,,NDF JUMPED ON FLOOR,,UGA
+Rcapito,497,50,19,,6/3/19,5.29,,NDF NE,,UGA
+Rcapito,685,50,19,,6/6/19,3.86,,NDF NE,,UGA
+Rcapito,686,50,19,,6/6/19,4.67,,NDF NE,,UGA
+Rcapito,793,50,19,,6/8/19,2.68,,NDF NE,,UGA
+Rcapito,986,50,19,,6/13/19,3.76,,NDF NE,,UGA
+Rcapito,987,50,19,,6/13/19,4.4,,NDF NE,,UGA
+Rcapito,496,50,19,,6/3/19,4.69,,NDF NE GILL,,UGA
+Rcapito,687,50,19,,6/6/19,3.88,,NDF NE GILL,,UGA
+Rcapito,1151,50,19,,6/19/19,4.8,,NDF NE GILL,,UGA
+Rcapito,1152,50,19,,6/19/19,6.4,,NDF NE GILL,,UGA
+Rcapito,1100,50,19,,6/17/19,4.56,,NE GILL,,UGA
+Rcapito,796,50,19,,6/8/19,5.84,,,,UGA
+Rcapito,531,50,20,,6/4/19,--,,GILL,EUTHANIZED 6/5,UGA
+Rcapito,913,50,20,,6/10/19,5.13,,GILL,,UGA
+Rcapito,1182,50,20,,6/20/19,6.27,,GILL,,UGA
+Rcapito,538,50,20,,6/4/19,--,,GILL ONE LEG,EUTHANIZED ND,UGA
+Rcapito,37,50,20,,5/27/19,6.18, ,NDF, ,UGA
+Rcapito,135,50,20,,5/28/19,7.01, ,NDF, ,UGA
+Rcapito,207,50,20,,5/30/19,8.55, ,NDF, ,UGA
+Rcapito,209,50,20,,5/30/19,7.5, ,NDF, ,UGA
+Rcapito,225,50,20,,5/30/19,5.89, ,NDF, ,UGA
+Rcapito,263,50,20,,5/30/19,7.57, ,NDF,dead 6/5,UGA
+Rcapito,304,50,20,,5/31/19,4.33, ,NDF, ,UGA
+Rcapito,352,50,20,,6/1/19,5.31, ,NDF, ,UGA
+Rcapito,396,50,20,,6/21/19,5.69, ,NDF, ,UGA
+Rcapito,397,50,20,,6/21/19,4.34, ,NDF, ,UGA
+Rcapito,398,50,20,,6/21/19,7.13, ,NDF, ,UGA
+Rcapito,507,50,20,,6/3/19,5.37,,NDF,,UGA
+Rcapito,532,50,20,,6/4/19,4.2,,NDF GILL,,UGA
+Rcapito,533,50,20,,6/4/19,6.27,,NDF GILL,DEAD 6/6,UGA
+Rcapito,537,50,20,,6/4/19,--,,NDF GILL,,UGA
+Rcapito,206,50,20,,5/30/19,4.24, ,NDF NE,dead 6/4,UGA
+Rcapito,208,50,20,,5/30/19,4.76, ,NDF NE, ,UGA
+Rcapito,210,50,20,,5/30/19,5.29, ,NDF NE,dead 6/4,UGA
+Rcapito,223,50,20,,5/30/19,4.56, ,NDF NE,found dead 7/3,UGA
+Rcapito,224,50,20,,5/30/19,5.67, ,NDF NE, ,UGA
+Rcapito,506,50,20,,6/3/19,3.24,,NDF NE GILL,EUTHANIZED 6/5,UGA
+Rcapito,534,50,20,,6/4/19,--,,NDF NE GILL,EUTHANIZED ND,UGA
+Rcapito,535,50,20,,6/4/19,--,,NDF NE GILL,EUTHANIZED ND,UGA
+Rcapito,536,50,20,,6/4/19,--,,NDF NE GILL,EUTHANIZED ND,UGA
+Rcapito,788,50,20,,6/8/19,4.5,,NDF NE GILL,EUTHANIZED 6/13,UGA
+Rcapito,849,50,20,,6/8/19,5.31,,NDF NE GILL,,UGA
+Rcapito,850,50,20,,6/8/19,4.54,,NDF NE GILL,,UGA
+Rcapito,539,50,20,,6/4/19,--,,,,UGA
+Rcapito,787,50,20,,6/8/19,5.61,,,,UGA
+Rcapito,406,50,21,,6/21/19,6.87, , , ,UGA
+Rcapito,485,50,21,,6/3/19,5.9,,0.5 CM TAIL,,UGA
+Rcapito,353,50,21,,6/1/19,6.85, ,NDF, ,UGA
+Rcapito,354,50,21,,6/1/19,6.96, ,NDF, ,UGA
+Rcapito,355,50,21,,6/1/19,7.36, ,NDF, ,UGA
+Rcapito,356,50,21,,6/1/19,6.38, ,NDF, ,UGA
+Rcapito,357,50,21,,6/1/19,6.55, ,NDF, ,UGA
+Rcapito,358,50,21,,6/1/19,6.71, ,NDF, ,UGA
+Rcapito,405,50,21,,6/21/19,6.11, ,NDF, ,UGA
+Rcapito,407,50,21,,6/21/19,7.52, ,NDF, ,UGA
+Rcapito,408,50,21,,6/21/19,5.92, ,NDF, ,UGA
+Rcapito,409,50,21,,6/21/19,6.46, ,NDF, ,UGA
+Rcapito,486,50,21,,6/3/19,6.16,,NDF,,UGA
+Rcapito,487,50,21,,6/3/19,6.28,,NDF,,UGA
+Rcapito,488,50,21,,6/3/19,6.51,,NDF,,UGA
+Rcapito,544,50,21,,6/4/19,5.89,,NDF,,UGA
+Rcapito,545,50,21,,6/4/19,5.88,,NDF,,UGA
+Rcapito,691,50,21,,6/6/19,5.26,,NDF,,UGA
+Rcapito,692,50,21,,6/6/19,6.69,,NDF,,UGA
+Rcapito,732,50,21,,6/7/19,6.76,,NDF,,UGA
+Rcapito,733,50,21,,6/7/19,6.16,,NDF,,UGA
+Rcapito,734,50,21,,6/7/19,5.56,,NDF,,UGA
+Rcapito,735,50,21,,6/7/19,6.94,,NDF,,UGA
+Rcapito,736,50,21,,6/7/19,6.39,,NDF,,UGA
+Rcapito,856,50,21,,6/8/19,7.39,,NDF,,UGA
+Rcapito,857,50,21,,6/8/19,4.71,,NDF,,UGA
+Rcapito,858,50,21,,6/8/19,5.16,,NDF,,UGA
+Rcapito,859,50,21,,6/8/19,5.33,,NDF,,UGA
+Rcapito,860,50,21,,6/8/19,6.01,,NDF,,UGA
+Rcapito,861,50,21,,6/8/19,6.16,,NDF,,UGA
+Rcapito,862,50,21,,6/8/19,4.59,,NDF,,UGA
+Rcapito,863,50,21,,6/8/19,5.77,,NDF,,UGA
+Rcapito,961,50,21,,6/12/19,5.94,,NDF,,UGA
+Rcapito,1031,50,21,,6/14/19,5.9,,NDF,,UGA
+Rcapito,1032,50,21,,6/14/19,5.56,,NDF,,UGA
+Rcapito,1091,50,21,,6/16/19,4.71,,NDF,,UGA
+Rcapito,540,50,21,,6/4/19,--,,,,UGA
+Rcapito,541,50,21,,6/4/19,--,,,,UGA
+Rcapito,542,50,21,,6/4/19,6.63,,,,UGA
+Rcapito,543,50,21,,6/4/19,4.76,,,,UGA
+Rcapito,737,50,21,,6/7/19,5.67,,,,UGA
+Rcapito,864,50,21,,6/8/19,5.3,,,,UGA
+Rcapito,960,50,21,,6/12/19,5.26,,,,UGA
+Rcapito,1034,50,21,,6/12/19,4.54,,,,UGA
+Rcapito,1131,50,21,,6/18/19,3.3,,,,UGA
+Rcapito,1132,50,21,,6/18/19,4.65,,,,UGA
+Rcapito,1222,50,21,,6/24/19,6.74,,,,UGA
+Rcapito,1238,50,21,,6/24/19,6.58,,,,UGA
+Rcapito,1252,50,21,,7/3/19,6.39,,,,UGA
+Rcapito,322,50,22,,6/1/19,6.03, ,NDF, ,UGA
+Rcapito,880,50,22,,6/6/19,3.7,,NDF,,UGA
+Rcapito,1178,50,22,,6/20/19,3.81,,NDF,,UGA
+Rcapito,577,50,22,,6/4/19,4.94,,,,UGA
+Rcapito,578,50,22,,6/4/19,4.24,,,,UGA
+Rcapito,721,50,22,,6/6/19,3.3,,,,UGA
+Rcapito,722,50,22,,6/6/19,4.08,,,,UGA
+Rcapito,723,50,22,,6/6/19,4.84,,,,UGA
+Rcapito,724,50,22,,6/6/19,3.72,,,,UGA
+Rcapito,725,50,22,,6/6/19,3.38,,,,UGA
+Rcapito,726,50,22,,6/6/19,3.32,,,,UGA
+Rcapito,730,50,22,,6/6/19,3.37,,,,UGA
+Rcapito,881,50,22,,6/6/19,3.35,,,,UGA
+Rcapito,882,50,22,,6/6/19,2.35,,,,UGA
+Rcapito,888,50,22,,6/10/19,2.88,,,,UGA
+Rcapito,889,50,22,,6/10/19,5.21,,,,UGA
+Rcapito,1115,50,22,,6/18/19,2.93,,,,UGA
+Rcapito,1116,50,22,,6/18/19,4.57,,,,UGA
+Rcapito,105,50,23,,5/28/19,5.35, , , ,UGA
+Rcapito,323,50,23,,6/1/19,5.6, ,NDF, ,UGA
+Rcapito,853,50,23,,6/8/19,5.6,,NDF NE,,UGA
+Rcapito,614,50,23,,6/4/19,4.71,,,,UGA
+Rcapito,694,50,23,,6/6/19,4.53,,,,UGA
+Rcapito,695,50,23,,6/6/19,4.52,,,,UGA
+Rcapito,764,50,23,,6/7/19,5.15,,,,UGA
+Rcapito,1079,50,23,,6/16/19,5.18,,,,UGA
+Rcapito,1080,50,23,,6/16/19,5.03,,,,UGA
+Rcapito,1081,50,23,,6/16/19,5.42,,,,UGA
+Rcapito,1137,50,23,,6/18/19,6.68,,,,UGA
+Rcapito,1213,50,23,,6/18/19,5.75,,,,UGA
+Rcapito,755,50,24,,6/7/19,4.13,,,,UGA
+Rcapito,785,50,24,,6/8/19,4.89,,,,UGA
+Rcapito,870,50,24,,6/9/19,4.87,,,,UGA
+Rcapito,956,50,24,,6/11/19,4.04,,,,UGA
+Rcapito,328,50,25,,6/1/19,5.04, , , ,UGA
+Rcapito,329,50,25,,6/1/19,5.23, , , ,UGA
+Rcapito,384,50,25,,6/21/19,4.39, , , ,UGA
+Rcapito,385,50,25,,6/21/19,5.44, , , ,UGA
+Rcapito,1190,50,25,,6/21/19,3.03,,NAD,,UGA
+Rcapito,1188,50,25,,6/21/19,2.19,,NDF,,UGA
+Rcapito,1191,50,25,,6/21/19,5.91,,NDF NE GILL,,UGA
+Rcapito,588,50,25,,6/4/19,4.81,,,,UGA
+Rcapito,589,50,25,,6/4/19,4.22,,,,UGA
+Rcapito,590,50,25,,6/4/19,4.97,,,,UGA
+Rcapito,591,50,25,,6/4/19,4.83,,,,UGA
+Rcapito,696,50,25,,6/6/19,4.36,,,,UGA
+Rcapito,697,50,25,,6/6/19,4.52,,,,UGA
+Rcapito,698,50,25,,6/6/19,5.79,,,,UGA
+Rcapito,699,50,25,,6/6/19,5.15,,,,UGA
+Rcapito,700,50,25,,6/6/19,4.73,,,,UGA
+Rcapito,701,50,25,,6/6/19,4.86,,,,UGA
+Rcapito,757,50,25,,6/7/19,4.49,,,,UGA
+Rcapito,758,50,25,,6/7/19,4.17,,,,UGA
+Rcapito,759,50,25,,6/7/19,4.35,,,,UGA
+Rcapito,760,50,25,,6/7/19,4.59,,,,UGA
+Rcapito,806,50,25,,6/8/19,4.84,,,,UGA
+Rcapito,807,50,25,,6/8/19,4.75,,,,UGA
+Rcapito,871,50,25,,6/9/19,4.43,,,,UGA
+Rcapito,872,50,25,,6/9/19,4.55,,,,UGA
+Rcapito,873,50,25,,6/9/19,5.13,,,,UGA
+Rcapito,890,50,25,,6/10/19,4.46,,,,UGA
+Rcapito,942,50,25,,6/11/19,4.49,,,,UGA
+Rcapito,943,50,25,,6/11/19,5.36,,,,UGA
+Rcapito,944,50,25,,6/11/19,4.26,,,,UGA
+Rcapito,945,50,25,,6/11/19,4.94,,,,UGA
+Rcapito,1042,50,25,,6/15/19,5.69,,,,UGA
+Rcapito,1043,50,25,,6/15/19,5.2,,,,UGA
+Rcapito,1044,50,25,,6/15/19,5.83,,,,UGA
+Rcapito,1045,50,25,,6/15/19,5.79,,,,UGA
+Rcapito,1046,50,25,,6/15/19,6.34,,,,UGA
+Rcapito,1063,50,25,,6/16/19,6.06,,,,UGA
+Rcapito,1064,50,25,,6/16/19,6.3,,,,UGA
+Rcapito,1065,50,25,,6/16/19,6.1,,,,UGA
+Rcapito,1104,50,25,,6/17/19,5.15,,,,UGA
+Rcapito,1105,50,25,,6/17/19,5.05,,,,UGA
+Rcapito,1106,50,25,MISSING,6/17/2019,5.29,,,,UGA
+Rcapito,1153,50,25,,6/19/19,4.68,,,,UGA
+Rcapito,1189,50,25,,6/21/19,6.95,,,,UGA
+Rcapito,1217,50,25,,6/23/19,2.34,,,,UGA
+Rcapito,1218,50,25,,6/23/19,6.24,,,,UGA
+Rcapito,1223,50,25,,6/24/19,5.27,,,,UGA
+Rcapito,1234,50,25,,6/27/19,2.37,,,,UGA
+Rcapito,1235,50,25,,6/27/19,2.18,,,,UGA
+Rcapito,1240,50,25,,6/24/19,3.13,,,,UGA
+Rcapito,179,50,26,,5/29/19,4.71, , , ,UGA
+Rcapito,1187,50,26,,6/20/19,3.77,,GILL,,UGA
+Rcapito,1028,50,26,,6/14/19,3.9,,NDF,,UGA
+Rcapito,715,50,26,,6/6/19,4.12,,,,UGA
+Rcapito,716,50,26,,6/6/19,4.81,,,,UGA
+Rcapito,717,50,26,,6/6/19,4.26,,,,UGA
+Rcapito,718,50,26,,6/6/19,4.45,,,,UGA
+Rcapito,719,50,26,,6/6/19,4.32,,,,UGA
+Rcapito,720,50,26,,6/6/19,3.72,,,,UGA
+Rcapito,765,50,26,,6/7/19,3.73,,,,UGA
+Rcapito,766,50,26,,6/7/19,4.86,,,,UGA
+Rcapito,874,50,26,,6/9/19,3.4,,,,UGA
+Rcapito,875,50,26,,6/9/19,4.87,,,,UGA
+Rcapito,876,50,26,,6/9/19,3.64,,,,UGA
+Rcapito,891,50,26,,6/10/19,3.96,,,,UGA
+Rcapito,892,50,26,,6/10/19,4.77,,,,UGA
+Rcapito,946,50,26,,6/11/19,3.88,,,,UGA
+Rcapito,947,50,26,,6/11/19,4.5,,,,UGA
+Rcapito,948,50,26,,6/11/19,4.29,,,,UGA
+Rcapito,949,50,26,,6/11/19,3.56,,,,UGA
+Rcapito,1005,50,26,,6/13/19,4.1,,,,UGA
+Rcapito,1006,50,26,,6/13/19,2.82,,,,UGA
+Rcapito,1029,50,26,,6/14/19,4.37,,,,UGA
+Rcapito,1030,50,26,,6/14/19,4.95,,,,UGA
+Rcapito,1059,50,26,,6/16/19,4.7,,,,UGA
+Rcapito,1060,50,26,,6/16/19,5.11,,,,UGA
+Rcapito,1107,50,26,MISSING,6/14/2019,5.18,,,,UGA
+Rcapito,1108,50,26,MISSING,6/14/19,3.71,,,,UGA
+Rcapito,1117,50,26,,6/18/19,1.98,,,,UGA
+Rcapito,1118,50,26,,6/18/19,2.93,,,,UGA
+Rcapito,1119,50,26,,6/18/19,3.73,,,,UGA
+Rcapito,1120,50,26,,6/18/19,3.89,,,,UGA
+Rcapito,1121,50,26,,6/18/19,5.27,,,,UGA
+Rcapito,1122,50,26,,6/18/19,5.52,,,,UGA
+Rcapito,1155,50,26,,6/19/19,3.33,,,,UGA
+Rcapito,1186,50,26,,6/20/19,4.04,,,,UGA
+Rcapito,452,50,27,,6/3/19,3.3,,,,UGA
+Rcapito,453,50,27,,6/3/19,4.91,,,,UGA
+Rcapito,454,50,27,,6/3/19,4.39,,,,UGA
+Rcapito,630,50,27,,6/5/19,3.67,,,,UGA
+Rcapito,631,50,27,,6/5/19,4.08,,,,UGA
+Rcapito,632,50,27,,6/5/19,3.96,,,,UGA
+Rcapito,633,50,27,,6/5/19,4.07,,,,UGA
+Rcapito,634,50,27,,6/5/19,4.36,,,,UGA
+Rcapito,635,50,27,,6/5/19,4.89,,,,UGA
+Rcapito,636,50,27,,6/5/19,4.2,,,,UGA
+Rcapito,637,50,27,,6/5/19,4.65,,,,UGA
+Rcapito,638,50,27,,6/5/19,3.54,,,,UGA
+Rcapito,825,50,27,,6/8/19,4.07,,,,UGA
+Rcapito,826,50,27,,6/8/19,4.33,,,,UGA
+Rcapito,827,50,27,,6/8/19,3.89,,,,UGA
+Rcapito,843,50,27,,6/8/19,3.35,,,,UGA
+Rcapito,844,50,27,,6/8/19,3.1,,,,UGA
+Rcapito,845,50,27,,6/8/19,3.46,,,,UGA
+Rcapito,851,50,27,,6/8/19,4.82,,,,UGA
+Rcapito,852,50,27,,6/8/19,4.28,,,,UGA
+Rcapito,915,50,27,,6/11/19,3.2,,,,UGA
+Rcapito,916,50,27,,6/11/19,2.55,,,,UGA
+Rcapito,917,50,27,,6/11/19,3.56,,,,UGA
+Rcapito,918,50,27,,6/11/19,2.63,,,,UGA
+Rcapito,919,50,27,,6/11/19,3.2,,,,UGA
+Rcapito,920,50,27,,6/11/19,3.58,,,,UGA
+Rcapito,921,50,27,,6/11/19,3.85,,,,UGA
+Rcapito,922,50,27,,6/11/19,4.05,,,,UGA
+Rcapito,923,50,27,,6/11/19,4.05,,,,UGA
+Rcapito,1003,50,27,,6/13/19,3.96,,,,UGA
+Rcapito,1004,50,27,,6/13/19,3.87,,,,UGA
+Rcapito,1007,50,27,,6/12/19,3.14,,,,UGA
+Rcapito,1035,50,27,,6/15/19,3.25,,,,UGA
+Rcapito,1036,50,27,,6/15/19,3.48,,,,UGA
+Rcapito,1037,50,27,,6/15/19,4.16,,,,UGA
+Rcapito,1082,50,27,,6/16/19,3.64,,,,UGA
+Rcapito,1083,50,27,,6/16/19,3.21,,,,UGA
+Rcapito,1084,50,27,,6/16/19,3.69,,,,UGA
+Rcapito,1085,50,27,,6/16/19,3.45,,,,UGA
+Rcapito,1125,50,27,,6/18/19,3.58,,,,UGA
+Rcapito,1126,50,27,,6/18/19,3.16,,,,UGA
+Rcapito,1127,50,27,,6/18/19,3.83,,,,UGA
+Rcapito,1167,50,27,,6/20/19,4.43,,,,UGA
+Rcapito,1168,50,27,,6/20/19,4.27,,,,UGA
+Rcapito,1169,50,27,,6/20/19,3.89,,,,UGA
+Rcapito,1170,50,27,,6/20/19,3.22,,,,UGA
+Rcapito,503,50,28,,6/3/19,2.59,,NDF,,UGA
+Rcapito,504,50,28,,6/3/19,2.87,,NDF,,UGA
+Rcapito,505,50,28,,6/3/19,3.86,,NDF,,UGA
+Rcapito,612,50,28,,6/4/19,3.75,,,,UGA
+Rcapito,613,50,28,,6/4/19,3.99,,,,UGA
+Rcapito,814,50,28,,6/8/19,3.19,,,,UGA
+Rcapito,815,50,28,,6/8/19,3.64,,,,UGA
+Rcapito,816,50,28,,6/8/19,2.88,,,,UGA
+Rcapito,817,50,28,,6/8/19,3.52,,,,UGA
+Rcapito,818,50,28,,6/8/19,2.94,,,,UGA
+Rcapito,819,50,28,,6/8/19,3.6,,,,UGA
+Rcapito,828,50,28,,6/8/19,2.61,,,,UGA
+Rcapito,829,50,28,,6/8/19,4.18,,,,UGA
+Rcapito,830,50,28,,6/8/19,3.22,,,,UGA
+Rcapito,893,50,28,,6/10/19,2.27,,,,UGA
+Rcapito,894,50,28,,6/10/19,2.69,,,,UGA
+Rcapito,895,50,28,,6/10/19,2.83,,,,UGA
+Rcapito,896,50,28,,6/10/19,2.63,,,,UGA
+Rcapito,897,50,28,,6/10/19,3.06,,,,UGA
+Rcapito,972,50,28,,6/12/19,2.61,,,,UGA
+Rcapito,973,50,28,,6/12/19,3.04,,,,UGA
+Rcapito,974,50,28,,6/12/19,3.15,,,,UGA
+Rcapito,975,50,28,,6/12/19,2.95,,,,UGA
+Rcapito,976,50,28,,6/12/19,3.81,,,,UGA
+Rcapito,1010,50,28,,6/13/19,3.65,,,,UGA
+Rcapito,1021,50,28,,6/14/19,3.18,,,,UGA
+Rcapito,1022,50,28,,6/14/19,3.52,,,,UGA
+Rcapito,1038,50,28,,6/15/19,3.28,,,,UGA
+Rcapito,1039,50,28,,6/15/19,3.74,,,,UGA
+Rcapito,1040,50,28,,6/15/19,3.58,,,,UGA
+Rcapito,1041,50,28,,6/15/19,4.23,,,,UGA
+Rcapito,1073,50,28,,6/16/19,4.18,,,,UGA
+Rcapito,1074,50,28,,6/16/19,3.03,,,,UGA
+Rcapito,1075,50,28,,6/16/19,3.39,,,,UGA
+Rcapito,1076,50,28,,6/16/19,4.65,,,,UGA
+Rcapito,1077,50,28,,6/16/19,3.84,,,,UGA
+Rcapito,1078,50,28,,6/16/19,2.54,,,,UGA
+Rcapito,1128,50,28,,6/18/19,3.67,,,,UGA
+Rcapito,1163,50,28,,6/20/19,3.83,,,,UGA
+Rcapito,1164,50,28,,6/20/19,3.46,,,,UGA
+Rcapito,1165,50,28,,6/20/19,3.17,,,,UGA
+Rcapito,1166,50,28,,6/20/19,3.85,,,,UGA
+Rcapito,38,50,29,,5/27/19,3.68, , , ,UGA
+Rcapito,176,50,29,,5/29/19,4.34, , , ,UGA
+Rcapito,180,50,29,,5/29/19,3.36, , , ,UGA
+Rcapito,181,50,29,,5/29/19,4.86, , , ,UGA
+Rcapito,196,50,29,,5/30/19,3.84, , , ,UGA
+Rcapito,462,50,29,,6/3/19,3.32,,,,UGA
+Rcapito,463,50,29,,6/3/19,4.2,,,,UGA
+Rcapito,464,50,29,,6/3/19,3.93,,,,UGA
+Rcapito,465,50,29,,6/3/19,3.46,,,,UGA
+Rcapito,466,50,29,,6/3/19,3.5,,,,UGA
+Rcapito,467,50,29,,6/3/19,3.44,,,,UGA
+Rcapito,468,50,29,,6/3/19,3.61,,,,UGA
+Rcapito,469,50,29,,6/3/19,3.68,,,,UGA
+Rcapito,470,50,29,,6/3/19,3.59,,,,UGA
+Rcapito,471,50,29,,6/3/19,4.15,,,,UGA
+Rcapito,472,50,29,,6/3/19,3.49,,,,UGA
+Rcapito,473,50,29,,6/3/19,3.78,,,,UGA
+Rcapito,615,50,29,,6/4/19,3.01,,,,UGA
+Rcapito,616,50,29,,6/4/19,4.72,,,,UGA
+Rcapito,617,50,29,,6/4/19,4.04,,,,UGA
+Rcapito,618,50,29,,6/4/19,3.54,,,,UGA
+Rcapito,639,50,29,,6/5/19,4,,,,UGA
+Rcapito,640,50,29,,6/5/19,3.37,,,,UGA
+Rcapito,770,50,29,,6/7/19,3.59,,,,UGA
+Rcapito,771,50,29,,6/7/19,2.92,,,,UGA
+Rcapito,772,50,29,,6/7/19,3.03,,,,UGA
+Rcapito,773,50,29,,6/7/19,3.45,,,,UGA
+Rcapito,774,50,29,,6/7/19,3.28,,,,UGA
+Rcapito,775,50,29,,6/7/19,3.38,,,,UGA
+Rcapito,776,50,29,,6/7/19,3.67,,,,UGA
+Rcapito,898,50,29,,6/10/19,2.7,,,,UGA
+Rcapito,899,50,29,,6/10/19,2.79,,,,UGA
+Rcapito,900,50,29,,6/10/19,3.38,,,,UGA
+Rcapito,901,50,29,,6/10/19,3.37,,,,UGA
+Rcapito,933,50,29,,6/11/19,3.05,,,,UGA
+Rcapito,934,50,29,,6/11/19,4.03,,,,UGA
+Rcapito,935,50,29,,6/11/19,3.69,,,,UGA
+Rcapito,1009,50,29,,6/10/19,3.11,,,,UGA
+Rcapito,1012,50,29,,6/14/19,4.17,,,,UGA
+Rcapito,1013,50,29,,6/14/19,3.77,,,,UGA
+Rcapito,1014,50,29,,6/14/19,3.3,,,,UGA
+Rcapito,1015,50,29,,6/14/19,4.64,,,,UGA
+Rcapito,1016,50,29,,6/14/19,4.08,,,,UGA
+Rcapito,1017,50,29,,6/14/19,3.94,,,,UGA
+Rcapito,1062,50,29,,6/16/19,4.31,,,,UGA
+Rcapito,1176,50,29,,6/20/19,4.72,,,,UGA
+Rcapito,1177,50,29,,6/20/19,4.71,,,,UGA
+Rcapito,211,50,30,,5/30/19,4.15, , , ,UGA
+Rcapito,260,50,30,,5/30/19,4.06, , , ,UGA
+Rcapito,428,50,30,,6/3/19,3.15, , , ,UGA
+Rcapito,429,50,30,,6/3/19,3.78, , , ,UGA
+Rcapito,430,50,30,,6/3/19,3.62, , , ,UGA
+Rcapito,431,50,30,,6/3/19,3.36, , , ,UGA
+Rcapito,432,50,30,,6/3/19,3.59, , , ,UGA
+Rcapito,433,50,30,,6/3/19,3.53, , , ,UGA
+Rcapito,619,50,30,,6/4/19,3,,,,UGA
+Rcapito,620,50,30,,6/4/19,3.39,,,,UGA
+Rcapito,621,50,30,,6/4/19,2.72,,,,UGA
+Rcapito,622,50,30,,6/4/19,3.32,,,,UGA
+Rcapito,623,50,30,,6/4/19,3.41,,,,UGA
+Rcapito,624,50,30,,6/4/19,3.42,,,,UGA
+Rcapito,627,50,30,,6/5/19,3.23,,,,UGA
+Rcapito,628,50,30,,6/5/19,4.15,,,,UGA
+Rcapito,629,50,30,,6/5/19,3.48,,,,UGA
+Rcapito,731,50,30,,6/6/19,3.58,,,,UGA
+Rcapito,777,50,30,,6/7/19,3.71,,,,UGA
+Rcapito,778,50,30,,6/7/19,3.99,,,,UGA
+Rcapito,779,50,30,,6/7/19,4.47,,,,UGA
+Rcapito,808,50,30,,6/8/19,2.63,,,,UGA
+Rcapito,809,50,30,,6/8/19,3.28,,,,UGA
+Rcapito,810,50,30,,6/8/19,3.09,,,,UGA
+Rcapito,902,50,30,,6/10/19,3.75,,,,UGA
+Rcapito,977,50,30,,6/12/19,3.17,,,,UGA
+Rcapito,978,50,30,,6/12/19,3.46,,,DEAD 6/13,UGA
+Rcapito,979,50,30,,6/12/19,3.92,,,,UGA
+Rcapito,980,50,30,,6/12/19,3.1,,,,UGA
+Rcapito,1008,50,30,,6/10/19,3.75,,,,UGA
+Rcapito,1018,50,30,,6/14/19,4.16,,,,UGA
+Rcapito,1019,50,30,,6/14/19,3.4,,,,UGA
+Rcapito,1020,50,30,,6/14/19,5.51,,,,UGA
+Rcapito,1086,50,30,,6/16/19,3.64,,,,UGA
+Rcapito,1087,50,30,,6/16/19,4.25,,,,UGA
+Rcapito,1088,50,30,,6/16/19,3.49,,,,UGA
+Rcapito,1089,50,30,,6/16/19,3.86,,,,UGA
+Rcapito,1090,50,30,,6/16/19,4.14,,,,UGA
+Rcapito,1129,50,30,,6/18/19,4.64,,,,UGA
+Rcapito,1171,50,30,,6/20/19,4.26,,,,UGA
+Rcapito,1172,50,30,,6/20/19,3.47,,,,UGA
+Rcapito,1173,50,30,,6/20/19,4.13,,,,UGA
+Rcapito,1201,50,30,,6/21/19,5.18,,,,UGA
+Rcapito,1202,50,30,,6/21/19,4.82,,,,UGA
+Rcapito,1210,50,30,,6/20/19,4.85,,,,UGA
+Rcapito,1211,50,30,,6/20/19,4.7,,,,UGA
+Rcapito,1241,50,30,,6/29/19,4.64,,,,UGA
+Rcapito,199,50,31,,5/30/19,4.98, , , ,UGA
+Rcapito,200,50,31,,5/30/19,4.82, , , ,UGA
+Rcapito,300,50,31,,5/31/19,4.39, , , ,UGA
+Rcapito,1197,50,31,,6/21/19,7.44,,GILL,,UGA
+Rcapito,781,50,31,,6/8/19,4.48,,NDF,,UGA
+Rcapito,1257,50,31,,7/4/19,5.74,,NDF NE GILL,,UGA
+Rcapito,455,50,31,,6/3/19,5.1,,,,UGA
+Rcapito,456,50,31,,6/3/19,4.25,,,,UGA
+Rcapito,457,50,31,,6/3/19,5.14,,,,UGA
+Rcapito,458,50,31,,6/3/19,3.77,,,,UGA
+Rcapito,459,50,31,,6/3/19,5.11,,,,UGA
+Rcapito,460,50,31,,6/3/19,4.24,,,,UGA
+Rcapito,461,50,31,,6/3/19,4.46,,,,UGA
+Rcapito,607,50,31,,6/4/19,5.13,,,,UGA
+Rcapito,608,50,31,,6/4/19,4.19,,,,UGA
+Rcapito,609,50,31,,6/4/19,4.62,,,,UGA
+Rcapito,610,50,31,,6/4/19,4.74,,,,UGA
+Rcapito,611,50,31,,6/4/19,4.4,,,,UGA
+Rcapito,707,50,31,,6/6/19,4.62,,,,UGA
+Rcapito,708,50,31,,6/6/19,4.66,,,,UGA
+Rcapito,709,50,31,,6/6/19,4.54,,,,UGA
+Rcapito,710,50,31,,6/6/19,3.86,,,,UGA
+Rcapito,767,50,31,,6/7/19,4.55,,,,UGA
+Rcapito,768,50,31,,6/7/19,4.53,,,,UGA
+Rcapito,769,50,31,,6/7/19,5.09,,,,UGA
+Rcapito,780,50,31,,6/8/19,4.89,,,,UGA
+Rcapito,782,50,31,,6/8/19,3.74,,,,UGA
+Rcapito,783,50,31,,6/8/19,4.94,,,,UGA
+Rcapito,877,50,31,,6/9/19,4.9,,,,UGA
+Rcapito,878,50,31,,6/9/19,4.82,,,,UGA
+Rcapito,926,50,31,,6/11/19,4.48,,,,UGA
+Rcapito,927,50,31,,6/11/19,5.18,,,,UGA
+Rcapito,928,50,31,,6/11/19,3.72,,,,UGA
+Rcapito,929,50,31,,6/11/19,5.05,,,,UGA
+Rcapito,990,50,31,,6/13/19,4.93,,,,UGA
+Rcapito,991,50,31,,6/13/19,4.13,,,,UGA
+Rcapito,1011,50,31,,6/14/19,5.84,,,,UGA
+Rcapito,1154,50,31,,6/19/19,5.97,,,,UGA
+Rcapito,1196,50,31,,6/21/19,3.62,,,,UGA
+Rcapito,1198,50,31,,6/21/19,5.25,,,,UGA
+Rcapito,1199,50,31,,6/21/19,4.24,,,,UGA
+Rcapito,1200,50,31,,6/21/19,5.51,,,,UGA
+Rcapito,1219,50,31,,6/23/19,6.43,,,,UGA
+Rcapito,1220,50,31,,6/23/19,3.56,,,,UGA
+Rcapito,1221,50,31,,6/23/19,8.64,,,,UGA
+Rcapito,1224,50,31,,6/25/19,3.29,,,,UGA
+Rcapito,1225,50,31,,6/25/19,3.24,,,,UGA
+Rcapito,1226,50,31,,6/25/19,5.38,,,,UGA
+Rcapito,1236,50,31,,6/27/19,4.8,,,,UGA
+Rcapito,1245,50,31,,7/1/19,5.27,,,,UGA
+Rcapito,1246,50,31,,7/1/19,5.51,,,,UGA
+Rcapito,1247,50,31,,7/1/19,5.42,,,,UGA
+Rcapito,1248,50,31,,7/1/19,4.61,,,,UGA
+Rcapito,1249,50,31,,7/1/19,4.18,,,,UGA
+Rcapito,1250,50,31,,7/1/19,6.04,,,,UGA
+Rcapito,1253,50,31,,7/3/19,6.86,,,,UGA
+Rcapito,1256,50,31,,6/27/19,4.38,,,,UGA
+Rcapito,287,50,32,,5/31/19,5.22, , , ,UGA
+Rcapito,435,50,32,,6/3/19,5.51, , , ,UGA
+Rcapito,436,50,32,,6/3/19,4.6, , , ,UGA
+Rcapito,442,50,32,,6/3/19,5.07,,.5 CM TAIL,,UGA
+Rcapito,434,50,32,,6/3/19,4.76, ,1 CM TAIL, ,UGA
+Rcapito,437,50,32,,6/3/19,5.56, ,1 CM TAIL, ,UGA
+Rcapito,438,50,32,,6/3/19,4.53, ,1 CM TAIL, ,UGA
+Rcapito,950,50,32,,6/11/19,4.26,,NDF,,UGA
+Rcapito,951,50,32,,6/11/19,4.52,,NDF,,UGA
+Rcapito,963,50,32,,6/12/19,4.27,,NDF,,UGA
+Rcapito,964,50,32,,6/12/19,4.18,,NDF,,UGA
+Rcapito,965,50,32,,6/12/19,4.21,,NDF,,UGA
+Rcapito,439,50,32,,6/3/19,5.02,,,,UGA
+Rcapito,440,50,32,,6/3/19,3.77,,,,UGA
+Rcapito,441,50,32,,6/3/19,4.04,,,,UGA
+Rcapito,443,50,32,,6/3/19,4.23,,,,UGA
+Rcapito,444,50,32,,6/3/19,4.42,,,,UGA
+Rcapito,445,50,32,,6/3/19,4.71,,,,UGA
+Rcapito,446,50,32,,6/3/19,5.16,,,,UGA
+Rcapito,626,50,32,,6/5/19,4.95,,,,UGA
+Rcapito,762,50,32,,6/7/19,4.61,,,,UGA
+Rcapito,763,50,32,,6/7/19,3.51,,,,UGA
+Rcapito,800,50,32,,6/8/19,3.73,,,,UGA
+Rcapito,801,50,32,,6/8/19,3.91,,,,UGA
+Rcapito,802,50,32,,6/8/19,4.4,,,,UGA
+Rcapito,803,50,32,,6/8/19,4.07,,,,UGA
+Rcapito,804,50,32,,6/8/19,4.07,,,,UGA
+Rcapito,805,50,32,,6/8/19,4.2,,,,UGA
+Rcapito,906,50,32,,6/10/19,4.48,,,,UGA
+Rcapito,907,50,32,,6/10/19,3.84,,,,UGA
+Rcapito,908,50,32,,6/10/19,3.81,,,,UGA
+Rcapito,962,50,32,,6/12/19,4.77,,,,UGA
+Rcapito,1055,50,32,,6/16/19,4.89,,,,UGA
+Rcapito,1056,50,32,,6/16/19,5.71,,,,UGA
+Rcapito,1057,50,32,,6/16/19,4.84,,,,UGA
+Rcapito,1058,50,32,,6/16/19,4.6,,,,UGA
+Rcapito,1130,50,32,,6/18/19,5.7,,,,UGA
+Rcapito,1133,50,32,,6/18/19,5.37,,,,UGA
+Rcapito,1134,50,32,,6/18/19,5.7,,,,UGA
+Rcapito,1184,50,32,,6/20/19,5.81,,,,UGA
+Rcapito,13,50,33,,5/26/19,3.57, , , ,UGA
+Rcapito,68,50,33,,5/27/19,4.85, , , ,UGA
+Rcapito,69,50,33,,5/27/19,4.21, , , ,UGA
+Rcapito,70,50,33,,5/28/19,4.68, , , ,UGA
+Rcapito,71,50,33,,5/27/19,5.03, , , ,UGA
+Rcapito,72,50,33,,5/27/19,4.44, , , ,UGA
+Rcapito,73,50,33,,5/27/19,3.77, , , ,UGA
+Rcapito,189,50,33,,5/29/19,5.68, , , ,UGA
+Rcapito,190,50,33,,5/29/19,4.75, , , ,UGA
+Rcapito,191,50,33,,5/29/19,3.88, , , ,UGA
+Rcapito,314,50,33,,5/31/19,4.26, , , ,UGA
+Rcapito,315,50,33,,5/31/19,5.12, , , ,UGA
+Rcapito,316,50,33,,5/31/19,4.31, , , ,UGA
+Rcapito,344,50,33,,6/1/19,4.68, , , ,UGA
+Rcapito,345,50,33,,6/1/19,4.09, , , ,UGA
+Rcapito,347,50,33,,6/1/19,4.62, , , ,UGA
+Rcapito,348,50,33,,6/1/19,4.35, , , ,UGA
+Rcapito,350,50,33,,6/1/19,4.48, , , ,UGA
+Rcapito,394,50,33,,6/21/19,3.5, , , ,UGA
+Rcapito,395,50,33,,6/21/19,4.54, , , ,UGA
+Rcapito,346,50,33,,6/1/19,4.77, ,0.5 CM TAIL, ,UGA
+Rcapito,349,50,33,,6/1/19,4.11, ,0.5 CM TAIL, ,UGA
+Rcapito,480,50,33,,6/3/19,4.12,,NDF,,UGA
+Rcapito,481,50,33,,6/3/19,4.08,,NDF,,UGA
+Rcapito,855,50,33,,6/8/19,4.78,,NDF,,UGA
+Rcapito,959,50,33,,6/11/19,4.24,,NDF,,UGA
+Rcapito,1251,50,33,,7/1/19,7.36,,NDF,,UGA
+Rcapito,1194,50,33,,6/21/19,5.22,,NDF NE GILL,,UGA
+Rcapito,677,50,33,,6/5/19,4.05,,,,UGA
+Rcapito,678,50,33,,6/5/19,3.78,,,,UGA
+Rcapito,679,50,33,,6/5/19,3.5,,,,UGA
+Rcapito,680,50,33,,6/5/19,4.7,,,,UGA
+Rcapito,681,50,33,,6/5/19,3.97,,,,UGA
+Rcapito,682,50,33,,6/5/19,3.85,,,,UGA
+Rcapito,683,50,33,,6/5/19,3.67,,,,UGA
+Rcapito,854,50,33,,6/8/19,5.33,,,,UGA
+Rcapito,992,50,33,,6/13/19,5.37,,,,UGA
+Rcapito,993,50,33,,6/13/19,5.5,,,,UGA
+Rcapito,1054,50,33,,6/15/19,6,,,,UGA
+Rcapito,1109,50,33,MISSING,6/17/19,5.56,,,,UGA
+Rcapito,1146,50,33,,6/19/19,5.37,,,,UGA
+Rcapito,1239,50,33,,6/27/19,7.29,,,,UGA
+Rcapito,50,50,34,,5/27/19,5.31, , , ,UGA
+Rcapito,51,50,34,,5/27/19,5.48, , , ,UGA
+Rcapito,52,50,34,,5/27/19,5.36, , , ,UGA
+Rcapito,53,50,34,,5/27/19,4.04, , , ,UGA
+Rcapito,54,50,34,,5/27/19,5.55, , , ,UGA
+Rcapito,55,50,34,,5/27/19,5.47, , , ,UGA
+Rcapito,56,50,34,,5/27/19,4.86, , , ,UGA
+Rcapito,57,50,34,,5/27/19,4.52, , , ,UGA
+Rcapito,58,50,34,,5/27/19,4.9, , , ,UGA
+Rcapito,59,50,34,,5/27/19,4.88, , , ,UGA
+Rcapito,60,50,34,,5/27/19,4.49, , , ,UGA
+Rcapito,61,50,34,,5/27/19,5.78, , , ,UGA
+Rcapito,62,50,34,,5/27/19,4.83, , , ,UGA
+Rcapito,136,50,34,,5/29/19,5.4, , , ,UGA
+Rcapito,139,50,34,,5/29/19,5.47, , , ,UGA
+Rcapito,140,50,34,,5/29/19,5.14, , , ,UGA
+Rcapito,161,50,34,,5/29/19,5.6, , , ,UGA
+Rcapito,162,50,34,,5/29/19,5.46, , , ,UGA
+Rcapito,163,50,34,,5/29/19,5.4, , , ,UGA
+Rcapito,164,50,34,,5/29/19,5.04, , , ,UGA
+Rcapito,165,50,34,,5/29/19,5.13, , , ,UGA
+Rcapito,166,50,34,,5/29/19,5.2, , , ,UGA
+Rcapito,167,50,34,,5/29/19,5.64, , , ,UGA
+Rcapito,183,50,34,,5/29/19,4.87, , , ,UGA
+Rcapito,185,50,34,,5/29/19,5.93, , , ,UGA
+Rcapito,186,50,34,,5/29/19,6.94, , , ,UGA
+Rcapito,187,50,34,,5/29/19,4.87, , , ,UGA
+Rcapito,188,50,34,,5/29/19,4.5, , , ,UGA
+Rcapito,310,50,34,,5/31/19,5.37, , , ,UGA
+Rcapito,311,50,34,,5/31/19,5.42, , , ,UGA
+Rcapito,312,50,34,,5/31/19,5.17, , , ,UGA
+Rcapito,313,50,34,,5/31/19,5.35, , , ,UGA
+Rcapito,325,50,34,,6/1/19,5.6, , , ,UGA
+Rcapito,326,50,34,,6/1/19,5.12, , , ,UGA
+Rcapito,327,50,34,,6/1/19,5.02, , , ,UGA
+Rcapito,137,50,34,,5/29/19,4.41, ,NDF, ,UGA
+Rcapito,138,50,34,,5/29/19,5.15, ,NDF, ,UGA
+Rcapito,184,50,34,,5/29/19,4.5, ,NDF, ,UGA
+Rcapito,706,50,34,,6/6/19,4.96,,NDF,,UGA
+Rcapito,748,50,34,,6/7/19,5.58,,NDF,,UGA
+Rcapito,1179,50,34,,6/20/19,6.25,,NDF,,UGA
+Rcapito,702,50,34,,6/6/19,5.42,,,,UGA
+Rcapito,703,50,34,,6/6/19,5,,,,UGA
+Rcapito,704,50,34,,6/6/19,5.07,,,,UGA
+Rcapito,705,50,34,,6/6/19,6.3,,,,UGA
+Rcapito,746,50,34,,6/7/19,4.21,,,,UGA
+Rcapito,747,50,34,,6/7/19,5.44,,,,UGA
+Rcapito,1110,50,34,MISSING,6/17/19,6.51,,,,UGA
+Rcapito,259,50,35,,5/29/19,4.32, , ,dead 5/30,UGA
+Rcapito,324,50,"""James""",,6/1/19,5.8, , , ,UGA
+Rcapito,86,50,UN,,5/28/19,5.58, , , ,UGA
+,,,,,,4.833557692,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
