@@ -21,3 +21,8 @@ merged.Master <- rbind(master.met, master.met2013)
 
 #This works to subset and merge dataframes with the same column names at the same time.
 test.merged.Master <- rbind(dat.meta2013[c("Year", "Date.metamorphosed", "Mass.g.metamorphosed", "Fate.comments")], dat.Metamorphosis20092012[c("Year", "Date.metamorphosed", "Mass.g.metamorphosed", "Fate.comments")])
+
+
+## TO DO
+# Go into each file (2015-2023) and update column headings to match those used on line 23
+# Use code on line 23 to make a master captive rearing dataset (all years)
