@@ -19,3 +19,5 @@ master.met2013 <- subset(dat.meta2013, select = c(Year, Date.metamorphosed, Mass
 library(dplyr)
 merged.Master <- rbind(master.met, master.met2013)
 
+#This works to subset and merge dataframes with the same column names at the same time.
+test.merged.Master <- rbind(dat.meta2013[c("Year", "Date.metamorphosed", "Mass.g.metamorphosed", "Fate.comments")], dat.Metamorphosis20092012[c("Year", "Date.metamorphosed", "Mass.g.metamorphosed", "Fate.comments")])
