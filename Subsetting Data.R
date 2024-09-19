@@ -22,7 +22,47 @@ merged.Master <- rbind(master.met, master.met2013)
 #This works to subset and merge dataframes with the same column names at the same time.
 test.merged.Master <- rbind(dat.meta2013[c("Year", "Date.metamorphosed", "Mass.g.metamorphosed", "Fate.comments")], dat.Metamorphosis20092012[c("Year", "Date.metamorphosed", "Mass.g.metamorphosed", "Fate.comments")])
 
+#Read the 2024 data file
+library(readr)
+Rcapito2024 <- read_csv("Rcapito2024.csv")
+
+#Run lubridate
+library(lubridate)
+
+# Convert the DateTime column to a POSIXct object
+# Parse the Date and Time column
+Rcapito2024$`Date and Time` <- mdy_hms(Rcapito2024$`Date and Time`, tz = "EST")
+
+
+Rcapito2024 <- Rcapito2024 %>%
+  mutate(
+    Date = format(`Date and Time`, "%Y-%m-%d"),  # Extract date in YYYY-MM-DD format
+    Time = format(`Date and Time`, "%H:%M:%S")   # Extract time in HH:MM:SS format
+  )
+
+# Print the result
+print(Rcapito2024)
+
+# converting the date column to a date from a character
+Rcapito2024$Date <- as.Date(Rcapito2024$Date, format = "%m/%d/%Y")
+str(df)
+
+
+
+
+
+## Notes for Vanessa:
+
+## The survey123 used AM/PM time instead of military and we ran into parsing 
+## issues. Line 34 fixed this by including the time zone and converting to military time
+
 
 ## TO DO
 # Go into each file (2015-2023) and update column headings to match those used on line 23
 # Use code on line 23 to make a master captive rearing dataset (all years)
+
+## Notes for Morgan:
+## Year
+## Date.metamorphosed
+## Mass.g.metamorphosed
+## Fate.comments
