@@ -8,14 +8,20 @@ library(readr)
 library(dplyr)
 library(lubridate)
 
-# Import 2009-2012 data set
-dat.Metamorphosis20092012<-read.csv("L. capito_UGA master rearing data_2009-2012.csv")
+# Import 2009-2011 data set
+dat.meta20092011<-read_csv("L. capito_UGA master rearing data_2009-2011.csv")
 
 # Use subset() function to create a new dataframe for 2009-2012 data
-master.met2009 <- subset(dat.Metamorphosis20092012, select = c(Year, Date.metamorphosed, Mass.g.metamorphosed, Fate.comments)) 
+master.met20092011 <- subset(dat.meta20092011, select = c(Year, Date.metamorphosed, Mass.g.metamorphosed, Fate.comments)) 
+
+# Import 2012 data set
+dat.meta2012 <- read_csv("Rcapito_MetamorphLog_2012.csv")
+
+# Use subset() function to create a new dataframe for 2012 data
+master.met2012 <- subset(dat.meta2012, select = c(Year, Date.metamorphosed, Mass.g.metamorphosed, Fate.comments)) 
 
 # Import 2013 data set
-dat.meta2013<-read.csv("L. capito_UGA rearing data_2013.csv")
+dat.meta2013 <- read_csv("L. capito_UGA rearing data_2013.csv")
 
 # Use subset() function to create new dataframe for 2013 data
 master.met2013 <- subset(dat.meta2013, select = c(Year, Date.metamorphosed, Mass.g.metamorphosed, Fate.comments)) 
