@@ -1,801 +1,801 @@
-Species,ID_No,Tank_Density,Tank,Year,Date_of_metamorphosis,Mass_at_metamorphosis_g,Mark,Fate_Comments,Mortality,Facility,Person Entering Data
-Rcapito,001,,3,,6/8/2022,5.69,,plastic container-moved 6/10,,White Hall,CP
-Rcapito,002,,3,,6/8/2022,8.71,,6< tub,,White Hall,CP
-Rcapito,003,,3,,6/8/2022,9.15,,6< tub,,White Hall,CP
-Rcapito,004,,3,,6/8/2022,6.98,,6< tub,,White Hall,CP
-Rcapito,005,,3,,6/8/2022,6.63,,6< tub,,White Hall,CP
-Rcapito,006,,3,,6/8/2022,5.85,,,,White Hall,CP
-Rcapito,007,,7,,6/8/2022,5.35,,,,White Hall,CP
-Rcapito,008,,7,,6/8/2022,7.05,,6< tub,,White Hall,CP
-Rcapito,009,,7,,6/8/2022,6.92,,6< tub,,White Hall,CP
-Rcapito,010,,7,,6/8/2022,6.31,,6< tub,,White Hall,CP
-Rcapito,011,,16,,6/8/2022,6.77,,6< tub,,White Hall,CP
-Rcapito,012,,16,,6/8/2022,5.45,,,,White Hall,CP
-Rcapito,013,,17,,6/8/2022,3.29,,,died in observation,White Hall,CP
-Rcapito,014,,17,,6/8/2022,4.86,,,,White Hall,CP
-Rcapito,015,,6,,6/9/2022,2.51,,,,White Hall,CP
-Rcapito,016,,11,,6/9/2022,7.31,,6< tub,,White Hall,CP
-Rcapito,017,,18,,6/10/2022,3.21,,,,White Hall,CP
-Rcapito,018,,3,,6/10/2022,7.39,,6< tub,,White Hall,CP
-Rcapito,019,,3,,6/10/2022,7.45,,6< tub,,White Hall,CP
-Rcapito,020,,3,,6/10/2022,7.72,,6< tub,,White Hall,CP
-Rcapito,021,,3,,6/10/2022,6.23,,6< tub,,White Hall,CP
-Rcapito,022,,3,,6/10/2022,8.04,,6< tub,,White Hall,CP
-Rcapito,023,,10,,6/10/2022,4.69,,,,White Hall,CP
-Rcapito,024,,6,,6/10/2022,2.75,,,,White Hall,CP
-Rcapito,025,,6,,6/10/2022,3.20,,,,White Hall,CP
-Rcapito,026,,2,,6/13/2022,3.03,,,,White Hall,CP
-Rcapito,027,,6,,6/13/2022,3.42,,,,White Hall,CP
-Rcapito,028,,6,,6/13/2022,2.52,,,,White Hall,CP
-Rcapito,029,,6,,6/13/2022,2.28,,,,White Hall,CP
-Rcapito,030,,7,,6/13/2022,4.30,,,,White Hall,CP
-Rcapito,031,,7,,6/13/2022,4.69,,,,White Hall,CP
-Rcapito,032,,7,,6/13/2022,5.46,,,,White Hall,CP
-Rcapito,033,,9,,6/13/2022,4.73,,,,White Hall,CP
-Rcapito,034,,9,,6/13/2022,4.04,,,,White Hall,CP
-Rcapito,035,,9,,6/13/2022,4.82,,,,White Hall,CP
-Rcapito,036,,10,,6/13/2022,3.91,,,,White Hall,CP
-Rcapito,037,,10,,6/13/2022,3.82,,,,White Hall,CP
-Rcapito,038,,10,,6/13/2022,4.09,,,,White Hall,CP
-Rcapito,039,,12,,6/13/2022,3.10,,"still had full tail, weigh after",,White Hall,CP
-Rcapito,040,,12,,6/13/2022,3.33,,,,White Hall,CP
-Rcapito,041,,12,,6/13/2022,2.81,,,,White Hall,CP
-Rcapito,042,,12,,6/13/2022,3.28,,,,White Hall,CP
-Rcapito,043,,13,,6/13/2022,2.51,,,,White Hall,CP
-Rcapito,044,,13,,6/13/2022,2.60,,,,White Hall,CP
-Rcapito,045,,14,,6/13/2022,2.34,,,,White Hall,CP
-Rcapito,046,,17,,6/13/2022,5.76,,,,White Hall,CP
-Rcapito,047,,17,,6/13/2022,3.29,,,,White Hall,CP
-Rcapito,048,,18,,6/13/2022,2.52,,,,White Hall,CP
-Rcapito,049,,18,,6/13/2022,2.90,,,,White Hall,CP
-Rcapito,050,,18,,6/13/2022,2.60,,,,White Hall,CP
-Rcapito,051,,18,,6/13/2022,3.12,,,,White Hall,CP
-Rcapito,052,,18,,6/13/2022,3.09,,,,White Hall,CP
-Rcapito,053,,18,,6/13/2022,4.05,,,,White Hall,CP
-Rcapito,054,,20,,6/13/2022,2.27,,"still had full tail, weigh after",,White Hall,CP
-Rcapito,055,,21,,6/13/2022,1.82,,,,White Hall,CP
-Rcapito,056,,22,,6/13/2022,2.60,,,,White Hall,CP
-Rcapito,057,,22,,6/13/2022,3.37,,,,White Hall,CP
-Rcapito,058,,24,,6/13/2022,2.73,,,,White Hall,CP
-Rcapito,059,,24,,6/13/2022,3.33,,"still had full tail, weigh after",,White Hall,CP
-Rcapito,060,,19,,6/14/2022,3.14,,,,White Hall,CP
-Rcapito,061,,3,,6/15/2022,5.03,,,,White Hall,CP
-Rcapito,062,,4,,6/15/2022,3.81,,"still had full tail, weigh after",,White Hall,CP
-Rcapito,063,,6,,6/15/2022,2.67,,"still had full tail, weigh after",,White Hall,CP
-Rcapito,064,,6,,6/15/2022,1.94,,"still had full tail, weigh after",,White Hall,CP
-Rcapito,065,,6,,6/15/2022,2.50,,plastic container,,White Hall,CP
-Rcapito,066,,6,,6/15/2022,2.11,,,,White Hall,CP
-Rcapito,067,,9,,6/15/2022,3.23,,,,White Hall,CP
-Rcapito,068,,9,,6/15/2022,3.70,,,,White Hall,CP
-Rcapito,069,,9,,6/15/2022,4.69,,,,White Hall,CP
-Rcapito,070,,9,,6/15/2022,3.54,,,,White Hall,CP
-Rcapito,071,,9,,6/15/2022,3.74,,,,White Hall,CP
-Rcapito,072,,10,,6/15/2022,4.52,,,,White Hall,CP
-Rcapito,073,,10,,6/15/2022,4.42,,,,White Hall,CP
-Rcapito,074,,10,,6/15/2022,3.60,,,,White Hall,CP
-Rcapito,075,,12,,6/15/2022,3.41,,,,White Hall,CP
-Rcapito,076,,12,,6/15/2022,4.11,,,,White Hall,CP
-Rcapito,077,,12,,6/15/2022,2.23,,,,White Hall,CP
-Rcapito,078,,12,,6/15/2022,4.56,,,,White Hall,CP
-Rcapito,079,,12,,6/15/2022,3.44,,plastic container,,White Hall,CP
-Rcapito,080,,12,,6/15/2022,3.49,,plastic container,,White Hall,CP
-Rcapito,081,,12,,6/15/2022,3.22,,"still had full tail, weigh after",,White Hall,CP
-Rcapito,082,,12,,6/15/2022,3.32,,"still had full tail, weigh after",,White Hall,CP
-Rcapito,083,,12,,6/15/2022,2.99,,"still had full tail, weigh after",,White Hall,CP
-Rcapito,084,,12,,6/15/2022,3.35,,"still had full tail, weigh after",,White Hall,CP
-Rcapito,085,,12,,6/15/2022,3.75,,"still had full tail, weigh after",,White Hall,CP
-Rcapito,086,,13,,6/15/2022,3.11,,plastic container,,White Hall,CP
-Rcapito,087,,13,,6/15/2022,2.91,,,,White Hall,CP
-Rcapito,088,,13,,6/15/2022,2.98,,,,White Hall,CP
-Rcapito,089,,13,,6/15/2022,2.37,,,,White Hall,CP
-Rcapito,090,,13,,6/15/2022,2.89,,,,White Hall,CP
-Rcapito,091,,13,,6/15/2022,3.00,,"still had full tail, weigh after",,White Hall,CP
-Rcapito,092,,15,,6/15/2022,3.37,,"still had full tail, weigh after",,White Hall,CP
-Rcapito,093,,15,,6/15/2022,3.07,,"still had full tail, weigh after",,White Hall,CP
-Rcapito,094,,15,,6/15/2022,2.91,,,,White Hall,CP
-Rcapito,095,,15,,6/15/2022,3.40,,,,White Hall,CP
-Rcapito,096,,15,,6/15/2022,2.65,,,,White Hall,CP
-Rcapito,097,,15,,6/15/2022,2.77,,,,White Hall,CP
-Rcapito,098,,17,,6/15/2022,4.11,,"still had full tail, weigh after",,White Hall,CP
-Rcapito,099,,17,,6/15/2022,5.33,,"still had full tail, weigh after",,White Hall,CP
-Rcapito,100,,17,,6/15/2022,5.41,,"still had full tail, weigh after",,White Hall,CP
-Rcapito,101,,20,,6/15/2022,5.39,,,,White Hall,CP
-Rcapito,102,,20,,6/15/2022,2.85,,"still had full tail, weigh after",,White Hall,CP
-Rcapito,103,,21,,6/15/2022,2.46,,"still had full tail, weigh after",,White Hall,CP
-Rcapito,104,,21,,6/15/2022,2.80,,"still had full tail, weigh after",,White Hall,CP
-Rcapito,105,,21,,6/15/2022,2.95,,"still had full tail, weigh after",,White Hall,CP
-Rcapito,106,,21,,6/15/2022,2.25,,"still had full tail, weigh after",,White Hall,CP
-Rcapito,107,,21,,6/15/2022,2.73,,"still had full tail, weigh after",,White Hall,CP
-Rcapito,108,,21,,6/15/2022,2.68,,,,White Hall,CP
-Rcapito,109,,21,,6/15/2022,3.03,,,,White Hall,CP
-Rcapito,110,,22,,6/15/2022,2.74,,"still had full tail, weigh after",,White Hall,CP
-Rcapito,111,,24,,6/15/2022,3.13,,,,White Hall,CP
-Rcapito,112,,24,,6/15/2022,2.68,,,,White Hall,CP
-Rcapito,113,,24,,6/15/2022,3.80,,"still had full tail, weigh after",,White Hall,CP
-Rcapito,114,,24,,6/15/2022,2.97,,"still had full tail, weigh after",,White Hall,CP
-Rcapito,115,,24,,6/15/2022,3.46,,"still had full tail, weigh after",,White Hall,CP
-Rcapito,116,,24,,6/15/2022,3.41,,"still had full tail, weigh after",,White Hall,CP
-Rcapito,117,,24,,6/15/2022,3.20,,"still had full tail, weigh after",,White Hall,CP
-Rcapito,118,,24,,6/15/2022,2.72,,"still had full tail, weigh after",,White Hall,CP
-Rcapito,119,,8,,6/17/2022,3.22,,"1/2 cm tail, weigh after",,White Hall,CP
-Rcapito,120,,2,,6/17/2022,2.73,,"1/2 cm tail, weigh after",,White Hall,CP
-Rcapito,121,,8,,6/17/2022,2.78,,,,White Hall,CP
-Rcapito,122,,6,,6/17/2022,2.68,,,,White Hall,CP
-Rcapito,123,,12,,6/17/2022,3.62,,,,White Hall,CP
-Rcapito,124,,12,,6/17/2022,5.88,,"still had full tail, weigh after",,White Hall,CP
-Rcapito,125,,12,,6/17/2022,3.58,,"still had full tail, weigh after",,White Hall,CP
-Rcapito,126,,15,,6/17/2022,3.01,,,,White Hall,CP
-Rcapito,127,,20,,6/17/2022,2.36,,,,White Hall,CP
-Rcapito,128,,20,,6/17/2022,2.58,,"still had full tail, weigh after",,White Hall,CP
-Rcapito,129,,22,,6/17/2022,3.54,,,,White Hall,CP
-Rcapito,130,,22,,6/17/2022,3.07,,,,White Hall,CP
-Rcapito,131,,22,,6/17/2022,3.16,,"plastic container, moved 6/22",,White Hall,CP
-Rcapito,132,,22,,6/17/2022,2.50,,"still had full tail, weigh after",,White Hall,CP
-Rcapito,133,,22,,6/17/2022,2.72,,"still had full tail, weigh after",,White Hall,CP
-Rcapito,134,,4,,6/20/2022,2.55,,,,White Hall,CP
-Rcapito,135,,4,,6/20/2022,465.00,,,,White Hall,CP
-Rcapito,136,,4,,6/20/2022,5.08,,,,White Hall,CP
-Rcapito,137,,4,,6/20/2022,3.24,,,,White Hall,CP
-Rcapito,138,,4,,6/20/2022,3.92,,,,White Hall,CP
-Rcapito,139,,4,,6/20/2022,3.86,,,,White Hall,CP
-Rcapito,140,,4,,6/20/2022,4.65,,,,White Hall,CP
-Rcapito,141,,3,,6/20/2022,5.50,,,,White Hall,CP
-Rcapito,142,,10,,6/20/2022,6.13,,,,White Hall,CP
-Rcapito,143,,12,,6/20/2022,3.32,,,,White Hall,CP
-Rcapito,144,,9,,6/20/2022,4.10,,"still had full tail, weigh after",,White Hall,CP
-Rcapito,145,,9,,6/20/2022,4.78,,"still had full tail, weigh after",,White Hall,CP
-Rcapito,146,,9,,6/20/2022,4.13,,,,White Hall,CP
-Rcapito,147,,9,,6/20/2022,2.93,,,,White Hall,CP
-Rcapito,148,,9,,6/20/2022,3.47,,,,White Hall,CP
-Rcapito,149,,9,,6/20/2022,2.63,,,,White Hall,CP
-Rcapito,150,,9,,6/20/2022,4.82,,,,White Hall,CP
-Rcapito,151,,9,,6/20/2022,4.57,,,,White Hall,CP
-Rcapito,152,,12,,6/20/2022,3.23,,,,White Hall,CP
-Rcapito,153,,13,,6/20/2022,2.69,,,,White Hall,CP
-Rcapito,154,,13,,6/20/2022,3.27,,,,White Hall,CP
-Rcapito,155,,13,,6/20/2022,3.18,,,,White Hall,CP
-Rcapito,156,,9,,6/20/2022,3.85,,,,White Hall,CP
-Rcapito,157,,24,,6/20/2022,3.27,,,,White Hall,CP
-,158,,24,,6/20/2022,3.44,,,,White Hall,CP
-,159,,24,,6/20/2022,2.70,,,,White Hall,CP
-,160,,24,,6/20/2022,3.58,,,,White Hall,CP
-,161,,24,,6/20/2022,3.35,,,,White Hall,CP
-,162,,8,,6/20/2022,2.90,,"1cm tail, weigh after",,White Hall,CP
-,163,,8,,6/20/2022,2.85,,"1cm tail, weigh after",,White Hall,CP
-,164,,21,,6/20/2022,2.89,,,,White Hall,CP
-,165,,7,,6/20/2022,6.13,,,,White Hall,CP
-,166,,7,,6/20/2022,5.61,,,,White Hall,CP
-,167,,1,,6/20/2022,4.02,,,,White Hall,CP
-,168,,6,,6/20/2022,2.55,,,,White Hall,CP
-,169,,6,,6/20/2022,1.86,,,,White Hall,CP
-,170,,6,,6/20/2022,2.95,,"still had full tail, weigh after",,White Hall,CP
-,171,,2,,6/20/2022,2.50,,,,White Hall,CP
-,172,,2,,6/20/2022,3.61,,,,White Hall,CP
-,173,,2,,6/20/2022,3.00,,,,White Hall,CP
-,174,,21,,6/20/2022,2.62,,"plastic container, 6/22",,White Hall,CP
-,175,,14,,6/20/2022,2.72,,,,White Hall,CP
-,176,,8,,6/22/2022,2.50,,,,White Hall,CP
-,177,,8,,6/22/2022,3.37,,,,White Hall,CP
-,178,,1,,6/22/2022,4.23,,"1.5cm tail, weigh after",,White Hall,CP
-,179,,1,,6/22/2022,3.49,,,,White Hall,CP
-,180,,1,,6/22/2022,3.52,,,,White Hall,CP
-,181,,1,,6/22/2022,5.11,,,,White Hall,CP
-,182,,1,,6/22/2022,3.54,,,,White Hall,CP
-,183,,1,,6/22/2022,3.38,,,,White Hall,CP
-,184,,1,,6/22/2022,3.82,,,,White Hall,CP
-,185,,6,,6/22/2022,2.47,,,,White Hall,CP
-,186,,6,,6/22/2022,2.46,,,,White Hall,CP
-,187,,6,,6/22/2022,3.02,,,,White Hall,CP
-,188,,6,,6/22/2022,3.54,,,,White Hall,CP
-,189,,2,,6/22/2022,4.02,,,,White Hall,CP
-,190,,2,,6/22/2022,3.17,,,,White Hall,CP
-,191,,9,,6/22/2022,4.97,,"still had full tail, weigh after",,White Hall,CP
-,192,,9,,6/22/2022,3.73,,,,White Hall,CP
-,193,,9,,6/22/2022,4.77,,,,White Hall,CP
-,194,,9,,6/22/2022,4.06,,,,White Hall,CP
-,195,,9,,6/22/2022,3.87,,,,White Hall,CP
-,196,,4,,6/22/2022,4.31,,"still had full tail, weigh after",,White Hall,CP
-,197,,19,,6/22/2022,4.39,,"still had full tail, weigh after",,White Hall,CP
-,198,,19,,6/22/2022,3.84,,,,White Hall,CP
-,199,,14,,6/22/2022,2.88,,,,White Hall,CP
-,200,,14,,6/22/2022,2.77,,"still had full tail, weigh after",,White Hall,CP
-,201,,18,,6/22/2022,3.57,,,,White Hall,CP
-,202,,18,,6/22/2022,3.91,,,,White Hall,CP
-,203,,23,,6/22/2022,1.91,,,,White Hall,CP
-,204,,23,,6/22/2022,2.47,,"still had full tail, weigh after",,White Hall,CP
-,205,,15,,6/22/2022,3.05,,,,White Hall,CP
-,206,,15,,6/22/2022,2.46,,,,White Hall,CP
-,207,,15,,6/22/2022,2.49,,"still had full tail, weigh after",,White Hall,CP
-,208,,15,,6/22/2022,2.69,,"still had full tail, weigh after",,White Hall,CP
-,209,,10,,6/22/2022,4.61,,,,White Hall,CP
-,210,,13,,6/22/2022,3.35,,"1 cm tail, plastic container",,White Hall,CP
-,211,,13,,6/22/2022,3.28,,,,White Hall,CP
-,212,,13,,6/22/2022,3.37,,"still had full tail, weigh after",,White Hall,CP
-,213,,13,,6/22/2022,died,,"still had full tail, weigh after",6/29,White Hall,CP
-,214,,22,,6/22/2022,2.94,,,,White Hall,CP
-,215,,22,,6/22/2022,2.44,,,,White Hall,CP
-,216,,22,,6/22/2022,3.52,,,,White Hall,CP
-,217,,22,,6/22/2022,3.18,,,,White Hall,CP
-,218,,22,,6/22/2022,3.11,,"still had full tail, weigh after, 6/29",,White Hall,CP
-,219,,22,,6/22/2022,2.24,,"still had full tail, weigh after",,White Hall,CP
-,220,,20,,6/22/2022,3.22,,"still had full tail, weigh after",,White Hall,CP
-,221,,20,,6/22/2022,2.58,,,,White Hall,CP
-,222,,20,,6/22/2022,3.27,,,,White Hall,CP
-,223,,20,,6/22/2022,2.76,,,,White Hall,CP
-,224,,21,,6/22/2022,3.45,,"still had full tail, weigh after",,White Hall,CP
-,225,,21,,6/22/2022,2.60,,,,White Hall,CP
-,226,,21,,6/22/2022,2.63,,,,White Hall,CP
-,227,,21,,6/22/2022,2.89,,,,White Hall,CP
-,228,,21,,6/22/2022,3.00,,,,White Hall,CP
-,229,,21,,6/22/2022,2.38,,,,White Hall,CP
-,230,,21,,6/22/2022,2.70,,,,White Hall,CP
-,231,,21,,6/22/2022,2.73,,,,White Hall,CP
-,232,,21,,6/22/2022,2.86,,,,White Hall,CP
-,233,,12,,6/22/2022,3.21,,"still had full tail, weigh after",,White Hall,CP
-,234,,12,,6/22/2022,4.89,,"still had full tail, weigh after",,White Hall,CP
-,235,,12,,6/22/2022,3.53,,,,White Hall,CP
-,236,,12,,6/22/2022,3.39,,,,White Hall,CP
-,237,,12,,6/22/2022,3.78,,,,White Hall,CP
-,238,,12,,6/22/2022,3.35,,,,White Hall,CP
-,239,,12,,6/22/2022,3.33,,,,White Hall,CP
-,240,,12,,6/22/2022,3.46,,,,White Hall,CP
-,241,,24,,6/22/2022,3.17,,"still had full tail, weigh after",,White Hall,CP
-,242,,24,,6/22/2022,3.58,,"still had full tail, weigh after",,White Hall,CP
-,243,,24,,6/22/2022,4.15,,"still had full tail, weigh after",,White Hall,CP
-,244,,24,,6/22/2022,3.05,,,,White Hall,CP
-,245,,24,,6/22/2022,3.70,,,,White Hall,CP
-,246,,24,,6/22/2022,2.78,,,,White Hall,CP
-,247,,24,,6/22/2022,3.19,,,,White Hall,CP
-,248,,24,,6/22/2022,3.24,,,,White Hall,CP
-,249,,3,,6/22/2022,7.70,,"still had full tail, weigh after",,White Hall,CP
-,250,,24,,6/20/2022,3.89,,,,White Hall,CP
-,251,,10,,6/3/2022,5.87,,long tail,,White Hall,CP
-,252,,7,,6/3/2022,5.03,,,,White Hall,CP
-,253,,7,,6/3/2022,5.32,,,,White Hall,CP
-,254,,7,,6/3/2022,5.37,,.5 cm tail,,White Hall,CP
-,255,,7,,6/3/2022,6.20,,,,White Hall,CP
-,256,,7,,6/3/2022,6.49,,long tail,,White Hall,CP
-,257,,17,,6/3/2022,3.84,,,,White Hall,CP
-,258,,17,,6/3/2022,3.65,,,,White Hall,CP
-,259,,17,,6/3/2022,3.77,,,,White Hall,CP
-,260,,11,,6/3/2022,6.24,,,,White Hall,CP
-,261,,11,,6/3/2022,5.63,,,,White Hall,CP
-,262,,11,,6/3/2022,5.70,,,,White Hall,CP
-,263,,11,,6/3/2022,6.59,,,,White Hall,CP
-,264,,11,,6/3/2022,7.83,,long tail,,White Hall,CP
-,265,,3,,6/3/2022,6.61,,1 cm tail,,White Hall,CP
-,266,,16,,6/3/2022,4.71,,,,White Hall,CP
-,267,,16,,6/3/2022,3.99,,,,White Hall,CP
-,268,,16,,6/3/2022,6.59,,,,White Hall,CP
-,269,,16,,6/3/2022,5.66,,,,White Hall,CP
-,270,,16,,6/3/2022,7.68,,long tail,,White Hall,CP
-,271,,16,,6/3/2022,5.92,,,,White Hall,CP
-,272,,16,,6/3/2022,4.75,,,,White Hall,CP
-,273,,16,,6/3/2022,6.18,,,,White Hall,CP
-,274,,16,,6/3/2022,6.45,,,,White Hall,CP
-,275,,16,,6/3/2022,6.87,,1.5 cm tail,,White Hall,CP
-,276,,16,,6/3/2022,6.55,,long tail,,White Hall,CP
-,277,,7,,6/5/2022,5.69,,,,White Hall,CP
-,278,,16,,6/5/2022,6.54,,1 cm,,White Hall,CP
-,279,,16,,6/5/2022,6.78,,,,White Hall,CP
-,280,,24,,6/5/2022,4.07,,,,White Hall,CP
-,281,,3,,6/7/2022,7.68,,6< tub,,White Hall,CP
-,282,,3,,6/7/2022,6.84,,6< tub,,White Hall,CP
-,283,,7,,6/7/2022,5.55,,,,White Hall,CP
-,284,,7,,6/7/2022,5.14,,,,White Hall,CP
-,285,,11,,6/7/2022,6.76,,,,White Hall,CP
-,286,,11,,6/7/2022,7.47,,6< tub,,White Hall,CP
-,287,,17,,6/7/2022,4.18,,,,White Hall,CP
-,288,,17,,6/7/2022,3.37,,,,White Hall,CP
-,289,,18,,6/7/2022,2.83,,,,White Hall,CP
-,290,,1,,6/24/2022,4.00,,,,White Hall,CP
-,291,,1,,6/24/2022,4.87,,,,White Hall,CP
-,292,,2,,6/24/2022,3.81,,,,White Hall,CP
-,293,,2,,6/24/2022,3.77,,,,White Hall,CP
-,294,,2,,6/24/2022,4.39,,,,White Hall,CP
-,295,,2,,6/24/2022,4.21,,,,White Hall,CP
-,296,,2,,6/24/2022,3.60,,,,White Hall,CP
-,297,,2,,6/24/2022,4.47,,,,White Hall,CP
-,298,,4,,6/24/2022,3.00,,,,White Hall,CP
-,299,,4,,6/24/2022,3.63,,,,White Hall,CP
-,300,,8,,6/24/2022,2.63,,,,White Hall,CP
-,301,,8,,6/24/2022,3.67,,,,White Hall,CP
-,302,,8,,6/24/2022,2.86,,,,White Hall,CP
-,303,,10,,6/24/2022,5.26,,,,White Hall,CP
-,304,,12,,6/24/2022,4.31,,,,White Hall,CP
-,305,,12,,6/24/2022,3.36,,,,White Hall,CP
-,306,,13,,6/24/2022,3.32,,,,White Hall,CP
-,307,,13,,6/24/2022,2.78,,,,White Hall,CP
-,308,,14,,6/24/2022,3.13,,,,White Hall,CP
-,309,,14,,6/24/2022,3.60,,"still had full tail, weigh after",,White Hall,CP
-,310,,15,,6/24/2022,3.12,,,,White Hall,CP
-,311,,19,,6/24/2022,3.46,,"still had full tail, weigh after",,White Hall,CP
-,312,,19,,6/24/2022,3.92,,"still had full tail, weigh after",,White Hall,CP
-,313,,20,,6/24/2022,3.05,,"still had full tail, weigh after",,White Hall,CP
-,314,,?,,6/24/2022,3.53,,"still had full tail, weigh after",,White Hall,CP
-,315,,?,,6/24/2022,4.30,,"still had full tail, weigh after",,White Hall,CP
-,316,,?,,6/24/2022,3.64,,"still had full tail, weigh after",,White Hall,CP
-,317,,20,,6/24/2022,2.95,,"still had full tail, weigh after",,White Hall,CP
-,318,,6,,6/24/2022,3.39,,"still had full tail, weigh after",,White Hall,CP
-,319,,22,,6/24/2022,3.68,,1.5 cm tail,,White Hall,CP
-,320,,22,,6/24/2022,3.70,,"still had full tail, weigh after",,White Hall,CP
-,321,,20,,6/24/2022,,,"still had full tail, weigh after",,White Hall,CP
-,322,,22,,6/24/2022,died,,"still had full tail, weigh after, 6/29 died",6/29,White Hall,CP
+Species,ID_No,Tank_Density,Tank,Year,Date.metamorphosed,Mass.g.metamorphosed,Mark,Fate.comments,Mortality,Facility,Person Entering Data
+Rcapito,1,,3,,6/8/22,5.69,,plastic container-moved 6/10,,White Hall,CP
+Rcapito,2,,3,,6/8/22,8.71,,6< tub,,White Hall,CP
+Rcapito,3,,3,,6/8/22,9.15,,6< tub,,White Hall,CP
+Rcapito,4,,3,,6/8/22,6.98,,6< tub,,White Hall,CP
+Rcapito,5,,3,,6/8/22,6.63,,6< tub,,White Hall,CP
+Rcapito,6,,3,,6/8/22,5.85,,,,White Hall,CP
+Rcapito,7,,7,,6/8/22,5.35,,,,White Hall,CP
+Rcapito,8,,7,,6/8/22,7.05,,6< tub,,White Hall,CP
+Rcapito,9,,7,,6/8/22,6.92,,6< tub,,White Hall,CP
+Rcapito,10,,7,,6/8/22,6.31,,6< tub,,White Hall,CP
+Rcapito,11,,16,,6/8/22,6.77,,6< tub,,White Hall,CP
+Rcapito,12,,16,,6/8/22,5.45,,,,White Hall,CP
+Rcapito,13,,17,,6/8/22,3.29,,,died in observation,White Hall,CP
+Rcapito,14,,17,,6/8/22,4.86,,,,White Hall,CP
+Rcapito,15,,6,,6/9/22,2.51,,,,White Hall,CP
+Rcapito,16,,11,,6/9/22,7.31,,6< tub,,White Hall,CP
+Rcapito,17,,18,,6/10/22,3.21,,,,White Hall,CP
+Rcapito,18,,3,,6/10/22,7.39,,6< tub,,White Hall,CP
+Rcapito,19,,3,,6/10/22,7.45,,6< tub,,White Hall,CP
+Rcapito,20,,3,,6/10/22,7.72,,6< tub,,White Hall,CP
+Rcapito,21,,3,,6/10/22,6.23,,6< tub,,White Hall,CP
+Rcapito,22,,3,,6/10/22,8.04,,6< tub,,White Hall,CP
+Rcapito,23,,10,,6/10/22,4.69,,,,White Hall,CP
+Rcapito,24,,6,,6/10/22,2.75,,,,White Hall,CP
+Rcapito,25,,6,,6/10/22,3.2,,,,White Hall,CP
+Rcapito,26,,2,,6/13/22,3.03,,,,White Hall,CP
+Rcapito,27,,6,,6/13/22,3.42,,,,White Hall,CP
+Rcapito,28,,6,,6/13/22,2.52,,,,White Hall,CP
+Rcapito,29,,6,,6/13/22,2.28,,,,White Hall,CP
+Rcapito,30,,7,,6/13/22,4.3,,,,White Hall,CP
+Rcapito,31,,7,,6/13/22,4.69,,,,White Hall,CP
+Rcapito,32,,7,,6/13/22,5.46,,,,White Hall,CP
+Rcapito,33,,9,,6/13/22,4.73,,,,White Hall,CP
+Rcapito,34,,9,,6/13/22,4.04,,,,White Hall,CP
+Rcapito,35,,9,,6/13/22,4.82,,,,White Hall,CP
+Rcapito,36,,10,,6/13/22,3.91,,,,White Hall,CP
+Rcapito,37,,10,,6/13/22,3.82,,,,White Hall,CP
+Rcapito,38,,10,,6/13/22,4.09,,,,White Hall,CP
+Rcapito,39,,12,,6/13/22,3.1,,"still had full tail, weigh after",,White Hall,CP
+Rcapito,40,,12,,6/13/22,3.33,,,,White Hall,CP
+Rcapito,41,,12,,6/13/22,2.81,,,,White Hall,CP
+Rcapito,42,,12,,6/13/22,3.28,,,,White Hall,CP
+Rcapito,43,,13,,6/13/22,2.51,,,,White Hall,CP
+Rcapito,44,,13,,6/13/22,2.6,,,,White Hall,CP
+Rcapito,45,,14,,6/13/22,2.34,,,,White Hall,CP
+Rcapito,46,,17,,6/13/22,5.76,,,,White Hall,CP
+Rcapito,47,,17,,6/13/22,3.29,,,,White Hall,CP
+Rcapito,48,,18,,6/13/22,2.52,,,,White Hall,CP
+Rcapito,49,,18,,6/13/22,2.9,,,,White Hall,CP
+Rcapito,50,,18,,6/13/22,2.6,,,,White Hall,CP
+Rcapito,51,,18,,6/13/22,3.12,,,,White Hall,CP
+Rcapito,52,,18,,6/13/22,3.09,,,,White Hall,CP
+Rcapito,53,,18,,6/13/22,4.05,,,,White Hall,CP
+Rcapito,54,,20,,6/13/22,2.27,,"still had full tail, weigh after",,White Hall,CP
+Rcapito,55,,21,,6/13/22,1.82,,,,White Hall,CP
+Rcapito,56,,22,,6/13/22,2.6,,,,White Hall,CP
+Rcapito,57,,22,,6/13/22,3.37,,,,White Hall,CP
+Rcapito,58,,24,,6/13/22,2.73,,,,White Hall,CP
+Rcapito,59,,24,,6/13/22,3.33,,"still had full tail, weigh after",,White Hall,CP
+Rcapito,60,,19,,6/14/22,3.14,,,,White Hall,CP
+Rcapito,61,,3,,6/15/22,5.03,,,,White Hall,CP
+Rcapito,62,,4,,6/15/22,3.81,,"still had full tail, weigh after",,White Hall,CP
+Rcapito,63,,6,,6/15/22,2.67,,"still had full tail, weigh after",,White Hall,CP
+Rcapito,64,,6,,6/15/22,1.94,,"still had full tail, weigh after",,White Hall,CP
+Rcapito,65,,6,,6/15/22,2.5,,plastic container,,White Hall,CP
+Rcapito,66,,6,,6/15/22,2.11,,,,White Hall,CP
+Rcapito,67,,9,,6/15/22,3.23,,,,White Hall,CP
+Rcapito,68,,9,,6/15/22,3.7,,,,White Hall,CP
+Rcapito,69,,9,,6/15/22,4.69,,,,White Hall,CP
+Rcapito,70,,9,,6/15/22,3.54,,,,White Hall,CP
+Rcapito,71,,9,,6/15/22,3.74,,,,White Hall,CP
+Rcapito,72,,10,,6/15/22,4.52,,,,White Hall,CP
+Rcapito,73,,10,,6/15/22,4.42,,,,White Hall,CP
+Rcapito,74,,10,,6/15/22,3.6,,,,White Hall,CP
+Rcapito,75,,12,,6/15/22,3.41,,,,White Hall,CP
+Rcapito,76,,12,,6/15/22,4.11,,,,White Hall,CP
+Rcapito,77,,12,,6/15/22,2.23,,,,White Hall,CP
+Rcapito,78,,12,,6/15/22,4.56,,,,White Hall,CP
+Rcapito,79,,12,,6/15/22,3.44,,plastic container,,White Hall,CP
+Rcapito,80,,12,,6/15/22,3.49,,plastic container,,White Hall,CP
+Rcapito,81,,12,,6/15/22,3.22,,"still had full tail, weigh after",,White Hall,CP
+Rcapito,82,,12,,6/15/22,3.32,,"still had full tail, weigh after",,White Hall,CP
+Rcapito,83,,12,,6/15/22,2.99,,"still had full tail, weigh after",,White Hall,CP
+Rcapito,84,,12,,6/15/22,3.35,,"still had full tail, weigh after",,White Hall,CP
+Rcapito,85,,12,,6/15/22,3.75,,"still had full tail, weigh after",,White Hall,CP
+Rcapito,86,,13,,6/15/22,3.11,,plastic container,,White Hall,CP
+Rcapito,87,,13,,6/15/22,2.91,,,,White Hall,CP
+Rcapito,88,,13,,6/15/22,2.98,,,,White Hall,CP
+Rcapito,89,,13,,6/15/22,2.37,,,,White Hall,CP
+Rcapito,90,,13,,6/15/22,2.89,,,,White Hall,CP
+Rcapito,91,,13,,6/15/22,3,,"still had full tail, weigh after",,White Hall,CP
+Rcapito,92,,15,,6/15/22,3.37,,"still had full tail, weigh after",,White Hall,CP
+Rcapito,93,,15,,6/15/22,3.07,,"still had full tail, weigh after",,White Hall,CP
+Rcapito,94,,15,,6/15/22,2.91,,,,White Hall,CP
+Rcapito,95,,15,,6/15/22,3.4,,,,White Hall,CP
+Rcapito,96,,15,,6/15/22,2.65,,,,White Hall,CP
+Rcapito,97,,15,,6/15/22,2.77,,,,White Hall,CP
+Rcapito,98,,17,,6/15/22,4.11,,"still had full tail, weigh after",,White Hall,CP
+Rcapito,99,,17,,6/15/22,5.33,,"still had full tail, weigh after",,White Hall,CP
+Rcapito,100,,17,,6/15/22,5.41,,"still had full tail, weigh after",,White Hall,CP
+Rcapito,101,,20,,6/15/22,5.39,,,,White Hall,CP
+Rcapito,102,,20,,6/15/22,2.85,,"still had full tail, weigh after",,White Hall,CP
+Rcapito,103,,21,,6/15/22,2.46,,"still had full tail, weigh after",,White Hall,CP
+Rcapito,104,,21,,6/15/22,2.8,,"still had full tail, weigh after",,White Hall,CP
+Rcapito,105,,21,,6/15/22,2.95,,"still had full tail, weigh after",,White Hall,CP
+Rcapito,106,,21,,6/15/22,2.25,,"still had full tail, weigh after",,White Hall,CP
+Rcapito,107,,21,,6/15/22,2.73,,"still had full tail, weigh after",,White Hall,CP
+Rcapito,108,,21,,6/15/22,2.68,,,,White Hall,CP
+Rcapito,109,,21,,6/15/22,3.03,,,,White Hall,CP
+Rcapito,110,,22,,6/15/22,2.74,,"still had full tail, weigh after",,White Hall,CP
+Rcapito,111,,24,,6/15/22,3.13,,,,White Hall,CP
+Rcapito,112,,24,,6/15/22,2.68,,,,White Hall,CP
+Rcapito,113,,24,,6/15/22,3.8,,"still had full tail, weigh after",,White Hall,CP
+Rcapito,114,,24,,6/15/22,2.97,,"still had full tail, weigh after",,White Hall,CP
+Rcapito,115,,24,,6/15/22,3.46,,"still had full tail, weigh after",,White Hall,CP
+Rcapito,116,,24,,6/15/22,3.41,,"still had full tail, weigh after",,White Hall,CP
+Rcapito,117,,24,,6/15/22,3.2,,"still had full tail, weigh after",,White Hall,CP
+Rcapito,118,,24,,6/15/22,2.72,,"still had full tail, weigh after",,White Hall,CP
+Rcapito,119,,8,,6/17/22,3.22,,"1/2 cm tail, weigh after",,White Hall,CP
+Rcapito,120,,2,,6/17/22,2.73,,"1/2 cm tail, weigh after",,White Hall,CP
+Rcapito,121,,8,,6/17/22,2.78,,,,White Hall,CP
+Rcapito,122,,6,,6/17/22,2.68,,,,White Hall,CP
+Rcapito,123,,12,,6/17/22,3.62,,,,White Hall,CP
+Rcapito,124,,12,,6/17/22,5.88,,"still had full tail, weigh after",,White Hall,CP
+Rcapito,125,,12,,6/17/22,3.58,,"still had full tail, weigh after",,White Hall,CP
+Rcapito,126,,15,,6/17/22,3.01,,,,White Hall,CP
+Rcapito,127,,20,,6/17/22,2.36,,,,White Hall,CP
+Rcapito,128,,20,,6/17/22,2.58,,"still had full tail, weigh after",,White Hall,CP
+Rcapito,129,,22,,6/17/22,3.54,,,,White Hall,CP
+Rcapito,130,,22,,6/17/22,3.07,,,,White Hall,CP
+Rcapito,131,,22,,6/17/22,3.16,,"plastic container, moved 6/22",,White Hall,CP
+Rcapito,132,,22,,6/17/22,2.5,,"still had full tail, weigh after",,White Hall,CP
+Rcapito,133,,22,,6/17/22,2.72,,"still had full tail, weigh after",,White Hall,CP
+Rcapito,134,,4,,6/20/22,2.55,,,,White Hall,CP
+Rcapito,135,,4,,6/20/22,465,,,,White Hall,CP
+Rcapito,136,,4,,6/20/22,5.08,,,,White Hall,CP
+Rcapito,137,,4,,6/20/22,3.24,,,,White Hall,CP
+Rcapito,138,,4,,6/20/22,3.92,,,,White Hall,CP
+Rcapito,139,,4,,6/20/22,3.86,,,,White Hall,CP
+Rcapito,140,,4,,6/20/22,4.65,,,,White Hall,CP
+Rcapito,141,,3,,6/20/22,5.5,,,,White Hall,CP
+Rcapito,142,,10,,6/20/22,6.13,,,,White Hall,CP
+Rcapito,143,,12,,6/20/22,3.32,,,,White Hall,CP
+Rcapito,144,,9,,6/20/22,4.1,,"still had full tail, weigh after",,White Hall,CP
+Rcapito,145,,9,,6/20/22,4.78,,"still had full tail, weigh after",,White Hall,CP
+Rcapito,146,,9,,6/20/22,4.13,,,,White Hall,CP
+Rcapito,147,,9,,6/20/22,2.93,,,,White Hall,CP
+Rcapito,148,,9,,6/20/22,3.47,,,,White Hall,CP
+Rcapito,149,,9,,6/20/22,2.63,,,,White Hall,CP
+Rcapito,150,,9,,6/20/22,4.82,,,,White Hall,CP
+Rcapito,151,,9,,6/20/22,4.57,,,,White Hall,CP
+Rcapito,152,,12,,6/20/22,3.23,,,,White Hall,CP
+Rcapito,153,,13,,6/20/22,2.69,,,,White Hall,CP
+Rcapito,154,,13,,6/20/22,3.27,,,,White Hall,CP
+Rcapito,155,,13,,6/20/22,3.18,,,,White Hall,CP
+Rcapito,156,,9,,6/20/22,3.85,,,,White Hall,CP
+Rcapito,157,,24,,6/20/22,3.27,,,,White Hall,CP
+,158,,24,,6/20/22,3.44,,,,White Hall,CP
+,159,,24,,6/20/22,2.7,,,,White Hall,CP
+,160,,24,,6/20/22,3.58,,,,White Hall,CP
+,161,,24,,6/20/22,3.35,,,,White Hall,CP
+,162,,8,,6/20/22,2.9,,"1cm tail, weigh after",,White Hall,CP
+,163,,8,,6/20/22,2.85,,"1cm tail, weigh after",,White Hall,CP
+,164,,21,,6/20/22,2.89,,,,White Hall,CP
+,165,,7,,6/20/22,6.13,,,,White Hall,CP
+,166,,7,,6/20/22,5.61,,,,White Hall,CP
+,167,,1,,6/20/22,4.02,,,,White Hall,CP
+,168,,6,,6/20/22,2.55,,,,White Hall,CP
+,169,,6,,6/20/22,1.86,,,,White Hall,CP
+,170,,6,,6/20/22,2.95,,"still had full tail, weigh after",,White Hall,CP
+,171,,2,,6/20/22,2.5,,,,White Hall,CP
+,172,,2,,6/20/22,3.61,,,,White Hall,CP
+,173,,2,,6/20/22,3,,,,White Hall,CP
+,174,,21,,6/20/22,2.62,,"plastic container, 6/22",,White Hall,CP
+,175,,14,,6/20/22,2.72,,,,White Hall,CP
+,176,,8,,6/22/22,2.5,,,,White Hall,CP
+,177,,8,,6/22/22,3.37,,,,White Hall,CP
+,178,,1,,6/22/22,4.23,,"1.5cm tail, weigh after",,White Hall,CP
+,179,,1,,6/22/22,3.49,,,,White Hall,CP
+,180,,1,,6/22/22,3.52,,,,White Hall,CP
+,181,,1,,6/22/22,5.11,,,,White Hall,CP
+,182,,1,,6/22/22,3.54,,,,White Hall,CP
+,183,,1,,6/22/22,3.38,,,,White Hall,CP
+,184,,1,,6/22/22,3.82,,,,White Hall,CP
+,185,,6,,6/22/22,2.47,,,,White Hall,CP
+,186,,6,,6/22/22,2.46,,,,White Hall,CP
+,187,,6,,6/22/22,3.02,,,,White Hall,CP
+,188,,6,,6/22/22,3.54,,,,White Hall,CP
+,189,,2,,6/22/22,4.02,,,,White Hall,CP
+,190,,2,,6/22/22,3.17,,,,White Hall,CP
+,191,,9,,6/22/22,4.97,,"still had full tail, weigh after",,White Hall,CP
+,192,,9,,6/22/22,3.73,,,,White Hall,CP
+,193,,9,,6/22/22,4.77,,,,White Hall,CP
+,194,,9,,6/22/22,4.06,,,,White Hall,CP
+,195,,9,,6/22/22,3.87,,,,White Hall,CP
+,196,,4,,6/22/22,4.31,,"still had full tail, weigh after",,White Hall,CP
+,197,,19,,6/22/22,4.39,,"still had full tail, weigh after",,White Hall,CP
+,198,,19,,6/22/22,3.84,,,,White Hall,CP
+,199,,14,,6/22/22,2.88,,,,White Hall,CP
+,200,,14,,6/22/22,2.77,,"still had full tail, weigh after",,White Hall,CP
+,201,,18,,6/22/22,3.57,,,,White Hall,CP
+,202,,18,,6/22/22,3.91,,,,White Hall,CP
+,203,,23,,6/22/22,1.91,,,,White Hall,CP
+,204,,23,,6/22/22,2.47,,"still had full tail, weigh after",,White Hall,CP
+,205,,15,,6/22/22,3.05,,,,White Hall,CP
+,206,,15,,6/22/22,2.46,,,,White Hall,CP
+,207,,15,,6/22/22,2.49,,"still had full tail, weigh after",,White Hall,CP
+,208,,15,,6/22/22,2.69,,"still had full tail, weigh after",,White Hall,CP
+,209,,10,,6/22/22,4.61,,,,White Hall,CP
+,210,,13,,6/22/22,3.35,,"1 cm tail, plastic container",,White Hall,CP
+,211,,13,,6/22/22,3.28,,,,White Hall,CP
+,212,,13,,6/22/22,3.37,,"still had full tail, weigh after",,White Hall,CP
+,213,,13,,6/22/22,died,,"still had full tail, weigh after",29-Jun,White Hall,CP
+,214,,22,,6/22/22,2.94,,,,White Hall,CP
+,215,,22,,6/22/22,2.44,,,,White Hall,CP
+,216,,22,,6/22/22,3.52,,,,White Hall,CP
+,217,,22,,6/22/22,3.18,,,,White Hall,CP
+,218,,22,,6/22/22,3.11,,"still had full tail, weigh after, 6/29",,White Hall,CP
+,219,,22,,6/22/22,2.24,,"still had full tail, weigh after",,White Hall,CP
+,220,,20,,6/22/22,3.22,,"still had full tail, weigh after",,White Hall,CP
+,221,,20,,6/22/22,2.58,,,,White Hall,CP
+,222,,20,,6/22/22,3.27,,,,White Hall,CP
+,223,,20,,6/22/22,2.76,,,,White Hall,CP
+,224,,21,,6/22/22,3.45,,"still had full tail, weigh after",,White Hall,CP
+,225,,21,,6/22/22,2.6,,,,White Hall,CP
+,226,,21,,6/22/22,2.63,,,,White Hall,CP
+,227,,21,,6/22/22,2.89,,,,White Hall,CP
+,228,,21,,6/22/22,3,,,,White Hall,CP
+,229,,21,,6/22/22,2.38,,,,White Hall,CP
+,230,,21,,6/22/22,2.7,,,,White Hall,CP
+,231,,21,,6/22/22,2.73,,,,White Hall,CP
+,232,,21,,6/22/22,2.86,,,,White Hall,CP
+,233,,12,,6/22/22,3.21,,"still had full tail, weigh after",,White Hall,CP
+,234,,12,,6/22/22,4.89,,"still had full tail, weigh after",,White Hall,CP
+,235,,12,,6/22/22,3.53,,,,White Hall,CP
+,236,,12,,6/22/22,3.39,,,,White Hall,CP
+,237,,12,,6/22/22,3.78,,,,White Hall,CP
+,238,,12,,6/22/22,3.35,,,,White Hall,CP
+,239,,12,,6/22/22,3.33,,,,White Hall,CP
+,240,,12,,6/22/22,3.46,,,,White Hall,CP
+,241,,24,,6/22/22,3.17,,"still had full tail, weigh after",,White Hall,CP
+,242,,24,,6/22/22,3.58,,"still had full tail, weigh after",,White Hall,CP
+,243,,24,,6/22/22,4.15,,"still had full tail, weigh after",,White Hall,CP
+,244,,24,,6/22/22,3.05,,,,White Hall,CP
+,245,,24,,6/22/22,3.7,,,,White Hall,CP
+,246,,24,,6/22/22,2.78,,,,White Hall,CP
+,247,,24,,6/22/22,3.19,,,,White Hall,CP
+,248,,24,,6/22/22,3.24,,,,White Hall,CP
+,249,,3,,6/22/22,7.7,,"still had full tail, weigh after",,White Hall,CP
+,250,,24,,6/20/22,3.89,,,,White Hall,CP
+,251,,10,,6/3/22,5.87,,long tail,,White Hall,CP
+,252,,7,,6/3/22,5.03,,,,White Hall,CP
+,253,,7,,6/3/22,5.32,,,,White Hall,CP
+,254,,7,,6/3/22,5.37,,.5 cm tail,,White Hall,CP
+,255,,7,,6/3/22,6.2,,,,White Hall,CP
+,256,,7,,6/3/22,6.49,,long tail,,White Hall,CP
+,257,,17,,6/3/22,3.84,,,,White Hall,CP
+,258,,17,,6/3/22,3.65,,,,White Hall,CP
+,259,,17,,6/3/22,3.77,,,,White Hall,CP
+,260,,11,,6/3/22,6.24,,,,White Hall,CP
+,261,,11,,6/3/22,5.63,,,,White Hall,CP
+,262,,11,,6/3/22,5.7,,,,White Hall,CP
+,263,,11,,6/3/22,6.59,,,,White Hall,CP
+,264,,11,,6/3/22,7.83,,long tail,,White Hall,CP
+,265,,3,,6/3/22,6.61,,1 cm tail,,White Hall,CP
+,266,,16,,6/3/22,4.71,,,,White Hall,CP
+,267,,16,,6/3/22,3.99,,,,White Hall,CP
+,268,,16,,6/3/22,6.59,,,,White Hall,CP
+,269,,16,,6/3/22,5.66,,,,White Hall,CP
+,270,,16,,6/3/22,7.68,,long tail,,White Hall,CP
+,271,,16,,6/3/22,5.92,,,,White Hall,CP
+,272,,16,,6/3/22,4.75,,,,White Hall,CP
+,273,,16,,6/3/22,6.18,,,,White Hall,CP
+,274,,16,,6/3/22,6.45,,,,White Hall,CP
+,275,,16,,6/3/22,6.87,,1.5 cm tail,,White Hall,CP
+,276,,16,,6/3/22,6.55,,long tail,,White Hall,CP
+,277,,7,,6/5/22,5.69,,,,White Hall,CP
+,278,,16,,6/5/22,6.54,,1 cm,,White Hall,CP
+,279,,16,,6/5/22,6.78,,,,White Hall,CP
+,280,,24,,6/5/22,4.07,,,,White Hall,CP
+,281,,3,,6/7/22,7.68,,6< tub,,White Hall,CP
+,282,,3,,6/7/22,6.84,,6< tub,,White Hall,CP
+,283,,7,,6/7/22,5.55,,,,White Hall,CP
+,284,,7,,6/7/22,5.14,,,,White Hall,CP
+,285,,11,,6/7/22,6.76,,,,White Hall,CP
+,286,,11,,6/7/22,7.47,,6< tub,,White Hall,CP
+,287,,17,,6/7/22,4.18,,,,White Hall,CP
+,288,,17,,6/7/22,3.37,,,,White Hall,CP
+,289,,18,,6/7/22,2.83,,,,White Hall,CP
+,290,,1,,6/24/22,4,,,,White Hall,CP
+,291,,1,,6/24/22,4.87,,,,White Hall,CP
+,292,,2,,6/24/22,3.81,,,,White Hall,CP
+,293,,2,,6/24/22,3.77,,,,White Hall,CP
+,294,,2,,6/24/22,4.39,,,,White Hall,CP
+,295,,2,,6/24/22,4.21,,,,White Hall,CP
+,296,,2,,6/24/22,3.6,,,,White Hall,CP
+,297,,2,,6/24/22,4.47,,,,White Hall,CP
+,298,,4,,6/24/22,3,,,,White Hall,CP
+,299,,4,,6/24/22,3.63,,,,White Hall,CP
+,300,,8,,6/24/22,2.63,,,,White Hall,CP
+,301,,8,,6/24/22,3.67,,,,White Hall,CP
+,302,,8,,6/24/22,2.86,,,,White Hall,CP
+,303,,10,,6/24/22,5.26,,,,White Hall,CP
+,304,,12,,6/24/22,4.31,,,,White Hall,CP
+,305,,12,,6/24/22,3.36,,,,White Hall,CP
+,306,,13,,6/24/22,3.32,,,,White Hall,CP
+,307,,13,,6/24/22,2.78,,,,White Hall,CP
+,308,,14,,6/24/22,3.13,,,,White Hall,CP
+,309,,14,,6/24/22,3.6,,"still had full tail, weigh after",,White Hall,CP
+,310,,15,,6/24/22,3.12,,,,White Hall,CP
+,311,,19,,6/24/22,3.46,,"still had full tail, weigh after",,White Hall,CP
+,312,,19,,6/24/22,3.92,,"still had full tail, weigh after",,White Hall,CP
+,313,,20,,6/24/22,3.05,,"still had full tail, weigh after",,White Hall,CP
+,314,,?,,6/24/22,3.53,,"still had full tail, weigh after",,White Hall,CP
+,315,,?,,6/24/22,4.3,,"still had full tail, weigh after",,White Hall,CP
+,316,,?,,6/24/22,3.64,,"still had full tail, weigh after",,White Hall,CP
+,317,,20,,6/24/22,2.95,,"still had full tail, weigh after",,White Hall,CP
+,318,,6,,6/24/22,3.39,,"still had full tail, weigh after",,White Hall,CP
+,319,,22,,6/24/22,3.68,,1.5 cm tail,,White Hall,CP
+,320,,22,,6/24/22,3.7,,"still had full tail, weigh after",,White Hall,CP
+,321,,20,,6/24/22,,,"still had full tail, weigh after",,White Hall,CP
+,322,,22,,6/24/22,died,,"still had full tail, weigh after, 6/29 died",29-Jun,White Hall,CP
 ,323,,,,,,,,,White Hall,CP
-,324,,24,,6/24/2022,3.96,,"still had full tail, weigh after",,White Hall,CP
-,325,,24,,6/24/2022,3.72,,"still had full tail, weigh after",,White Hall,CP
-,326,,10,,6/24/2022,6.90,,,,White Hall,CP
-,327,,4,,6/24/2022,5.17,,,,White Hall,CP
-,328,,4,,6/24/2022,3.85,,,,White Hall,CP
-,329,,4,,6/24/2022,5.61,,,,White Hall,CP
-,330,,4,,6/24/2022,4.51,,,,White Hall,CP
-,331,,4,,6/24/2022,3.74,,,,White Hall,CP
-,332,,1,,6/24/2022,4.85,,,,White Hall,CP
-,333,,1,,6/24/2022,4.66,,,,White Hall,CP
-,334,,1,,6/24/2022,4.16,,,,White Hall,CP
-,335,,1,,6/24/2022,5.17,,,,White Hall,CP
-,336,,1,,6/24/2022,4.37,,,,White Hall,CP
-,337,,1,,6/24/2022,3.71,,,,White Hall,CP
-,338,,1,,6/24/2022,3.69,,,,White Hall,CP
-,339,,1,,6/24/2022,4.27,,,,White Hall,CP
-,340,,1,,6/24/2022,5.97,,"*weigh after, 7/1",,White Hall,CP
-,341,,1,,6/24/2022,4.18,,"*weigh after, 7/5",,White Hall,CP
-,342,,1,,6/24/2022,3.68,,"*weigh after, 7/5",,White Hall,CP
-,343,,2,,6/24/2022,4.08,,"*weigh after, 7/1",,White Hall,CP
-,344,,2,,6/24/2022,4.15,,"*weigh after, 7/5",,White Hall,CP
-,345,,2,,6/24/2022,3.67,,,,White Hall,CP
-,346,,2,,6/24/2022,3.36,,,,White Hall,CP
-,347,,4,,6/24/2022,4.95,,"*weigh after, 6/29",,White Hall,CP
-,348,,4,,6/24/2022,5.45,,"*weigh after, 6/29",,White Hall,CP
-,349,,4,,6/24/2022,4.84,,,,White Hall,CP
-,350,,5,,6/24/2022,5.60,,,,White Hall,CP
-,351,,5,,6/24/2022,7.22,,,,White Hall,CP
-,352,,6,,6/24/2022,3.98,,,,White Hall,CP
-,353,,6,,6/24/2022,4.73,,,,White Hall,CP
-,354,,6,,6/24/2022,2.91,,,,White Hall,CP
-,355,,6,,6/24/2022,3.70,,,,White Hall,CP
-,356,,6,,6/24/2022,2.99,,,,White Hall,CP
-,357,,6,,6/24/2022,4.15,,,,White Hall,CP
-,358,,8,,6/24/2022,2.25,,,,White Hall,CP
-,359,,8,,6/24/2022,3.23,,,,White Hall,CP
-,360,,9,,6/24/2022,4.77,,,,White Hall,CP
-,361,,9,,6/24/2022,5.40,,,,White Hall,CP
-,362,,9,,6/24/2022,4.25,,,,White Hall,CP
-,363,,9,,6/24/2022,4.47,,,,White Hall,CP
-,364,,9,,6/24/2022,4.09,,,,White Hall,CP
-,365,,9,,6/24/2022,4.97,,,,White Hall,CP
-,366,,9,,6/24/2022,4.77,,,,White Hall,CP
-,367,,9,,6/24/2022,5.13,,,,White Hall,CP
-,368,,9,,6/24/2022,4.16,,,,White Hall,CP
-,369,,9,,6/24/2022,5.35,,,,White Hall,CP
-,370,,9,,6/24/2022,4.56,,,,White Hall,CP
-,371,,9,,6/24/2022,4.36,,,,White Hall,CP
-,372,,9,,6/24/2022,4.17,,"*weigh after, 7/5",,White Hall,CP
-,373,,12,,6/24/2022,4.17,,"*weigh after, 7/1",,White Hall,CP
-,374,,12,,6/24/2022,3.81,,,,White Hall,CP
-,375,,12,,6/24/2022,2.78,,,,White Hall,CP
-,376,,12,,6/24/2022,3.95,,,,White Hall,CP
-,377,,13,,6/24/2022,3.02,,,,White Hall,CP
-,378,,13,,6/24/2022,3.38,,"1.5 cm tail, 6/29",,White Hall,CP
-,379,,13,,6/24/2022,3.45,,"1.5 cm tail, 6/29",,White Hall,CP
-,380,,13,,6/24/2022,2.86,,"*weigh after, 7/5",,White Hall,CP
-,381,,14,,6/24/2022,3.21,,"*weigh after, 7/1",,White Hall,CP
-,382,,14,,6/24/2022,2.51,,,,White Hall,CP
-,383,,14,,6/24/2022,3.74,,,,White Hall,CP
-,384,,13,,6/24/2022,3.20,,,,White Hall,CP
-,385,,15,,6/24/2022,3.24,,,,White Hall,CP
-,386,,15,,6/24/2022,3.48,,,,White Hall,CP
-,387,,15,,6/24/2022,4.18,,1.5 cm tail,,White Hall,CP
-,388,,18,,6/24/2022,4.94,,"*weigh after, 7/1",,White Hall,CP
-,389,,19,,6/24/2022,3.30,,,,White Hall,CP
-,390,,19,,6/24/2022,3.38,,,,White Hall,CP
-,391,,19,,6/24/2022,3.79,,"*weigh after, 7/5",,White Hall,CP
-,392,,20,,6/24/2022,2.53,,,,White Hall,CP
-,393,,20,,6/24/2022,2.90,,"1 cm tail, 6/29",,White Hall,CP
-,394,,20,,6/24/2022,3.57,,"*weigh after, 7/5",,White Hall,CP
-,395,,21,,6/24/2022,4.53,,,,White Hall,CP
-,396,,21,,6/24/2022,4.29,,,,White Hall,CP
-,397,,21,,6/24/2022,3.13,,"*weigh after, 7/1",,White Hall,CP
-,398,,22,,6/24/2022,3.71,,"*very stressed, died, 7/1",7/1,White Hall,CP
-,399,,23,,6/24/2022,2.82,,"*weigh after, 7/1",,White Hall,CP
-,400,,23,,6/24/2022,2.64,,"*weigh after, 7/5",,White Hall,CP
-,401,,24,,6/24/2022,4.50,,,,White Hall,CP
-,402,,24,,6/24/2022,4.01,,,,White Hall,CP
-,403,,24,,6/24/2022,4.90,,"*weigh after, 6/29",,White Hall,CP
-,404,,24,,6/24/2022,4.31,,"*weigh after, 6/29",,White Hall,CP
-,405,,24,,6/24/2022,4.25,,"*weigh after, 7/1",,White Hall,CP
-,406,,24,,6/24/2022,4.34,,"*weigh after, 7/1",,White Hall,CP
-,407,,10,,6/24/2022,7.80,,,,White Hall,CP
-,408,,20,,6/24/2022,2.94,,"*weigh after, 6/29",,White Hall,CP
-,409,,20,,6/24/2022,2.74,,"*weigh after, 6/29",,White Hall,CP
-,410,,1,,6/29/2022,3.81,,,,White Hall,CP
-,411,,1,,6/29/2022,5.16,,,,White Hall,CP
-,412,,1,,6/29/2022,,,"*weigh after, ",,White Hall,CP
-,413,,1,,6/29/2022,5.30,,,,White Hall,CP
-,414,,1,,6/29/2022,4.78,,"*weigh after, 7/5",,White Hall,CP
-,415,,1,,6/29/2022,4.76,,"*weigh after, 7/5",,White Hall,CP
-,416,,1,,6/29/2022,4.08,,"*weigh after, 7/5",,White Hall,CP
-,417,,2,,6/29/2022,4.35,,,,White Hall,CP
-,418,,2,,6/29/2022,4.12,,"*weigh after, 7/5",,White Hall,CP
-,419,,4,,6/29/2022,4.81,,,,White Hall,CP
-,420,,4,,6/29/2022,4.05,,,,White Hall,CP
-,421,,4,,6/29/2022,5.35,,,,White Hall,CP
-,422,,4,,6/29/2022,5.08,,,,White Hall,CP
-,423,,4,,6/29/2022,3.70,,,,White Hall,CP
-,424,,4,,6/29/2022,5.02,,2 cm tail,,White Hall,CP
-,425,,4,,6/29/2022,5.05,,"*weigh after, 7/1",,White Hall,CP
-,426,,4,,6/29/2022,4.94,,"*weigh after, 7/5",,White Hall,CP
-,427,,6,,6/29/2022,3.92,,"*weigh after, 7/5",,White Hall,CP
-,428,,8,,6/29/2022,3.12,,"*weigh after, 7/5",,White Hall,CP
-,429,,8,,6/29/2022,3.71,,"*weigh after, 7/1",,White Hall,CP
-,430,,9,,6/29/2022,4.38,,"*weigh after, 7/1",,White Hall,CP
-,431,,9,,6/29/2022,5.31,,"*weigh after, 7/1",,White Hall,CP
-,432,,9,,6/29/2022,4.57,,"*weigh after, 7/1",,White Hall,CP
-,433,,9,,6/29/2022,5.41,,"*weigh after, 7/1",,White Hall,CP
-,434,,12,,6/29/2022,3.81,,,,White Hall,CP
-,435,,12,,6/29/2022,4.08,,,,White Hall,CP
-,436,,12,,6/29/2022,4.02,,,,White Hall,CP
-,437,,13,,6/29/2022,4.03,,,,White Hall,CP
-,438,,13,,6/29/2022,3.86,,,,White Hall,CP
-,439,,13,,6/29/2022,3.84,,"*weigh after, 7/5",,White Hall,CP
-,440,,13,,6/29/2022,4.09,,"*weigh after, 7/5",,White Hall,CP
-,441,,13,,6/29/2022,3.25,,"*weigh after, 7/5",,White Hall,CP
-,442,,13,,6/29/2022,,,,,White Hall,CP
-,443,,14,,6/29/2022,3.05,,"*weigh after, 7/5",,White Hall,CP
-,444,,14,,6/29/2022,3.28,,"*weigh after, 7/5",,White Hall,CP
-,445,,14,,6/29/2022,3.03,,"*weigh after, 7/5",,White Hall,CP
-,446,,14,,6/29/2022,2.64,,"*weigh after, 7/5",,White Hall,CP
-,447,,14,,6/29/2022,3.20,,1 cm tail,,White Hall,CP
-,448,,18,,6/29/2022,5.51,,"*weigh after, 6/29",,White Hall,CP
-,449,,18,,6/29/2022,5.35,,,,White Hall,CP
-,450,,19,,6/29/2022,4.06,,"*weigh after, 7/5",,White Hall,CP
-,451,,20,,6/29/2022,3.31,,2 cm tail,,White Hall,CP
-,452,,21,,6/29/2022,3.34,,,,White Hall,CP
-,453,,21,,6/29/2022,3.37,,,,White Hall,CP
-,454,,21,,6/29/2022,3.09,,,,White Hall,CP
-,455,,21,,6/29/2022,3.63,,,,White Hall,CP
-,456,,21,,6/29/2022,3.73,,,,White Hall,CP
-,457,,21,,6/29/2022,4.03,,"*weigh after, 7/5",,White Hall,CP
-,458,,21,,6/29/2022,3.85,,"*weigh after, 7/5",,White Hall,CP
-,459,,21,,6/29/2022,3.82,,"*weigh after, 7/5",,White Hall,CP
-,460,,22,,6/29/2022,4.19,,"*weigh after, 7/5",,White Hall,CP
-,461,,22,,6/29/2022,3.82,,"*weigh after, 7/5",,White Hall,CP
-,462,,23,,6/29/2022,3.35,,"*weigh after, 7/5",,White Hall,CP
-,463,,23,,6/29/2022,2.91,,"*weigh after, 7/5",,White Hall,CP
-,464,,24,,6/29/2022,4.13,,,,White Hall,CP
-,465,,24,,6/29/2022,3.91,,,,White Hall,CP
-,466,,20,,6/24/2022,4.89,,"*weigh after, 7/1",,White Hall,CP
-,467,,1,,7/1/2022,5.98,,,,White Hall,CP
-,468,,1,,7/1/2022,5.10,,,,White Hall,CP
-,469,,1,,7/1/2022,4.61,,"*weigh after, 7/5",,White Hall,CP
-,470,,1,,7/1/2022,4.83,,"*weigh after, 7/5",,White Hall,CP
-,471,,2,,7/1/2022,5.00,,,,White Hall,CP
-,472,,2,,7/1/2022,4.29,,,,White Hall,CP
-,473,,4,,7/1/2022,5.41,,,,White Hall,CP
-,474,,4,,7/1/2022,4.73,,,,White Hall,CP
-,475,,4,,7/1/2022,4.97,,,,White Hall,CP
-,476,,4,,7/1/2022,5.27,,"*weigh after, 7/5",,White Hall,CP
-,477,,6,,7/1/2022,3.48,,,,White Hall,CP
-,478,,6,,7/1/2022,4.63,,"*weigh after, 7/5",,White Hall,CP
-,479,,8,,7/1/2022,3.19,,,,White Hall,CP
-,480,,8,,7/1/2022,3.18,,"*weigh after, 7/5",,White Hall,CP
-,481,,8,,7/1/2022,2.75,,"*weigh after, 7/5",,White Hall,CP
-,482,,12,,7/1/2022,4.03,,,,White Hall,CP
-,483,,13,,7/1/2022,3.66,,"*weigh after, 7/5",,White Hall,CP
-,484,,9,,7/1/2022,5.62,,"*weigh after, 7/5",,White Hall,CP
-,485,,19,,7/1/2022,4.18,,,,White Hall,CP
-,486,,19,,7/1/2022,3.46,,,,White Hall,CP
-,487,,19,,7/1/2022,5.59,,"*weigh after, 7/5",,White Hall,CP
-,488,,19,,7/1/2022,4.27,,"*weigh after, 7/5",,White Hall,CP
-,489,,19,,7/1/2022,4.65,,"*weigh after, 7/5",,White Hall,CP
-,490,,24,,7/1/2022,4.30,,"*weigh after, 7/5",,White Hall,CP
-,491,,15,,7/1/2022,3.83,,,,White Hall,CP
-,492,,15,,7/1/2022,3.88,,,,White Hall,CP
-,493,,21,,7/1/2022,5.24,,,,White Hall,CP
-,494,,21,,7/1/2022,3.91,,"*weigh after, 7/5",,White Hall,CP
-,495,,20,,7/1/2022,4.64,,,,White Hall,CP
-,496,,1,,7/4/2022,5.56,,,,White Hall,CP
-,497,,1,,7/4/2022,6.00,,,,White Hall,CP
-,498,,1,,7/4/2022,5.49,,,,White Hall,CP
-,499,,1,,7/4/2022,5.16,,,,White Hall,CP
-,500,,1,,7/4/2022,4.45,,,,White Hall,CP
-,501,,1,,7/4/2022,5.92,,,,White Hall,CP
-,502,,1,,7/4/2022,4.36,,,,White Hall,CP
-,503,,4,,7/4/2022,4.90,,,,White Hall,CP
-,504,,4,,7/4/2022,5.47,,,,White Hall,CP
-,505,,4,,7/4/2022,4.44,,,,White Hall,CP
-,506,,4,,7/4/2022,4.33,,,,White Hall,CP
-,507,,4,,7/4/2022,5.40,,,,White Hall,CP
-,508,,4,,7/4/2022,4.85,,"*weigh after, 7/6",,White Hall,CP
-,509,,4,,7/4/2022,5.85,,"*weigh after, 7/6",,White Hall,CP
-,510,,4,,7/4/2022,5.86,,"*weigh after, 7/6",,White Hall,CP
-,511,,6,,7/4/2022,2.88,,,,White Hall,CP
-,512,,8,,7/4/2022,3.88,,,,White Hall,CP
-,513,,8,,7/4/2022,3.94,,"*weigh after, 7/6",,White Hall,CP
-,514,,8,,7/4/2022,,,"*weigh after, ",,White Hall,CP
-,515,,8,,7/4/2022,,,"*weigh after, ",,White Hall,CP
-,516,,8,,7/4/2022,,,"*weigh after, ",,White Hall,CP
-,517,,9,,7/4/2022,5.72,,"*weigh after, 7/6",,White Hall,CP
-,518,,9,,7/4/2022,5.22,,"*weigh after, 7/6",,White Hall,CP
-,519,,9,,7/4/2022,4.77,,"*weigh after, 7/6",,White Hall,CP
-,520,,12,,7/4/2022,3.04,,,,White Hall,CP
-,521,,12,,7/4/2022,5.92,,"*weigh after, 7/6",,White Hall,CP
-,522,,13,,7/4/2022,3.91,,,,White Hall,CP
-,523,,13,,7/4/2022,4.12,,,,White Hall,CP
-,524,,13,,7/4/2022,4.08,,"*weigh after, 7/6",,White Hall,CP
-,525,,13,,7/4/2022,4.12,,"*weigh after, 7/6",,White Hall,CP
-,526,,14,,7/4/2022,3.09,,"*weigh after, 7/6",,White Hall,CP
-,527,,14,,7/4/2022,3.31,,"*weigh after, 7/6",,White Hall,CP
-,528,,14,,7/4/2022,3.23,,"*weigh after, 7/5",,White Hall,CP
-,529,,15,,7/4/2022,4.18,,"*weigh after, 7/7",,White Hall,CP
-,530,,19,,7/4/2022,,,"*weigh after, ",,White Hall,CP
-,531,,19,,7/4/2022,4.50,,"*weigh after, 7/5",,White Hall,CP
-,532,,20,,7/4/2022,3.12,,,,White Hall,CP
-,533,,20,,7/4/2022,3.65,,,,White Hall,CP
-,534,,20,,7/4/2022,3.96,,,,White Hall,CP
-,535,,20,,7/4/2022,4.23,,,,White Hall,CP
-,536,,20,,7/4/2022,3.68,,"*weigh after, 7/6",,White Hall,CP
-,537,,20,,7/4/2022,4.06,,"*weigh after, 7/6",,White Hall,CP
-,538,,21,,7/4/2022,5.22,,,,White Hall,CP
-,539,,21,,7/4/2022,4.58,,,,White Hall,CP
-,540,,21,,7/4/2022,4.61,,,,White Hall,CP
-,541,,21,,7/4/2022,5.34,,"*weigh after, 7/6",,White Hall,CP
-,542,,21,,7/4/2022,,,"*weigh after, ",,White Hall,CP
-,543,,22,,7/4/2022,3.94,,"*weigh after, 7/6",,White Hall,CP
-,544,,22,,7/4/2022,3.34,,"*weigh after, 7/6",,White Hall,CP
-,545,,23,,7/4/2022,3.43,,"*weigh after, ",,White Hall,CP
-,546,,23,,7/4/2022,3.15,,"*weigh after, ",,White Hall,CP
-,547,,24,,7/4/2022,4.97,,,,White Hall,CP
-,548,,24,,7/4/2022,4.57,,,,White Hall,CP
-,549,,14,,7/1/2022,3.04,,"*weigh after, 7/5",,White Hall,CP
-,550,,14,,7/1/2022,3.417*,,"*weigh after, 7/5",,White Hall,CP
-,551,,1,,6/29/2022,4.58,,"*weigh after, 7/5",,White Hall,CP
-,552,,23,,6/29/2022,2.80,,"*weigh after, 7/5",,White Hall,CP
-,553,,1,,7/6/2022,4.52,,,,White Hall,CP
-,554,,1,,7/6/2022,6.02,,,,White Hall,CP
-,555,,1,,7/6/2022,5.40,,,,White Hall,CP
-,556,,1,,7/6/2022,4.55,,,,White Hall,CP
-,557,,1,,7/6/2022,,,"*weigh after, ",,White Hall,CP
-,558,,2,,7/6/2022,4.47,,,,White Hall,CP
-,559,,2,,7/6/2022,3.64,,,,White Hall,CP
-,560,,4,,7/6/2022,6.04,,,,White Hall,CP
-,561,,4,,7/6/2022,5.65,,,,White Hall,CP
-,562,,4,,7/6/2022,4.89,,1 cm tail,,White Hall,CP
-,563,,4,,7/6/2022,5.85,,2 cm tail,,White Hall,CP
-,564,,4,,7/6/2022,,,*weigh after,,White Hall,CP
-,565,,4,,7/6/2022,,,*weigh after,,White Hall,CP
-,566,,4,,7/6/2022,,,*weigh after,,White Hall,CP
-,567,,6,,7/6/2022,4.51,,1 cm tail,,White Hall,CP
-,568,,6,,7/6/2022,5.25,,,,White Hall,CP
-,569,,6,,7/6/2022,4.90,,,,White Hall,CP
-,570,,6,,7/6/2022,4.76,,,,White Hall,CP
-,571,,6,,7/6/2022,3.70,,2 cm tail,,White Hall,CP
-,572,,6,,7/6/2022,,,*weigh after,,White Hall,CP
-,573,,8,,7/6/2022,4.28,,,,White Hall,CP
-,574,,9,,7/6/2022,7.42,,1 cm tail,,White Hall,CP
-,575,,9,,7/6/2022,5.78,,,,White Hall,CP
-,576,,9,,7/6/2022,6.89,,2 cm tail,,White Hall,CP
-,577,,9,,7/6/2022,,,*weigh after,,White Hall,CP
-,578,,9,,7/6/2022,,,*weigh after,,White Hall,CP
-,579,,9,,7/6/2022,,,*weigh after,,White Hall,CP
-,580,,9,,7/6/2022,,,*weigh after,,White Hall,CP
-,581,,12,,7/6/2022,4.98,,,,White Hall,CP
-,582,,12,,7/6/2022,6.00,,,,White Hall,CP
-,583,,12,,7/6/2022,6.63,,,,White Hall,CP
-,584,,13,,7/6/2022,4.27,,,,White Hall,CP
-,585,,13,,7/6/2022,3.69,,,,White Hall,CP
-,586,,13,,7/6/2022,3.75,,1.5 cm tail,,White Hall,CP
-,587,,13,,7/6/2022,4.57,,1 cm tail,,White Hall,CP
-,588,,13,,7/6/2022,3.84,,"*weigh after, 7/7",,White Hall,CP
-,589,,13,,7/6/2022,,,*weigh after,,White Hall,CP
-,590,,13,,7/6/2022,,,*weigh after,,White Hall,CP
-,591,,13,,7/6/2022,,,*weigh after,,White Hall,CP
-,592,,13,,7/6/2022,,,*weigh after,,White Hall,CP
-,593,,14,,7/6/2022,2.86,,,,White Hall,CP
-,594,,14,,7/6/2022,2.97,,,,White Hall,CP
-,595,,14,,7/6/2022,,,*weigh after,,White Hall,CP
-,596,,14,,7/6/2022,,,*weigh after,,White Hall,CP
-,597,,14,,7/6/2022,,,*weigh after,,White Hall,CP
-,598,,14,,7/6/2022,,,*weigh after,,White Hall,CP
-,599,,15,,7/6/2022,,,*weigh after,,White Hall,CP
-,600,,15,,7/6/2022,,,*weigh after,,White Hall,CP
-,601,,19,,7/6/2022,3.70,,,,White Hall,CP
-,602,,19,,7/6/2022,,,*weigh after,,White Hall,CP
-,603,,19,,7/6/2022,,,*weigh after,,White Hall,CP
-,604,,19,,7/6/2022,,,*weigh after,,White Hall,CP
-,605,,20,,7/6/2022,,,*weigh after,,White Hall,CP
-,606,,20,,7/6/2022,,,*weigh after,,White Hall,CP
-,607,,20,,7/6/2022,,,*weigh after,,White Hall,CP
-,608,,21,,7/6/2022,5.56,,2 cm tail,,White Hall,CP
-,609,,21,,7/6/2022,7.04,,,,White Hall,CP
-,610,,21,,7/6/2022,4.58,,,,White Hall,CP
-,611,,21,,7/6/2022,5.90,,,,White Hall,CP
-,612,,21,,7/6/2022,4.93,,"*weigh after, 7/11",,White Hall,CP
-,613,,22,,7/6/2022,5.10,,"*weigh after, 7/11",,White Hall,CP
-,614,,23,,7/6/2022,2.65,,"*weigh after, 7/8",,White Hall,CP
-,615,,23,,7/6/2022,3.05,,"*weigh after, 7/8",,White Hall,CP
-,616,,23,,7/6/2022,3.18,,"*weigh after, 7/11",,White Hall,CP
-,617,,23,,7/6/2022,2.75,,"*weigh after, 7/11",,White Hall,CP
-,618,,23,,7/6/2022,2.50,,,,White Hall,CP
-,619,,23,,7/6/2022,3.29,,,,White Hall,CP
-,620,,1,,7/8/2022,6.96,,"*weigh after, 7/11",,White Hall,CP
-,621,,1,,7/8/2022,5.30,,"*weigh after, 7/11",,White Hall,CP
-,622,,4,,7/8/2022,5.82,,"*weigh after, 7/13",,White Hall,CP
-,623,,6,,7/8/2022,died,,"*weigh after, 7/11",died 7/11,White Hall,CP
-,624,,6,,7/8/2022,5.45,,"*weigh after, 7/13",,White Hall,CP
-,625,,8,,7/8/2022,2.99,,"*weigh after, 7/13",,White Hall,CP
-,626,,14,,7/8/2022,3.28,,,,White Hall,CP
-,627,,14,,7/8/2022,2.75,,"*weigh after, 7/11",,White Hall,CP
-,628,,19,,7/8/2022,4.07,,"*weigh after, 7/11",,White Hall,CP
-,629,,19,,7/8/2022,3.85,,"*weigh after, 7/11",,White Hall,CP
-,630,,19,,7/8/2022,3.80,,"*weigh after, 7/13",,White Hall,CP
-,631,,23,,7/8/2022,3.43,,"*weigh after, 7/11",,White Hall,CP
-,632,,23,,7/8/2022,5.05,,"*weigh after, 7/11",,White Hall,CP
-,633,,23,,7/8/2022,2.50,,"*weigh after, 7/13",,White Hall,CP
-,634,,23,,7/8/2022,3.75,,,,White Hall,CP
-,635,,15,,7/8/2022,5.42,,"*weigh after, 7/11",,White Hall,CP
-,636,,21,,7/8/2022,5.04,,"*weigh after, 7/13",,White Hall,CP
-,637,,21,,7/8/2022,4.19,,,,White Hall,CP
-,638,,1,,7/11/2022,5.18,,,,White Hall,CP
-,639,,1,,7/11/2022,4.97,,,,White Hall,CP
-,640,,1,,7/11/2022,4.86,,1 cm tail,,White Hall,CP
-,641,,2,,7/11/2022,4.85,,,,White Hall,CP
-,642,,2,,7/11/2022,4.79,,,,White Hall,CP
-,643,,2,,7/11/2022,6.50,,"*weigh after, 7/16",,White Hall,CP
-,644,,2,,7/11/2022,5.53,,"*weigh after, 7/16",,White Hall,CP
-,645,,4,,7/11/2022,5.41,,,,White Hall,CP
-,646,,4,,7/11/2022,4.80,,,,White Hall,CP
-,647,,4,,7/11/2022,6.57,,"*weigh after, 7/16",,White Hall,CP
-,648,,4,,7/11/2022,5.67,,"*weigh after, 7/16",,White Hall,CP
-,649,,4,,7/11/2022,5.23,,"*weigh after, 7/16",,White Hall,CP
-,650,,6,,7/11/2022,4.02,,"absorbed tail, missing front limb, died",died,White Hall,CP
-,651,,9,,7/11/2022,6.74,,,,White Hall,CP
-,652,,9,,7/11/2022,5.79,,,,White Hall,CP
-,653,,9,,7/11/2022,5.03,,,,White Hall,CP
-,654,,8,,7/11/2022,2.74,,.5 cm tail,,White Hall,CP
-,655,,8,,7/11/2022,3.88,,"*weigh after, 7/17",,White Hall,CP
-,656,,12,,7/11/2022,5.86,,,,White Hall,CP
-,657,,12,,7/11/2022,5.47,,,,White Hall,CP
-,658,,12,,7/11/2022,4.97,,"*weigh after, 7/16, 3 cups labeled T12 from 7/11 on 7/16 their masses were 4.97+6.47+ one (one not weighed yet)",,White Hall,CP
-,659,,14,,7/11/2022,2.92,,1 cm tail,,White Hall,CP
-,660,,14,,7/11/2022,2.87,,,,White Hall,CP
-,661,,14,,7/11/2022,2.55,,,,White Hall,CP
-,662,,14,,7/11/2022,3.05,,"*weigh after, 7/16",,White Hall,CP
-,663,,15,,7/11/2022,4.94,,.5 cm tail,,White Hall,CP
-,664,,15,,7/11/2022,4.03,,1 cm tail,,White Hall,CP
-,665,,15,,7/11/2022,4.57,,,,White Hall,CP
-,666,,15,,7/11/2022,5.06,,1 cm tail,,White Hall,CP
-,667,,15,,7/11/2022,5.21,,1 cm tail,,White Hall,CP
-,668,,19,,7/11/2022,4.69,,2 cm tail,,White Hall,CP
-,669,,19,,7/11/2022,4.18,,,,White Hall,CP
-,670,,19,,7/11/2022,3.75,,,,White Hall,CP
-,671,,19,,7/11/2022,4.56,,,,White Hall,CP
-,672,,19,,7/11/2022,3.77,,,,White Hall,CP
-,673,,21,,7/11/2022,6.65,,,,White Hall,CP
-,674,,21,,7/11/2022,4.65,,,,White Hall,CP
-,675,,21,,7/11/2022,5.80,,.5 cm tail,,White Hall,CP
-,676,,21,,7/11/2022,6.00,,1 cm tail,,White Hall,CP
-,677,,21,,7/11/2022,5.68,,*weigh after,,White Hall,CP
-,678,,23,,7/11/2022,4.07,,,,White Hall,CP
-,679,,23,,7/11/2022,3.09,,,,White Hall,CP
-,680,,23,,7/11/2022,3.68,,*weigh after,,White Hall,CP
-,681,,23,,7/11/2022,3.29,,*weigh after,,White Hall,CP
-,682,,12,,7/11/2022,7.22,,"*weigh after, 7/17",,White Hall,CP
-,683,,12,,7/11/2022,6.47,,"*weigh after, 7/16",,White Hall,CP
-,684,,23,,7/13/2022,2.62,,"*weigh after, 7/17",,White Hall,CP
-,685,,23,,7/13/2022,4.03,,"*weigh after, 7/17",,White Hall,CP
-,686,,23,,7/13/2022,3.09,,,,White Hall,CP
-,687,,19,,7/13/2022,4.56,,,,White Hall,CP
-,688,,21,,7/13/2022,5.77,,,,White Hall,CP
-,689,,21,,7/13/2022,5.48,,,,White Hall,CP
-,690,,19,,7/13/2022,4.25,,,,White Hall,CP
-,691,,19,,7/13/2022,5.08,,,,White Hall,CP
-,692,,19,,7/13/2022,4.87,,,,White Hall,CP
-,693,,19,,7/13/2022,5.58,,,,White Hall,CP
-,694,,19,,7/13/2022,5.53,,"*weigh after, 7/17",,White Hall,CP
-,695,,14,,7/13/2022,3.22,,"*weigh after, 7/17",,White Hall,CP
-,696,,14,,7/13/2022,3.62,,,,White Hall,CP
-,697,,2,,7/13/2022,died,,"*weigh after, very dead 7/15",,White Hall,CP
-,698,,9,,7/13/2022,6.88,,,,White Hall,CP
-,699,,9,,7/13/2022,6.36,,,,White Hall,CP
-,700,,9,,7/13/2022,7.33,,,,White Hall,CP
-,701,,8,,7/13/2022,died,,"*weigh after, 7/14 dead ",,White Hall,CP
-,702,,8,,7/13/2022,3.85,,,,White Hall,CP
-,703,,19,,7/15/2022,4.28,,"*weigh after, 7/17",,White Hall,CP
-,704,,19,,7/15/2022,4.84,,"*weigh after, 7/17",,White Hall,CP
-,705,,19,,7/15/2022,2.97,,"*weigh after, 7/19",,White Hall,CP
-,706,,19,,7/15/2022,4.08,,,,White Hall,CP
-,707,,23,,7/15/2022,3.96,,,,White Hall,CP
-,708,,21,,7/15/2022,3.88,,,,White Hall,CP
-,709,,1,,7/15/2022,7.00,,"*weigh after, 7/17",,White Hall,CP
-,710,,1,,7/15/2022,4.79,,,,White Hall,CP
-,711,,1,,7/15/2022,5.14,,,,White Hall,CP
-,712,,8,,7/15/2022,3.50,,,,White Hall,CP
-,713,,8,,7/15/2022,2.87,,"*weigh after, 7/17",,White Hall,CP
-,714,,14,,7/15/2022,3.03,,,,White Hall,CP
-,715,,14,,7/15/2022,4.16,,"*weigh after, 7/17",,White Hall,CP
-,716,,14,,7/15/2022,3.57,,"*weigh after, 7/17",,White Hall,CP
-,717,,14,,7/15/2022,,,"*weigh after, died 7/17",,White Hall,CP
-,718,,15,,7/15/2022,4.88,,,,White Hall,CP
-,719,,15,,7/15/2022,4.97,,"*weigh after, 7/17",,White Hall,CP
-,720,,15,,7/15/2022,3.43,,,,White Hall,CP
-,721,,15,,7/15/2022,4.22,,,,White Hall,CP
-,722,,15,,7/15/2022,5.91,,"*weigh after, 7/17",,White Hall,CP
-,723,,15,,7/15/2022,6.39,,"*weigh after, 7/19",,White Hall,CP
-,724,,15,,7/15/2022,4.71,,,,White Hall,CP
-,725,,15,,7/15/2022,5.15,,,,White Hall,CP
-,726,,23,,7/17/2022,3.72,,,,White Hall,CP
-,727,,23,,7/17/2022,3.20,,,,White Hall,CP
-,728,,23,,7/17/2022,3.09,,"*weigh after, 7/19",,White Hall,CP
-,729,,23,,7/17/2022,2.90,,"*weigh after, 7/19",,White Hall,CP
-,730,,2,,7/17/2022,4.25,,,,White Hall,CP
-,731,,20,,7/17/2022,4.47,,,,White Hall,CP
-,732,,21,,7/17/2022,6.51,,,,White Hall,CP
-,733,,21,,7/17/2022,6.06,,1 cm tail,,White Hall,CP
-,734,,21,,7/17/2022,4.60,,,,White Hall,CP
-,735,,21,,7/17/2022,5.42,,,,White Hall,CP
-,736,,21,,7/17/2022,6.00,,"*weigh after, 7/19",,White Hall,CP
-,737,,21,,7/17/2022,5.87,,"*weigh after, 7/19",,White Hall,CP
-,738,,14,,7/17/2022,3.56,,,,White Hall,CP
-,739,,19,,7/17/2022,5.49,,,,White Hall,CP
-,740,,19,,7/17/2022,4.52,,,,White Hall,CP
-,741,,19,,7/17/2022,4.68,,,,White Hall,CP
-,742,,15,,7/17/2022,6.45,,"*weigh after, 7/19",,White Hall,CP
-,743,,15,,7/17/2022,5.33,,,,White Hall,CP
-,744,,15,,7/17/2022,5.86,,,,White Hall,CP
-,745,,?,,7/17/2022,5.11,,found hopping in greenhouse,,White Hall,CP
-,746,,21,,7/17/2022,6.64,,"*weigh after, 7/25",,White Hall,CP
-,747,,15,,7/18/2022,7.87,,,,White Hall,CP
-,748,,19,,7/19/2022,6.51,,"*weigh after, 7/19",,White Hall,CP
-,749,,19,,7/19/2022,5.43,,"*weigh after, 7/19",,White Hall,CP
-,750,,19,,7/19/2022,6.23,,"*weigh after, 7/19",,White Hall,CP
-,751,,19,,7/19/2022,4.88,,"*weigh after, 7/23",,White Hall,CP
-,752,,19,,7/19/2022,,,*weigh after,,White Hall,CP
-,753,,19,,7/19/2022,4.37,,,,White Hall,CP
-,754,,19,,7/19/2022,5.75,,,,White Hall,CP
-,755,,19,,7/19/2022,5.37,,,,White Hall,CP
-,756,,19,,7/19/2022,4.30,,,,White Hall,CP
-,757,,24,,7/21/2022,4.58,,"*weigh after, 7/25",,White Hall,CP
-,758,,24,,7/21/2022,,,*weigh after,,White Hall,CP
-,759,,24,,7/21/2022,3.07,,,,White Hall,CP
-,760,,19,,7/21/2022,6.97,,"*weigh after, 7/25",,White Hall,CP
-,761,,19,,7/21/2022,4.34,,,,White Hall,CP
-,762,,19,,7/21/2022,5.55,,,,White Hall,CP
-,763,,19,,7/21/2022,5.62,,,,White Hall,CP
-,764,,19,,7/21/2022,4.89,,,,White Hall,CP
-,765,,21,,7/23/2022,,,*weigh after,,White Hall,CP
-,766,,21,,7/23/2022,,,*weigh after,,White Hall,CP
-,767,,21,,7/23/2022,,,*weigh after,,White Hall,CP
-,768,,19,,7/23/2022,2.97,,,,White Hall,CP
-,769,,19,,7/23/2022,7.00,,,,White Hall,CP
-,770,,19,,7/23/2022,6.40,,,,White Hall,CP
-,771,,23,,7/23/2022,3.54,,"*weigh after, 7/25",,White Hall,CP
-,772,,23,,7/23/2022,5.20,,,,White Hall,CP
-,773,,19,,7/25/2022,3.87,,,,White Hall,CP
-,774,,19,,7/25/2022,7.20,,,,White Hall,CP
-,775,,19,,7/25/2022,5.15,,,,White Hall,CP
-,776,,23,,7/25/2022,3.62,,"*weigh after, 7/29",,White Hall,CP
-,777,,23,,7/25/2022,3.24,,"*weigh after, 7/29",,White Hall,CP
-,778,,19,,7/25/2022,5.33,,"*weigh after, 7/29",,White Hall,CP
-,779,,19,,7/25/2022,5.21,,"*weigh after, 8/2",,White Hall,CP
-,780,,23,,7/25/2022,2.87,,,,White Hall,CP
-,781,,19,,7/29/2022,4.89,,,,White Hall,CP
-,782,,19,,7/29/2022,4.68,,,,White Hall,CP
-,783,,19,,7/21/2022,5.22,,"could not find line, 7/29",,White Hall,CP
-,784,,19,,7/29/2022,5.50,,"says T21? couldn't find line, 7/29",,White Hall,CP
-,785,,19,,7/23/2022,4.04,,"could not find line, 7/29",,White Hall,CP
-,786,,19,,7/29/2022,3.84,,"could not find line, 7/29, says T12 6/27",,White Hall,CP
-,787,,19,,7/29/2022,2.75,,"could not find line, 7/29, says T5 6/27",,White Hall,CP
-,788,,19,,7/23/2022,3.69,,"could not find line, 7/29",,White Hall,CP
-,789,,19,,7/23/2022,6.29,,"could not find line, 7/29",,White Hall,CP
-,790,,?,,7/29/2022,5.47,,found in bin of moss,,White Hall,CP
-,791,,?,,7/29/2022,4.96,,in unmarked cup 7/29,,White Hall,CP
-,792,,?,,7/18/2022,6.86,,found in greenhouse,,White Hall,CP
-,793,,?,,7/23/2022,4.76,,in unmarked cup 7/23,,White Hall,CP
-,794,,?,,7/23/2022,4.05,,in unmarked cup 7/23,,White Hall,CP
-,795,,?,,7/18/2022,7.83,,"7/18 greenhouse, 7/29",,White Hall,CP
-,796,,19,,8/2/2022,3.70,,,,White Hall,CP
-,797,,19,,8/2/2022,6.24,,,,White Hall,CP
-,798,,19,,8/2/2022,,,*weigh after,,White Hall,CP
+,324,,24,,6/24/22,3.96,,"still had full tail, weigh after",,White Hall,CP
+,325,,24,,6/24/22,3.72,,"still had full tail, weigh after",,White Hall,CP
+,326,,10,,6/24/22,6.9,,,,White Hall,CP
+,327,,4,,6/24/22,5.17,,,,White Hall,CP
+,328,,4,,6/24/22,3.85,,,,White Hall,CP
+,329,,4,,6/24/22,5.61,,,,White Hall,CP
+,330,,4,,6/24/22,4.51,,,,White Hall,CP
+,331,,4,,6/24/22,3.74,,,,White Hall,CP
+,332,,1,,6/24/22,4.85,,,,White Hall,CP
+,333,,1,,6/24/22,4.66,,,,White Hall,CP
+,334,,1,,6/24/22,4.16,,,,White Hall,CP
+,335,,1,,6/24/22,5.17,,,,White Hall,CP
+,336,,1,,6/24/22,4.37,,,,White Hall,CP
+,337,,1,,6/24/22,3.71,,,,White Hall,CP
+,338,,1,,6/24/22,3.69,,,,White Hall,CP
+,339,,1,,6/24/22,4.27,,,,White Hall,CP
+,340,,1,,6/24/22,5.97,,"*weigh after, 7/1",,White Hall,CP
+,341,,1,,6/24/22,4.18,,"*weigh after, 7/5",,White Hall,CP
+,342,,1,,6/24/22,3.68,,"*weigh after, 7/5",,White Hall,CP
+,343,,2,,6/24/22,4.08,,"*weigh after, 7/1",,White Hall,CP
+,344,,2,,6/24/22,4.15,,"*weigh after, 7/5",,White Hall,CP
+,345,,2,,6/24/22,3.67,,,,White Hall,CP
+,346,,2,,6/24/22,3.36,,,,White Hall,CP
+,347,,4,,6/24/22,4.95,,"*weigh after, 6/29",,White Hall,CP
+,348,,4,,6/24/22,5.45,,"*weigh after, 6/29",,White Hall,CP
+,349,,4,,6/24/22,4.84,,,,White Hall,CP
+,350,,5,,6/24/22,5.6,,,,White Hall,CP
+,351,,5,,6/24/22,7.22,,,,White Hall,CP
+,352,,6,,6/24/22,3.98,,,,White Hall,CP
+,353,,6,,6/24/22,4.73,,,,White Hall,CP
+,354,,6,,6/24/22,2.91,,,,White Hall,CP
+,355,,6,,6/24/22,3.7,,,,White Hall,CP
+,356,,6,,6/24/22,2.99,,,,White Hall,CP
+,357,,6,,6/24/22,4.15,,,,White Hall,CP
+,358,,8,,6/24/22,2.25,,,,White Hall,CP
+,359,,8,,6/24/22,3.23,,,,White Hall,CP
+,360,,9,,6/24/22,4.77,,,,White Hall,CP
+,361,,9,,6/24/22,5.4,,,,White Hall,CP
+,362,,9,,6/24/22,4.25,,,,White Hall,CP
+,363,,9,,6/24/22,4.47,,,,White Hall,CP
+,364,,9,,6/24/22,4.09,,,,White Hall,CP
+,365,,9,,6/24/22,4.97,,,,White Hall,CP
+,366,,9,,6/24/22,4.77,,,,White Hall,CP
+,367,,9,,6/24/22,5.13,,,,White Hall,CP
+,368,,9,,6/24/22,4.16,,,,White Hall,CP
+,369,,9,,6/24/22,5.35,,,,White Hall,CP
+,370,,9,,6/24/22,4.56,,,,White Hall,CP
+,371,,9,,6/24/22,4.36,,,,White Hall,CP
+,372,,9,,6/24/22,4.17,,"*weigh after, 7/5",,White Hall,CP
+,373,,12,,6/24/22,4.17,,"*weigh after, 7/1",,White Hall,CP
+,374,,12,,6/24/22,3.81,,,,White Hall,CP
+,375,,12,,6/24/22,2.78,,,,White Hall,CP
+,376,,12,,6/24/22,3.95,,,,White Hall,CP
+,377,,13,,6/24/22,3.02,,,,White Hall,CP
+,378,,13,,6/24/22,3.38,,"1.5 cm tail, 6/29",,White Hall,CP
+,379,,13,,6/24/22,3.45,,"1.5 cm tail, 6/29",,White Hall,CP
+,380,,13,,6/24/22,2.86,,"*weigh after, 7/5",,White Hall,CP
+,381,,14,,6/24/22,3.21,,"*weigh after, 7/1",,White Hall,CP
+,382,,14,,6/24/22,2.51,,,,White Hall,CP
+,383,,14,,6/24/22,3.74,,,,White Hall,CP
+,384,,13,,6/24/22,3.2,,,,White Hall,CP
+,385,,15,,6/24/22,3.24,,,,White Hall,CP
+,386,,15,,6/24/22,3.48,,,,White Hall,CP
+,387,,15,,6/24/22,4.18,,1.5 cm tail,,White Hall,CP
+,388,,18,,6/24/22,4.94,,"*weigh after, 7/1",,White Hall,CP
+,389,,19,,6/24/22,3.3,,,,White Hall,CP
+,390,,19,,6/24/22,3.38,,,,White Hall,CP
+,391,,19,,6/24/22,3.79,,"*weigh after, 7/5",,White Hall,CP
+,392,,20,,6/24/22,2.53,,,,White Hall,CP
+,393,,20,,6/24/22,2.9,,"1 cm tail, 6/29",,White Hall,CP
+,394,,20,,6/24/22,3.57,,"*weigh after, 7/5",,White Hall,CP
+,395,,21,,6/24/22,4.53,,,,White Hall,CP
+,396,,21,,6/24/22,4.29,,,,White Hall,CP
+,397,,21,,6/24/22,3.13,,"*weigh after, 7/1",,White Hall,CP
+,398,,22,,6/24/22,3.71,,"*very stressed, died, 7/1",1-Jul,White Hall,CP
+,399,,23,,6/24/22,2.82,,"*weigh after, 7/1",,White Hall,CP
+,400,,23,,6/24/22,2.64,,"*weigh after, 7/5",,White Hall,CP
+,401,,24,,6/24/22,4.5,,,,White Hall,CP
+,402,,24,,6/24/22,4.01,,,,White Hall,CP
+,403,,24,,6/24/22,4.9,,"*weigh after, 6/29",,White Hall,CP
+,404,,24,,6/24/22,4.31,,"*weigh after, 6/29",,White Hall,CP
+,405,,24,,6/24/22,4.25,,"*weigh after, 7/1",,White Hall,CP
+,406,,24,,6/24/22,4.34,,"*weigh after, 7/1",,White Hall,CP
+,407,,10,,6/24/22,7.8,,,,White Hall,CP
+,408,,20,,6/24/22,2.94,,"*weigh after, 6/29",,White Hall,CP
+,409,,20,,6/24/22,2.74,,"*weigh after, 6/29",,White Hall,CP
+,410,,1,,6/29/22,3.81,,,,White Hall,CP
+,411,,1,,6/29/22,5.16,,,,White Hall,CP
+,412,,1,,6/29/22,,,"*weigh after, ",,White Hall,CP
+,413,,1,,6/29/22,5.3,,,,White Hall,CP
+,414,,1,,6/29/22,4.78,,"*weigh after, 7/5",,White Hall,CP
+,415,,1,,6/29/22,4.76,,"*weigh after, 7/5",,White Hall,CP
+,416,,1,,6/29/22,4.08,,"*weigh after, 7/5",,White Hall,CP
+,417,,2,,6/29/22,4.35,,,,White Hall,CP
+,418,,2,,6/29/22,4.12,,"*weigh after, 7/5",,White Hall,CP
+,419,,4,,6/29/22,4.81,,,,White Hall,CP
+,420,,4,,6/29/22,4.05,,,,White Hall,CP
+,421,,4,,6/29/22,5.35,,,,White Hall,CP
+,422,,4,,6/29/22,5.08,,,,White Hall,CP
+,423,,4,,6/29/22,3.7,,,,White Hall,CP
+,424,,4,,6/29/22,5.02,,2 cm tail,,White Hall,CP
+,425,,4,,6/29/22,5.05,,"*weigh after, 7/1",,White Hall,CP
+,426,,4,,6/29/22,4.94,,"*weigh after, 7/5",,White Hall,CP
+,427,,6,,6/29/22,3.92,,"*weigh after, 7/5",,White Hall,CP
+,428,,8,,6/29/22,3.12,,"*weigh after, 7/5",,White Hall,CP
+,429,,8,,6/29/22,3.71,,"*weigh after, 7/1",,White Hall,CP
+,430,,9,,6/29/22,4.38,,"*weigh after, 7/1",,White Hall,CP
+,431,,9,,6/29/22,5.31,,"*weigh after, 7/1",,White Hall,CP
+,432,,9,,6/29/22,4.57,,"*weigh after, 7/1",,White Hall,CP
+,433,,9,,6/29/22,5.41,,"*weigh after, 7/1",,White Hall,CP
+,434,,12,,6/29/22,3.81,,,,White Hall,CP
+,435,,12,,6/29/22,4.08,,,,White Hall,CP
+,436,,12,,6/29/22,4.02,,,,White Hall,CP
+,437,,13,,6/29/22,4.03,,,,White Hall,CP
+,438,,13,,6/29/22,3.86,,,,White Hall,CP
+,439,,13,,6/29/22,3.84,,"*weigh after, 7/5",,White Hall,CP
+,440,,13,,6/29/22,4.09,,"*weigh after, 7/5",,White Hall,CP
+,441,,13,,6/29/22,3.25,,"*weigh after, 7/5",,White Hall,CP
+,442,,13,,6/29/22,,,,,White Hall,CP
+,443,,14,,6/29/22,3.05,,"*weigh after, 7/5",,White Hall,CP
+,444,,14,,6/29/22,3.28,,"*weigh after, 7/5",,White Hall,CP
+,445,,14,,6/29/22,3.03,,"*weigh after, 7/5",,White Hall,CP
+,446,,14,,6/29/22,2.64,,"*weigh after, 7/5",,White Hall,CP
+,447,,14,,6/29/22,3.2,,1 cm tail,,White Hall,CP
+,448,,18,,6/29/22,5.51,,"*weigh after, 6/29",,White Hall,CP
+,449,,18,,6/29/22,5.35,,,,White Hall,CP
+,450,,19,,6/29/22,4.06,,"*weigh after, 7/5",,White Hall,CP
+,451,,20,,6/29/22,3.31,,2 cm tail,,White Hall,CP
+,452,,21,,6/29/22,3.34,,,,White Hall,CP
+,453,,21,,6/29/22,3.37,,,,White Hall,CP
+,454,,21,,6/29/22,3.09,,,,White Hall,CP
+,455,,21,,6/29/22,3.63,,,,White Hall,CP
+,456,,21,,6/29/22,3.73,,,,White Hall,CP
+,457,,21,,6/29/22,4.03,,"*weigh after, 7/5",,White Hall,CP
+,458,,21,,6/29/22,3.85,,"*weigh after, 7/5",,White Hall,CP
+,459,,21,,6/29/22,3.82,,"*weigh after, 7/5",,White Hall,CP
+,460,,22,,6/29/22,4.19,,"*weigh after, 7/5",,White Hall,CP
+,461,,22,,6/29/22,3.82,,"*weigh after, 7/5",,White Hall,CP
+,462,,23,,6/29/22,3.35,,"*weigh after, 7/5",,White Hall,CP
+,463,,23,,6/29/22,2.91,,"*weigh after, 7/5",,White Hall,CP
+,464,,24,,6/29/22,4.13,,,,White Hall,CP
+,465,,24,,6/29/22,3.91,,,,White Hall,CP
+,466,,20,,6/24/22,4.89,,"*weigh after, 7/1",,White Hall,CP
+,467,,1,,7/1/22,5.98,,,,White Hall,CP
+,468,,1,,7/1/22,5.1,,,,White Hall,CP
+,469,,1,,7/1/22,4.61,,"*weigh after, 7/5",,White Hall,CP
+,470,,1,,7/1/22,4.83,,"*weigh after, 7/5",,White Hall,CP
+,471,,2,,7/1/22,5,,,,White Hall,CP
+,472,,2,,7/1/22,4.29,,,,White Hall,CP
+,473,,4,,7/1/22,5.41,,,,White Hall,CP
+,474,,4,,7/1/22,4.73,,,,White Hall,CP
+,475,,4,,7/1/22,4.97,,,,White Hall,CP
+,476,,4,,7/1/22,5.27,,"*weigh after, 7/5",,White Hall,CP
+,477,,6,,7/1/22,3.48,,,,White Hall,CP
+,478,,6,,7/1/22,4.63,,"*weigh after, 7/5",,White Hall,CP
+,479,,8,,7/1/22,3.19,,,,White Hall,CP
+,480,,8,,7/1/22,3.18,,"*weigh after, 7/5",,White Hall,CP
+,481,,8,,7/1/22,2.75,,"*weigh after, 7/5",,White Hall,CP
+,482,,12,,7/1/22,4.03,,,,White Hall,CP
+,483,,13,,7/1/22,3.66,,"*weigh after, 7/5",,White Hall,CP
+,484,,9,,7/1/22,5.62,,"*weigh after, 7/5",,White Hall,CP
+,485,,19,,7/1/22,4.18,,,,White Hall,CP
+,486,,19,,7/1/22,3.46,,,,White Hall,CP
+,487,,19,,7/1/22,5.59,,"*weigh after, 7/5",,White Hall,CP
+,488,,19,,7/1/22,4.27,,"*weigh after, 7/5",,White Hall,CP
+,489,,19,,7/1/22,4.65,,"*weigh after, 7/5",,White Hall,CP
+,490,,24,,7/1/22,4.3,,"*weigh after, 7/5",,White Hall,CP
+,491,,15,,7/1/22,3.83,,,,White Hall,CP
+,492,,15,,7/1/22,3.88,,,,White Hall,CP
+,493,,21,,7/1/22,5.24,,,,White Hall,CP
+,494,,21,,7/1/22,3.91,,"*weigh after, 7/5",,White Hall,CP
+,495,,20,,7/1/22,4.64,,,,White Hall,CP
+,496,,1,,7/4/22,5.56,,,,White Hall,CP
+,497,,1,,7/4/22,6,,,,White Hall,CP
+,498,,1,,7/4/22,5.49,,,,White Hall,CP
+,499,,1,,7/4/22,5.16,,,,White Hall,CP
+,500,,1,,7/4/22,4.45,,,,White Hall,CP
+,501,,1,,7/4/22,5.92,,,,White Hall,CP
+,502,,1,,7/4/22,4.36,,,,White Hall,CP
+,503,,4,,7/4/22,4.9,,,,White Hall,CP
+,504,,4,,7/4/22,5.47,,,,White Hall,CP
+,505,,4,,7/4/22,4.44,,,,White Hall,CP
+,506,,4,,7/4/22,4.33,,,,White Hall,CP
+,507,,4,,7/4/22,5.4,,,,White Hall,CP
+,508,,4,,7/4/22,4.85,,"*weigh after, 7/6",,White Hall,CP
+,509,,4,,7/4/22,5.85,,"*weigh after, 7/6",,White Hall,CP
+,510,,4,,7/4/22,5.86,,"*weigh after, 7/6",,White Hall,CP
+,511,,6,,7/4/22,2.88,,,,White Hall,CP
+,512,,8,,7/4/22,3.88,,,,White Hall,CP
+,513,,8,,7/4/22,3.94,,"*weigh after, 7/6",,White Hall,CP
+,514,,8,,7/4/22,,,"*weigh after, ",,White Hall,CP
+,515,,8,,7/4/22,,,"*weigh after, ",,White Hall,CP
+,516,,8,,7/4/22,,,"*weigh after, ",,White Hall,CP
+,517,,9,,7/4/22,5.72,,"*weigh after, 7/6",,White Hall,CP
+,518,,9,,7/4/22,5.22,,"*weigh after, 7/6",,White Hall,CP
+,519,,9,,7/4/22,4.77,,"*weigh after, 7/6",,White Hall,CP
+,520,,12,,7/4/22,3.04,,,,White Hall,CP
+,521,,12,,7/4/22,5.92,,"*weigh after, 7/6",,White Hall,CP
+,522,,13,,7/4/22,3.91,,,,White Hall,CP
+,523,,13,,7/4/22,4.12,,,,White Hall,CP
+,524,,13,,7/4/22,4.08,,"*weigh after, 7/6",,White Hall,CP
+,525,,13,,7/4/22,4.12,,"*weigh after, 7/6",,White Hall,CP
+,526,,14,,7/4/22,3.09,,"*weigh after, 7/6",,White Hall,CP
+,527,,14,,7/4/22,3.31,,"*weigh after, 7/6",,White Hall,CP
+,528,,14,,7/4/22,3.23,,"*weigh after, 7/5",,White Hall,CP
+,529,,15,,7/4/22,4.18,,"*weigh after, 7/7",,White Hall,CP
+,530,,19,,7/4/22,,,"*weigh after, ",,White Hall,CP
+,531,,19,,7/4/22,4.5,,"*weigh after, 7/5",,White Hall,CP
+,532,,20,,7/4/22,3.12,,,,White Hall,CP
+,533,,20,,7/4/22,3.65,,,,White Hall,CP
+,534,,20,,7/4/22,3.96,,,,White Hall,CP
+,535,,20,,7/4/22,4.23,,,,White Hall,CP
+,536,,20,,7/4/22,3.68,,"*weigh after, 7/6",,White Hall,CP
+,537,,20,,7/4/22,4.06,,"*weigh after, 7/6",,White Hall,CP
+,538,,21,,7/4/22,5.22,,,,White Hall,CP
+,539,,21,,7/4/22,4.58,,,,White Hall,CP
+,540,,21,,7/4/22,4.61,,,,White Hall,CP
+,541,,21,,7/4/22,5.34,,"*weigh after, 7/6",,White Hall,CP
+,542,,21,,7/4/22,,,"*weigh after, ",,White Hall,CP
+,543,,22,,7/4/22,3.94,,"*weigh after, 7/6",,White Hall,CP
+,544,,22,,7/4/22,3.34,,"*weigh after, 7/6",,White Hall,CP
+,545,,23,,7/4/22,3.43,,"*weigh after, ",,White Hall,CP
+,546,,23,,7/4/22,3.15,,"*weigh after, ",,White Hall,CP
+,547,,24,,7/4/22,4.97,,,,White Hall,CP
+,548,,24,,7/4/22,4.57,,,,White Hall,CP
+,549,,14,,7/1/22,3.04,,"*weigh after, 7/5",,White Hall,CP
+,550,,14,,7/1/22,3.417*,,"*weigh after, 7/5",,White Hall,CP
+,551,,1,,6/29/22,4.58,,"*weigh after, 7/5",,White Hall,CP
+,552,,23,,6/29/22,2.8,,"*weigh after, 7/5",,White Hall,CP
+,553,,1,,7/6/22,4.52,,,,White Hall,CP
+,554,,1,,7/6/22,6.02,,,,White Hall,CP
+,555,,1,,7/6/22,5.4,,,,White Hall,CP
+,556,,1,,7/6/22,4.55,,,,White Hall,CP
+,557,,1,,7/6/22,,,"*weigh after, ",,White Hall,CP
+,558,,2,,7/6/22,4.47,,,,White Hall,CP
+,559,,2,,7/6/22,3.64,,,,White Hall,CP
+,560,,4,,7/6/22,6.04,,,,White Hall,CP
+,561,,4,,7/6/22,5.65,,,,White Hall,CP
+,562,,4,,7/6/22,4.89,,1 cm tail,,White Hall,CP
+,563,,4,,7/6/22,5.85,,2 cm tail,,White Hall,CP
+,564,,4,,7/6/22,,,*weigh after,,White Hall,CP
+,565,,4,,7/6/22,,,*weigh after,,White Hall,CP
+,566,,4,,7/6/22,,,*weigh after,,White Hall,CP
+,567,,6,,7/6/22,4.51,,1 cm tail,,White Hall,CP
+,568,,6,,7/6/22,5.25,,,,White Hall,CP
+,569,,6,,7/6/22,4.9,,,,White Hall,CP
+,570,,6,,7/6/22,4.76,,,,White Hall,CP
+,571,,6,,7/6/22,3.7,,2 cm tail,,White Hall,CP
+,572,,6,,7/6/22,,,*weigh after,,White Hall,CP
+,573,,8,,7/6/22,4.28,,,,White Hall,CP
+,574,,9,,7/6/22,7.42,,1 cm tail,,White Hall,CP
+,575,,9,,7/6/22,5.78,,,,White Hall,CP
+,576,,9,,7/6/22,6.89,,2 cm tail,,White Hall,CP
+,577,,9,,7/6/22,,,*weigh after,,White Hall,CP
+,578,,9,,7/6/22,,,*weigh after,,White Hall,CP
+,579,,9,,7/6/22,,,*weigh after,,White Hall,CP
+,580,,9,,7/6/22,,,*weigh after,,White Hall,CP
+,581,,12,,7/6/22,4.98,,,,White Hall,CP
+,582,,12,,7/6/22,6,,,,White Hall,CP
+,583,,12,,7/6/22,6.63,,,,White Hall,CP
+,584,,13,,7/6/22,4.27,,,,White Hall,CP
+,585,,13,,7/6/22,3.69,,,,White Hall,CP
+,586,,13,,7/6/22,3.75,,1.5 cm tail,,White Hall,CP
+,587,,13,,7/6/22,4.57,,1 cm tail,,White Hall,CP
+,588,,13,,7/6/22,3.84,,"*weigh after, 7/7",,White Hall,CP
+,589,,13,,7/6/22,,,*weigh after,,White Hall,CP
+,590,,13,,7/6/22,,,*weigh after,,White Hall,CP
+,591,,13,,7/6/22,,,*weigh after,,White Hall,CP
+,592,,13,,7/6/22,,,*weigh after,,White Hall,CP
+,593,,14,,7/6/22,2.86,,,,White Hall,CP
+,594,,14,,7/6/22,2.97,,,,White Hall,CP
+,595,,14,,7/6/22,,,*weigh after,,White Hall,CP
+,596,,14,,7/6/22,,,*weigh after,,White Hall,CP
+,597,,14,,7/6/22,,,*weigh after,,White Hall,CP
+,598,,14,,7/6/22,,,*weigh after,,White Hall,CP
+,599,,15,,7/6/22,,,*weigh after,,White Hall,CP
+,600,,15,,7/6/22,,,*weigh after,,White Hall,CP
+,601,,19,,7/6/22,3.7,,,,White Hall,CP
+,602,,19,,7/6/22,,,*weigh after,,White Hall,CP
+,603,,19,,7/6/22,,,*weigh after,,White Hall,CP
+,604,,19,,7/6/22,,,*weigh after,,White Hall,CP
+,605,,20,,7/6/22,,,*weigh after,,White Hall,CP
+,606,,20,,7/6/22,,,*weigh after,,White Hall,CP
+,607,,20,,7/6/22,,,*weigh after,,White Hall,CP
+,608,,21,,7/6/22,5.56,,2 cm tail,,White Hall,CP
+,609,,21,,7/6/22,7.04,,,,White Hall,CP
+,610,,21,,7/6/22,4.58,,,,White Hall,CP
+,611,,21,,7/6/22,5.9,,,,White Hall,CP
+,612,,21,,7/6/22,4.93,,"*weigh after, 7/11",,White Hall,CP
+,613,,22,,7/6/22,5.1,,"*weigh after, 7/11",,White Hall,CP
+,614,,23,,7/6/22,2.65,,"*weigh after, 7/8",,White Hall,CP
+,615,,23,,7/6/22,3.05,,"*weigh after, 7/8",,White Hall,CP
+,616,,23,,7/6/22,3.18,,"*weigh after, 7/11",,White Hall,CP
+,617,,23,,7/6/22,2.75,,"*weigh after, 7/11",,White Hall,CP
+,618,,23,,7/6/22,2.5,,,,White Hall,CP
+,619,,23,,7/6/22,3.29,,,,White Hall,CP
+,620,,1,,7/8/22,6.96,,"*weigh after, 7/11",,White Hall,CP
+,621,,1,,7/8/22,5.3,,"*weigh after, 7/11",,White Hall,CP
+,622,,4,,7/8/22,5.82,,"*weigh after, 7/13",,White Hall,CP
+,623,,6,,7/8/22,died,,"*weigh after, 7/11",died 7/11,White Hall,CP
+,624,,6,,7/8/22,5.45,,"*weigh after, 7/13",,White Hall,CP
+,625,,8,,7/8/22,2.99,,"*weigh after, 7/13",,White Hall,CP
+,626,,14,,7/8/22,3.28,,,,White Hall,CP
+,627,,14,,7/8/22,2.75,,"*weigh after, 7/11",,White Hall,CP
+,628,,19,,7/8/22,4.07,,"*weigh after, 7/11",,White Hall,CP
+,629,,19,,7/8/22,3.85,,"*weigh after, 7/11",,White Hall,CP
+,630,,19,,7/8/22,3.8,,"*weigh after, 7/13",,White Hall,CP
+,631,,23,,7/8/22,3.43,,"*weigh after, 7/11",,White Hall,CP
+,632,,23,,7/8/22,5.05,,"*weigh after, 7/11",,White Hall,CP
+,633,,23,,7/8/22,2.5,,"*weigh after, 7/13",,White Hall,CP
+,634,,23,,7/8/22,3.75,,,,White Hall,CP
+,635,,15,,7/8/22,5.42,,"*weigh after, 7/11",,White Hall,CP
+,636,,21,,7/8/22,5.04,,"*weigh after, 7/13",,White Hall,CP
+,637,,21,,7/8/22,4.19,,,,White Hall,CP
+,638,,1,,7/11/22,5.18,,,,White Hall,CP
+,639,,1,,7/11/22,4.97,,,,White Hall,CP
+,640,,1,,7/11/22,4.86,,1 cm tail,,White Hall,CP
+,641,,2,,7/11/22,4.85,,,,White Hall,CP
+,642,,2,,7/11/22,4.79,,,,White Hall,CP
+,643,,2,,7/11/22,6.5,,"*weigh after, 7/16",,White Hall,CP
+,644,,2,,7/11/22,5.53,,"*weigh after, 7/16",,White Hall,CP
+,645,,4,,7/11/22,5.41,,,,White Hall,CP
+,646,,4,,7/11/22,4.8,,,,White Hall,CP
+,647,,4,,7/11/22,6.57,,"*weigh after, 7/16",,White Hall,CP
+,648,,4,,7/11/22,5.67,,"*weigh after, 7/16",,White Hall,CP
+,649,,4,,7/11/22,5.23,,"*weigh after, 7/16",,White Hall,CP
+,650,,6,,7/11/22,4.02,,"absorbed tail, missing front limb, died",died,White Hall,CP
+,651,,9,,7/11/22,6.74,,,,White Hall,CP
+,652,,9,,7/11/22,5.79,,,,White Hall,CP
+,653,,9,,7/11/22,5.03,,,,White Hall,CP
+,654,,8,,7/11/22,2.74,,.5 cm tail,,White Hall,CP
+,655,,8,,7/11/22,3.88,,"*weigh after, 7/17",,White Hall,CP
+,656,,12,,7/11/22,5.86,,,,White Hall,CP
+,657,,12,,7/11/22,5.47,,,,White Hall,CP
+,658,,12,,7/11/22,4.97,,"*weigh after, 7/16, 3 cups labeled T12 from 7/11 on 7/16 their masses were 4.97+6.47+ one (one not weighed yet)",,White Hall,CP
+,659,,14,,7/11/22,2.92,,1 cm tail,,White Hall,CP
+,660,,14,,7/11/22,2.87,,,,White Hall,CP
+,661,,14,,7/11/22,2.55,,,,White Hall,CP
+,662,,14,,7/11/22,3.05,,"*weigh after, 7/16",,White Hall,CP
+,663,,15,,7/11/22,4.94,,.5 cm tail,,White Hall,CP
+,664,,15,,7/11/22,4.03,,1 cm tail,,White Hall,CP
+,665,,15,,7/11/22,4.57,,,,White Hall,CP
+,666,,15,,7/11/22,5.06,,1 cm tail,,White Hall,CP
+,667,,15,,7/11/22,5.21,,1 cm tail,,White Hall,CP
+,668,,19,,7/11/22,4.69,,2 cm tail,,White Hall,CP
+,669,,19,,7/11/22,4.18,,,,White Hall,CP
+,670,,19,,7/11/22,3.75,,,,White Hall,CP
+,671,,19,,7/11/22,4.56,,,,White Hall,CP
+,672,,19,,7/11/22,3.77,,,,White Hall,CP
+,673,,21,,7/11/22,6.65,,,,White Hall,CP
+,674,,21,,7/11/22,4.65,,,,White Hall,CP
+,675,,21,,7/11/22,5.8,,.5 cm tail,,White Hall,CP
+,676,,21,,7/11/22,6,,1 cm tail,,White Hall,CP
+,677,,21,,7/11/22,5.68,,*weigh after,,White Hall,CP
+,678,,23,,7/11/22,4.07,,,,White Hall,CP
+,679,,23,,7/11/22,3.09,,,,White Hall,CP
+,680,,23,,7/11/22,3.68,,*weigh after,,White Hall,CP
+,681,,23,,7/11/22,3.29,,*weigh after,,White Hall,CP
+,682,,12,,7/11/22,7.22,,"*weigh after, 7/17",,White Hall,CP
+,683,,12,,7/11/22,6.47,,"*weigh after, 7/16",,White Hall,CP
+,684,,23,,7/13/22,2.62,,"*weigh after, 7/17",,White Hall,CP
+,685,,23,,7/13/22,4.03,,"*weigh after, 7/17",,White Hall,CP
+,686,,23,,7/13/22,3.09,,,,White Hall,CP
+,687,,19,,7/13/22,4.56,,,,White Hall,CP
+,688,,21,,7/13/22,5.77,,,,White Hall,CP
+,689,,21,,7/13/22,5.48,,,,White Hall,CP
+,690,,19,,7/13/22,4.25,,,,White Hall,CP
+,691,,19,,7/13/22,5.08,,,,White Hall,CP
+,692,,19,,7/13/22,4.87,,,,White Hall,CP
+,693,,19,,7/13/22,5.58,,,,White Hall,CP
+,694,,19,,7/13/22,5.53,,"*weigh after, 7/17",,White Hall,CP
+,695,,14,,7/13/22,3.22,,"*weigh after, 7/17",,White Hall,CP
+,696,,14,,7/13/22,3.62,,,,White Hall,CP
+,697,,2,,7/13/22,died,,"*weigh after, very dead 7/15",,White Hall,CP
+,698,,9,,7/13/22,6.88,,,,White Hall,CP
+,699,,9,,7/13/22,6.36,,,,White Hall,CP
+,700,,9,,7/13/22,7.33,,,,White Hall,CP
+,701,,8,,7/13/22,died,,"*weigh after, 7/14 dead ",,White Hall,CP
+,702,,8,,7/13/22,3.85,,,,White Hall,CP
+,703,,19,,7/15/22,4.28,,"*weigh after, 7/17",,White Hall,CP
+,704,,19,,7/15/22,4.84,,"*weigh after, 7/17",,White Hall,CP
+,705,,19,,7/15/22,2.97,,"*weigh after, 7/19",,White Hall,CP
+,706,,19,,7/15/22,4.08,,,,White Hall,CP
+,707,,23,,7/15/22,3.96,,,,White Hall,CP
+,708,,21,,7/15/22,3.88,,,,White Hall,CP
+,709,,1,,7/15/22,7,,"*weigh after, 7/17",,White Hall,CP
+,710,,1,,7/15/22,4.79,,,,White Hall,CP
+,711,,1,,7/15/22,5.14,,,,White Hall,CP
+,712,,8,,7/15/22,3.5,,,,White Hall,CP
+,713,,8,,7/15/22,2.87,,"*weigh after, 7/17",,White Hall,CP
+,714,,14,,7/15/22,3.03,,,,White Hall,CP
+,715,,14,,7/15/22,4.16,,"*weigh after, 7/17",,White Hall,CP
+,716,,14,,7/15/22,3.57,,"*weigh after, 7/17",,White Hall,CP
+,717,,14,,7/15/22,,,"*weigh after, died 7/17",,White Hall,CP
+,718,,15,,7/15/22,4.88,,,,White Hall,CP
+,719,,15,,7/15/22,4.97,,"*weigh after, 7/17",,White Hall,CP
+,720,,15,,7/15/22,3.43,,,,White Hall,CP
+,721,,15,,7/15/22,4.22,,,,White Hall,CP
+,722,,15,,7/15/22,5.91,,"*weigh after, 7/17",,White Hall,CP
+,723,,15,,7/15/22,6.39,,"*weigh after, 7/19",,White Hall,CP
+,724,,15,,7/15/22,4.71,,,,White Hall,CP
+,725,,15,,7/15/22,5.15,,,,White Hall,CP
+,726,,23,,7/17/22,3.72,,,,White Hall,CP
+,727,,23,,7/17/22,3.2,,,,White Hall,CP
+,728,,23,,7/17/22,3.09,,"*weigh after, 7/19",,White Hall,CP
+,729,,23,,7/17/22,2.9,,"*weigh after, 7/19",,White Hall,CP
+,730,,2,,7/17/22,4.25,,,,White Hall,CP
+,731,,20,,7/17/22,4.47,,,,White Hall,CP
+,732,,21,,7/17/22,6.51,,,,White Hall,CP
+,733,,21,,7/17/22,6.06,,1 cm tail,,White Hall,CP
+,734,,21,,7/17/22,4.6,,,,White Hall,CP
+,735,,21,,7/17/22,5.42,,,,White Hall,CP
+,736,,21,,7/17/22,6,,"*weigh after, 7/19",,White Hall,CP
+,737,,21,,7/17/22,5.87,,"*weigh after, 7/19",,White Hall,CP
+,738,,14,,7/17/22,3.56,,,,White Hall,CP
+,739,,19,,7/17/22,5.49,,,,White Hall,CP
+,740,,19,,7/17/22,4.52,,,,White Hall,CP
+,741,,19,,7/17/22,4.68,,,,White Hall,CP
+,742,,15,,7/17/22,6.45,,"*weigh after, 7/19",,White Hall,CP
+,743,,15,,7/17/22,5.33,,,,White Hall,CP
+,744,,15,,7/17/22,5.86,,,,White Hall,CP
+,745,,?,,7/17/22,5.11,,found hopping in greenhouse,,White Hall,CP
+,746,,21,,7/17/22,6.64,,"*weigh after, 7/25",,White Hall,CP
+,747,,15,,7/18/22,7.87,,,,White Hall,CP
+,748,,19,,7/19/22,6.51,,"*weigh after, 7/19",,White Hall,CP
+,749,,19,,7/19/22,5.43,,"*weigh after, 7/19",,White Hall,CP
+,750,,19,,7/19/22,6.23,,"*weigh after, 7/19",,White Hall,CP
+,751,,19,,7/19/22,4.88,,"*weigh after, 7/23",,White Hall,CP
+,752,,19,,7/19/22,,,*weigh after,,White Hall,CP
+,753,,19,,7/19/22,4.37,,,,White Hall,CP
+,754,,19,,7/19/22,5.75,,,,White Hall,CP
+,755,,19,,7/19/22,5.37,,,,White Hall,CP
+,756,,19,,7/19/22,4.3,,,,White Hall,CP
+,757,,24,,7/21/22,4.58,,"*weigh after, 7/25",,White Hall,CP
+,758,,24,,7/21/22,,,*weigh after,,White Hall,CP
+,759,,24,,7/21/22,3.07,,,,White Hall,CP
+,760,,19,,7/21/22,6.97,,"*weigh after, 7/25",,White Hall,CP
+,761,,19,,7/21/22,4.34,,,,White Hall,CP
+,762,,19,,7/21/22,5.55,,,,White Hall,CP
+,763,,19,,7/21/22,5.62,,,,White Hall,CP
+,764,,19,,7/21/22,4.89,,,,White Hall,CP
+,765,,21,,7/23/22,,,*weigh after,,White Hall,CP
+,766,,21,,7/23/22,,,*weigh after,,White Hall,CP
+,767,,21,,7/23/22,,,*weigh after,,White Hall,CP
+,768,,19,,7/23/22,2.97,,,,White Hall,CP
+,769,,19,,7/23/22,7,,,,White Hall,CP
+,770,,19,,7/23/22,6.4,,,,White Hall,CP
+,771,,23,,7/23/22,3.54,,"*weigh after, 7/25",,White Hall,CP
+,772,,23,,7/23/22,5.2,,,,White Hall,CP
+,773,,19,,7/25/22,3.87,,,,White Hall,CP
+,774,,19,,7/25/22,7.2,,,,White Hall,CP
+,775,,19,,7/25/22,5.15,,,,White Hall,CP
+,776,,23,,7/25/22,3.62,,"*weigh after, 7/29",,White Hall,CP
+,777,,23,,7/25/22,3.24,,"*weigh after, 7/29",,White Hall,CP
+,778,,19,,7/25/22,5.33,,"*weigh after, 7/29",,White Hall,CP
+,779,,19,,7/25/22,5.21,,"*weigh after, 8/2",,White Hall,CP
+,780,,23,,7/25/22,2.87,,,,White Hall,CP
+,781,,19,,7/29/22,4.89,,,,White Hall,CP
+,782,,19,,7/29/22,4.68,,,,White Hall,CP
+,783,,19,,7/21/22,5.22,,"could not find line, 7/29",,White Hall,CP
+,784,,19,,7/29/22,5.5,,"says T21? couldn't find line, 7/29",,White Hall,CP
+,785,,19,,7/23/22,4.04,,"could not find line, 7/29",,White Hall,CP
+,786,,19,,7/29/22,3.84,,"could not find line, 7/29, says T12 6/27",,White Hall,CP
+,787,,19,,7/29/22,2.75,,"could not find line, 7/29, says T5 6/27",,White Hall,CP
+,788,,19,,7/23/22,3.69,,"could not find line, 7/29",,White Hall,CP
+,789,,19,,7/23/22,6.29,,"could not find line, 7/29",,White Hall,CP
+,790,,?,,7/29/22,5.47,,found in bin of moss,,White Hall,CP
+,791,,?,,7/29/22,4.96,,in unmarked cup 7/29,,White Hall,CP
+,792,,?,,7/18/22,6.86,,found in greenhouse,,White Hall,CP
+,793,,?,,7/23/22,4.76,,in unmarked cup 7/23,,White Hall,CP
+,794,,?,,7/23/22,4.05,,in unmarked cup 7/23,,White Hall,CP
+,795,,?,,7/18/22,7.83,,"7/18 greenhouse, 7/29",,White Hall,CP
+,796,,19,,8/2/22,3.7,,,,White Hall,CP
+,797,,19,,8/2/22,6.24,,,,White Hall,CP
+,798,,19,,8/2/22,,,*weigh after,,White Hall,CP
 ,799,,,,,,,,,,
 ,800,,,,,,,,,,

@@ -1,4 +1,4 @@
-﻿Species,ID_No,Tank_Density,Tank,Year,Date_of_metamorphosis,Mass_at_metamorphosis_g,Mark,Fate_Comments,Mortality,Facility
+﻿Species,ID_No,Tank_Density,Tank,Year,Date.metamorphosed,Mass.g.metamorphosed,Mark,Fate.comments,Mortality,Facility
 Rcapito,246,50,4,,5/30/19,5.98, ,NDF, ,UGA
 Rcapito,247,50,4,,5/30/19,6.82, ,NDF,dead 6/4,UGA
 Rcapito,248,50,4,,5/30/19,6.31, ,NDF, ,UGA
@@ -840,7 +840,7 @@ Rcapito,1064,50,25,,6/16/19,6.3,,,,UGA
 Rcapito,1065,50,25,,6/16/19,6.1,,,,UGA
 Rcapito,1104,50,25,,6/17/19,5.15,,,,UGA
 Rcapito,1105,50,25,,6/17/19,5.05,,,,UGA
-Rcapito,1106,50,25,MISSING,6/17/2019,5.29,,,,UGA
+Rcapito,1106,50,25,MISSING,6/17/19,5.29,,,,UGA
 Rcapito,1153,50,25,,6/19/19,4.68,,,,UGA
 Rcapito,1189,50,25,,6/21/19,6.95,,,,UGA
 Rcapito,1217,50,25,,6/23/19,2.34,,,,UGA
@@ -875,7 +875,7 @@ Rcapito,1029,50,26,,6/14/19,4.37,,,,UGA
 Rcapito,1030,50,26,,6/14/19,4.95,,,,UGA
 Rcapito,1059,50,26,,6/16/19,4.7,,,,UGA
 Rcapito,1060,50,26,,6/16/19,5.11,,,,UGA
-Rcapito,1107,50,26,MISSING,6/14/2019,5.18,,,,UGA
+Rcapito,1107,50,26,MISSING,6/14/19,5.18,,,,UGA
 Rcapito,1108,50,26,MISSING,6/14/19,3.71,,,,UGA
 Rcapito,1117,50,26,,6/18/19,1.98,,,,UGA
 Rcapito,1118,50,26,,6/18/19,2.93,,,,UGA
@@ -1258,6 +1258,3 @@ Rcapito,259,50,35,,5/29/19,4.32, , ,dead 5/30,UGA
 Rcapito,324,50,"""James""",,6/1/19,5.8, , , ,UGA
 Rcapito,86,50,UN,,5/28/19,5.58, , , ,UGA
 ,,,,,,4.833557692,,,,
-,,,,,,,,,,
-,,,,,,,,,,
-,,,,,,,,,,

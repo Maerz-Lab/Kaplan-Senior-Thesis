@@ -1,4 +1,4 @@
-Species,ID_No,Tank_Density,Tank,Year,Date_of_metamorphosis,Mass_at_metamorphosis_g,Mark,Fate_Comments,Mortality,Facility,Person Entering Data
+Species,ID_No,Tank_Density,Tank,Year,Date.metamorphosed,Mass.g.metamorphosed,Mark,Fate.comments,Mortality,Facility,Person Entering Data
 Rcapito,1,,12,,6/1/21,4.5,,,,UGA,AKB
 Rcapito,2,,17,,6/3/21,5.41,,,,UGA,AKB
 Rcapito,3,,17,,6/3/21,4.75,,,,UGA,AKB
