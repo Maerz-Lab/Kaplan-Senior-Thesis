@@ -1,5 +1,5 @@
 ## Primary Investigators: Vanessa Terrell and Morgan Kaplan
-## Last Edited: 9/27/24
+## Last Edited: 10/17/24
 ## Goal of this code: working to subset data from 2009-2024 and compile into a master datafile
 
 
@@ -9,9 +9,9 @@ library(dplyr)
 library(lubridate)
 
 # Import 2009-2011 data set
-dat.meta20092011<-read_csv("L. capito_UGA master rearing data_2009-2011.csv")
+dat.meta20092011 <- read_csv("L. capito_UGA master rearing data_2009-2011.csv")
 
-# Use subset() function to create a new dataframe for 2009-2012 data
+# Use subset() function to create a new dataframe for 2009-2011 data
 master.met20092011 <- subset(dat.meta20092011, select = c(Year, Date.metamorphosed, Mass.g.metamorphosed, Fate.comments)) 
 
 # Import 2012 data set
@@ -99,9 +99,8 @@ dat.meta2024 <- read_csv("Rcapito2024.cleaned.csv")
 master.met2024 <- subset(dat.meta2024, select = c(Year, Date.metamorphosed, Mass.g.metamorphosed, Fate.comments))
 
 # Create a master dataset with all subsetted data files
-merged.Master <- rbind(master.met2009, master.met2013, master.met2015, master.met2016, master.met2017, master.met2018,
+merged.Master <- rbind(master.met2009, master.met2012, master.met2013, master.met2015, master.met2016, master.met2017, master.met2018,
                        master.met2019, master.met2021, master.met2022, master.met2023, master.met2024)
-
 
 
 # Separating Date, Time, and Year columns from one "Date and Time" column in 2024 dataset
@@ -125,13 +124,20 @@ print(Rcapito2024)
 
 # Save to csv
 write.csv(Rcapito2024.cleaned, "RCapito2024.cleaned.csv", row.names = FALSE)
-## Notes for Vanessa:
 
-## The survey123 used AM/PM time instead of military and we ran into parsing 
-## issues. Line 34 fixed this by including the time zone and converting to military time
+# Saving full merged master dataframe to source
+write.csv(merged.Master, "merged.Master.csv", row.names = FALSE) 
 
 
 ## TO DO
-## finish merging datasets after changing date formats
-## average mass per year, dates etc
-## summaries up next- find 2012 data
+
+## for weather data: National clearing house for weather data, daymet (interpolated data)
+## pull rainfall, temperature, humidity data
+## summary statistics for avg days to metamorphosis per year bc longer metamorphosis is 
+## typically correlated to lower survivorship and fitness
+## min, mean, max size at metamorphosis per year
+## graph for each year with points of different masses but also showed density of tanks (box plots??)
+## ability to cite multiple research papers here
+## look into Sara Diamond's senior thesis for density data
+## doing a model for what predicts days to metamorphosis in tanks
+## does it matter if we combine years where density is not the same?
