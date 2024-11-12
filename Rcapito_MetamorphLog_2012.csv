@@ -1,4 +1,4 @@
-﻿Species,Animal ID,clutch,date eggs hatched,tank density,tank,Year,Date stocked,Date.metamorphosed,Days to metamorphosis,Mass.g.metamorphosed,Mark,Fate.comments,date alpha tag was inserted,,PENS,CLIP
+﻿Species,Animal ID,Clutch.ID,Date.eggs.hatched,Stocking.density,Tank.ID,Year,Date.stocked,Date.metamorphosed,Days.to.metamorphosis,Mass.g.metamorphosed,Mark,Fate.comments,date alpha tag was inserted,,PENS,CLIP
 Rcap-,1447,1,3/6/12,105,1,2012,3/22/12,6/1/12,,4.55,,dead? See notes,,,,
 Rcap-,1448,1,3/6/12,105,1,2012,3/22/12,6/4/12,,3.99,,,,,burrow 2*,
 Rcap-,1449,1,3/6/12,105,1,2012,3/22/12,6/4/12,,2.89,,,,,burrow 3,
