@@ -9,5 +9,5 @@ This thesis aims to summarize the fifteen years of Gopher frog captive rearing d
 ## Edited 1/30/25:
 - Hypotheses:
 - Predictions: I expect development to be slower in cooler, rainier years because of the effects of temperature and light on algal production in aquaculture tanks. I also expect higher mortality in very hot years associated with reduced dissolved oxygen and stress-related outbreaks of disease or abnormalities. Years with moderate temperatures and humidity will likely produce frogs of the greatest mass. It is anticipated that disease outbreaks to be more numerous in tanks with higher stocking densities, and for masses to be higher in tanks with lower stocking densities.
-- Covariates: Temperature, humidity, rainfall, stocking density
+- Covariates: Temperature, humidity, rainfall, stocking density, time to metamorphosis, size at metamorphosis, clutch ID
 - Nuisance Variables: Dissolved O2
