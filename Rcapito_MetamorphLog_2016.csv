@@ -1,4 +1,4 @@
-﻿Species,ID_No,Clutch,Date Eggs Hatched,Tank_Density ,Tank,Year,Date Stocked,Date.metamorphosed,Mass.g.metamorphosed,Mark,Fate.comments
+﻿Species,ID_No,Clutch.ID,Date.eggs.hatched,Stocking.density,Tank.ID,Year,Date.stocked,Date.metamorphosed,Mass.g.metamorphosed,Mark,Fate.comments
 Lcapito,891,na,2/17/16,60,1,2016,3/5/16,5/29/16,8.32,,chunky
 Lcapito,905,na,2/17/16,60,1,2016,3/5/16,5/30/16,9.92,,DEAD
 Lcapito,906,na,2/17/16,60,1,2016,3/5/16,5/30/16,10.05,,DEAD

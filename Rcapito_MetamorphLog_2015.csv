@@ -1,4 +1,4 @@
-﻿Species,ID_No,Clutch,Date Eggs Hatched,Tank,Stocking Density,Year,Date Stocked,Date.metamorphosed,Mass.g.metamorphosed,Mass_at_meta_g,Mark,Fate.comments
+﻿Species,ID_No,Clutch.ID,Date.eggs.hatched,Tank.ID,Stocking.density,Year,Date.stocked,Date.metamorphosed,Mass.g.metamorphosed,Mass_at_meta_g,Mark,Fate.comments
 Lcaptio,33,na,3/15/15,1,100,2015,3/25/15,6/12/15,2.67,,,
 Lcaptio,38,na,3/15/15,1,100,2015,3/25/15,6/13/15,NA,,,Dead in tank
 Lcaptio,39,na,3/15/15,1,100,2015,3/25/15,6/13/15,4.13,,,
