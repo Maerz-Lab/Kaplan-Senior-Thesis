@@ -71,7 +71,10 @@ write.csv(dat.meta2019.cleaned, "dat.meta2019.cleaned.csv", row.names = FALSE)
 # Merge into master file
 master.met2019 <- subset(dat.meta2019.cleaned, select = c(Year, Date.metamorphosed, Mass.g.metamorphosed, Fate.comments, Clutch.ID,
                                                           Date.stocked, Date.eggs.hatched, Stocking.density, Tank.ID, Days.to.metamorphosis))
-
+# Import and subset 2020 data
+dat.meta2020 <- read_csv("Rcapito_MetamorphLog_2020.csv")
+master.met2020 <- subset(dat.meta2020, select = c(Year, Date.metamorphosed, Mass.g.metamorphosed, Fate.comments, Clutch.ID,
+                                                  Date.stocked, Date.eggs.hatched, Stocking.density, Tank.ID, Days.to.metamorphosis))
 # Read 2021 data
 dat.meta2021 <- read_csv("Rcapito_MetamorphLog_2021.csv")
 
@@ -106,12 +109,12 @@ master.met2023 <- subset(dat.meta2023, select = c(Year, Date.metamorphosed, Mass
                                                   Date.stocked, Date.eggs.hatched, Stocking.density, Tank.ID, Days.to.metamorphosis))
 
 # Read and merge 2024 data
-dat.meta2024 <- read_csv("Rcapito_MetamorphLog_2024csv")
+dat.meta2024 <- read_csv("Rcapito_MetamorphLog_2024.csv")
 master.met2024 <- subset(dat.meta2024, select = c(Year, Date.metamorphosed, Mass.g.metamorphosed, Fate.comments, Clutch.ID,
                                                   Date.stocked, Date.eggs.hatched, Stocking.density, Tank.ID, Days.to.metamorphosis))
 
 # Create a master dataset with all subsetted data files
-merged.Master <- rbind(master.met2009, master.met2012, master.met2013, master.met2015, master.met2016, master.met2017, master.met2018,
+merged.Master <- rbind(master.met20092011, master.met2012, master.met2013, master.met2015, master.met2016, master.met2017, master.met2018,
                        master.met2019, master.met2021, master.met2022, master.met2023, master.met2024)
 
 # Saving full merged master dataframe to source
