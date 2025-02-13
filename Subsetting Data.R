@@ -9,34 +9,40 @@ library(dplyr)
 library(lubridate)
 
 # Import 2009-2011 data set
-dat.meta20092011 <- read_csv("L. capito_UGA master rearing data_2009-2011.csv")
+dat.meta20092011 <- read_csv("Rcapito_MetamorphLog_2009_2011_Final.csv")
 
 # Use subset() function to create a new dataframe for 2009-2011 data
-master.met20092011 <- subset(dat.meta20092011, select = c(Year, Date.metamorphosed, Mass.g.metamorphosed, Fate.comments)) 
+master.met20092011 <- subset(dat.meta20092011, select = c(Year, Date.metamorphosed, Mass.g.metamorphosed, Fate.comments, Clutch.ID,
+                                                          Date.stocked, Date.eggs.hatched, Stocking.density, Tank.ID, Days.to.metamorphosis)) 
 
 # Import 2012 data set
 dat.meta2012 <- read_csv("Rcapito_MetamorphLog_2012.csv")
 
 # Use subset() function to create a new dataframe for 2012 data
-master.met2012 <- subset(dat.meta2012, select = c(Year, Date.metamorphosed, Mass.g.metamorphosed, Fate.comments)) 
+master.met2012 <- subset(dat.meta2012, select = c(Year, Date.metamorphosed, Mass.g.metamorphosed, Fate.comments, Clutch.ID,
+                                                  Date.stocked, Date.eggs.hatched, Stocking.density, Tank.ID, Days.to.metamorphosis)) 
 
 # Import 2013 data set
-dat.meta2013 <- read_csv("L. capito_UGA rearing data_2013.csv")
+dat.meta2013 <- read_csv("Rcapito_MetamorphLog_2013.csv")
 
 # Use subset() function to create new dataframe for 2013 data
-master.met2013 <- subset(dat.meta2013, select = c(Year, Date.metamorphosed, Mass.g.metamorphosed, Fate.comments)) 
+master.met2013 <- subset(dat.meta2013, select = c(Year, Date.metamorphosed, Mass.g.metamorphosed, Fate.comments, Clutch.ID,
+                                                  Date.stocked, Date.eggs.hatched, Stocking.density, Tank.ID, Days.to.metamorphosis)) 
 
 # Import and subset 2015 data
 dat.meta2015 <- read_csv("Rcapito_MetamorphLog_2015.csv")
-master.met2015 <- subset(dat.meta2015, select = c(Year, Date.metamorphosed, Mass.g.metamorphosed, Fate.comments))
+master.met2015 <- subset(dat.meta2015, select = cYear, Date.metamorphosed, Mass.g.metamorphosed, Fate.comments, Clutch.ID,
+                         Date.stocked, Date.eggs.hatched, Stocking.density, Tank.ID, Days.to.metamorphosis)
 
 # Import and subset 2016 data
 dat.meta2016 <- read_csv("Rcapito_MetamorphLog_2016.csv")
-master.met2016 <- subset(dat.meta2016, select = c(Year, Date.metamorphosed, Mass.g.metamorphosed, Fate.comments))
+master.met2016 <- subset(dat.meta2016, select = c(Year, Date.metamorphosed, Mass.g.metamorphosed, Fate.comments, Clutch.ID,
+                                                  Date.stocked, Date.eggs.hatched, Stocking.density, Tank.ID, Days.to.metamorphosis))
 
 # Import and subset 2017 data
 dat.meta2017 <- read_csv("Rcapito_MetamorphLog_2017.csv")
-master.met2017 <- subset(dat.meta2017, select = c(Year, Date.metamorphosed, Mass.g.metamorphosed, Fate.comments))
+master.met2017 <- subset(dat.meta2017, select = c(Year, Date.metamorphosed, Mass.g.metamorphosed, Fate.comments, Clutch.ID,
+                                                  Date.stocked, Date.eggs.hatched, Stocking.density, Tank.ID, Days.to.metamorphosis))
 
 # Read 2018 data
 dat.meta2018 <- read_csv("Rcapito_MetamorphLog_2018.csv")
@@ -49,7 +55,8 @@ dat.meta2018.cleaned <- dat.meta2018 %>%
 write.csv(dat.meta2018.cleaned, "dat.meta2018.cleaned.csv", row.names = FALSE)
 
 # Merge into master file
-master.met2018 <- subset(dat.meta2018.cleaned, select = c(Year, Date.metamorphosed, Mass.g.metamorphosed, Fate.comments))
+master.met2018 <- subset(dat.meta2018.cleaned, select = c(Year, Date.metamorphosed, Mass.g.metamorphosed, Fate.comments, Clutch.ID,
+                         Date.stocked, Date.eggs.hatched, Stocking.density, Tank.ID, Days.to.metamorphosis))
 
 # Read 2019 data
 dat.meta2019 <- read_csv("Rcapito_MetamorphLog_2019.csv")
@@ -62,7 +69,8 @@ dat.meta2019.cleaned <- dat.meta2019 %>%
 write.csv(dat.meta2019.cleaned, "dat.meta2019.cleaned.csv", row.names = FALSE)
 
 # Merge into master file
-master.met2019 <- subset(dat.meta2019.cleaned, select = c(Year, Date.metamorphosed, Mass.g.metamorphosed, Fate.comments))
+master.met2019 <- subset(dat.meta2019.cleaned, select = c(Year, Date.metamorphosed, Mass.g.metamorphosed, Fate.comments, Clutch.ID,
+                                                          Date.stocked, Date.eggs.hatched, Stocking.density, Tank.ID, Days.to.metamorphosis))
 
 # Read 2021 data
 dat.meta2021 <- read_csv("Rcapito_MetamorphLog_2021.csv")
@@ -75,7 +83,8 @@ dat.meta2021.cleaned <- dat.meta2021 %>%
 write.csv(dat.meta2021.cleaned, "dat.meta2021.cleaned.csv", row.names = FALSE)
 
 # Merge into master file
-master.met2021 <- subset(dat.meta2021.cleaned, select = c(Year, Date.metamorphosed, Mass.g.metamorphosed, Fate.comments))
+master.met2021 <- subset(dat.meta2021.cleaned, select = c(Year, Date.metamorphosed, Mass.g.metamorphosed, Fate.comments, Clutch.ID,
+                                                          Date.stocked, Date.eggs.hatched, Stocking.density, Tank.ID, Days.to.metamorphosis))
 
 # Read 2022 data
 dat.meta2022 <- read_csv("Rcapito_MetamorphLog_2022.csv")
@@ -88,42 +97,22 @@ dat.meta2022.cleaned <- dat.meta2022 %>%
 write.csv(dat.meta2022.cleaned, "dat.meta2022.cleaned.csv", row.names = FALSE)
 
 # Merge into master file
-master.met2022 <- subset(dat.meta2022.cleaned, select = c(Year, Date.metamorphosed, Mass.g.metamorphosed, Fate.comments))
+master.met2022 <- subset(dat.meta2022.cleaned, select = c(Year, Date.metamorphosed, Mass.g.metamorphosed, Fate.comments, Clutch.ID,
+                                                          Date.stocked, Date.eggs.hatched, Stocking.density, Tank.ID, Days.to.metamorphosis))
 
 # Read and merge 2023 data 
 dat.meta2023 <- read_csv("Rcapito_MetamorphLog_2023.csv")
-master.met2023 <- subset(dat.meta2023, select = c(Year, Date.metamorphosed, Mass.g.metamorphosed, Fate.comments))
+master.met2023 <- subset(dat.meta2023, select = c(Year, Date.metamorphosed, Mass.g.metamorphosed, Fate.comments, Clutch.ID,
+                                                  Date.stocked, Date.eggs.hatched, Stocking.density, Tank.ID, Days.to.metamorphosis))
 
 # Read and merge 2024 data
-dat.meta2024 <- read_csv("Rcapito2024.cleaned2.csv")
-master.met2024 <- subset(dat.meta2024, select = c(Year, Date.metamorphosed, Mass.g.metamorphosed, Fate.comments))
+dat.meta2024 <- read_csv("Rcapito_MetamorphLog_2024csv")
+master.met2024 <- subset(dat.meta2024, select = c(Year, Date.metamorphosed, Mass.g.metamorphosed, Fate.comments, Clutch.ID,
+                                                  Date.stocked, Date.eggs.hatched, Stocking.density, Tank.ID, Days.to.metamorphosis))
 
 # Create a master dataset with all subsetted data files
 merged.Master <- rbind(master.met2009, master.met2012, master.met2013, master.met2015, master.met2016, master.met2017, master.met2018,
                        master.met2019, master.met2021, master.met2022, master.met2023, master.met2024)
-
-
-# Separating Date, Time, and Year columns from one "Date and Time" column in 2024 dataset
-
-# Read the CSV file
-Rcapito2024 <- read_csv("Rcapito2024.csv")
-
-# Convert the Date and Time column to a POSIXct object
-Rcapito2024$`Date and Time` <- mdy_hms(Rcapito2024$`Date and Time`, tz = "EST")
-
-# Extract Date, Time, and Year
-Rcapito2024.cleaned <- Rcapito2024 %>%
-  mutate(
-    Date = as.Date(`Date and Time`),                 # Extract date in YYYY-MM-DD format
-    Time = format(`Date and Time`, "%H:%M:%S"),      # Extract time in HH:MM:SS format
-    Year = year(`Date and Time`)                     # Extract year
-  )
-
-# Print the result
-print(Rcapito2024)
-
-# Save to csv
-write.csv(Rcapito2024.cleaned, "RCapito2024.cleaned.csv", row.names = FALSE)
 
 # Saving full merged master dataframe to source
 write.csv(merged.Master, "merged.Master.csv", row.names = FALSE) 
@@ -141,3 +130,32 @@ write.csv(merged.Master, "merged.Master.csv", row.names = FALSE)
 ## look into Sara Diamond's senior thesis for density data
 ## doing a model for what predicts days to metamorphosis in tanks
 ## does it matter if we combine years where density is not the same?
+
+
+
+##### Code that I used last semester but do not need currently #####
+
+# Separating Date, Time, and Year columns from one "Date and Time" column in 2024 dataset
+# Read the CSV file
+# Rcapito2024 <- read_csv("Rcapito2024.csv")
+
+# Convert the Date and Time column to a POSIXct object
+#Rcapito2024$`Date and Time` <- mdy_hms(Rcapito2024$`Date and Time`, tz = "EST")
+
+# Extract Date, Time, and Year
+#Rcapito2024.cleaned <- Rcapito2024 %>%
+#  mutate(
+#    Date = as.Date(`Date and Time`),                 # Extract date in YYYY-MM-DD format
+ #   Time = format(`Date and Time`, "%H:%M:%S"),      # Extract time in HH:MM:SS format
+  #  Year = year(`Date and Time`)                     # Extract year
+#  )
+
+# Print the result
+#print(Rcapito2024)
+
+# Save to csv
+#write.csv(Rcapito2024.cleaned, "RCapito2024.cleaned.csv", row.names = FALSE)
+
+# Saving full merged master dataframe to source
+#write.csv(merged.Master, "merged.Master.csv", row.names = FALSE) 
+
