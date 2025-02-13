@@ -31,8 +31,8 @@ master.met2013 <- subset(dat.meta2013, select = c(Year, Date.metamorphosed, Mass
 
 # Import and subset 2015 data
 dat.meta2015 <- read_csv("Rcapito_MetamorphLog_2015.csv")
-master.met2015 <- subset(dat.meta2015, select = cYear, Date.metamorphosed, Mass.g.metamorphosed, Fate.comments, Clutch.ID,
-                         Date.stocked, Date.eggs.hatched, Stocking.density, Tank.ID, Days.to.metamorphosis)
+master.met2015 <- subset(dat.meta2015, select = c(Year, Date.metamorphosed, Mass.g.metamorphosed, Fate.comments, Clutch.ID,
+                         Date.stocked, Date.eggs.hatched, Stocking.density, Tank.ID, Days.to.metamorphosis))
 
 # Import and subset 2016 data
 dat.meta2016 <- read_csv("Rcapito_MetamorphLog_2016.csv")
