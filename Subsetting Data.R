@@ -8,6 +8,7 @@ library(readr)
 library(dplyr)
 library(lubridate)
 
+
 # Import 2009-2011 data set
 dat.meta20092011 <- read_csv("Rcapito_MetamorphLog_2009_2011_Final.csv")
 
@@ -120,6 +121,38 @@ merged.Master <- rbind(master.met20092011, master.met2012, master.met2013, maste
 # Saving full merged master dataframe to source
 write.csv(merged.Master, "merged.Master.csv", row.names = FALSE) 
 
+# Read and merge 2009 weather data
+dat.weather2009 <- read_csv ("Weather_2009.csv", skip = 5)
+dat.weather2009 <- dat.weather2009 %>%
+  rename(tmax = 'tmax (deg c)', tmin = 'tmin (deg c)', prcp = 'prcp (mm/day)', vp = 'vp (Pa)')
+master.weather2009 <- subset(dat.weather2009, select = c(prcp, tmax, tmin, vp))
+
+# Read and merge 2010 weather data
+dat.weather2010 <- read_csv ("Weather_2010.csv")
+dat.weather2010 <- dat.weather2010 %>%
+  rename(tmax = 'tmax (deg c)', tmin = 'tmin (deg c)', prcp = 'prcp (mm/day)', vp = 'vp (Pa)')
+
+master.weather2010 <- subset(dat.weather2010, select = c(prcp, tmax, tmin, vp))
+
+# Read and merge 2011 weather data
+dat.weather2011 <- read_csv ("Weather_2011.csv")
+dat.weather2011 <- dat.weather2011 %>%
+  rename(tmax = 'tmax (deg c)', tmin = 'tmin (deg c)', prcp = 'prcp (mm/day)', vp = 'vp (Pa)')
+
+master.weather2011 <- subset(dat.weather2011, select = c(prcp, tmax, tmin, vp))
+
+# Read and merge 2012 weather data
+dat.weather2012 <- read_csv ("Weather_2012.csv")
+dat.weather2012 <- dat.weather2012 %>%
+  rename(tmax = 'tmax (deg c)', tmin = 'tmin (deg c)', prcp = 'prcp (mm/day)', vp = 'vp (Pa)')
+master.weather2012 <- subset(dat.weather2012, select = c(prcp, tmax, tmin, vp))
+
+# Read and merge 2015 weather data
+dat.weather2012 <- read_csv ("Weather_2012.csv")
+dat.weather2012 <- dat.weather2012 %>%
+  rename(tmax = 'tmax (deg c)', tmin = 'tmin (deg c)', prcp = 'prcp (mm/day)', vp = 'vp (Pa)')
+
+master.weather2012 <- subset(dat.weather2012, select = c(prcp, tmax, tmin, vp))
 
 ## TO DO
 
