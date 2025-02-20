@@ -1,31 +1,19 @@
 "Species","ID_No","Stocking.density","Tank.ID","Year","Date.metamorphosed","Mass.g.metamorphosed","Mark","Fate.comments","Mortality","Facility","Days.to.metamorphosis","Date.eggs.hatched","Clutch.ID","Date.stocked"
-"Lcapito",840,50,1,"2018","6/13/18",5.99,NA,NA,NA,"UGA",NA,NA,NA,NA
-"Lcapito",841,50,1,"2018","6/13/18",4.96,NA,NA,NA,"UGA",NA,NA,NA,NA
-"Lcapito",842,50,1,"2018","6/14/18",4.66,NA,NA,NA,"UGA",NA,NA,NA,NA
-"Lcapito",843,50,1,"2018","6/14/18",3.88,NA,NA,NA,"UGA",NA,NA,NA,NA
-"Lcapito",844,50,1,"2018","6/14/18",4.82,NA,"15mm tail",NA,"UGA",NA,NA,NA,NA
-"Lcapito",845,50,1,"2018","6/14/18",5.04,NA,NA,NA,"UGA",NA,NA,NA,NA
-"Lcapito",846,50,1,"2018","6/14/18",4.87,NA,NA,NA,"UGA",NA,NA,NA,NA
-"Lcapito",847,50,1,"2018","6/14/18",6.61,NA,NA,NA,"UGA",NA,NA,NA,NA
-"Lcapito",848,50,1,"2018","6/14/18",6.59,NA,NA,NA,"UGA",NA,NA,NA,NA
-"Lcapito",849,50,2,"2018","6/14/18",4.56,NA,NA,NA,"UGA",NA,NA,NA,NA
-"Lcapito",850,50,2,"2018","6/14/18",4.44,NA,NA,NA,"UGA",NA,NA,NA,NA
-"Lcapito",851,50,1,"2018","6/16/18",4.28,NA,NA,NA,"UGA",NA,NA,NA,NA
-"Lcapito",852,50,1,"2018","6/16/18",4.28,NA,NA,NA,"UGA",NA,NA,NA,NA
-"Lcapito",853,50,1,"2018","6/16/18",4.72,NA,NA,NA,"UGA",NA,NA,NA,NA
-"Lcapito",854,50,1,"2018","6/16/18",4.8,NA,NA,NA,"UGA",NA,NA,NA,NA
-"Lcapito",855,50,1,"2018","6/16/18",4.99,NA,NA,NA,"UGA",NA,NA,NA,NA
-"Lcapito",856,45,3,"2018","6/17/18",4.37,NA,NA,NA,"UGA",NA,NA,NA,NA
-"Lcapito",857,50,1,"2018","6/17/18",5.63,NA,NA,NA,"UGA",NA,NA,NA,NA
-"Lcapito",858,50,1,"2018","6/17/18",4.73,NA,NA,NA,"UGA",NA,NA,NA,NA
-"Lcapito",859,50,2,"2018","6/18/18",5.36,NA,NA,NA,"UGA",NA,NA,NA,NA
-"Lcapito",860,50,2,"2018","6/18/18",4.57,NA,NA,NA,"UGA",NA,NA,NA,NA
-"Lcapito",861,50,2,"2018","6/18/18",3.93,NA,NA,NA,"UGA",NA,NA,NA,NA
-"Lcapito",862,50,2,"2018","6/18/18",4.58,NA,NA,NA,"UGA",NA,NA,NA,NA
-"Lcapito",863,50,2,"2018","6/18/18",3.99,NA,NA,NA,"UGA",NA,NA,NA,NA
-"Lcapito",864,50,2,"2018","6/18/18",4.36,NA,NA,NA,"UGA",NA,NA,NA,NA
-"Lcapito",865,50,2,"2018","6/18/18",4.35,NA,NA,NA,"UGA",NA,NA,NA,NA
-"Lcapito",866,50,2,"2018","6/18/18",3.93,NA,NA,NA,"UGA",NA,NA,NA,NA
+"Lcapito",933,50,1,"2018","6/26/18",6.74,NA,"12mm tail",NA,"UGA",NA,NA,NA,NA
+"Lcapito",921,50,1,"2018","6/25/18",5.74,NA,NA,NA,"UGA",NA,NA,NA,NA
+"Lcapito",915,50,1,"2018","6/24/18",6,NA,NA,NA,"UGA",NA,NA,NA,NA
+"Lcapito",909,50,1,"2018","6/23/18",6.23,NA,"8mm tail",NA,"UGA",NA,NA,NA,NA
+"Lcapito",901,50,1,"2018","6/22/18",4.62,NA,NA,NA,"UGA",NA,NA,NA,NA
+"Lcapito",902,50,1,"2018","6/22/18",5.85,NA,NA,NA,"UGA",NA,NA,NA,NA
+"Lcapito",892,50,1,"2018","6/21/18",5.6,NA,"6mm tail",NA,"UGA",NA,NA,NA,NA
+"Lcapito",884,50,1,"2018","6/20/18",4.42,NA,NA,NA,"UGA",NA,NA,NA,NA
+"Lcapito",885,50,1,"2018","6/20/18",6.34,NA,"8mm tail",NA,"UGA",NA,NA,NA,NA
+"Lcapito",886,50,1,"2018","6/20/18",6.19,NA,NA,NA,"UGA",NA,NA,NA,NA
+"Lcapito",887,50,1,"2018","6/20/18",5.53,NA,"6mm tail",NA,"UGA",NA,NA,NA,NA
+"Lcapito",877,50,1,"2018","6/19/18",4.42,NA,NA,NA,"UGA",NA,NA,NA,NA
+"Lcapito",878,50,1,"2018","6/19/18",5.51,NA,NA,NA,"UGA",NA,NA,NA,NA
+"Lcapito",879,50,1,"2018","6/19/18",6,NA,NA,NA,"UGA",NA,NA,NA,NA
+"Lcapito",880,50,1,"2018","6/19/18",4.43,NA,NA,NA,"UGA",NA,NA,NA,NA
 "Lcapito",867,50,1,"2018","6/18/18",6.07,NA,NA,NA,"UGA",NA,NA,NA,NA
 "Lcapito",868,50,1,"2018","6/18/18",5.84,NA,NA,NA,"UGA",NA,NA,NA,NA
 "Lcapito",869,50,1,"2018","6/18/18",6.61,NA,NA,NA,"UGA",NA,NA,NA,NA
@@ -36,82 +24,94 @@
 "Lcapito",874,50,1,"2018","6/18/18",4.42,NA,"11mm tail",NA,"UGA",NA,NA,NA,NA
 "Lcapito",875,50,1,"2018","6/18/18",5.98,NA,"10mm tail",NA,"UGA",NA,NA,NA,NA
 "Lcapito",876,50,1,"2018","6/18/18",5.57,NA,NA,NA,"UGA",NA,NA,NA,NA
-"Lcapito",877,50,1,"2018","6/19/18",4.42,NA,NA,NA,"UGA",NA,NA,NA,NA
-"Lcapito",878,50,1,"2018","6/19/18",5.51,NA,NA,NA,"UGA",NA,NA,NA,NA
-"Lcapito",879,50,1,"2018","6/19/18",6,NA,NA,NA,"UGA",NA,NA,NA,NA
-"Lcapito",880,50,1,"2018","6/19/18",4.43,NA,NA,NA,"UGA",NA,NA,NA,NA
-"Lcapito",881,45,3,"2018","6/19/18",5.24,NA,NA,NA,"UGA",NA,NA,NA,NA
-"Lcapito",882,45,3,"2018","6/20/18",5.5,NA,NA,NA,"UGA",NA,NA,NA,NA
-"Lcapito",883,45,3,"2018","6/20/18",5.07,NA,NA,NA,"UGA",NA,NA,NA,NA
-"Lcapito",884,50,1,"2018","6/20/18",4.42,NA,NA,NA,"UGA",NA,NA,NA,NA
-"Lcapito",885,50,1,"2018","6/20/18",6.34,NA,"8mm tail",NA,"UGA",NA,NA,NA,NA
-"Lcapito",886,50,1,"2018","6/20/18",6.19,NA,NA,NA,"UGA",NA,NA,NA,NA
-"Lcapito",887,50,1,"2018","6/20/18",5.53,NA,"6mm tail",NA,"UGA",NA,NA,NA,NA
-"Lcapito",888,50,2,"2018","6/20/18",4.54,NA,NA,NA,"UGA",NA,NA,NA,NA
-"Lcapito",889,50,2,"2018","6/20/18",4.81,NA,"15mm tail",NA,"UGA",NA,NA,NA,NA
-"Lcapito",890,50,2,"2018","6/20/18",4.26,NA,NA,NA,"UGA",NA,NA,NA,NA
-"Lcapito",891,50,2,"2018","6/20/18",4.81,NA,"10mm tail",NA,"UGA",NA,NA,NA,NA
-"Lcapito",892,50,1,"2018","6/21/18",5.6,NA,"6mm tail",NA,"UGA",NA,NA,NA,NA
-"Lcapito",893,45,3,"2018","6/21/18",4.61,NA,NA,NA,"UGA",NA,NA,NA,NA
-"Lcapito",894,50,2,"2018","6/21/18",5.28,NA,"10mm tail",NA,"UGA",NA,NA,NA,NA
-"Lcapito",895,50,2,"2018","6/21/18",5.16,NA,"4mm tail",NA,"UGA",NA,NA,NA,NA
-"Lcapito",896,50,2,"2018","6/21/18",4.56,NA,NA,NA,"UGA",NA,NA,NA,NA
-"Lcapito",897,50,2,"2018","6/21/18",5.85,NA,"5mm tail",NA,"UGA",NA,NA,NA,NA
-"Lcapito",898,50,2,"2018","6/21/18",3.72,NA,NA,NA,"UGA",NA,NA,NA,NA
-"Lcapito",899,45,3,"2018","###############################################################################################################################################################################################################################################################",6.28,NA,"3mm tail",NA,"UGA",NA,NA,NA,NA
-"Lcapito",900,45,3,"2018","6/22/18",5.38,NA,NA,NA,"UGA",NA,NA,NA,NA
-"Lcapito",901,50,1,"2018","6/22/18",4.62,NA,NA,NA,"UGA",NA,NA,NA,NA
-"Lcapito",902,50,1,"2018","6/22/18",5.85,NA,NA,NA,"UGA",NA,NA,NA,NA
+"Lcapito",857,50,1,"2018","6/17/18",5.63,NA,NA,NA,"UGA",NA,NA,NA,NA
+"Lcapito",858,50,1,"2018","6/17/18",4.73,NA,NA,NA,"UGA",NA,NA,NA,NA
+"Lcapito",851,50,1,"2018","6/16/18",4.28,NA,NA,NA,"UGA",NA,NA,NA,NA
+"Lcapito",852,50,1,"2018","6/16/18",4.28,NA,NA,NA,"UGA",NA,NA,NA,NA
+"Lcapito",853,50,1,"2018","6/16/18",4.72,NA,NA,NA,"UGA",NA,NA,NA,NA
+"Lcapito",854,50,1,"2018","6/16/18",4.8,NA,NA,NA,"UGA",NA,NA,NA,NA
+"Lcapito",855,50,1,"2018","6/16/18",4.99,NA,NA,NA,"UGA",NA,NA,NA,NA
+"Lcapito",842,50,1,"2018","6/14/18",4.66,NA,NA,NA,"UGA",NA,NA,NA,NA
+"Lcapito",843,50,1,"2018","6/14/18",3.88,NA,NA,NA,"UGA",NA,NA,NA,NA
+"Lcapito",844,50,1,"2018","6/14/18",4.82,NA,"15mm tail",NA,"UGA",NA,NA,NA,NA
+"Lcapito",845,50,1,"2018","6/14/18",5.04,NA,NA,NA,"UGA",NA,NA,NA,NA
+"Lcapito",846,50,1,"2018","6/14/18",4.87,NA,NA,NA,"UGA",NA,NA,NA,NA
+"Lcapito",847,50,1,"2018","6/14/18",6.61,NA,NA,NA,"UGA",NA,NA,NA,NA
+"Lcapito",848,50,1,"2018","6/14/18",6.59,NA,NA,NA,"UGA",NA,NA,NA,NA
+"Lcapito",840,50,1,"2018","6/13/18",5.99,NA,NA,NA,"UGA",NA,NA,NA,NA
+"Lcapito",841,50,1,"2018","6/13/18",4.96,NA,NA,NA,"UGA",NA,NA,NA,NA
+"Lcapito",950,50,2,"2018","7/4/18",4.63,NA,NA,NA,"UGA",NA,NA,NA,NA
+"Lcapito",948,50,2,"2018","7/2/18",5.73,NA,NA,NA,"UGA",NA,NA,NA,NA
+"Lcapito",944,50,2,"2018","6/30/18",5.89,NA,NA,NA,"UGA",NA,NA,NA,NA
+"Lcapito",938,50,2,"2018","6/28/18",6.46,NA,NA,NA,"UGA",NA,NA,NA,NA
+"Lcapito",939,50,2,"2018","6/28/18",5.04,NA,NA,NA,"UGA",NA,NA,NA,NA
+"Lcapito",930,50,2,"2018","6/26/18",5.4,NA,NA,NA,"UGA",NA,NA,NA,NA
+"Lcapito",931,50,2,"2018","6/26/18",4.73,NA,NA,NA,"UGA",NA,NA,NA,NA
+"Lcapito",924,50,2,"2018","6/25/18",4.74,NA,NA,NA,"UGA",NA,NA,NA,NA
+"Lcapito",925,50,2,"2018","6/25/18",6.51,NA,NA,NA,"UGA",NA,NA,NA,NA
+"Lcapito",926,50,2,"2018","6/25/18",5.48,NA,NA,NA,"UGA",NA,NA,NA,NA
+"Lcapito",927,50,2,"2018","6/25/18",4.58,NA,NA,NA,"UGA",NA,NA,NA,NA
+"Lcapito",928,50,2,"2018","6/25/18",5.51,NA,NA,NA,"UGA",NA,NA,NA,NA
+"Lcapito",916,50,2,"2018","6/24/18",4.67,NA,NA,NA,"UGA",NA,NA,NA,NA
+"Lcapito",913,50,2,"2018","6/23/18",5.97,NA,"6mm tail",NA,"UGA",NA,NA,NA,NA
+"Lcapito",914,50,2,"2018","6/23/18",4.7,NA,"5mm tail",NA,"UGA",NA,NA,NA,NA
 "Lcapito",903,50,2,"2018","6/22/18",5.02,NA,"3mm tail",NA,"UGA",NA,NA,NA,NA
 "Lcapito",904,50,2,"2018","6/22/18",5.57,NA,NA,NA,"UGA",NA,NA,NA,NA
 "Lcapito",905,50,2,"2018","6/22/18",5.56,NA,"5mm tail",NA,"UGA",NA,NA,NA,NA
 "Lcapito",906,50,2,"2018","6/22/18",4.33,NA,"2mm tail",NA,"UGA",NA,NA,NA,NA
 "Lcapito",907,50,2,"2018","6/22/18",5.03,NA,NA,NA,"UGA",NA,NA,NA,NA
 "Lcapito",908,50,2,"2018","6/22/18",5.97,NA,"6mm tail",NA,"UGA",NA,NA,NA,NA
-"Lcapito",909,50,1,"2018","6/23/18",6.23,NA,"8mm tail",NA,"UGA",NA,NA,NA,NA
-"Lcapito",910,45,3,"2018","6/23/18",5.23,NA,NA,NA,"UGA",NA,NA,NA,NA
-"Lcapito",911,45,3,"2018","6/23/18",5.04,NA,"10mm tail",NA,"UGA",NA,NA,NA,NA
-"Lcapito",912,45,3,"2018","6/23/18",5.55,NA,"4mm tail",NA,"UGA",NA,NA,NA,NA
-"Lcapito",913,50,2,"2018","6/23/18",5.97,NA,"6mm tail",NA,"UGA",NA,NA,NA,NA
-"Lcapito",914,50,2,"2018","6/23/18",4.7,NA,"5mm tail",NA,"UGA",NA,NA,NA,NA
-"Lcapito",915,50,1,"2018","6/24/18",6,NA,NA,NA,"UGA",NA,NA,NA,NA
-"Lcapito",916,50,2,"2018","6/24/18",4.67,NA,NA,NA,"UGA",NA,NA,NA,NA
+"Lcapito",894,50,2,"2018","6/21/18",5.28,NA,"10mm tail",NA,"UGA",NA,NA,NA,NA
+"Lcapito",895,50,2,"2018","6/21/18",5.16,NA,"4mm tail",NA,"UGA",NA,NA,NA,NA
+"Lcapito",896,50,2,"2018","6/21/18",4.56,NA,NA,NA,"UGA",NA,NA,NA,NA
+"Lcapito",897,50,2,"2018","6/21/18",5.85,NA,"5mm tail",NA,"UGA",NA,NA,NA,NA
+"Lcapito",898,50,2,"2018","6/21/18",3.72,NA,NA,NA,"UGA",NA,NA,NA,NA
+"Lcapito",888,50,2,"2018","6/20/18",4.54,NA,NA,NA,"UGA",NA,NA,NA,NA
+"Lcapito",889,50,2,"2018","6/20/18",4.81,NA,"15mm tail",NA,"UGA",NA,NA,NA,NA
+"Lcapito",890,50,2,"2018","6/20/18",4.26,NA,NA,NA,"UGA",NA,NA,NA,NA
+"Lcapito",891,50,2,"2018","6/20/18",4.81,NA,"10mm tail",NA,"UGA",NA,NA,NA,NA
+"Lcapito",859,50,2,"2018","6/18/18",5.36,NA,NA,NA,"UGA",NA,NA,NA,NA
+"Lcapito",860,50,2,"2018","6/18/18",4.57,NA,NA,NA,"UGA",NA,NA,NA,NA
+"Lcapito",861,50,2,"2018","6/18/18",3.93,NA,NA,NA,"UGA",NA,NA,NA,NA
+"Lcapito",862,50,2,"2018","6/18/18",4.58,NA,NA,NA,"UGA",NA,NA,NA,NA
+"Lcapito",863,50,2,"2018","6/18/18",3.99,NA,NA,NA,"UGA",NA,NA,NA,NA
+"Lcapito",864,50,2,"2018","6/18/18",4.36,NA,NA,NA,"UGA",NA,NA,NA,NA
+"Lcapito",865,50,2,"2018","6/18/18",4.35,NA,NA,NA,"UGA",NA,NA,NA,NA
+"Lcapito",866,50,2,"2018","6/18/18",3.93,NA,NA,NA,"UGA",NA,NA,NA,NA
+"Lcapito",849,50,2,"2018","6/14/18",4.56,NA,NA,NA,"UGA",NA,NA,NA,NA
+"Lcapito",850,50,2,"2018","6/14/18",4.44,NA,NA,NA,"UGA",NA,NA,NA,NA
+"Lcapito",899,45,3,"2018",NA,6.28,NA,"3mm tail",NA,"UGA",NA,NA,NA,NA
+"Lcapito",946,45,3,"2018",NA,6.02,NA,NA,NA,"UGA",NA,NA,NA,NA
+"Lcapito",947,45,3,"2018",NA,5.95,NA,NA,NA,"UGA",NA,NA,NA,NA
+"Lcapito",954,45,3,"2018","7/5/18",6.62,NA,"3-5mm tail",NA,"UGA",NA,NA,NA,NA
+"Lcapito",951,45,3,"2018","7/4/18",5.91,NA,"3mm tail",NA,"UGA",NA,NA,NA,NA
+"Lcapito",952,45,3,"2018","7/4/18",6.8,NA,"5mm tail",NA,"UGA",NA,NA,NA,NA
+"Lcapito",953,45,3,"2018","7/4/18",7.79,NA,"10mm tail",NA,"UGA",NA,NA,NA,NA
+"Lcapito",949,45,3,"2018","7/3/18",6.28,NA,NA,NA,"UGA",NA,NA,NA,NA
+"Lcapito",945,45,3,"2018","7/1/18",5.86,NA,NA,NA,"UGA",NA,NA,NA,NA
+"Lcapito",941,45,3,"2018","6/30/18",5.68,NA,NA,NA,"UGA",NA,NA,NA,NA
+"Lcapito",942,45,3,"2018","6/30/18",6.52,NA,NA,NA,"UGA",NA,NA,NA,NA
+"Lcapito",943,45,3,"2018","6/30/18",6.54,NA,NA,NA,"UGA",NA,NA,NA,NA
+"Lcapito",940,45,3,"2018","6/29/18",5.15,NA,NA,NA,"UGA",NA,NA,NA,NA
+"Lcapito",936,45,3,"2018","6/28/18",6.03,NA,NA,NA,"UGA",NA,NA,NA,NA
+"Lcapito",937,45,3,"2018","6/28/18",5.65,NA,NA,NA,"UGA",NA,NA,NA,NA
+"Lcapito",934,45,3,"2018","6/27/18",5.01,NA,NA,NA,"UGA",NA,NA,NA,NA
+"Lcapito",935,45,3,"2018","6/27/18",4.93,NA,NA,NA,"UGA",NA,NA,NA,NA
+"Lcapito",929,45,3,"2018","6/26/18",6.59,NA,NA,NA,"UGA",NA,NA,NA,NA
+"Lcapito",932,45,3,"2018","6/26/18",5.13,NA,"pulled 6/25 from tank, long tail",NA,"UGA",NA,NA,NA,NA
+"Lcapito",922,45,3,"2018","6/25/18",5.84,NA,NA,NA,"UGA",NA,NA,NA,NA
+"Lcapito",923,45,3,"2018","6/25/18",4.52,NA,NA,NA,"UGA",NA,NA,NA,NA
 "Lcapito",917,45,3,"2018","6/24/18",4.3,NA,NA,NA,"UGA",NA,NA,NA,NA
 "Lcapito",918,45,3,"2018","6/24/18",4.62,NA,NA,NA,"UGA",NA,NA,NA,NA
 "Lcapito",919,45,3,"2018","6/24/18",4.51,NA,NA,NA,"UGA",NA,NA,NA,NA
 "Lcapito",920,45,3,"2018","6/24/18",5.99,NA,NA,NA,"UGA",NA,NA,NA,NA
-"Lcapito",921,50,1,"2018","6/25/18",5.74,NA,NA,NA,"UGA",NA,NA,NA,NA
-"Lcapito",922,45,3,"2018","6/25/18",5.84,NA,NA,NA,"UGA",NA,NA,NA,NA
-"Lcapito",923,45,3,"2018","6/25/18",4.52,NA,NA,NA,"UGA",NA,NA,NA,NA
-"Lcapito",924,50,2,"2018","6/25/18",4.74,NA,NA,NA,"UGA",NA,NA,NA,NA
-"Lcapito",925,50,2,"2018","6/25/18",6.51,NA,NA,NA,"UGA",NA,NA,NA,NA
-"Lcapito",926,50,2,"2018","6/25/18",5.48,NA,NA,NA,"UGA",NA,NA,NA,NA
-"Lcapito",927,50,2,"2018","6/25/18",4.58,NA,NA,NA,"UGA",NA,NA,NA,NA
-"Lcapito",928,50,2,"2018","6/25/18",5.51,NA,NA,NA,"UGA",NA,NA,NA,NA
-"Lcapito",929,45,3,"2018","6/26/18",6.59,NA,NA,NA,"UGA",NA,NA,NA,NA
-"Lcapito",930,50,2,"2018","6/26/18",5.4,NA,NA,NA,"UGA",NA,NA,NA,NA
-"Lcapito",931,50,2,"2018","6/26/18",4.73,NA,NA,NA,"UGA",NA,NA,NA,NA
-"Lcapito",932,45,3,"2018","6/26/18",5.13,NA,"pulled 6/25 from tank, long tail",NA,"UGA",NA,NA,NA,NA
-"Lcapito",933,50,1,"2018","6/26/18",6.74,NA,"12mm tail",NA,"UGA",NA,NA,NA,NA
-"Lcapito",934,45,3,"2018","6/27/18",5.01,NA,NA,NA,"UGA",NA,NA,NA,NA
-"Lcapito",935,45,3,"2018","6/27/18",4.93,NA,NA,NA,"UGA",NA,NA,NA,NA
-"Lcapito",936,45,3,"2018","6/28/18",6.03,NA,NA,NA,"UGA",NA,NA,NA,NA
-"Lcapito",937,45,3,"2018","6/28/18",5.65,NA,NA,NA,"UGA",NA,NA,NA,NA
-"Lcapito",938,50,2,"2018","6/28/18",6.46,NA,NA,NA,"UGA",NA,NA,NA,NA
-"Lcapito",939,50,2,"2018","6/28/18",5.04,NA,NA,NA,"UGA",NA,NA,NA,NA
-"Lcapito",940,45,3,"2018","6/29/18",5.15,NA,NA,NA,"UGA",NA,NA,NA,NA
-"Lcapito",941,45,3,"2018","6/30/18",5.68,NA,NA,NA,"UGA",NA,NA,NA,NA
-"Lcapito",942,45,3,"2018","6/30/18",6.52,NA,NA,NA,"UGA",NA,NA,NA,NA
-"Lcapito",943,45,3,"2018","6/30/18",6.54,NA,NA,NA,"UGA",NA,NA,NA,NA
-"Lcapito",944,50,2,"2018","6/30/18",5.89,NA,NA,NA,"UGA",NA,NA,NA,NA
-"Lcapito",945,45,3,"2018","7/1/18",5.86,NA,NA,NA,"UGA",NA,NA,NA,NA
-"Lcapito",946,45,3,"2018","###############################################################################################################################################################################################################################################################",6.02,NA,NA,NA,"UGA",NA,NA,NA,NA
-"Lcapito",947,45,3,"2018","###############################################################################################################################################################################################################################################################",5.95,NA,NA,NA,"UGA",NA,NA,NA,NA
-"Lcapito",948,50,2,"2018","7/2/18",5.73,NA,NA,NA,"UGA",NA,NA,NA,NA
-"Lcapito",949,45,3,"2018","7/3/18",6.28,NA,NA,NA,"UGA",NA,NA,NA,NA
-"Lcapito",950,50,2,"2018","7/4/18",4.63,NA,NA,NA,"UGA",NA,NA,NA,NA
-"Lcapito",951,45,3,"2018","7/4/18",5.91,NA,"3mm tail",NA,"UGA",NA,NA,NA,NA
-"Lcapito",952,45,3,"2018","7/4/18",6.8,NA,"5mm tail",NA,"UGA",NA,NA,NA,NA
-"Lcapito",953,45,3,"2018","7/4/18",7.79,NA,"10mm tail",NA,"UGA",NA,NA,NA,NA
-"Lcapito",954,45,3,"2018","7/5/18",6.62,NA,"3-5mm tail",NA,"UGA",NA,NA,NA,NA
+"Lcapito",910,45,3,"2018","6/23/18",5.23,NA,NA,NA,"UGA",NA,NA,NA,NA
+"Lcapito",911,45,3,"2018","6/23/18",5.04,NA,"10mm tail",NA,"UGA",NA,NA,NA,NA
+"Lcapito",912,45,3,"2018","6/23/18",5.55,NA,"4mm tail",NA,"UGA",NA,NA,NA,NA
+"Lcapito",900,45,3,"2018","6/22/18",5.38,NA,NA,NA,"UGA",NA,NA,NA,NA
+"Lcapito",893,45,3,"2018","6/21/18",4.61,NA,NA,NA,"UGA",NA,NA,NA,NA
+"Lcapito",882,45,3,"2018","6/20/18",5.5,NA,NA,NA,"UGA",NA,NA,NA,NA
+"Lcapito",883,45,3,"2018","6/20/18",5.07,NA,NA,NA,"UGA",NA,NA,NA,NA
+"Lcapito",881,45,3,"2018","6/19/18",5.24,NA,NA,NA,"UGA",NA,NA,NA,NA
+"Lcapito",856,45,3,"2018","6/17/18",4.37,NA,NA,NA,"UGA",NA,NA,NA,NA
 NA,NA,NA,NA,"2018",NA,5.302,NA,NA,NA,NA,NA,NA,NA,NA
