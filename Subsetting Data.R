@@ -16,12 +16,29 @@ dat.meta20092011 <- read_csv("Rcapito_MetamorphLog_2009_2011_Final.csv")
 master.met20092011 <- subset(dat.meta20092011, select = c(Year, Date.metamorphosed, Mass.g.metamorphosed, Fate.comments, Clutch.ID,
                                                           Date.stocked, Date.eggs.hatched, Stocking.density, Tank.ID, Days.to.metamorphosis)) 
 
+# Subtract date stocked from date metamorphosed to get days to metamorphosis
+dat.meta20092011 <- dat.meta20092011 %>%
+  mutate(
+    Date.stocked = mdy(Date.stocked),  # Change to dmy() or ymd() if needed
+    Date.metamorphosed = mdy(Date.metamorphosed)
+  )
+dat.meta20092011 <- dat.meta20092011 %>%
+  mutate(Days.to.metamorphosis = as.numeric(Date.metamorphosed - Date.stocked))
+
 # Import 2012 data set
 dat.meta2012 <- read_csv("Rcapito_MetamorphLog_2012.csv")
 
 # Use subset() function to create a new dataframe for 2012 data
 master.met2012 <- subset(dat.meta2012, select = c(Year, Date.metamorphosed, Mass.g.metamorphosed, Fate.comments, Clutch.ID,
                                                   Date.stocked, Date.eggs.hatched, Stocking.density, Tank.ID, Days.to.metamorphosis)) 
+# Subtract date stocked from date metamorphosed to get days to metamorphosis
+dat.meta2012 <- dat.meta2012 %>%
+  mutate(
+    Date.stocked = mdy(Date.stocked),  # Change to dmy() or ymd() if needed
+    Date.metamorphosed = mdy(Date.metamorphosed)
+  )
+dat.meta2012 <- dat.meta2012 %>%
+  mutate(Days.to.metamorphosis = as.numeric(Date.metamorphosed - Date.stocked))
 
 # Import 2013 data set
 dat.meta2013 <- read_csv("Rcapito_MetamorphLog_2013.csv")
@@ -29,19 +46,59 @@ dat.meta2013 <- read_csv("Rcapito_MetamorphLog_2013.csv")
 # Use subset() function to create new dataframe for 2013 data
 master.met2013 <- subset(dat.meta2013, select = c(Year, Date.metamorphosed, Mass.g.metamorphosed, Fate.comments, Clutch.ID,
                                                   Date.stocked, Date.eggs.hatched, Stocking.density, Tank.ID, Days.to.metamorphosis)) 
+# Subtract date stocked from date metamorphosed to get days to metamorphosis
+dat.meta2013 <- dat.meta2013 %>%
+  mutate(
+    Date.stocked = mdy(Date.stocked),  # Change to dmy() or ymd() if needed
+    Date.metamorphosed = mdy(Date.metamorphosed)
+  )
+dat.meta2013 <- dat.meta2013 %>%
+  mutate(Days.to.metamorphosis = as.numeric(Date.metamorphosed - Date.stocked))
 
 # Import and subset 2015 data
 dat.meta2015 <- read_csv("Rcapito_MetamorphLog_2015.csv")
+
+# Subtract date stocked from date metamorphosed to get days to metamorphosis
+dat.meta2015 <- dat.meta2015 %>%
+  mutate(
+    Date.stocked = mdy(Date.stocked),  # Change to dmy() or ymd() if needed
+    Date.metamorphosed = mdy(Date.metamorphosed)
+  )
+dat.meta2015 <- dat.meta2015 %>%
+  mutate(Days.to.metamorphosis = as.numeric(Date.metamorphosed - Date.stocked))
+
 master.met2015 <- subset(dat.meta2015, select = c(Year, Date.metamorphosed, Mass.g.metamorphosed, Fate.comments, Clutch.ID,
                          Date.stocked, Date.eggs.hatched, Stocking.density, Tank.ID, Days.to.metamorphosis))
 
-# Import and subset 2016 data
+# Import 2016 data
 dat.meta2016 <- read_csv("Rcapito_MetamorphLog_2016.csv")
+
+# Subtract date stocked from date metamorphosed to get days to metamorphosis
+dat.meta2016 <- dat.meta2016 %>%
+  mutate(
+    Date.stocked = mdy(Date.stocked),  # Change to dmy() or ymd() if needed
+    Date.metamorphosed = mdy(Date.metamorphosed)
+  )
+dat.meta2016 <- dat.meta2016 %>%
+  mutate(Days.to.metamorphosis = as.numeric(Date.metamorphosed - Date.stocked))
+
+# Subset 2016 data
 master.met2016 <- subset(dat.meta2016, select = c(Year, Date.metamorphosed, Mass.g.metamorphosed, Fate.comments, Clutch.ID,
                                                   Date.stocked, Date.eggs.hatched, Stocking.density, Tank.ID, Days.to.metamorphosis))
 
-# Import and subset 2017 data
+# Import 2017 data
 dat.meta2017 <- read_csv("Rcapito_MetamorphLog_2017.csv")
+
+# Subtract date stocked from date metamorphosed to get days to metamorphosis
+dat.meta2017 <- dat.meta2017 %>%
+  mutate(
+    Date.stocked = mdy(Date.stocked),  # Change to dmy() or ymd() if needed
+    Date.metamorphosed = mdy(Date.metamorphosed)
+  )
+dat.meta2017 <- dat.meta2017 %>%
+  mutate(Days.to.metamorphosis = as.numeric(Date.metamorphosed - Date.stocked))
+
+# Subset 2017 data
 master.met2017 <- subset(dat.meta2017, select = c(Year, Date.metamorphosed, Mass.g.metamorphosed, Fate.comments, Clutch.ID,
                                                   Date.stocked, Date.eggs.hatched, Stocking.density, Tank.ID, Days.to.metamorphosis))
 
@@ -54,6 +111,15 @@ dat.meta2018.cleaned <- dat.meta2018 %>%
 
 # Save the modified dataframe back to a CSV file
 write.csv(dat.meta2018.cleaned, "dat.meta2018.cleaned.csv", row.names = FALSE)
+
+# Subtract date stocked from date metamorphosed to get days to metamorphosis
+dat.meta2018.cleaned <- dat.meta2018.cleaned %>%
+  mutate(
+    Date.stocked = mdy(Date.stocked),  # Change to dmy() or ymd() if needed
+    Date.metamorphosed = mdy(Date.metamorphosed)
+  )
+dat.meta2018.cleaned <- dat.meta2018.cleaned %>%
+  mutate(Days.to.metamorphosis = as.numeric(Date.metamorphosed - Date.stocked))
 
 # Merge into master file
 master.met2018 <- subset(dat.meta2018.cleaned, select = c(Year, Date.metamorphosed, Mass.g.metamorphosed, Fate.comments, Clutch.ID,
@@ -69,11 +135,31 @@ dat.meta2019.cleaned <- dat.meta2019 %>%
 # Save the modified dataframe back to a CSV file
 write.csv(dat.meta2019.cleaned, "dat.meta2019.cleaned.csv", row.names = FALSE)
 
+# Subtract date stocked from date metamorphosed to get days to metamorphosis
+dat.meta2019.cleaned <- dat.meta2019.cleaned %>%
+  mutate(
+    Date.stocked = mdy(Date.stocked),  # Change to dmy() or ymd() if needed
+    Date.metamorphosed = mdy(Date.metamorphosed)
+  )
+dat.meta2019.cleaned <- dat.meta2019.cleaned %>%
+  mutate(Days.to.metamorphosis = as.numeric(Date.metamorphosed - Date.stocked))
+
 # Merge into master file
 master.met2019 <- subset(dat.meta2019.cleaned, select = c(Year, Date.metamorphosed, Mass.g.metamorphosed, Fate.comments, Clutch.ID,
                                                           Date.stocked, Date.eggs.hatched, Stocking.density, Tank.ID, Days.to.metamorphosis))
-# Import and subset 2020 data
+# Import 2020 data
 dat.meta2020 <- read_csv("Rcapito_MetamorphLog_2020.csv")
+
+# Subtract date stocked from date metamorphosed to get days to metamorphosis
+dat.meta2020 <- dat.meta2020 %>%
+  mutate(
+    Date.stocked = mdy(Date.stocked),  # Change to dmy() or ymd() if needed
+    Date.metamorphosed = mdy(Date.metamorphosed)
+  )
+dat.meta2020 <- dat.meta2020 %>%
+  mutate(Days.to.metamorphosis = as.numeric(Date.metamorphosed - Date.stocked))
+
+# Subset and merge into master file
 master.met2020 <- subset(dat.meta2020, select = c(Year, Date.metamorphosed, Mass.g.metamorphosed, Fate.comments, Clutch.ID,
                                                   Date.stocked, Date.eggs.hatched, Stocking.density, Tank.ID, Days.to.metamorphosis))
 # Read 2021 data
@@ -82,6 +168,15 @@ dat.meta2021 <- read_csv("Rcapito_MetamorphLog_2021.csv")
 # Populate 2021 year columns shown as N/A
 dat.meta2021.cleaned <- dat.meta2021 %>%
   mutate(Year = "2021")
+
+# Subtract date stocked from date metamorphosed to get days to metamorphosis
+dat.meta2021.cleaned <- dat.meta2021.cleaned %>%
+  mutate(
+    Date.stocked = mdy(Date.stocked),  # Change to dmy() or ymd() if needed
+    Date.metamorphosed = mdy(Date.metamorphosed)
+  )
+dat.meta2021.cleaned <- dat.meta2021.cleaned %>%
+  mutate(Days.to.metamorphosis = as.numeric(Date.metamorphosed - Date.stocked))
 
 # Save the modified dataframe back to a CSV file
 write.csv(dat.meta2021.cleaned, "dat.meta2021.cleaned.csv", row.names = FALSE)
@@ -100,17 +195,46 @@ dat.meta2022.cleaned <- dat.meta2022 %>%
 # Save the modified dataframe back to a CSV file
 write.csv(dat.meta2022.cleaned, "dat.meta2022.cleaned.csv", row.names = FALSE)
 
+# Subtract date stocked from date metamorphosed to get days to metamorphosis
+dat.meta2022.cleaned <- dat.meta2022.cleaned %>%
+  mutate(
+    Date.stocked = mdy(Date.stocked),  # Change to dmy() or ymd() if needed
+    Date.metamorphosed = mdy(Date.metamorphosed)
+  )
+dat.meta2022.cleaned <- dat.meta2022.cleaned %>%
+  mutate(Days.to.metamorphosis = as.numeric(Date.metamorphosed - Date.stocked))
+
 # Merge into master file
 master.met2022 <- subset(dat.meta2022.cleaned, select = c(Year, Date.metamorphosed, Mass.g.metamorphosed, Fate.comments, Clutch.ID,
                                                           Date.stocked, Date.eggs.hatched, Stocking.density, Tank.ID, Days.to.metamorphosis))
 
 # Read and merge 2023 data 
 dat.meta2023 <- read_csv("Rcapito_MetamorphLog_2023.csv")
+
+# Subtract date stocked from date metamorphosed to get days to metamorphosis
+dat.meta2023 <- dat.meta2023 %>%
+  mutate(
+    Date.stocked = mdy(Date.stocked),  # Change to dmy() or ymd() if needed
+    Date.metamorphosed = mdy(Date.metamorphosed)
+  )
+dat.meta2023 <- dat.meta2023 %>%
+  mutate(Days.to.metamorphosis = as.numeric(Date.metamorphosed - Date.stocked))
+
 master.met2023 <- subset(dat.meta2023, select = c(Year, Date.metamorphosed, Mass.g.metamorphosed, Fate.comments, Clutch.ID,
                                                   Date.stocked, Date.eggs.hatched, Stocking.density, Tank.ID, Days.to.metamorphosis))
 
 # Read and merge 2024 data
 dat.meta2024 <- read_csv("Rcapito_MetamorphLog_2024.csv")
+
+# Subtract date stocked from date metamorphosed to get days to metamorphosis
+dat.meta2024 <- dat.meta2024 %>%
+  mutate(
+    Date.stocked = mdy(Date.stocked),  # Change to dmy() or ymd() if needed
+    Date.metamorphosed = mdy(Date.metamorphosed)
+  )
+dat.meta2024 <- dat.meta2024 %>%
+  mutate(Days.to.metamorphosis = as.numeric(Date.metamorphosed - Date.stocked))
+
 master.met2024 <- subset(dat.meta2024, select = c(Year, Date.metamorphosed, Mass.g.metamorphosed, Fate.comments, Clutch.ID,
                                                   Date.stocked, Date.eggs.hatched, Stocking.density, Tank.ID, Days.to.metamorphosis))
 
