@@ -1,5 +1,5 @@
 ## Primary Investigators: Vanessa Terrell and Morgan Kaplan
-## Last Edited: 02/13/24
+## Last Edited: 02/21/25
 ## Goal of this code: working to subset data from 2009-2024 and compile into a master datafile
 
 
@@ -345,60 +345,187 @@ weather_summary <- merged.Master.weather %>%
   mutate(temp_mean = (tmin + tmax) / 2) %>%  # Create average temperature column
   group_by(year) %>%
   summarise(
-    # Temperature statistics (from temp_mean)
-    temp_min = min(temp_mean, na.rm = TRUE),
+    # Temperature statistics
+    temp_min = min(tmin, na.rm = TRUE),
     temp_median = median(temp_mean, na.rm = TRUE),
     temp_mean = mean(temp_mean, na.rm = TRUE),
-    temp_max = max(temp_mean, na.rm = TRUE),
+    temp_max = max(tmax, na.rm = TRUE),  # Ensure max is calculated from tmax
     
     # Precipitation statistics
-    prcp_cumulative = sum(prcp, na.rm = TRUE),
-    prcp_mean = mean(prcp, na.rm = TRUE),
-    prcp_median = median(prcp, na.rm = TRUE),
+    prcp_cumulative = sum(prcp, na.rm = TRUE),  # Total precipitation for the year
+    prcp_mean = mean(prcp, na.rm = TRUE),       # Average precipitation for the year
+    prcp_median = median(prcp, na.rm = TRUE),   # Median precipitation for the year
     
     # Vapor pressure statistics
-    vp_min = min(vp, na.rm = TRUE),
-    vp_median = median(vp, na.rm = TRUE),
-    vp_mean = mean(vp, na.rm = TRUE),
-    vp_max = max(vp, na.rm = TRUE)
+    vp_min = min(vp, na.rm = TRUE),  # Minimum vapor pressure
+    vp_median = median(vp, na.rm = TRUE),  # Median vapor pressure
+    vp_mean = mean(vp, na.rm = TRUE),  # Mean vapor pressure
+    vp_max = max(vp, na.rm = TRUE)  # Maximum vapor pressure
   )
 
-
-library(ggplot2)
-
-ggplot(weather_summary, aes(x = year, y = temp_mean)) +
-  geom_line(color = "steelblue", size = 1) +
-  geom_point(color = "darkblue", size = 2) +
-  labs(
-    title = "Mean Temperature per Year",
-    x = "Year",
-    y = "Mean Temperature (°C)"
-  ) +
-  theme_minimal()
-
-
-library(ggplot2)
-
-ggplot(weather_summary) +
-  # Mean temperature line and points (steelblue)
-  geom_line(aes(x = year, y = temp_mean), color = "steelblue", size = 1) +
-  geom_point(aes(x = year, y = temp_mean), color = "darkblue", size = 2) +
+# Graphing temp stats per year
+ggplot(weather_summary, aes(x = year)) +
+  # Plot temp_max first
+  geom_line(aes(y = temp_max, color = "Max"), size = 1, na.rm = TRUE) +
+  geom_point(aes(y = temp_max, color = "Max"), size = 2, na.rm = TRUE) +
   
-  # Max temperature line and points (red)
-  geom_line(aes(x = year, y = temp_max), color = "red", size = 1) +
-  geom_point(aes(x = year, y = temp_max), color = "red", size = 2) +
+  # Plot temp_min second
+  geom_line(aes(y = temp_min, color = "Min"), size = 1, na.rm = TRUE) +
+  geom_point(aes(y = temp_min, color = "Min"), size = 2, na.rm = TRUE) +
   
-  # Min temperature line and points (black)
-  geom_line(aes(x = year, y = temp_min), color = "black", size = 1) +
-  geom_point(aes(x = year, y = temp_min), color = "black", size = 2) +
+  # Plot temp_mean last
+  geom_line(aes(y = temp_mean, color = "Mean"), size = 1, na.rm = TRUE) +
+  geom_point(aes(y = temp_mean, color = "Mean"), size = 2, na.rm = TRUE) +
+  
+  # Manual color scale
+  scale_color_manual(values = c("Mean" = "steelblue", "Max" = "red", "Min" = "black")) +
   
   labs(
     title = "Temperature Statistics per Year",
     x = "Year",
-    y = "Temperature (°C)"
+    y = "Temperature (°C)",
+    color = "Temperature Type"
   ) +
-  theme_minimal()
+  theme_minimal() +
+  theme(
+    plot.title = element_text(hjust = 0.5, family = "serif"),
+    text = element_text(family = "serif")
+  )
 
+
+
+# Summarize Days.to.metamorphosis by year
+# Assuming merged.Master.met is already loaded
+merged.Master.met <- read.csv("path/to/merged.Master.met.csv")  # Replace with actual file path if not already loaded
+
+# Summarize Days.to.metamorphosis by year
+met_summary <- merged.Master.met %>%
+  group_by(Year) %>%
+  summarise(
+    # Handle cases where there are no valid data points
+    days_min = ifelse(all(is.na(Days.to.metamorphosis)), NA, min(Days.to.metamorphosis, na.rm = TRUE)),
+    days_median = ifelse(all(is.na(Days.to.metamorphosis)), NA, median(Days.to.metamorphosis, na.rm = TRUE)),
+    days_mean = ifelse(all(is.na(Days.to.metamorphosis)), NA, mean(Days.to.metamorphosis, na.rm = TRUE)),
+    days_max = ifelse(all(is.na(Days.to.metamorphosis)), NA, max(Days.to.metamorphosis, na.rm = TRUE))
+  )
+
+
+# Plot the summarized data
+ggplot(met_summary, aes(x = Year)) +
+  geom_line(aes(y = days_mean, color = "Mean"), size = 1) +
+  geom_point(aes(y = days_mean, color = "Mean"), size = 2) +
+  geom_line(aes(y = days_max, color = "Max"), size = 1) +
+  geom_point(aes(y = days_max, color = "Max"), size = 2) +
+  geom_line(aes(y = days_min, color = "Min"), size = 1) +
+  geom_point(aes(y = days_min, color = "Min"), size = 2) +
+  geom_line(aes(y = days_median, color = "Median"), size = 1) +
+  geom_point(aes(y = days_median, color = "Median"), size = 2) +
+  scale_color_manual(values = c("Mean" = "steelblue", "Max" = "red", "Min" = "black", "Median" = "green")) +
+  labs(
+    title = "Days to Metamorphosis per Year",
+    x = "Year",
+    y = "Days to Metamorphosis",
+    color = "Statistic"
+  ) +
+  theme_minimal() +
+  theme(
+    plot.title = element_text(hjust = 0.5, family = "serif"),
+    text = element_text(family = "serif")
+  )
+
+
+# Left join weather_summary into met_summary based on 'year'
+# Change the column name 'year' to 'Year' in the weather_summary data frame
+# Convert 'Year' in weather_summary to character
+merged.Master.met$Year <- as.character(merged.Master.met$Year)
+weather_summary$year <- as.character(weather_summary$year)
+weather_summary <- weather_summary %>%
+  rename(Year = year)
+# Now perform the left join
+# Left join weather_summary into merged.Master.met based on 'Year'
+merged_with_weather <- left_join(merged.Master.met, weather_summary, by = "Year")
+# Compute the average mean days to metamorphosis per year
+merged_with_weather <- merged_with_weather %>%
+  group_by(Year) %>%
+  mutate(days_mean = mean(Days.to.metamorphosis, na.rm = TRUE)) %>%
+  ungroup()  # Ungroup to remove the grouping after the calculation
+
+
+# Plotting mean days to metamorphosis and mean temp per year
+ggplot(merged_with_weather, aes(x = Year)) +
+  geom_line(aes(y = temp_mean, color = "Mean Temp (°C)"), size = 1) +
+  geom_point(aes(y = temp_mean, color = "Mean Temp (°C)"), size = 2) +
+  geom_line(aes(y = days_mean, color = "Mean Days to Metamorphosis"), size = 1) +
+  geom_point(aes(y = days_mean, color = "Mean Days to Metamorphosis"), size = 2) +
+  scale_color_manual(values = c("Mean Temp (°C)" = "steelblue", 
+                                "Mean Days to Metamorphosis" = "darkorange")) +
+  labs(
+    title = "Mean Days to Metamorphosis and Mean Temperature per Year",
+    x = "Year",
+    y = "Value",
+    color = "Statistic"
+  ) +
+  theme_minimal() +
+  theme(
+    plot.title = element_text(hjust = 0.5, family = "serif"),
+    text = element_text(family = "serif")
+  )
+
+colnames(merged_with_weather)
+
+
+# Remove rows where either days_mean or temp_mean is NA
+merged_with_weather <- merged_with_weather %>%
+  filter(!is.na(days_mean) & !is.na(temp_mean))
+# Remove rows with unreasonable values
+merged_with_weather <- merged_with_weather %>%
+  filter(temp_mean >= -50 & temp_mean <= 250,  # Adjust the range as needed
+         days_mean > 0)
+
+# Compute the average days to metamorphosis per year
+merged_with_weather <- merged_with_weather %>%
+  group_by(Year) %>%
+  mutate(days_mean = mean(Days.to.metamorphosis, na.rm = TRUE)) %>%
+  ungroup()  # Remove grouping after calculation
+
+ggplot(merged_with_weather, aes(x = Year)) +
+  geom_line(aes(y = temp_mean, color = "Mean Temp (°C)"), size = 1) +
+  geom_point(aes(y = temp_mean, color = "Mean Temp (°C)"), size = 2) +
+  geom_line(aes(y = days_mean, color = "Average Days to Metamorphosis"), size = 1) +
+  geom_point(aes(y = days_mean, color = "Average Days to Metamorphosis"), size = 2) +
+  scale_color_manual(values = c("Mean Temp (°C)" = "steelblue", 
+                                "Average Days to Metamorphosis" = "darkorange")) +
+  labs(
+    title = "Mean Days to Metamorphosis and Mean Temperature per Year",
+    x = "Year",
+    y = "Value",
+    color = "Statistic"
+  ) +
+  theme_minimal() +
+  theme(
+    plot.title = element_text(hjust = 0.5, family = "serif"),
+    text = element_text(family = "serif")
+  )
+
+ggplot(merged_with_weather, aes(x = Year)) +
+  geom_line(aes(y = temp_mean, color = "Mean Temp (°C)"), size = 1) +
+  geom_point(aes(y = temp_mean, color = "Mean Temp (°C)"), size = 2) +
+  geom_line(aes(y = days_mean, color = "Average Days to Metamorphosis"), size = 1) +
+  geom_point(aes(y = days_mean, color = "Average Days to Metamorphosis"), size = 2) +
+  scale_color_manual(values = c("Mean Temp (°C)" = "steelblue", 
+                                "Average Days to Metamorphosis" = "darkorange")) +
+  labs(
+    title = "Mean Days to Metamorphosis and Mean Temperature per Year",
+    x = "Year",
+    y = "Value",
+    color = "Statistic"
+  ) +
+  ylim(0, 150) +  # Limit y-axis values up to 150
+  theme_minimal() +
+  theme(
+    plot.title = element_text(hjust = 0.5, family = "serif"),
+    text = element_text(family = "serif")
+  )
 
 ## how do i use left join function to pull weather summary into meta summary"
 ## TO DO
