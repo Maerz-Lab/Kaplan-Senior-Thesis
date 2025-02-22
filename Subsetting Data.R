@@ -362,7 +362,7 @@ weather_summary <- merged.Master.weather %>%
     vp_mean = mean(vp, na.rm = TRUE),  # Mean vapor pressure
     vp_max = max(vp, na.rm = TRUE)  # Maximum vapor pressure
   )
-
+library (ggplot2)
 # Graphing temp stats per year
 ggplot(weather_summary, aes(x = year)) +
   # Plot temp_max first
@@ -392,11 +392,6 @@ ggplot(weather_summary, aes(x = year)) +
     text = element_text(family = "serif")
   )
 
-
-
-# Summarize Days.to.metamorphosis by year
-# Assuming merged.Master.met is already loaded
-merged.Master.met <- read.csv("path/to/merged.Master.met.csv")  # Replace with actual file path if not already loaded
 
 # Summarize Days.to.metamorphosis by year
 met_summary <- merged.Master.met %>%
