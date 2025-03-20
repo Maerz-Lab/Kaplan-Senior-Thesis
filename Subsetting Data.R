@@ -211,6 +211,17 @@ master.met2022 <- subset(dat.meta2022.cleaned, select = c(Year, Date.metamorphos
 # Read and merge 2023 data 
 dat.meta2023 <- read_csv("Rcapito_MetamorphLog_2023.csv")
 
+# Convert to Date format (if it's not already)
+library(lubridate)
+
+# Set all years to 2023
+dat.meta2023$Year <- as.numeric(dat.meta2023$Year)
+dat.meta2023$Date.metamorphosed <- as.Date(dat.meta2023$Date.metamorphosed, format = "%m/%d/%Y")
+year(dat.meta2023$Date.metamorphosed) <- 2023
+dat.meta2023$Date.metamorphosed <- as.Date(dat.meta2023$Date.metamorphosed)
+write.csv(dat.meta2023, "dat.meta2023.csv", row.names = FALSE)
+
+
 # Subtract date stocked from date metamorphosed to get days to metamorphosis
 dat.meta2023 <- dat.meta2023 %>%
   mutate(
@@ -446,6 +457,11 @@ merged_with_weather <- merged_with_weather %>%
   ungroup()  # Ungroup to remove the grouping after the calculation
 
 
+merged_with_weather$Year <- as.numeric(merged_with_weather$Year)
+merged_with_weather$Mass.g.metamorphosed <- as.numeric(merged_with_weather$Mass.g.metamorphosed)
+merged_with_weather$Tank.ID <- as.numeric(merged_with_weather$Tank.ID)
+merged_with_weather$Stocking.density <- as.numeric(merged_with_weather$Stocking.density)
+
 # Plotting mean days to metamorphosis and mean temp per year
 ggplot(merged_with_weather, aes(x = Year)) +
   geom_line(aes(y = temp_mean, color = "Mean Temp (°C)"), size = 1) +
@@ -521,6 +537,31 @@ ggplot(merged_with_weather, aes(x = Year)) +
     plot.title = element_text(hjust = 0.5, family = "serif"),
     text = element_text(family = "serif")
   )
+
+# LME model
+library(lme4)
+
+# Model for days to metamorphosis
+days_model <- lmer(Days.to.metamorphosis ~ temp_min + temp_max + prcp_mean + Stocking.density + (1 | Year) + (1|Tank.ID), data = merged_with_weather)
+summary(days_model)
+
+library(sjPlot)
+
+p1 <- plot_model(days_model, type = "pred", terms = c("temp_max", "prcp_mean[3.683709]", "Stocking.density[30,50,80,110]"))
+p1 <- p1 +
+  geom_point(data = merged_with_weather, aes(x=temp_max, y = Days.to.metamorphosis), shape=1, color="black", size=1)
+p1
+
+# Model for mass at metamorphosis
+mass_model <- lmer(Mass.g.metamorphosed ~ temp_min + temp_max + prcp_mean + Stocking.density + (1 | Year) + (1|Tank.ID), data = merged_with_weather)
+summary(mass_model)
+
+plot_model(mass_model)
+
+library(ggplot2)
+
+plot1 <- ggplot(data = merged_with_weather, aes(x = temp_min, y = temp_max)) +
+  geom_point()
 
 ## how do i use left join function to pull weather summary into meta summary"
 ## TO DO
