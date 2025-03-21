@@ -12,9 +12,16 @@ library(lubridate)
 # Import 2009-2011 data set
 dat.meta20092011 <- read_csv("Rcapito_MetamorphLog_2009_2011_Final.csv")
 
-# Use subset() function to create a new dataframe for 2009-2011 data
-master.met20092011 <- subset(dat.meta20092011, select = c(Year, Date.metamorphosed, Mass.g.metamorphosed, Fate.comments, Clutch.ID,
-                                                          Date.stocked, Date.eggs.hatched, Stocking.density, Tank.ID, Days.to.metamorphosis)) 
+# Calculate survivorship proportion (Surv.prop) by Tank.ID and Year
+Surv.prop <- dat.meta20092011 %>%
+  filter(Year %in% c(2009, 2010, 2011)) %>%  # Filter for years 2009, 2010, and 2011
+  group_by(Tank.ID, Year) %>%  # Group by both Tank.ID and Year
+  summarise(
+    n_stocked = first(Stocking.density),  # Get stocking density per tank
+    n_metamorphosed = sum(!is.na(Date.metamorphosed)),  # Count successfully metamorphosed
+    Surv.prop = n_metamorphosed / n_stocked,  # Calculate survivorship proportion
+    .groups = "drop"  # Drop grouping after summarisation
+  )
 
 # Subtract date stocked from date metamorphosed to get days to metamorphosis
 dat.meta20092011 <- dat.meta20092011 %>%
@@ -24,13 +31,18 @@ dat.meta20092011 <- dat.meta20092011 %>%
   )
 dat.meta20092011 <- dat.meta20092011 %>%
   mutate(Days.to.metamorphosis = as.numeric(Date.metamorphosed - Date.stocked))
+
+
+# Use subset() function to create a new dataframe for 2009-2011 data
+library(dplyr)
+
+master.met20092011 <- dat.meta20092011 %>%
+  select(Year, Date.metamorphosed, Mass.g.metamorphosed, Fate.comments, Clutch.ID,
+         Date.stocked, Date.eggs.hatched, Stocking.density, Tank.ID, Days.to.metamorphosis, Surv.prop)
 
 # Import 2012 data set
 dat.meta2012 <- read_csv("Rcapito_MetamorphLog_2012.csv")
 
-# Use subset() function to create a new dataframe for 2012 data
-master.met2012 <- subset(dat.meta2012, select = c(Year, Date.metamorphosed, Mass.g.metamorphosed, Fate.comments, Clutch.ID,
-                                                  Date.stocked, Date.eggs.hatched, Stocking.density, Tank.ID, Days.to.metamorphosis)) 
 # Subtract date stocked from date metamorphosed to get days to metamorphosis
 dat.meta2012 <- dat.meta2012 %>%
   mutate(
@@ -39,13 +51,42 @@ dat.meta2012 <- dat.meta2012 %>%
   )
 dat.meta2012 <- dat.meta2012 %>%
   mutate(Days.to.metamorphosis = as.numeric(Date.metamorphosed - Date.stocked))
+
+# Calculate survivorship proportion per tank
+Surv.prop <- dat.meta2012 %>%
+  group_by(Tank.ID) %>%
+  summarise(
+    n_stocked = first(Stocking.density),  # Use the stocking density per tank
+    n_metamorphosed = sum(!is.na(Date.metamorphosed)),  # Successfully metamorphosed
+    Surv.prop = n_metamorphosed / n_stocked  # Survivorship ratio
+  )
+
+# Add survivorship to dat.meta2012
+dat.meta2012 <- dat.meta2012 %>%
+  left_join(Surv.prop, by = "Tank.ID")
+
+# Use subset() function to create a new dataframe for 2012 data
+master.met2012 <- subset(dat.meta2012, select = c(Year, Date.metamorphosed, Mass.g.metamorphosed, Fate.comments, Clutch.ID,
+                                                  Date.stocked, Date.eggs.hatched, Stocking.density, Tank.ID, Days.to.metamorphosis, Surv.prop)) 
 
 # Import 2013 data set
 dat.meta2013 <- read_csv("Rcapito_MetamorphLog_2013.csv")
 
-# Use subset() function to create new dataframe for 2013 data
-master.met2013 <- subset(dat.meta2013, select = c(Year, Date.metamorphosed, Mass.g.metamorphosed, Fate.comments, Clutch.ID,
-                                                  Date.stocked, Date.eggs.hatched, Stocking.density, Tank.ID, Days.to.metamorphosis)) 
+# Convert Tank.ID to numeric
+dat.meta2013 <- dat.meta2013 %>%
+  mutate(Tank.ID = as.numeric(Tank.ID))
+
+# Convert Stocking.density to numeric + convert invalid values to NA
+dat.meta2013 <- dat.meta2013 %>%
+  mutate(Stocking.density = suppressWarnings(as.numeric(Stocking.density)))
+
+# Convert dates to Date format if the format is m/d/y
+dat.meta2013 <- dat.meta2013 %>%
+  mutate(
+    Date.stocked = mdy(Date.stocked),
+    Date.metamorphosed = mdy(Date.metamorphosed)
+  )
+
 # Subtract date stocked from date metamorphosed to get days to metamorphosis
 dat.meta2013 <- dat.meta2013 %>%
   mutate(
@@ -55,6 +96,23 @@ dat.meta2013 <- dat.meta2013 %>%
 dat.meta2013 <- dat.meta2013 %>%
   mutate(Days.to.metamorphosis = as.numeric(Date.metamorphosed - Date.stocked))
 
+# Calculate survivorship proportion per tank
+Surv.prop <- dat.meta2013 %>%
+  group_by(Tank.ID) %>%
+  summarise(
+    n_stocked = first(Stocking.density),
+    n_metamorphosed = sum(!is.na(Date.metamorphosed)),
+    Surv.prop = ifelse(is.na(n_stocked) | n_stocked == 0, NA, n_metamorphosed / n_stocked)
+  )
+
+
+# Add survivorship to dat.meta2013
+dat.meta2013 <- dat.meta2013 %>%
+  left_join(Surv.prop, by = "Tank.ID")
+
+# Use subset() function to create a new dataframe for 2013 data
+master.met2013 <- subset(dat.meta2013, select = c(Year, Date.metamorphosed, Mass.g.metamorphosed, Fate.comments, Clutch.ID,
+                                                  Date.stocked, Date.eggs.hatched, Stocking.density, Tank.ID, Days.to.metamorphosis, Surv.prop)) 
 # Import and subset 2015 data
 dat.meta2015 <- read_csv("Rcapito_MetamorphLog_2015.csv")
 
@@ -67,9 +125,22 @@ dat.meta2015 <- dat.meta2015 %>%
 dat.meta2015 <- dat.meta2015 %>%
   mutate(Days.to.metamorphosis = as.numeric(Date.metamorphosed - Date.stocked))
 
-master.met2015 <- subset(dat.meta2015, select = c(Year, Date.metamorphosed, Mass.g.metamorphosed, Fate.comments, Clutch.ID,
-                         Date.stocked, Date.eggs.hatched, Stocking.density, Tank.ID, Days.to.metamorphosis))
+# Calculate survivorship proportion per tank
+Surv.prop <- dat.meta2015 %>%
+  group_by(Tank.ID) %>%
+  summarise(
+    n_stocked = first(Stocking.density),  # Use the stocking density per tank
+    n_metamorphosed = sum(!is.na(Date.metamorphosed)),  # Successfully metamorphosed
+    Surv.prop = n_metamorphosed / n_stocked  # Survivorship ratio
+  )
 
+# Add survivorship to dat.meta2015
+dat.meta2015 <- dat.meta2015 %>%
+  left_join(Surv.prop, by = "Tank.ID")
+
+# Use subset() function to create a new dataframe for 2015 data
+master.met2015 <- subset(dat.meta2015, select = c(Year, Date.metamorphosed, Mass.g.metamorphosed, Fate.comments, Clutch.ID,
+                                                  Date.stocked, Date.eggs.hatched, Stocking.density, Tank.ID, Days.to.metamorphosis, Surv.prop)) 
 # Import 2016 data
 dat.meta2016 <- read_csv("Rcapito_MetamorphLog_2016.csv")
 
@@ -82,10 +153,22 @@ dat.meta2016 <- dat.meta2016 %>%
 dat.meta2016 <- dat.meta2016 %>%
   mutate(Days.to.metamorphosis = as.numeric(Date.metamorphosed - Date.stocked))
 
-# Subset 2016 data
-master.met2016 <- subset(dat.meta2016, select = c(Year, Date.metamorphosed, Mass.g.metamorphosed, Fate.comments, Clutch.ID,
-                                                  Date.stocked, Date.eggs.hatched, Stocking.density, Tank.ID, Days.to.metamorphosis))
+# Calculate survivorship proportion per tank
+Surv.prop <- dat.meta2016 %>%
+  group_by(Tank.ID) %>%
+  summarise(
+    n_stocked = first(Stocking.density),  # Use the stocking density per tank
+    n_metamorphosed = sum(!is.na(Date.metamorphosed)),  # Successfully metamorphosed
+    Surv.prop = n_metamorphosed / n_stocked  # Survivorship ratio
+  )
 
+# Add survivorship to dat.meta2016
+dat.meta2016 <- dat.meta2016 %>%
+  left_join(Surv.prop, by = "Tank.ID")
+
+# Use subset() function to create a new dataframe for 2012 data
+master.met2016 <- subset(dat.meta2016, select = c(Year, Date.metamorphosed, Mass.g.metamorphosed, Fate.comments, Clutch.ID,
+                                                  Date.stocked, Date.eggs.hatched, Stocking.density, Tank.ID, Days.to.metamorphosis, Surv.prop)) 
 # Import 2017 data
 dat.meta2017 <- read_csv("Rcapito_MetamorphLog_2017.csv")
 
@@ -98,10 +181,22 @@ dat.meta2017 <- dat.meta2017 %>%
 dat.meta2017 <- dat.meta2017 %>%
   mutate(Days.to.metamorphosis = as.numeric(Date.metamorphosed - Date.stocked))
 
-# Subset 2017 data
-master.met2017 <- subset(dat.meta2017, select = c(Year, Date.metamorphosed, Mass.g.metamorphosed, Fate.comments, Clutch.ID,
-                                                  Date.stocked, Date.eggs.hatched, Stocking.density, Tank.ID, Days.to.metamorphosis))
+# Calculate survivorship proportion per tank
+Surv.prop <- dat.meta2017 %>%
+  group_by(Tank.ID) %>%
+  summarise(
+    n_stocked = first(Stocking.density),  # Use the stocking density per tank
+    n_metamorphosed = sum(!is.na(Date.metamorphosed)),  # Successfully metamorphosed
+    Surv.prop = n_metamorphosed / n_stocked  # Survivorship ratio
+  )
 
+# Add survivorship to dat.meta2017
+dat.meta2017 <- dat.meta2017 %>%
+  left_join(Surv.prop, by = "Tank.ID")
+
+# Use subset() function to create a new dataframe for 2017 data
+master.met2017 <- subset(dat.meta2017, select = c(Year, Date.metamorphosed, Mass.g.metamorphosed, Fate.comments, Clutch.ID,
+                                                  Date.stocked, Date.eggs.hatched, Stocking.density, Tank.ID, Days.to.metamorphosis, Surv.prop)) 
 # Read 2018 data
 dat.meta2018 <- read_csv("Rcapito_MetamorphLog_2018.csv")
 
@@ -121,10 +216,22 @@ dat.meta2018.cleaned <- dat.meta2018.cleaned %>%
 dat.meta2018.cleaned <- dat.meta2018.cleaned %>%
   mutate(Days.to.metamorphosis = as.numeric(Date.metamorphosed - Date.stocked))
 
-# Merge into master file
-master.met2018 <- subset(dat.meta2018.cleaned, select = c(Year, Date.metamorphosed, Mass.g.metamorphosed, Fate.comments, Clutch.ID,
-                         Date.stocked, Date.eggs.hatched, Stocking.density, Tank.ID, Days.to.metamorphosis))
+# Calculate survivorship proportion per tank
+Surv.prop <- dat.meta2018.cleaned %>%
+  group_by(Tank.ID) %>%
+  summarise(
+    n_stocked = first(Stocking.density),  # Use the stocking density per tank
+    n_metamorphosed = sum(!is.na(Date.metamorphosed)),  # Successfully metamorphosed
+    Surv.prop = n_metamorphosed / n_stocked  # Survivorship ratio
+  )
 
+# Add survivorship to dat.meta2018
+dat.meta2018.cleaned <- dat.meta2018.cleaned %>%
+  left_join(Surv.prop, by = "Tank.ID")
+
+# Use subset() function to create a new dataframe for 2018 data
+master.met2018 <- subset(dat.meta2018.cleaned, select = c(Year, Date.metamorphosed, Mass.g.metamorphosed, Fate.comments, Clutch.ID,
+                                                  Date.stocked, Date.eggs.hatched, Stocking.density, Tank.ID, Days.to.metamorphosis, Surv.prop)) 
 # Read 2019 data
 dat.meta2019 <- read_csv("Rcapito_MetamorphLog_2019.csv")
 
@@ -144,9 +251,22 @@ dat.meta2019.cleaned <- dat.meta2019.cleaned %>%
 dat.meta2019.cleaned <- dat.meta2019.cleaned %>%
   mutate(Days.to.metamorphosis = as.numeric(Date.metamorphosed - Date.stocked))
 
-# Merge into master file
+# Calculate survivorship proportion per tank
+Surv.prop <- dat.meta2019.cleaned %>%
+  group_by(Tank.ID) %>%
+  summarise(
+    n_stocked = first(Stocking.density),  # Use the stocking density per tank
+    n_metamorphosed = sum(!is.na(Date.metamorphosed)),  # Successfully metamorphosed
+    Surv.prop = n_metamorphosed / n_stocked  # Survivorship ratio
+  )
+
+# Add survivorship to dat.meta2019.cleaned
+dat.meta2019.cleaned <- dat.meta2019.cleaned %>%
+  left_join(Surv.prop, by = "Tank.ID")
+
+# Use subset() function to create a new dataframe for 2019 data
 master.met2019 <- subset(dat.meta2019.cleaned, select = c(Year, Date.metamorphosed, Mass.g.metamorphosed, Fate.comments, Clutch.ID,
-                                                          Date.stocked, Date.eggs.hatched, Stocking.density, Tank.ID, Days.to.metamorphosis))
+                                                  Date.stocked, Date.eggs.hatched, Stocking.density, Tank.ID, Days.to.metamorphosis, Surv.prop)) 
 # Import 2020 data
 dat.meta2020 <- read_csv("Rcapito_MetamorphLog_2020.csv")
 
@@ -159,9 +279,22 @@ dat.meta2020 <- dat.meta2020 %>%
 dat.meta2020 <- dat.meta2020 %>%
   mutate(Days.to.metamorphosis = as.numeric(Date.metamorphosed - Date.stocked))
 
-# Subset and merge into master file
+# Calculate survivorship proportion per tank
+Surv.prop <- dat.meta2020 %>%
+  group_by(Tank.ID) %>%
+  summarise(
+    n_stocked = first(Stocking.density),  # Use the stocking density per tank
+    n_metamorphosed = sum(!is.na(Date.metamorphosed)),  # Successfully metamorphosed
+    Surv.prop = n_metamorphosed / n_stocked  # Survivorship ratio
+  )
+
+# Add survivorship to dat.meta2020
+dat.meta2020 <- dat.meta2020 %>%
+  left_join(Surv.prop, by = "Tank.ID")
+
+# Use subset() function to create a new dataframe for 2012 data
 master.met2020 <- subset(dat.meta2020, select = c(Year, Date.metamorphosed, Mass.g.metamorphosed, Fate.comments, Clutch.ID,
-                                                  Date.stocked, Date.eggs.hatched, Stocking.density, Tank.ID, Days.to.metamorphosis))
+                                                  Date.stocked, Date.eggs.hatched, Stocking.density, Tank.ID, Days.to.metamorphosis, Surv.prop)) 
 # Read 2021 data
 dat.meta2021 <- read_csv("Rcapito_MetamorphLog_2021.csv")
 
@@ -181,9 +314,22 @@ dat.meta2021.cleaned <- dat.meta2021.cleaned %>%
 # Save the modified dataframe back to a CSV file
 write.csv(dat.meta2021.cleaned, "dat.meta2021.cleaned.csv", row.names = FALSE)
 
-# Merge into master file
+# Calculate survivorship proportion per tank
+Surv.prop <- dat.meta2021.cleaned %>%
+  group_by(Tank.ID) %>%
+  summarise(
+    n_stocked = first(Stocking.density),  # Use the stocking density per tank
+    n_metamorphosed = sum(!is.na(Date.metamorphosed)),  # Successfully metamorphosed
+    Surv.prop = n_metamorphosed / n_stocked  # Survivorship ratio
+  )
+
+# Add survivorship to dat.meta2021.cleaned
+dat.meta2021.cleaned <- dat.meta2021.cleaned %>%
+  left_join(Surv.prop, by = "Tank.ID")
+
+# Use subset() function to create a new dataframe for 2012 data
 master.met2021 <- subset(dat.meta2021.cleaned, select = c(Year, Date.metamorphosed, Mass.g.metamorphosed, Fate.comments, Clutch.ID,
-                                                          Date.stocked, Date.eggs.hatched, Stocking.density, Tank.ID, Days.to.metamorphosis))
+                                                  Date.stocked, Date.eggs.hatched, Stocking.density, Tank.ID, Days.to.metamorphosis, Surv.prop))
 
 # Read 2022 data
 dat.meta2022 <- read_csv("Rcapito_MetamorphLog_2022.csv")
@@ -204,10 +350,22 @@ dat.meta2022.cleaned <- dat.meta2022.cleaned %>%
 dat.meta2022.cleaned <- dat.meta2022.cleaned %>%
   mutate(Days.to.metamorphosis = as.numeric(Date.metamorphosed - Date.stocked))
 
-# Merge into master file
-master.met2022 <- subset(dat.meta2022.cleaned, select = c(Year, Date.metamorphosed, Mass.g.metamorphosed, Fate.comments, Clutch.ID,
-                                                          Date.stocked, Date.eggs.hatched, Stocking.density, Tank.ID, Days.to.metamorphosis))
+# Calculate survivorship proportion per tank
+Surv.prop <- dat.meta2022.cleaned %>%
+  group_by(Tank.ID) %>%
+  summarise(
+    n_stocked = first(Stocking.density),  # Use the stocking density per tank
+    n_metamorphosed = sum(!is.na(Date.metamorphosed)),  # Successfully metamorphosed
+    Surv.prop = n_metamorphosed / n_stocked  # Survivorship ratio
+  )
 
+# Add survivorship to dat.meta2022.cleaned
+dat.meta2022.cleaned <- dat.meta2022.cleaned %>%
+  left_join(Surv.prop, by = "Tank.ID")
+
+# Use subset() function to create a new dataframe for 2012 data
+master.met2022 <- subset(dat.meta2022.cleaned, select = c(Year, Date.metamorphosed, Mass.g.metamorphosed, Fate.comments, Clutch.ID,
+                                                  Date.stocked, Date.eggs.hatched, Stocking.density, Tank.ID, Days.to.metamorphosis, Surv.prop)) 
 # Read and merge 2023 data 
 dat.meta2023 <- read_csv("Rcapito_MetamorphLog_2023.csv")
 
@@ -231,9 +389,22 @@ dat.meta2023 <- dat.meta2023 %>%
 dat.meta2023 <- dat.meta2023 %>%
   mutate(Days.to.metamorphosis = as.numeric(Date.metamorphosed - Date.stocked))
 
-master.met2023 <- subset(dat.meta2023, select = c(Year, Date.metamorphosed, Mass.g.metamorphosed, Fate.comments, Clutch.ID,
-                                                  Date.stocked, Date.eggs.hatched, Stocking.density, Tank.ID, Days.to.metamorphosis))
+# Calculate survivorship proportion per tank
+Surv.prop <- dat.meta2023 %>%
+  group_by(Tank.ID) %>%
+  summarise(
+    n_stocked = first(Stocking.density),  # Use the stocking density per tank
+    n_metamorphosed = sum(!is.na(Date.metamorphosed)),  # Successfully metamorphosed
+    Surv.prop = n_metamorphosed / n_stocked  # Survivorship ratio
+  )
 
+# Add survivorship to dat.meta2023
+dat.meta2023 <- dat.meta2023 %>%
+  left_join(Surv.prop, by = "Tank.ID")
+
+# Use subset() function to create a new dataframe for 2012 data
+master.met2023 <- subset(dat.meta2023, select = c(Year, Date.metamorphosed, Mass.g.metamorphosed, Fate.comments, Clutch.ID,
+                                                  Date.stocked, Date.eggs.hatched, Stocking.density, Tank.ID, Days.to.metamorphosis, Surv.prop)) 
 # Read and merge 2024 data
 dat.meta2024 <- read_csv("Rcapito_MetamorphLog_2024.csv")
 
@@ -246,8 +417,22 @@ dat.meta2024 <- dat.meta2024 %>%
 dat.meta2024 <- dat.meta2024 %>%
   mutate(Days.to.metamorphosis = as.numeric(Date.metamorphosed - Date.stocked))
 
+# Calculate survivorship proportion per tank
+Surv.prop <- dat.meta2024 %>%
+  group_by(Tank.ID) %>%
+  summarise(
+    n_stocked = first(Stocking.density),  # Use the stocking density per tank
+    n_metamorphosed = sum(!is.na(Date.metamorphosed)),  # Successfully metamorphosed
+    Surv.prop = n_metamorphosed / n_stocked  # Survivorship ratio
+  )
+
+# Add survivorship to dat.meta2024
+dat.meta2024 <- dat.meta2024 %>%
+  left_join(Surv.prop, by = "Tank.ID")
+
+# Use subset() function to create a new dataframe for 2024 data
 master.met2024 <- subset(dat.meta2024, select = c(Year, Date.metamorphosed, Mass.g.metamorphosed, Fate.comments, Clutch.ID,
-                                                  Date.stocked, Date.eggs.hatched, Stocking.density, Tank.ID, Days.to.metamorphosis))
+                                                  Date.stocked, Date.eggs.hatched, Stocking.density, Tank.ID, Days.to.metamorphosis, Surv.prop)) 
 
 # Create a master dataset with all subsetted data files
 merged.Master.met <- rbind(master.met20092011, master.met2012, master.met2013, master.met2015, master.met2016, master.met2017, master.met2018,
@@ -544,6 +729,7 @@ library(lme4)
 # Model for days to metamorphosis
 days_model <- lmer(Days.to.metamorphosis ~ temp_min + temp_max + prcp_mean + Stocking.density + (1 | Year) + (1|Tank.ID), data = merged_with_weather)
 summary(days_model)
+plot_model(days_model)
 
 library(sjPlot)
 
@@ -562,6 +748,35 @@ library(ggplot2)
 
 plot1 <- ggplot(data = merged_with_weather, aes(x = temp_min, y = temp_max)) +
   geom_point()
+
+
+## SD vs Survivorship
+library(ggplot2)
+# Create a scatter plot using Merged.master.met dataset
+ggplot(merged.Master.met, aes(x = Stocking.density, y = Surv.prop)) +
+  geom_point() +  # Add points
+  geom_smooth(method = "lm", se = FALSE, color = "blue") +  # Add a regression line
+  labs(
+    title = "Survivorship vs. Stocking Density",
+    x = "Stocking Density",
+    y = "Survivorship Proportion"
+  ) +
+  theme_minimal()
+
+
+
+
+
+
+
+
+
+
+sum(is.na(merged.Master.met$Surv.prop))  # Count NAs in Surv.prop
+
+
+
+
 
 ## how do i use left join function to pull weather summary into meta summary"
 ## TO DO
