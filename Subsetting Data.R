@@ -12,17 +12,6 @@ library(lubridate)
 # Import 2009-2011 data set
 dat.meta20092011 <- read_csv("Rcapito_MetamorphLog_2009_2011_Final.csv")
 
-# Calculate survivorship proportion (Surv.prop) by Tank.ID and Year
-Surv.prop <- dat.meta20092011 %>%
-  filter(Year %in% c(2009, 2010, 2011)) %>%  # Filter for years 2009, 2010, and 2011
-  group_by(Tank.ID, Year) %>%  # Group by both Tank.ID and Year
-  summarise(
-    n_stocked = first(Stocking.density),  # Get stocking density per tank
-    n_metamorphosed = sum(!is.na(Date.metamorphosed)),  # Count successfully metamorphosed
-    Surv.prop = n_metamorphosed / n_stocked,  # Calculate survivorship proportion
-    .groups = "drop"  # Drop grouping after summarisation
-  )
-
 # Subtract date stocked from date metamorphosed to get days to metamorphosis
 dat.meta20092011 <- dat.meta20092011 %>%
   mutate(
@@ -32,6 +21,9 @@ dat.meta20092011 <- dat.meta20092011 %>%
 dat.meta20092011 <- dat.meta20092011 %>%
   mutate(Days.to.metamorphosis = as.numeric(Date.metamorphosed - Date.stocked))
 
+## Temp Surv.prop column
+dat.meta20092011 <- dat.meta20092011 %>%
+  mutate(Surv.prop = NA)
 
 # Use subset() function to create a new dataframe for 2009-2011 data
 library(dplyr)
@@ -434,9 +426,57 @@ dat.meta2024 <- dat.meta2024 %>%
 master.met2024 <- subset(dat.meta2024, select = c(Year, Date.metamorphosed, Mass.g.metamorphosed, Fate.comments, Clutch.ID,
                                                   Date.stocked, Date.eggs.hatched, Stocking.density, Tank.ID, Days.to.metamorphosis, Surv.prop)) 
 
-# Create a master dataset with all subsetted data files
+# Create a master dataset with all subsetted data files 
 merged.Master.met <- rbind(master.met20092011, master.met2012, master.met2013, master.met2015, master.met2016, master.met2017, master.met2018,
                        master.met2019, master.met2021, master.met2022, master.met2023, master.met2024)
+
+library(dplyr)
+
+
+# Create a new dataframe with Tank.ID count by Year
+Ind.per.tank <- merged.Master.met %>%
+  group_by(Year, Tank.ID) %>%
+  summarise(Ind.per.tank = n(), .groups = 'drop')
+
+# Join Stocking.density to the tank_counts_by_year dataframe
+Ind.per.tank <- Ind.per.tank %>%
+  left_join(merged.Master.met %>%
+              select(Year, Tank.ID, Stocking.density) %>%
+              distinct(), 
+            by = c("Year", "Tank.ID"))
+
+# View the resulting dataframe
+head(Ind.per.tank)
+
+Ind.per.tank$No.dead <- Ind.per.tank$Stocking.density - Ind.per.tank$Ind.per.tank
+
+merged.Master.met$Fate <- 1
+
+all.tadpoles.livedead <- merged_with_weather
+
+library(tidyr)
+
+# Step 1: Create a dataframe with the dead individuals (Fate = 0)
+dead_individuals <- Ind.per.tank %>%
+  # Replicate the rows based on No.dead column to create as many rows as dead individuals
+  rowwise() %>%
+  mutate(dead_individuals = list(rep(0, No.dead))) %>%
+  unnest(dead_individuals) %>%
+  select(Year, Tank.ID, dead_individuals) %>%
+  mutate(Fate = 0)  # Assign Fate = 0 for dead individuals
+
+# Step 2: Create a dataframe for surviving individuals (Fate = 1)
+# Assuming all.tadpoles.livedead already contains the survivors (Fate = 1)
+survivors <- all.tadpoles.livedead %>%
+  filter(Fate == 1)  # Filter for survivors
+
+# Step 3: Combine the dead individuals with the survivors
+# We append the rows for dead individuals to the survivors dataframe
+all_data_with_dead <- bind_rows(survivors, dead_individuals)
+
+# View the resulting dataframe
+head(all_data_with_dead)
+
 
 # Saving full merged master dataframe to source
 write.csv(merged.Master.met, "merged.Master.met.csv", row.names = FALSE) 
@@ -725,18 +765,35 @@ ggplot(merged_with_weather, aes(x = Year)) +
 
 # LME model
 library(lme4)
+library(dplyr)
+
+# Standardize variables
+merged_with_weather <- merged_with_weather %>%
+  mutate(
+    Stocking.density.std = (Stocking.density - mean(Stocking.density, na.rm = TRUE)) / sd(Stocking.density, na.rm = TRUE),
+    temp_max.std = (temp_max - mean(temp_max, na.rm = TRUE)) / sd(temp_max, na.rm = TRUE),
+    temp_min.std = (temp_min - mean(temp_min, na.rm = TRUE)) / sd(temp_min, na.rm = TRUE),
+    prcp_mean.std = (prcp_mean - mean(prcp_mean, na.rm = TRUE)) / sd(prcp_mean, na.rm = TRUE)
+  )
+
+
+# Remove NA values from DTM
+merged_with_weather_clean <- merged_with_weather %>%
+  filter(!is.na(Days.to.metamorphosis))
+
 
 # Model for days to metamorphosis
-days_model <- lmer(Days.to.metamorphosis ~ temp_min + temp_max + prcp_mean + Stocking.density + (1 | Year) + (1|Tank.ID), data = merged_with_weather)
+days_model <- lmer(Days.to.metamorphosis ~ temp_min.std + temp_max.std + prcp_mean.std + Stocking.density.std + (1 | Year) + (1|Tank.ID), data = merged_with_weather_clean)
 summary(days_model)
 plot_model(days_model)
 
 library(sjPlot)
 
-p1 <- plot_model(days_model, type = "pred", terms = c("temp_max", "prcp_mean[3.683709]", "Stocking.density[30,50,80,110]"))
+p1 <- plot_model(days_model, type = "pred", terms = c("temp_max.std", "prcp_mean.std[3.683709]", "Stocking.density.std[-2, 0, 2]"))
 p1 <- p1 +
-  geom_point(data = merged_with_weather, aes(x=temp_max, y = Days.to.metamorphosis), shape=1, color="black", size=1)
+  geom_point(data = merged_with_weather_clean, aes(x = temp_max.std, y = Days.to.metamorphosis), shape = 1, color = "black", size = 1)
 p1
+
 
 # Model for mass at metamorphosis
 mass_model <- lmer(Mass.g.metamorphosed ~ temp_min + temp_max + prcp_mean + Stocking.density + (1 | Year) + (1|Tank.ID), data = merged_with_weather)
