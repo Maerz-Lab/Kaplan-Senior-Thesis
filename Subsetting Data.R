@@ -477,6 +477,26 @@ all_data_with_dead <- bind_rows(survivors, dead_individuals)
 # View the resulting dataframe
 head(all_data_with_dead)
 
+dead_individuals <- Ind.per.tank %>%
+  filter(!is.na(No.dead)) %>%                      # Remove rows with NA in No.dead
+  rowwise() %>%
+  mutate(dead_individuals = list(rep(0, No.dead))) %>%
+  unnest(dead_individuals) %>%
+  select(Year, Tank.ID, dead_individuals) %>%
+  mutate(Fate = 0)  # Assign Fate = 0 for dead individuals
+
+
+# Perform the left join and select the desired covariates
+dead_individuals <- left_join(dead_individuals, 
+                             merged_with_weather_clean %>%
+                               select(Year, Tank.ID, Stocking.density, 
+                                      temp_min, temp_median, temp_max, temp_mean, 
+                                      prcp_cumulative, prcp_mean, prcp_median, 
+                                      vp_min, vp_max, vp_median, vp_mean, prcp_mean.std, temp_max.std,
+                                      temp_min.std, Stocking.density.std), 
+                             by = c("Year" = "Year", "Tank.ID" = "Tank.ID"))
+dead_individuals$Year <- as.numeric(dead_individuals$Year)
+dead_individuals$Tank.ID <- as.numeric(dead_individuals$Tank.ID)
 
 # Saving full merged master dataframe to source
 write.csv(merged.Master.met, "merged.Master.met.csv", row.names = FALSE) 
@@ -787,12 +807,16 @@ days_model <- lmer(Days.to.metamorphosis ~ temp_min.std + temp_max.std + prcp_me
 summary(days_model)
 plot_model(days_model)
 
+days_model
+## how to find p value with this model, and correlation coefficient r^2
+
 library(sjPlot)
 
 p1 <- plot_model(days_model, type = "pred", terms = c("temp_max.std", "prcp_mean.std[3.683709]", "Stocking.density.std[-2, 0, 2]"))
 p1 <- p1 +
   geom_point(data = merged_with_weather_clean, aes(x = temp_max.std, y = Days.to.metamorphosis), shape = 1, color = "black", size = 1)
 p1
+## can plot on one graph with different color lines, make each point more transparent
 
 
 # Model for mass at metamorphosis
@@ -805,6 +829,8 @@ library(ggplot2)
 
 plot1 <- ggplot(data = merged_with_weather, aes(x = temp_min, y = temp_max)) +
   geom_point()
+
+
 
 
 ## SD vs Survivorship
