@@ -807,9 +807,8 @@ days_model <- lmer(Days.to.metamorphosis ~ temp_min.std + temp_max.std + prcp_me
 summary(days_model)
 plot_model(days_model)
 
-days_model
 ## how to find p value with this model, and correlation coefficient r^2
-
+# Estimate model for days to meta
 library(sjPlot)
 
 p1 <- plot_model(days_model, type = "pred", terms = c("temp_max.std", "prcp_mean.std[3.683709]", "Stocking.density.std[-2, 0, 2]"))
@@ -824,6 +823,71 @@ mass_model <- lmer(Mass.g.metamorphosed ~ temp_min + temp_max + prcp_mean + Stoc
 summary(mass_model)
 
 plot_model(mass_model)
+
+## Predict effects on mass at metamorphosis
+p2 <- plot_model(mass_model, type = "pred", terms = c("temp_max.std", "prcp_mean.std[3.683709]", "Stocking.density.std[-2, 0, 2]"))
+p2 <- p2 +
+  geom_point(data = merged_with_weather_clean, aes(x = temp_max.std, y = Mass.g.metamorphosed), shape = 1, color = "black", size = 1)
+p2
+
+ ##  Plots for Stocking Density Ranges vs Days to Meta ##
+# Create density range categories
+subset_density_days <- merged_with_weather %>%
+  mutate(density_range = case_when(
+    Stocking.density >= 0 & Stocking.density <= 30 ~ "0-30",
+    Stocking.density >= 31 & Stocking.density <= 60 ~ "31-60",
+    Stocking.density >= 61 & Stocking.density <= 90 ~ "61-90",
+    Stocking.density >= 91 ~ "91+"
+  ))
+# Summary statistics by density range
+summary_stats <- subset_density_days %>%
+  group_by(density_range) %>%
+  summarize(
+    min_days = min(Days.to.metamorphosis, na.rm = TRUE),
+    max_days = max(Days.to.metamorphosis, na.rm = TRUE),
+    avg_days = mean(Days.to.metamorphosis, na.rm = TRUE)
+  ) %>%
+  arrange(density_range)
+print(summary_stats)
+
+ggplot(subset_density_days, aes(x = density_range, y = Days.to.metamorphosis)) +
+  geom_boxplot(fill = "lightblue", color = "black") +
+  labs(
+    title = "Days to Metamorphosis by Stocking Density Range",
+    x = "Stocking Density Range",
+    y = "Days to Metamorphosis"
+  ) +
+  theme_minimal()
+
+  ## Plot for SD ranges vs Mass at meta ##
+subset_density_mass <- merged_with_weather %>%
+  mutate(density_range = case_when(
+    Stocking.density >= 0 & Stocking.density <= 30 ~ "0-30",
+    Stocking.density >= 31 & Stocking.density <= 60 ~ "31-60",
+    Stocking.density >= 61 & Stocking.density <= 90 ~ "61-90",
+    Stocking.density >= 91 ~ "91+"
+  ))
+# Summary statistics by density range
+summary_stats <- subset_density_mass %>%
+  group_by(density_range) %>%
+  summarize(
+    min_mass = min(Mass.g.metamorphosed, na.rm = TRUE),
+    max_mass = max(Mass.g.metamorphosed, na.rm = TRUE),
+    avg_mass = mean(Mass.g.metamorphosed, na.rm = TRUE)
+  ) %>%
+  arrange(density_range)
+print(summary_stats)
+
+ggplot(subset_density_days, aes(x = density_range, y = Mass.g.metamorphosed)) +
+  geom_boxplot(fill = "pink", color = "black") +
+  labs(
+    title = "Mass at Metamorphosis by Stocking Density Range",
+    x = "Stocking Density Range",
+    y = "Mass at Metamorphosis (g)"
+  ) +
+  theme_minimal()
+
+
 
 library(ggplot2)
 
