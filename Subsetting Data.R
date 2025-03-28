@@ -3,12 +3,13 @@
 ## Goal of this code: working to subset data from 2009-2024 and compile into a master datafile
 
 
+
 # Load necessary libraries
 library(readr)
 library(dplyr)
 library(lubridate)
 
-
+             ###### IMPORT AND CLEAN META DATA ######
 # Import 2009-2011 data set
 dat.meta20092011 <- read_csv("Rcapito_MetamorphLog_2009_2011_Final.csv")
 
@@ -371,7 +372,6 @@ year(dat.meta2023$Date.metamorphosed) <- 2023
 dat.meta2023$Date.metamorphosed <- as.Date(dat.meta2023$Date.metamorphosed)
 write.csv(dat.meta2023, "dat.meta2023.csv", row.names = FALSE)
 
-
 # Subtract date stocked from date metamorphosed to get days to metamorphosis
 dat.meta2023 <- dat.meta2023 %>%
   mutate(
@@ -430,6 +430,25 @@ master.met2024 <- subset(dat.meta2024, select = c(Year, Date.metamorphosed, Mass
 merged.Master.met <- rbind(master.met20092011, master.met2012, master.met2013, master.met2015, master.met2016, master.met2017, master.met2018,
                        master.met2019, master.met2021, master.met2022, master.met2023, master.met2024)
 
+# Saving full merged master dataframe to source
+write.csv(merged.Master.met, "merged.Master.met.csv", row.names = FALSE) 
+
+                      ###### SURVIVORSHIP CODE ######
+
+
+weather_summary$std_temp_min <- scale(weather_summary$temp_min, center = TRUE, scale = TRUE)
+weather_summary$std_temp_median <- scale(weather_summary$temp_median, center = TRUE, scale = TRUE)
+weather_summary$std_temp_max <- scale(weather_summary$temp_max, center = TRUE, scale = TRUE)
+weather_summary$std_prcp_cumulative <- scale(weather_summary$prcp_cumulative, center = TRUE, scale = TRUE)
+weather_summary$std_prcp_mean <- scale(weather_summary$prcp_mean, center = TRUE, scale = TRUE)
+weather_summary$std_prcp_median <- scale(weather_summary$prcp_median, center = TRUE, scale = TRUE)
+weather_summary$std_vp_min <- scale(weather_summary$vp_min, center = TRUE, scale = TRUE)
+weather_summary$std_vp_median <- scale(weather_summary$vp_median, center = TRUE, scale = TRUE)
+weather_summary$std_vp_mean <- scale(weather_summary$vp_mean, center = TRUE, scale = TRUE)
+weather_summary$std_vp_max <- scale(weather_summary$vp_max, center = TRUE, scale = TRUE)
+
+
+
 library(dplyr)
 
 
@@ -456,14 +475,98 @@ all.tadpoles.livedead <- merged_with_weather
 
 library(tidyr)
 
-# Step 1: Create a dataframe with the dead individuals (Fate = 0)
+# Ensure No.dead has valid values
+Ind.per.tank$No.dead <- ifelse(Ind.per.tank$Stocking.density - Ind.per.tank$Ind.per.tank >= 0,
+                               Ind.per.tank$Stocking.density - Ind.per.tank$Ind.per.tank, 
+                               NA)
+
+library(dplyr)
+library(tidyr)
+
+# Step 1: Ensure No.dead is not NA or negative
 dead_individuals <- Ind.per.tank %>%
-  # Replicate the rows based on No.dead column to create as many rows as dead individuals
-  rowwise() %>%
-  mutate(dead_individuals = list(rep(0, No.dead))) %>%
-  unnest(dead_individuals) %>%
-  select(Year, Tank.ID, dead_individuals) %>%
+  filter(!is.na(No.dead) & No.dead >= 0) %>%  # Keep only rows with valid No.dead
+  uncount(No.dead) %>%  # Replicates each row No.dead times
+  select(Year, Tank.ID) %>%
   mutate(Fate = 0)  # Assign Fate = 0 for dead individuals
+
+# View the first few rows of the data after removing dead_individuals
+head(dead_individuals)
+
+
+dead_individuals$Year <- as.numeric(dead_individuals$Year)
+dead_individuals$Tank.ID <- as.numeric(dead_individuals$Tank.ID)
+
+# Perform the left join and select the desired covariates
+library(dplyr)
+
+library(dplyr)
+
+# Ensure that 'merged_with_weather_clean' has unique rows based on 'Year' and 'Tank.ID'
+merged_clean_unique <- merged_with_weather_clean %>%
+  distinct(Year, Tank.ID, .keep_all = TRUE)
+
+# Perform the left join to add the values from 'merged_with_weather_clean' to 'dead_individuals'
+dead_individuals <- dead_individuals %>%
+  left_join(merged_clean_unique %>%
+              select(Year, Tank.ID, Clutch.ID, Date.stocked, Stocking.density, 
+                     temp_min, temp_median, temp_max, temp_mean, 
+                     prcp_cumulative, prcp_mean, prcp_median, 
+                     vp_min, vp_max, vp_median, vp_mean, 
+                     prcp_mean.std, temp_max.std, temp_min.std, 
+                     Stocking.density.std),
+            by = c("Year" = "Year", "Tank.ID" = "Tank.ID"))
+
+
+
+# Step 1: Add the 'Fate' column to 'merged_with_weather_clean' with a value of 1
+merged_with_weather_clean <- merged_with_weather_clean %>%
+  mutate(Fate = 1)
+
+# Step 2: Ensure both dataframes have the same column names in the same order
+# First, ensure 'dead_individuals' has the 'Fate' column
+dead_individuals <- dead_individuals %>%
+  mutate(Fate = 0)  # Set Fate = 0 for dead individuals
+
+# Step 3: Ensure column order is the same for both dataframes
+column_order <- c("Year", "Tank.ID", "Clutch.ID", "Date.stocked", "Stocking.density", 
+                  "temp_min", "temp_median", "temp_max", "temp_mean", 
+                  "prcp_cumulative", "prcp_mean", "prcp_median", 
+                  "vp_min", "vp_max", "vp_median", "vp_mean", 
+                  "prcp_mean.std", "temp_max.std", "temp_min.std", 
+                  "Stocking.density.std", "Date.metamorphosed", "Mass.g.metamorphosed", "Fate")
+
+merged_with_weather_clean <- merged_with_weather_clean %>%
+  select(all_of(column_order))
+
+dead_individuals <- dead_individuals %>%
+  select(all_of(column_order))
+
+# Step 4: Combine the two dataframes using rbind
+all.tadpoles <- rbind(merged_with_weather_clean, dead_individuals)
+
+# Step 5: Check the result
+nrow(all.tadpoles)  # Should now have the correct number of rows
+head(all.tadpoles)  # Check the first few rows
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 # Step 2: Create a dataframe for surviving individuals (Fate = 1)
 # Assuming all.tadpoles.livedead already contains the survivors (Fate = 1)
@@ -498,8 +601,7 @@ dead_individuals <- left_join(dead_individuals,
 dead_individuals$Year <- as.numeric(dead_individuals$Year)
 dead_individuals$Tank.ID <- as.numeric(dead_individuals$Tank.ID)
 
-# Saving full merged master dataframe to source
-write.csv(merged.Master.met, "merged.Master.met.csv", row.names = FALSE) 
+                    ##### WEATHER DATA ADDITION + MERGING ######
 
 # Read and merge 2009 weather data
 dat.weather2009 <- read_csv ("Weather_2009.csv", skip = 6)
@@ -594,6 +696,8 @@ merged.Master.weather <- rbind(master.weather2009, master.weather2010, master.we
 # Saving full merged master dataframe to source
 write.csv(merged.Master.weather, "merged.Master.weather.csv", row.names = FALSE) 
 
+                      ####### ANALYZE WEATHER DATA #######
+
 # summary statistics for weather
 library(dplyr)
 
@@ -618,6 +722,9 @@ weather_summary <- merged.Master.weather %>%
     vp_mean = mean(vp, na.rm = TRUE),  # Mean vapor pressure
     vp_max = max(vp, na.rm = TRUE)  # Maximum vapor pressure
   )
+
+            ####### GRAPHING WEATHER DATA ########
+
 library (ggplot2)
 # Graphing temp stats per year
 ggplot(weather_summary, aes(x = year)) +
@@ -640,14 +747,10 @@ ggplot(weather_summary, aes(x = year)) +
     title = "Temperature Statistics per Year",
     x = "Year",
     y = "Temperature (°C)",
-    color = "Temperature Type"
-  ) +
-  theme_minimal() +
-  theme(
+    color = "Temperature Type") +
+  theme_minimal() + theme(
     plot.title = element_text(hjust = 0.5, family = "serif"),
-    text = element_text(family = "serif")
-  )
-
+    text = element_text(family = "serif"))
 
 # Summarize Days.to.metamorphosis by year
 met_summary <- merged.Master.met %>%
@@ -657,11 +760,9 @@ met_summary <- merged.Master.met %>%
     days_min = ifelse(all(is.na(Days.to.metamorphosis)), NA, min(Days.to.metamorphosis, na.rm = TRUE)),
     days_median = ifelse(all(is.na(Days.to.metamorphosis)), NA, median(Days.to.metamorphosis, na.rm = TRUE)),
     days_mean = ifelse(all(is.na(Days.to.metamorphosis)), NA, mean(Days.to.metamorphosis, na.rm = TRUE)),
-    days_max = ifelse(all(is.na(Days.to.metamorphosis)), NA, max(Days.to.metamorphosis, na.rm = TRUE))
-  )
+    days_max = ifelse(all(is.na(Days.to.metamorphosis)), NA, max(Days.to.metamorphosis, na.rm = TRUE)))
 
-
-# Plot the summarized data
+# Summarized days to metamorphosis per year graph
 ggplot(met_summary, aes(x = Year)) +
   geom_line(aes(y = days_mean, color = "Mean"), size = 1) +
   geom_point(aes(y = days_mean, color = "Mean"), size = 2) +
@@ -676,38 +777,34 @@ ggplot(met_summary, aes(x = Year)) +
     title = "Days to Metamorphosis per Year",
     x = "Year",
     y = "Days to Metamorphosis",
-    color = "Statistic"
-  ) +
+    color = "Statistic") +
   theme_minimal() +
   theme(
     plot.title = element_text(hjust = 0.5, family = "serif"),
-    text = element_text(family = "serif")
-  )
+    text = element_text(family = "serif"))
 
-
-# Left join weather_summary into met_summary based on 'year'
-# Change the column name 'year' to 'Year' in the weather_summary data frame
-# Convert 'Year' in weather_summary to character
+# Change variable types to characters
 merged.Master.met$Year <- as.character(merged.Master.met$Year)
 weather_summary$year <- as.character(weather_summary$year)
 weather_summary <- weather_summary %>%
   rename(Year = year)
-# Now perform the left join
+
 # Left join weather_summary into merged.Master.met based on 'Year'
-merged_with_weather <- left_join(merged.Master.met, weather_summary, by = "Year")
+merged.Master.met <- left_join(merged.Master.met, weather_summary, by = "Year")
+
 # Compute the average mean days to metamorphosis per year
 merged_with_weather <- merged_with_weather %>%
   group_by(Year) %>%
   mutate(days_mean = mean(Days.to.metamorphosis, na.rm = TRUE)) %>%
-  ungroup()  # Ungroup to remove the grouping after the calculation
+  ungroup() 
 
-
+# Change variables to numeric
 merged_with_weather$Year <- as.numeric(merged_with_weather$Year)
 merged_with_weather$Mass.g.metamorphosed <- as.numeric(merged_with_weather$Mass.g.metamorphosed)
 merged_with_weather$Tank.ID <- as.numeric(merged_with_weather$Tank.ID)
 merged_with_weather$Stocking.density <- as.numeric(merged_with_weather$Stocking.density)
 
-# Plotting mean days to metamorphosis and mean temp per year
+# GRAPH - mean days to metamorphosis and mean temp per year
 ggplot(merged_with_weather, aes(x = Year)) +
   geom_line(aes(y = temp_mean, color = "Mean Temp (°C)"), size = 1) +
   geom_point(aes(y = temp_mean, color = "Mean Temp (°C)"), size = 2) +
@@ -719,20 +816,16 @@ ggplot(merged_with_weather, aes(x = Year)) +
     title = "Mean Days to Metamorphosis and Mean Temperature per Year",
     x = "Year",
     y = "Value",
-    color = "Statistic"
-  ) +
-  theme_minimal() +
+    color = "Statistic") + theme_minimal() +
   theme(
     plot.title = element_text(hjust = 0.5, family = "serif"),
-    text = element_text(family = "serif")
-  )
-
+    text = element_text(family = "serif"))
 colnames(merged_with_weather)
-
 
 # Remove rows where either days_mean or temp_mean is NA
 merged_with_weather <- merged_with_weather %>%
   filter(!is.na(days_mean) & !is.na(temp_mean))
+
 # Remove rows with unreasonable values
 merged_with_weather <- merged_with_weather %>%
   filter(temp_mean >= -50 & temp_mean <= 250,  # Adjust the range as needed
@@ -742,27 +835,9 @@ merged_with_weather <- merged_with_weather %>%
 merged_with_weather <- merged_with_weather %>%
   group_by(Year) %>%
   mutate(days_mean = mean(Days.to.metamorphosis, na.rm = TRUE)) %>%
-  ungroup()  # Remove grouping after calculation
+  ungroup() 
 
-ggplot(merged_with_weather, aes(x = Year)) +
-  geom_line(aes(y = temp_mean, color = "Mean Temp (°C)"), size = 1) +
-  geom_point(aes(y = temp_mean, color = "Mean Temp (°C)"), size = 2) +
-  geom_line(aes(y = days_mean, color = "Average Days to Metamorphosis"), size = 1) +
-  geom_point(aes(y = days_mean, color = "Average Days to Metamorphosis"), size = 2) +
-  scale_color_manual(values = c("Mean Temp (°C)" = "steelblue", 
-                                "Average Days to Metamorphosis" = "darkorange")) +
-  labs(
-    title = "Mean Days to Metamorphosis and Mean Temperature per Year",
-    x = "Year",
-    y = "Value",
-    color = "Statistic"
-  ) +
-  theme_minimal() +
-  theme(
-    plot.title = element_text(hjust = 0.5, family = "serif"),
-    text = element_text(family = "serif")
-  )
-
+# GRAPH - Mean Temp vs Mean Days to Meta per Year
 ggplot(merged_with_weather, aes(x = Year)) +
   geom_line(aes(y = temp_mean, color = "Mean Temp (°C)"), size = 1) +
   geom_point(aes(y = temp_mean, color = "Mean Temp (°C)"), size = 2) +
@@ -782,47 +857,167 @@ ggplot(merged_with_weather, aes(x = Year)) +
     plot.title = element_text(hjust = 0.5, family = "serif"),
     text = element_text(family = "serif")
   )
-
-# LME model
+                  ####### MODELS FOR VARIABLE COMPARISON ########
+# Load libraries
 library(lme4)
 library(dplyr)
+library(ggplot2)
+library(sjPlot)
 
-# Standardize variables
+# Standardize variables of temp max, temp min, prcp mean, and stocking density
 merged_with_weather <- merged_with_weather %>%
   mutate(
     Stocking.density.std = (Stocking.density - mean(Stocking.density, na.rm = TRUE)) / sd(Stocking.density, na.rm = TRUE),
     temp_max.std = (temp_max - mean(temp_max, na.rm = TRUE)) / sd(temp_max, na.rm = TRUE),
     temp_min.std = (temp_min - mean(temp_min, na.rm = TRUE)) / sd(temp_min, na.rm = TRUE),
-    prcp_mean.std = (prcp_mean - mean(prcp_mean, na.rm = TRUE)) / sd(prcp_mean, na.rm = TRUE)
-  )
+    prcp_mean.std = (prcp_mean - mean(prcp_mean, na.rm = TRUE)) / sd(prcp_mean, na.rm = TRUE))
 
-
-# Remove NA values from DTM
+# Remove NA values from days and mass
 merged_with_weather_clean <- merged_with_weather %>%
-  filter(!is.na(Days.to.metamorphosis))
+  filter(!is.na(Days.to.metamorphosis), !is.na(Mass.g.metamorphosed))
 
 
-# Model for days to metamorphosis
+# MODEL - Estimated effects of standardized variables on days to meta
 days_model <- lmer(Days.to.metamorphosis ~ temp_min.std + temp_max.std + prcp_mean.std + Stocking.density.std + (1 | Year) + (1|Tank.ID), data = merged_with_weather_clean)
+plot_model(days_model, 
+           title = "Effects of Weather and Stocking Density on Days to Metamorphosis") +
+  theme_minimal(base_size = 14) +
+  theme(plot.title = element_text(hjust = 0.5, face = "bold"))
 summary(days_model)
-plot_model(days_model)
 
-## how to find p value with this model, and correlation coefficient r^2
-# Estimate model for days to meta
-library(sjPlot)
+# MODEL - Estimated effects of standardized variables on mass at meta
+mass_model <- lmer(Mass.g.metamorphosed ~ temp_min.std + temp_max.std + prcp_mean.std + Stocking.density.std + (1 | Year) + (1|Tank.ID), data = merged_with_weather_clean)
+plot_model(mass_model, 
+           title = "Effects of Weather and Stocking Density on Mass at Metamorphosis") +
+  theme_minimal(base_size = 14) +
+  theme(plot.title = element_text(hjust = 0.5, face = "bold"))
 
+
+
+                    ##### CONFIDENCE INTERVAL PLOTS #######
+
+# Install packages
+install.packages("broom.mixed")
+library(broom.mixed)
+library(tidyr)
+library(ggplot2)
+
+# GRAPH - Regression Coefficients with 95% CI for days to meta
+model_coefs <- tidy(days_model, conf.int = TRUE)
+ggplot(model_coefs, aes(x = term, y = estimate, ymin = conf.low, ymax = conf.high)) +
+  geom_pointrange() +
+  coord_flip() +
+  theme_minimal() +
+  labs(title = "Regression Coefficients with 95% CI", 
+       x = "Predictors", y = "Estimate")
+
+# Calculate R² for the mass model
+install.packages("MuMIn")
+library(MuMIn)
+library(performance)
+r2(days_model)
+
+# GRAPH - Regression Coefficients with 95% CI for mass
+model_coefs <- tidy(mass_model, conf.int = TRUE)
+ggplot(model_coefs, aes(x = term, y = estimate, ymin = conf.low, ymax = conf.high)) +
+  geom_pointrange() +
+  coord_flip() +
+  theme_minimal() +
+  labs(title = "Regression Coefficients with 95% CI", 
+       x = "Predictors", y = "Estimate")
+
+# Calculate R² for the mass model
+install.packages("MuMIn")
+library(MuMIn)
+library(performance)
+r2(mass_model)
+
+# Find P-values for model
+install.packages("lmerTest")  # Install lmerTest if not already installed
+library(lmerTest)
+
+            ####### MODELS FOR PREDICTING THE EFFECT OF VARIABLES ON DAYS TO META AND MASS ##########
+
+# GRAPH - Effects of weather and SD on days to metamorphosis
 p1 <- plot_model(days_model, type = "pred", terms = c("temp_max.std", "prcp_mean.std[3.683709]", "Stocking.density.std[-2, 0, 2]"))
 p1 <- p1 +
   geom_point(data = merged_with_weather_clean, aes(x = temp_max.std, y = Days.to.metamorphosis), shape = 1, color = "black", size = 1)
 p1
-## can plot on one graph with different color lines, make each point more transparent
+
+# GRAPH - variation of above graph showing on one graph with different lines for SD
+# Use a fixed value for temp_min.std (e.g., the mean of temp_min.std)
+mean_temp_min <- mean(merged_with_weather_clean$temp_min.std, na.rm = TRUE)
+
+# Generate predictions manually for the plot
+predict_data <- expand.grid(
+  temp_min.std = mean_temp_min,  # Use the mean of temp_min.std
+  temp_max.std = seq(min(merged_with_weather_clean$temp_max.std), 
+                     max(merged_with_weather_clean$temp_max.std), length.out = 100),
+  prcp_mean.std = 3.683709,  # Set the value of prcp_mean.std
+  Stocking.density.std = c(-2, 0, 2)  # Different levels of Stocking.density.std
+)
+
+# Generate predicted Days.to.metamorphosis values from the model, ignoring random effects
+predict_data$Days.to.metamorphosis <- predict(days_model, newdata = predict_data, re.form = ~0)
+
+# Plot the predictions with different color lines for Stocking.density.std
+p1 <- ggplot(predict_data, aes(x = temp_max.std, y = Days.to.metamorphosis, color = factor(Stocking.density.std))) +
+  geom_line(size = 1) +  # Draw lines for each level of Stocking.density.std
+  scale_color_manual(values = c("red", "blue", "green")) +  # Customize the colors if needed
+  geom_point(data = merged_with_weather_clean, aes(x = temp_max.std, y = Days.to.metamorphosis), 
+             shape = 1, color = "black", size = 1) +  # Scatter plot points
+  labs(color = "Stocking Density") +  # Add a legend for color
+  theme_minimal(base_size = 14) +
+  theme(plot.title = element_text(hjust = 0.5, face = "bold")) +
+  ggtitle("Effects of Weather and Stocking Density on Days to Metamorphosis")
+
+# Print the plot
+print(p1)
 
 
-# Model for mass at metamorphosis
-mass_model <- lmer(Mass.g.metamorphosed ~ temp_min + temp_max + prcp_mean + Stocking.density + (1 | Year) + (1|Tank.ID), data = merged_with_weather)
-summary(mass_model)
+ ## SAME CODE, ADDED CONFIDENCE INTERVALS ##
+# Use a fixed value for temp_min.std (e.g., the mean of temp_min.std)
+mean_temp_min <- mean(merged_with_weather_clean$temp_min.std, na.rm = TRUE)
 
-plot_model(mass_model)
+# Generate predictions manually for the plot
+predict_data <- expand.grid(
+  temp_min.std = mean_temp_min,  # Use the mean of temp_min.std
+  temp_max.std = seq(min(merged_with_weather_clean$temp_max.std), 
+                     max(merged_with_weather_clean$temp_max.std), length.out = 100),
+  prcp_mean.std = 3.683709,  # Set the value of prcp_mean.std
+  Stocking.density.std = c(-2, 0, 2)  # Different levels of Stocking.density.std
+)
+
+# Generate predicted values and standard errors, ignoring random effects
+predictions <- predict(days_model, newdata = predict_data, re.form = ~0, se.fit = TRUE)
+
+# Add the fitted values and standard errors to the prediction data
+predict_data$Days.to.metamorphosis <- predictions$fit
+predict_data$se <- predictions$se.fit
+
+# Calculate the confidence intervals (95% by default)
+predict_data$CI_lower <- predict_data$Days.to.metamorphosis - 1.96 * predict_data$se
+predict_data$CI_upper <- predict_data$Days.to.metamorphosis + 1.96 * predict_data$se
+
+# Plot the predictions with confidence intervals
+p1 <- ggplot(predict_data, aes(x = temp_max.std, y = Days.to.metamorphosis, color = factor(Stocking.density.std))) +
+  geom_line(size = 1) +  # Draw lines for each level of Stocking.density.std
+  geom_ribbon(aes(ymin = CI_lower, ymax = CI_upper, fill = factor(Stocking.density.std)), alpha = 0.2) +  # Add confidence intervals as shaded areas
+  scale_color_manual(values = c("red", "blue", "green")) +  # Customize the colors if needed
+  scale_fill_manual(values = c("red", "blue", "green")) +  # Same colors for the ribbons
+  geom_point(data = merged_with_weather_clean, aes(x = temp_max.std, y = Days.to.metamorphosis), 
+             shape = 1, color = "black", size = 1) +  # Scatter plot points
+  labs(color = "Stocking Density", fill = "Stocking Density") +  # Add a legend for color and fill
+  theme_minimal(base_size = 14) +
+  theme(plot.title = element_text(hjust = 0.5, face = "bold")) +
+  ggtitle("Effects of Weather and Stocking Density on Days to Metamorphosis")
+
+# Print the plot
+print(p1)
+
+
+
+
 
 ## Predict effects on mass at metamorphosis
 p2 <- plot_model(mass_model, type = "pred", terms = c("temp_max.std", "prcp_mean.std[3.683709]", "Stocking.density.std[-2, 0, 2]"))
@@ -830,7 +1025,10 @@ p2 <- p2 +
   geom_point(data = merged_with_weather_clean, aes(x = temp_max.std, y = Mass.g.metamorphosed), shape = 1, color = "black", size = 1)
 p2
 
+
  ##  Plots for Stocking Density Ranges vs Days to Meta ##
+
+# 30, 50, 70, 100 #
 # Create density range categories
 subset_density_days <- merged_with_weather %>%
   mutate(density_range = case_when(
@@ -886,10 +1084,6 @@ ggplot(subset_density_days, aes(x = density_range, y = Mass.g.metamorphosed)) +
     y = "Mass at Metamorphosis (g)"
   ) +
   theme_minimal()
-
-
-
-library(ggplot2)
 
 plot1 <- ggplot(data = merged_with_weather, aes(x = temp_min, y = temp_max)) +
   geom_point()
