@@ -439,6 +439,7 @@ write.csv(merged.Master.met, "merged.Master.met.csv", row.names = FALSE)
 weather_summary$std_temp_min <- scale(weather_summary$temp_min, center = TRUE, scale = TRUE)
 weather_summary$std_temp_median <- scale(weather_summary$temp_median, center = TRUE, scale = TRUE)
 weather_summary$std_temp_max <- scale(weather_summary$temp_max, center = TRUE, scale = TRUE)
+weather_summary$std_temp_mean <- scale(weather_summary$temp_mean, center = TRUE, scale = TRUE)
 weather_summary$std_prcp_cumulative <- scale(weather_summary$prcp_cumulative, center = TRUE, scale = TRUE)
 weather_summary$std_prcp_mean <- scale(weather_summary$prcp_mean, center = TRUE, scale = TRUE)
 weather_summary$std_prcp_median <- scale(weather_summary$prcp_median, center = TRUE, scale = TRUE)
@@ -494,56 +495,65 @@ dead_individuals <- Ind.per.tank %>%
 head(dead_individuals)
 
 
-dead_individuals$Year <- as.numeric(dead_individuals$Year)
-dead_individuals$Tank.ID <- as.numeric(dead_individuals$Tank.ID)
 
 # Perform the left join and select the desired covariates
 library(dplyr)
 
-library(dplyr)
-
 # Ensure that 'merged_with_weather_clean' has unique rows based on 'Year' and 'Tank.ID'
-merged_clean_unique <- merged_with_weather_clean %>%
+merged.master.met_unique <- merged.Master.met %>%
   distinct(Year, Tank.ID, .keep_all = TRUE)
 
 # Perform the left join to add the values from 'merged_with_weather_clean' to 'dead_individuals'
 dead_individuals <- dead_individuals %>%
-  left_join(merged_clean_unique %>%
+  left_join(merged.master.met_unique %>%
               select(Year, Tank.ID, Clutch.ID, Date.stocked, Stocking.density, 
                      temp_min, temp_median, temp_max, temp_mean, 
                      prcp_cumulative, prcp_mean, prcp_median, 
-                     vp_min, vp_max, vp_median, vp_mean, 
-                     prcp_mean.std, temp_max.std, temp_min.std, 
-                     Stocking.density.std),
+                     vp_min, vp_max, vp_median, vp_mean, std_temp_min, std_temp_median, std_temp_max, std_temp_mean, 
+                     std_prcp_cumulative, std_prcp_mean, std_prcp_median, 
+                     std_vp_min, std_vp_max, std_vp_median, std_vp_mean),
             by = c("Year" = "Year", "Tank.ID" = "Tank.ID"))
 
 
-
-# Step 1: Add the 'Fate' column to 'merged_with_weather_clean' with a value of 1
-merged_with_weather_clean <- merged_with_weather_clean %>%
+# Step 1: Add the 'Fate' column to 'merged.Master.met' with a value of 1
+merged.Master.met <- merged.Master.met %>%
   mutate(Fate = 1)
 
-# Step 2: Ensure both dataframes have the same column names in the same order
-# First, ensure 'dead_individuals' has the 'Fate' column
 dead_individuals <- dead_individuals %>%
-  mutate(Fate = 0)  # Set Fate = 0 for dead individuals
+  mutate(Fate = 0)
+
+dead_individuals <- dead_individuals %>%
+  mutate(Date.metamorphosed = "NA")
+
+dead_individuals <- dead_individuals %>%
+  mutate(Mass.g.metamorphosed = "NA")
 
 # Step 3: Ensure column order is the same for both dataframes
 column_order <- c("Year", "Tank.ID", "Clutch.ID", "Date.stocked", "Stocking.density", 
                   "temp_min", "temp_median", "temp_max", "temp_mean", 
                   "prcp_cumulative", "prcp_mean", "prcp_median", 
-                  "vp_min", "vp_max", "vp_median", "vp_mean", 
-                  "prcp_mean.std", "temp_max.std", "temp_min.std", 
-                  "Stocking.density.std", "Date.metamorphosed", "Mass.g.metamorphosed", "Fate")
+                  "vp_min", "vp_max", "vp_median", "vp_mean", "std_temp_min", "std_temp_median", "std_temp_max", "std_temp_mean", 
+                  "std_prcp_cumulative", "std_prcp_mean", "std_prcp_median", 
+                  "std_vp_min", "std_vp_max", "std_vp_median", "std_vp_mean", 
+                  "Date.metamorphosed", "Mass.g.metamorphosed", "Fate")
 
-merged_with_weather_clean <- merged_with_weather_clean %>%
+merged.Master.met <- merged.Master.met %>%
   select(all_of(column_order))
 
 dead_individuals <- dead_individuals %>%
   select(all_of(column_order))
 
-# Step 4: Combine the two dataframes using rbind
-all.tadpoles <- rbind(merged_with_weather_clean, dead_individuals)
+# Convert date columns to Date class in both data frames
+merged.Master.met$Date.stocked <- as.Date(merged.Master.met$Date.stocked, format = "%Y-%m-%d")  # Adjust format as needed
+merged.Master.met$Date.metamorphosed <- as.Date(merged.Master.met$Date.metamorphosed, format = "%Y-%m-%d")  # Adjust format as needed
+
+dead_individuals$Date.stocked <- as.Date(dead_individuals$Date.stocked, format = "%Y-%m-%d")  # Adjust format as needed
+dead_individuals$Date.metamorphosed <- as.Date(dead_individuals$Date.metamorphosed, format = "%Y-%m-%d")  # Adjust format as needed
+
+# Now combine the two dataframes
+all.tadpoles <- rbind(merged.Master.met, dead_individuals)
+
+all.tadpoles$std_Stocking.density <- scale(all.tadpoles$Stocking.density, center = TRUE, scale = TRUE)
 
 # Step 5: Check the result
 nrow(all.tadpoles)  # Should now have the correct number of rows
@@ -553,53 +563,6 @@ head(all.tadpoles)  # Check the first few rows
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# Step 2: Create a dataframe for surviving individuals (Fate = 1)
-# Assuming all.tadpoles.livedead already contains the survivors (Fate = 1)
-survivors <- all.tadpoles.livedead %>%
-  filter(Fate == 1)  # Filter for survivors
-
-# Step 3: Combine the dead individuals with the survivors
-# We append the rows for dead individuals to the survivors dataframe
-all_data_with_dead <- bind_rows(survivors, dead_individuals)
-
-# View the resulting dataframe
-head(all_data_with_dead)
-
-dead_individuals <- Ind.per.tank %>%
-  filter(!is.na(No.dead)) %>%                      # Remove rows with NA in No.dead
-  rowwise() %>%
-  mutate(dead_individuals = list(rep(0, No.dead))) %>%
-  unnest(dead_individuals) %>%
-  select(Year, Tank.ID, dead_individuals) %>%
-  mutate(Fate = 0)  # Assign Fate = 0 for dead individuals
-
-
-# Perform the left join and select the desired covariates
-dead_individuals <- left_join(dead_individuals, 
-                             merged_with_weather_clean %>%
-                               select(Year, Tank.ID, Stocking.density, 
-                                      temp_min, temp_median, temp_max, temp_mean, 
-                                      prcp_cumulative, prcp_mean, prcp_median, 
-                                      vp_min, vp_max, vp_median, vp_mean, prcp_mean.std, temp_max.std,
-                                      temp_min.std, Stocking.density.std), 
-                             by = c("Year" = "Year", "Tank.ID" = "Tank.ID"))
-dead_individuals$Year <- as.numeric(dead_individuals$Year)
-dead_individuals$Tank.ID <- as.numeric(dead_individuals$Tank.ID)
 
                     ##### WEATHER DATA ADDITION + MERGING ######
 
@@ -885,12 +848,29 @@ plot_model(days_model,
   theme(plot.title = element_text(hjust = 0.5, face = "bold"))
 summary(days_model)
 
+plot_model(days_model, type = "pred", c("std_Stocking.density"))
+
 # MODEL - Estimated effects of standardized variables on mass at meta
 mass_model <- lmer(Mass.g.metamorphosed ~ temp_min.std + temp_max.std + prcp_mean.std + Stocking.density.std + (1 | Year) + (1|Tank.ID), data = merged_with_weather_clean)
 plot_model(mass_model, 
            title = "Effects of Weather and Stocking Density on Mass at Metamorphosis") +
   theme_minimal(base_size = 14) +
   theme(plot.title = element_text(hjust = 0.5, face = "bold"))
+
+plot_model(mass_model, type = "pred", c("std_Stocking.density"))
+
+
+
+
+
+fate_model <- glmer(Fate ~ std_temp_min + std_temp_max + std_prcp_mean+ std_Stocking.density + 
+                      (1 | Year) + (1 | Tank.ID), 
+                    data = all.tadpoles, 
+                    family = binomial)
+
+plot_model(fate_model)
+
+plot_model(fate_model, type = "pred", c("std_Stocking.density"))
 
 
 
