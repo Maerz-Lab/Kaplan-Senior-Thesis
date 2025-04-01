@@ -22,16 +22,10 @@ dat.meta20092011 <- dat.meta20092011 %>%
 dat.meta20092011 <- dat.meta20092011 %>%
   mutate(Days.to.metamorphosis = as.numeric(Date.metamorphosed - Date.stocked))
 
-## Temp Surv.prop column
-dat.meta20092011 <- dat.meta20092011 %>%
-  mutate(Surv.prop = NA)
-
 # Use subset() function to create a new dataframe for 2009-2011 data
-library(dplyr)
-
 master.met20092011 <- dat.meta20092011 %>%
   select(Year, Date.metamorphosed, Mass.g.metamorphosed, Fate.comments, Clutch.ID,
-         Date.stocked, Date.eggs.hatched, Stocking.density, Tank.ID, Days.to.metamorphosis, Surv.prop)
+         Date.stocked, Date.eggs.hatched, Stocking.density, Tank.ID, Days.to.metamorphosis)
 
 # Import 2012 data set
 dat.meta2012 <- read_csv("Rcapito_MetamorphLog_2012.csv")
@@ -45,22 +39,9 @@ dat.meta2012 <- dat.meta2012 %>%
 dat.meta2012 <- dat.meta2012 %>%
   mutate(Days.to.metamorphosis = as.numeric(Date.metamorphosed - Date.stocked))
 
-# Calculate survivorship proportion per tank
-Surv.prop <- dat.meta2012 %>%
-  group_by(Tank.ID) %>%
-  summarise(
-    n_stocked = first(Stocking.density),  # Use the stocking density per tank
-    n_metamorphosed = sum(!is.na(Date.metamorphosed)),  # Successfully metamorphosed
-    Surv.prop = n_metamorphosed / n_stocked  # Survivorship ratio
-  )
-
-# Add survivorship to dat.meta2012
-dat.meta2012 <- dat.meta2012 %>%
-  left_join(Surv.prop, by = "Tank.ID")
-
 # Use subset() function to create a new dataframe for 2012 data
 master.met2012 <- subset(dat.meta2012, select = c(Year, Date.metamorphosed, Mass.g.metamorphosed, Fate.comments, Clutch.ID,
-                                                  Date.stocked, Date.eggs.hatched, Stocking.density, Tank.ID, Days.to.metamorphosis, Surv.prop)) 
+                                                  Date.stocked, Date.eggs.hatched, Stocking.density, Tank.ID, Days.to.metamorphosis)) 
 
 # Import 2013 data set
 dat.meta2013 <- read_csv("Rcapito_MetamorphLog_2013.csv")
@@ -89,23 +70,9 @@ dat.meta2013 <- dat.meta2013 %>%
 dat.meta2013 <- dat.meta2013 %>%
   mutate(Days.to.metamorphosis = as.numeric(Date.metamorphosed - Date.stocked))
 
-# Calculate survivorship proportion per tank
-Surv.prop <- dat.meta2013 %>%
-  group_by(Tank.ID) %>%
-  summarise(
-    n_stocked = first(Stocking.density),
-    n_metamorphosed = sum(!is.na(Date.metamorphosed)),
-    Surv.prop = ifelse(is.na(n_stocked) | n_stocked == 0, NA, n_metamorphosed / n_stocked)
-  )
-
-
-# Add survivorship to dat.meta2013
-dat.meta2013 <- dat.meta2013 %>%
-  left_join(Surv.prop, by = "Tank.ID")
-
 # Use subset() function to create a new dataframe for 2013 data
 master.met2013 <- subset(dat.meta2013, select = c(Year, Date.metamorphosed, Mass.g.metamorphosed, Fate.comments, Clutch.ID,
-                                                  Date.stocked, Date.eggs.hatched, Stocking.density, Tank.ID, Days.to.metamorphosis, Surv.prop)) 
+                                                  Date.stocked, Date.eggs.hatched, Stocking.density, Tank.ID, Days.to.metamorphosis)) 
 # Import and subset 2015 data
 dat.meta2015 <- read_csv("Rcapito_MetamorphLog_2015.csv")
 
@@ -118,22 +85,9 @@ dat.meta2015 <- dat.meta2015 %>%
 dat.meta2015 <- dat.meta2015 %>%
   mutate(Days.to.metamorphosis = as.numeric(Date.metamorphosed - Date.stocked))
 
-# Calculate survivorship proportion per tank
-Surv.prop <- dat.meta2015 %>%
-  group_by(Tank.ID) %>%
-  summarise(
-    n_stocked = first(Stocking.density),  # Use the stocking density per tank
-    n_metamorphosed = sum(!is.na(Date.metamorphosed)),  # Successfully metamorphosed
-    Surv.prop = n_metamorphosed / n_stocked  # Survivorship ratio
-  )
-
-# Add survivorship to dat.meta2015
-dat.meta2015 <- dat.meta2015 %>%
-  left_join(Surv.prop, by = "Tank.ID")
-
 # Use subset() function to create a new dataframe for 2015 data
 master.met2015 <- subset(dat.meta2015, select = c(Year, Date.metamorphosed, Mass.g.metamorphosed, Fate.comments, Clutch.ID,
-                                                  Date.stocked, Date.eggs.hatched, Stocking.density, Tank.ID, Days.to.metamorphosis, Surv.prop)) 
+                                                  Date.stocked, Date.eggs.hatched, Stocking.density, Tank.ID, Days.to.metamorphosis)) 
 # Import 2016 data
 dat.meta2016 <- read_csv("Rcapito_MetamorphLog_2016.csv")
 
@@ -146,22 +100,9 @@ dat.meta2016 <- dat.meta2016 %>%
 dat.meta2016 <- dat.meta2016 %>%
   mutate(Days.to.metamorphosis = as.numeric(Date.metamorphosed - Date.stocked))
 
-# Calculate survivorship proportion per tank
-Surv.prop <- dat.meta2016 %>%
-  group_by(Tank.ID) %>%
-  summarise(
-    n_stocked = first(Stocking.density),  # Use the stocking density per tank
-    n_metamorphosed = sum(!is.na(Date.metamorphosed)),  # Successfully metamorphosed
-    Surv.prop = n_metamorphosed / n_stocked  # Survivorship ratio
-  )
-
-# Add survivorship to dat.meta2016
-dat.meta2016 <- dat.meta2016 %>%
-  left_join(Surv.prop, by = "Tank.ID")
-
 # Use subset() function to create a new dataframe for 2012 data
 master.met2016 <- subset(dat.meta2016, select = c(Year, Date.metamorphosed, Mass.g.metamorphosed, Fate.comments, Clutch.ID,
-                                                  Date.stocked, Date.eggs.hatched, Stocking.density, Tank.ID, Days.to.metamorphosis, Surv.prop)) 
+                                                  Date.stocked, Date.eggs.hatched, Stocking.density, Tank.ID, Days.to.metamorphosis)) 
 # Import 2017 data
 dat.meta2017 <- read_csv("Rcapito_MetamorphLog_2017.csv")
 
@@ -174,22 +115,9 @@ dat.meta2017 <- dat.meta2017 %>%
 dat.meta2017 <- dat.meta2017 %>%
   mutate(Days.to.metamorphosis = as.numeric(Date.metamorphosed - Date.stocked))
 
-# Calculate survivorship proportion per tank
-Surv.prop <- dat.meta2017 %>%
-  group_by(Tank.ID) %>%
-  summarise(
-    n_stocked = first(Stocking.density),  # Use the stocking density per tank
-    n_metamorphosed = sum(!is.na(Date.metamorphosed)),  # Successfully metamorphosed
-    Surv.prop = n_metamorphosed / n_stocked  # Survivorship ratio
-  )
-
-# Add survivorship to dat.meta2017
-dat.meta2017 <- dat.meta2017 %>%
-  left_join(Surv.prop, by = "Tank.ID")
-
 # Use subset() function to create a new dataframe for 2017 data
 master.met2017 <- subset(dat.meta2017, select = c(Year, Date.metamorphosed, Mass.g.metamorphosed, Fate.comments, Clutch.ID,
-                                                  Date.stocked, Date.eggs.hatched, Stocking.density, Tank.ID, Days.to.metamorphosis, Surv.prop)) 
+                                                  Date.stocked, Date.eggs.hatched, Stocking.density, Tank.ID, Days.to.metamorphosis)) 
 # Read 2018 data
 dat.meta2018 <- read_csv("Rcapito_MetamorphLog_2018.csv")
 
@@ -209,22 +137,9 @@ dat.meta2018.cleaned <- dat.meta2018.cleaned %>%
 dat.meta2018.cleaned <- dat.meta2018.cleaned %>%
   mutate(Days.to.metamorphosis = as.numeric(Date.metamorphosed - Date.stocked))
 
-# Calculate survivorship proportion per tank
-Surv.prop <- dat.meta2018.cleaned %>%
-  group_by(Tank.ID) %>%
-  summarise(
-    n_stocked = first(Stocking.density),  # Use the stocking density per tank
-    n_metamorphosed = sum(!is.na(Date.metamorphosed)),  # Successfully metamorphosed
-    Surv.prop = n_metamorphosed / n_stocked  # Survivorship ratio
-  )
-
-# Add survivorship to dat.meta2018
-dat.meta2018.cleaned <- dat.meta2018.cleaned %>%
-  left_join(Surv.prop, by = "Tank.ID")
-
 # Use subset() function to create a new dataframe for 2018 data
 master.met2018 <- subset(dat.meta2018.cleaned, select = c(Year, Date.metamorphosed, Mass.g.metamorphosed, Fate.comments, Clutch.ID,
-                                                  Date.stocked, Date.eggs.hatched, Stocking.density, Tank.ID, Days.to.metamorphosis, Surv.prop)) 
+                                                  Date.stocked, Date.eggs.hatched, Stocking.density, Tank.ID, Days.to.metamorphosis)) 
 # Read 2019 data
 dat.meta2019 <- read_csv("Rcapito_MetamorphLog_2019.csv")
 
@@ -244,22 +159,9 @@ dat.meta2019.cleaned <- dat.meta2019.cleaned %>%
 dat.meta2019.cleaned <- dat.meta2019.cleaned %>%
   mutate(Days.to.metamorphosis = as.numeric(Date.metamorphosed - Date.stocked))
 
-# Calculate survivorship proportion per tank
-Surv.prop <- dat.meta2019.cleaned %>%
-  group_by(Tank.ID) %>%
-  summarise(
-    n_stocked = first(Stocking.density),  # Use the stocking density per tank
-    n_metamorphosed = sum(!is.na(Date.metamorphosed)),  # Successfully metamorphosed
-    Surv.prop = n_metamorphosed / n_stocked  # Survivorship ratio
-  )
-
-# Add survivorship to dat.meta2019.cleaned
-dat.meta2019.cleaned <- dat.meta2019.cleaned %>%
-  left_join(Surv.prop, by = "Tank.ID")
-
 # Use subset() function to create a new dataframe for 2019 data
 master.met2019 <- subset(dat.meta2019.cleaned, select = c(Year, Date.metamorphosed, Mass.g.metamorphosed, Fate.comments, Clutch.ID,
-                                                  Date.stocked, Date.eggs.hatched, Stocking.density, Tank.ID, Days.to.metamorphosis, Surv.prop)) 
+                                                  Date.stocked, Date.eggs.hatched, Stocking.density, Tank.ID, Days.to.metamorphosis)) 
 # Import 2020 data
 dat.meta2020 <- read_csv("Rcapito_MetamorphLog_2020.csv")
 
@@ -272,22 +174,9 @@ dat.meta2020 <- dat.meta2020 %>%
 dat.meta2020 <- dat.meta2020 %>%
   mutate(Days.to.metamorphosis = as.numeric(Date.metamorphosed - Date.stocked))
 
-# Calculate survivorship proportion per tank
-Surv.prop <- dat.meta2020 %>%
-  group_by(Tank.ID) %>%
-  summarise(
-    n_stocked = first(Stocking.density),  # Use the stocking density per tank
-    n_metamorphosed = sum(!is.na(Date.metamorphosed)),  # Successfully metamorphosed
-    Surv.prop = n_metamorphosed / n_stocked  # Survivorship ratio
-  )
-
-# Add survivorship to dat.meta2020
-dat.meta2020 <- dat.meta2020 %>%
-  left_join(Surv.prop, by = "Tank.ID")
-
 # Use subset() function to create a new dataframe for 2012 data
 master.met2020 <- subset(dat.meta2020, select = c(Year, Date.metamorphosed, Mass.g.metamorphosed, Fate.comments, Clutch.ID,
-                                                  Date.stocked, Date.eggs.hatched, Stocking.density, Tank.ID, Days.to.metamorphosis, Surv.prop)) 
+                                                  Date.stocked, Date.eggs.hatched, Stocking.density, Tank.ID, Days.to.metamorphosis)) 
 # Read 2021 data
 dat.meta2021 <- read_csv("Rcapito_MetamorphLog_2021.csv")
 
@@ -307,22 +196,9 @@ dat.meta2021.cleaned <- dat.meta2021.cleaned %>%
 # Save the modified dataframe back to a CSV file
 write.csv(dat.meta2021.cleaned, "dat.meta2021.cleaned.csv", row.names = FALSE)
 
-# Calculate survivorship proportion per tank
-Surv.prop <- dat.meta2021.cleaned %>%
-  group_by(Tank.ID) %>%
-  summarise(
-    n_stocked = first(Stocking.density),  # Use the stocking density per tank
-    n_metamorphosed = sum(!is.na(Date.metamorphosed)),  # Successfully metamorphosed
-    Surv.prop = n_metamorphosed / n_stocked  # Survivorship ratio
-  )
-
-# Add survivorship to dat.meta2021.cleaned
-dat.meta2021.cleaned <- dat.meta2021.cleaned %>%
-  left_join(Surv.prop, by = "Tank.ID")
-
 # Use subset() function to create a new dataframe for 2012 data
 master.met2021 <- subset(dat.meta2021.cleaned, select = c(Year, Date.metamorphosed, Mass.g.metamorphosed, Fate.comments, Clutch.ID,
-                                                  Date.stocked, Date.eggs.hatched, Stocking.density, Tank.ID, Days.to.metamorphosis, Surv.prop))
+                                                  Date.stocked, Date.eggs.hatched, Stocking.density, Tank.ID, Days.to.metamorphosis))
 
 # Read 2022 data
 dat.meta2022 <- read_csv("Rcapito_MetamorphLog_2022.csv")
@@ -343,22 +219,9 @@ dat.meta2022.cleaned <- dat.meta2022.cleaned %>%
 dat.meta2022.cleaned <- dat.meta2022.cleaned %>%
   mutate(Days.to.metamorphosis = as.numeric(Date.metamorphosed - Date.stocked))
 
-# Calculate survivorship proportion per tank
-Surv.prop <- dat.meta2022.cleaned %>%
-  group_by(Tank.ID) %>%
-  summarise(
-    n_stocked = first(Stocking.density),  # Use the stocking density per tank
-    n_metamorphosed = sum(!is.na(Date.metamorphosed)),  # Successfully metamorphosed
-    Surv.prop = n_metamorphosed / n_stocked  # Survivorship ratio
-  )
-
-# Add survivorship to dat.meta2022.cleaned
-dat.meta2022.cleaned <- dat.meta2022.cleaned %>%
-  left_join(Surv.prop, by = "Tank.ID")
-
-# Use subset() function to create a new dataframe for 2012 data
+# Use subset() function to create a new dataframe for 2022 data
 master.met2022 <- subset(dat.meta2022.cleaned, select = c(Year, Date.metamorphosed, Mass.g.metamorphosed, Fate.comments, Clutch.ID,
-                                                  Date.stocked, Date.eggs.hatched, Stocking.density, Tank.ID, Days.to.metamorphosis, Surv.prop)) 
+                                                  Date.stocked, Date.eggs.hatched, Stocking.density, Tank.ID, Days.to.metamorphosis)) 
 # Read and merge 2023 data 
 dat.meta2023 <- read_csv("Rcapito_MetamorphLog_2023.csv")
 
@@ -381,22 +244,9 @@ dat.meta2023 <- dat.meta2023 %>%
 dat.meta2023 <- dat.meta2023 %>%
   mutate(Days.to.metamorphosis = as.numeric(Date.metamorphosed - Date.stocked))
 
-# Calculate survivorship proportion per tank
-Surv.prop <- dat.meta2023 %>%
-  group_by(Tank.ID) %>%
-  summarise(
-    n_stocked = first(Stocking.density),  # Use the stocking density per tank
-    n_metamorphosed = sum(!is.na(Date.metamorphosed)),  # Successfully metamorphosed
-    Surv.prop = n_metamorphosed / n_stocked  # Survivorship ratio
-  )
-
-# Add survivorship to dat.meta2023
-dat.meta2023 <- dat.meta2023 %>%
-  left_join(Surv.prop, by = "Tank.ID")
-
 # Use subset() function to create a new dataframe for 2012 data
 master.met2023 <- subset(dat.meta2023, select = c(Year, Date.metamorphosed, Mass.g.metamorphosed, Fate.comments, Clutch.ID,
-                                                  Date.stocked, Date.eggs.hatched, Stocking.density, Tank.ID, Days.to.metamorphosis, Surv.prop)) 
+                                                  Date.stocked, Date.eggs.hatched, Stocking.density, Tank.ID, Days.to.metamorphosis)) 
 # Read and merge 2024 data
 dat.meta2024 <- read_csv("Rcapito_MetamorphLog_2024.csv")
 
@@ -409,26 +259,14 @@ dat.meta2024 <- dat.meta2024 %>%
 dat.meta2024 <- dat.meta2024 %>%
   mutate(Days.to.metamorphosis = as.numeric(Date.metamorphosed - Date.stocked))
 
-# Calculate survivorship proportion per tank
-Surv.prop <- dat.meta2024 %>%
-  group_by(Tank.ID) %>%
-  summarise(
-    n_stocked = first(Stocking.density),  # Use the stocking density per tank
-    n_metamorphosed = sum(!is.na(Date.metamorphosed)),  # Successfully metamorphosed
-    Surv.prop = n_metamorphosed / n_stocked  # Survivorship ratio
-  )
-
-# Add survivorship to dat.meta2024
-dat.meta2024 <- dat.meta2024 %>%
-  left_join(Surv.prop, by = "Tank.ID")
-
 # Use subset() function to create a new dataframe for 2024 data
 master.met2024 <- subset(dat.meta2024, select = c(Year, Date.metamorphosed, Mass.g.metamorphosed, Fate.comments, Clutch.ID,
-                                                  Date.stocked, Date.eggs.hatched, Stocking.density, Tank.ID, Days.to.metamorphosis, Surv.prop)) 
+                                                  Date.stocked, Date.eggs.hatched, Stocking.density, Tank.ID, Days.to.metamorphosis)) 
 
 # Create a master dataset with all subsetted data files 
 merged.Master.met <- rbind(master.met20092011, master.met2012, master.met2013, master.met2015, master.met2016, master.met2017, master.met2018,
                        master.met2019, master.met2021, master.met2022, master.met2023, master.met2024)
+
 
 # Saving full merged master dataframe to source
 write.csv(merged.Master.met, "merged.Master.met.csv", row.names = FALSE) 
@@ -493,11 +331,6 @@ dead_individuals <- Ind.per.tank %>%
 
 # View the first few rows of the data after removing dead_individuals
 head(dead_individuals)
-
-
-
-# Perform the left join and select the desired covariates
-library(dplyr)
 
 # Ensure that 'merged_with_weather_clean' has unique rows based on 'Year' and 'Tank.ID'
 merged.master.met_unique <- merged.Master.met %>%
@@ -650,11 +483,33 @@ dat.weather2023 <- dat.weather2023 %>%
   rename(tmax = 'tmax (deg c)', tmin = 'tmin (deg c)', prcp = 'prcp (mm/day)', vp = 'vp (Pa)')
 master.weather2023 <- subset(dat.weather2023, select = c(year, yday,  prcp, tmax, tmin, vp))
 
+# Read and merge 2024 weather data
+dat.weather2024 <- read_csv("Weather_2024.csv", skip = 10)
+# Convert temps from F to C
+dat.weather2024$"tmin (degrees F)" <- (dat.weather2024$"tmin (degrees F)" - 32) * 5 / 9
+dat.weather2024$"tmax (degrees F)" <- (dat.weather2024$"tmax (degrees F)" - 32) * 5 / 9
+# Convert precipitation from inches to millimeters
+dat.weather2024$"ppt (inches)" <- dat.weather2024$"ppt (inches)" * 25.4
+# Calculate the average VPD in hPa
+dat.weather2024$"vp_hPa" <- (dat.weather2024$"vpdmin (hPa)" + dat.weather2024$"vpdmax (hPa)") / 2
+# Convert VPD from hPa to Pa
+dat.weather2024$vp_Pa <- dat.weather2024$vp_hPa * 100
+# Ensure the date column is in Date format
+dat.weather2024$Date <- as.Date(dat.weather2024$Date)
+# Extract year and day of year
+dat.weather2024$year <- format(dat.weather2024$Date, "%Y")
+dat.weather2024$yday <- as.numeric(format(dat.weather2024$Date, "%j"))
+
+
+dat.weather2024 <- dat.weather2024 %>%
+  rename(tmax = 'tmax (degrees F)', tmin = 'tmin (degrees F)', prcp = 'ppt (inches)', vp = 'vp_Pa')
+master.weather2024 <- subset(dat.weather2024, select = c(year, yday,  prcp, tmax, tmin, vp))
+
 # Create a master dataset with all subsetted weather data files
 merged.Master.weather <- rbind(master.weather2009, master.weather2010, master.weather2011, master.weather2012,
                                master.weather2013, master.weather2015, master.weather2016, master.weather2017,
                                master.weather2018, master.weather2019, master.weather2020, master.weather2021,
-                               master.weather2022, master.weather2023)
+                               master.weather2022, master.weather2023, master.weather2024)
 
 # Saving full merged master dataframe to source
 write.csv(merged.Master.weather, "merged.Master.weather.csv", row.names = FALSE) 
@@ -691,19 +546,15 @@ weather_summary <- merged.Master.weather %>%
 library (ggplot2)
 # Graphing temp stats per year
 ggplot(weather_summary, aes(x = year)) +
-  # Plot temp_max first
-  geom_line(aes(y = temp_max, color = "Max"), size = 1, na.rm = TRUE) +
+  geom_line(aes(y = temp_max, color = "Max", group = 1), size = 1, na.rm = TRUE) +
   geom_point(aes(y = temp_max, color = "Max"), size = 2, na.rm = TRUE) +
   
-  # Plot temp_min second
-  geom_line(aes(y = temp_min, color = "Min"), size = 1, na.rm = TRUE) +
+  geom_line(aes(y = temp_min, color = "Min", group = 1), size = 1, na.rm = TRUE) +
   geom_point(aes(y = temp_min, color = "Min"), size = 2, na.rm = TRUE) +
   
-  # Plot temp_mean last
-  geom_line(aes(y = temp_mean, color = "Mean"), size = 1, na.rm = TRUE) +
+  geom_line(aes(y = temp_mean, color = "Mean", group = 1), size = 1, na.rm = TRUE) +
   geom_point(aes(y = temp_mean, color = "Mean"), size = 2, na.rm = TRUE) +
   
-  # Manual color scale
   scale_color_manual(values = c("Mean" = "steelblue", "Max" = "red", "Min" = "black")) +
   
   labs(
@@ -711,9 +562,13 @@ ggplot(weather_summary, aes(x = year)) +
     x = "Year",
     y = "Temperature (°C)",
     color = "Temperature Type") +
-  theme_minimal() + theme(
+  theme_minimal() + 
+  theme(
     plot.title = element_text(hjust = 0.5, family = "serif"),
-    text = element_text(family = "serif"))
+    text = element_text(family = "serif")
+  )
+
+
 
 # Summarize Days.to.metamorphosis by year
 met_summary <- merged.Master.met %>%
@@ -724,6 +579,15 @@ met_summary <- merged.Master.met %>%
     days_median = ifelse(all(is.na(Days.to.metamorphosis)), NA, median(Days.to.metamorphosis, na.rm = TRUE)),
     days_mean = ifelse(all(is.na(Days.to.metamorphosis)), NA, mean(Days.to.metamorphosis, na.rm = TRUE)),
     days_max = ifelse(all(is.na(Days.to.metamorphosis)), NA, max(Days.to.metamorphosis, na.rm = TRUE)))
+met_summary <- merged.Master.met %>%
+  group_by(Year) %>%
+  summarise(
+    # Handle cases where there are no valid data points, excluding 0 values
+    days_min = ifelse(all(is.na(Days.to.metamorphosis) | Days.to.metamorphosis == 0), NA, min(Days.to.metamorphosis[Days.to.metamorphosis != 0], na.rm = TRUE)),
+    days_median = ifelse(all(is.na(Days.to.metamorphosis) | Days.to.metamorphosis == 0), NA, median(Days.to.metamorphosis[Days.to.metamorphosis != 0], na.rm = TRUE)),
+    days_mean = ifelse(all(is.na(Days.to.metamorphosis) | Days.to.metamorphosis == 0), NA, mean(Days.to.metamorphosis[Days.to.metamorphosis != 0], na.rm = TRUE)),
+    days_max = ifelse(all(is.na(Days.to.metamorphosis) | Days.to.metamorphosis == 0), NA, max(Days.to.metamorphosis[Days.to.metamorphosis != 0], na.rm = TRUE))
+  )
 
 # Summarized days to metamorphosis per year graph
 ggplot(met_summary, aes(x = Year)) +
@@ -745,6 +609,53 @@ ggplot(met_summary, aes(x = Year)) +
   theme(
     plot.title = element_text(hjust = 0.5, family = "serif"),
     text = element_text(family = "serif"))
+
+                        ###### Coding out 0 and NA from above graph ########
+library(dplyr)
+library(ggplot2)
+
+# Filter out rows with NA or 0 values in the relevant columns
+met_summary_clean <- met_summary %>%
+  filter(
+    !is.na(days_mean) & days_mean != 0,
+    !is.na(days_max) & days_max != 0,
+    !is.na(days_min) & days_min != 0,
+    !is.na(days_median) & days_median != 0
+  )
+
+# Plot with the cleaned data
+ggplot(met_summary_clean, aes(x = Year)) +
+  geom_line(aes(y = days_mean, color = "Mean"), size = 1) +
+  geom_point(aes(y = days_mean, color = "Mean"), size = 2) +
+  geom_line(aes(y = days_max, color = "Max"), size = 1) +
+  geom_point(aes(y = days_max, color = "Max"), size = 2) +
+  geom_line(aes(y = days_min, color = "Min"), size = 1) +
+  geom_point(aes(y = days_min, color = "Min"), size = 2) +
+  geom_line(aes(y = days_median, color = "Median"), size = 1) +
+  geom_point(aes(y = days_median, color = "Median"), size = 2) +
+  scale_color_manual(values = c("Mean" = "steelblue", "Max" = "red", "Min" = "black", "Median" = "green")) +
+  labs(
+    title = "Days to Metamorphosis per Year",
+    x = "Year",
+    y = "Days to Metamorphosis",
+    color = "Statistic") +
+  theme_minimal() +
+  theme(
+    plot.title = element_text(hjust = 0.5, family = "serif"),
+    text = element_text(family = "serif"))
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 # Change variable types to characters
 merged.Master.met$Year <- as.character(merged.Master.met$Year)
@@ -768,23 +679,6 @@ merged_with_weather$Tank.ID <- as.numeric(merged_with_weather$Tank.ID)
 merged_with_weather$Stocking.density <- as.numeric(merged_with_weather$Stocking.density)
 
 # GRAPH - mean days to metamorphosis and mean temp per year
-ggplot(merged_with_weather, aes(x = Year)) +
-  geom_line(aes(y = temp_mean, color = "Mean Temp (°C)"), size = 1) +
-  geom_point(aes(y = temp_mean, color = "Mean Temp (°C)"), size = 2) +
-  geom_line(aes(y = days_mean, color = "Mean Days to Metamorphosis"), size = 1) +
-  geom_point(aes(y = days_mean, color = "Mean Days to Metamorphosis"), size = 2) +
-  scale_color_manual(values = c("Mean Temp (°C)" = "steelblue", 
-                                "Mean Days to Metamorphosis" = "darkorange")) +
-  labs(
-    title = "Mean Days to Metamorphosis and Mean Temperature per Year",
-    x = "Year",
-    y = "Value",
-    color = "Statistic") + theme_minimal() +
-  theme(
-    plot.title = element_text(hjust = 0.5, family = "serif"),
-    text = element_text(family = "serif"))
-colnames(merged_with_weather)
-
 # Remove rows where either days_mean or temp_mean is NA
 merged_with_weather <- merged_with_weather %>%
   filter(!is.na(days_mean) & !is.na(temp_mean))
@@ -794,22 +688,31 @@ merged_with_weather <- merged_with_weather %>%
   filter(temp_mean >= -50 & temp_mean <= 250,  # Adjust the range as needed
          days_mean > 0)
 
-# Compute the average days to metamorphosis per year
+# Compute the average days to metamorphosis and mass per year
+library(ggplot2)
+library(ggplot)
 merged_with_weather <- merged_with_weather %>%
   group_by(Year) %>%
   mutate(days_mean = mean(Days.to.metamorphosis, na.rm = TRUE)) %>%
   ungroup() 
 
-# GRAPH - Mean Temp vs Mean Days to Meta per Year
+merged_with_weather <- merged_with_weather %>%
+  group_by(Year) %>%
+  mutate(mass_mean = mean(Mass.g.metamorphosed, na.rm = TRUE)) %>%
+  ungroup() 
+
 ggplot(merged_with_weather, aes(x = Year)) +
   geom_line(aes(y = temp_mean, color = "Mean Temp (°C)"), size = 1) +
   geom_point(aes(y = temp_mean, color = "Mean Temp (°C)"), size = 2) +
   geom_line(aes(y = days_mean, color = "Average Days to Metamorphosis"), size = 1) +
-  geom_point(aes(y = days_mean, color = "Average Days to Metamorphosis"), size = 2) +
+  geom_point(aes(y = days_mean, color = "Average Days to Metamorphosis"), size = 2) + 
+  geom_line(aes(y = mass_mean, color = "Average Mass at Metamorphosis"), size = 1) +
+  geom_point(aes(y = mass_mean, color = "Average Mass at Metamorphosis"), size = 2) +
   scale_color_manual(values = c("Mean Temp (°C)" = "steelblue", 
-                                "Average Days to Metamorphosis" = "darkorange")) +
+                                "Average Days to Metamorphosis" = "darkorange",
+                                "Average Mass at Metamorphosis" = "darkgreen")) +
   labs(
-    title = "Mean Days to Metamorphosis and Mean Temperature per Year",
+    title = "Mean Days to Metamorphosis, Mass at Metamorphosis, and Temperature per Year",
     x = "Year",
     y = "Value",
     color = "Statistic"
@@ -820,6 +723,9 @@ ggplot(merged_with_weather, aes(x = Year)) +
     plot.title = element_text(hjust = 0.5, family = "serif"),
     text = element_text(family = "serif")
   )
+ 
+
+
                   ####### MODELS FOR VARIABLE COMPARISON ########
 # Load libraries
 library(lme4)
@@ -859,62 +765,14 @@ plot_model(mass_model,
 
 plot_model(mass_model, type = "pred", c("std_Stocking.density"))
 
-
-
-
-
+# MODEL - Estimated effects of standardized variables on survivorship
 fate_model <- glmer(Fate ~ std_temp_min + std_temp_max + std_prcp_mean+ std_Stocking.density + 
                       (1 | Year) + (1 | Tank.ID), 
                     data = all.tadpoles, 
                     family = binomial)
-
 plot_model(fate_model)
-
 plot_model(fate_model, type = "pred", c("std_Stocking.density"))
 
-
-
-                    ##### CONFIDENCE INTERVAL PLOTS #######
-
-# Install packages
-install.packages("broom.mixed")
-library(broom.mixed)
-library(tidyr)
-library(ggplot2)
-
-# GRAPH - Regression Coefficients with 95% CI for days to meta
-model_coefs <- tidy(days_model, conf.int = TRUE)
-ggplot(model_coefs, aes(x = term, y = estimate, ymin = conf.low, ymax = conf.high)) +
-  geom_pointrange() +
-  coord_flip() +
-  theme_minimal() +
-  labs(title = "Regression Coefficients with 95% CI", 
-       x = "Predictors", y = "Estimate")
-
-# Calculate R² for the mass model
-install.packages("MuMIn")
-library(MuMIn)
-library(performance)
-r2(days_model)
-
-# GRAPH - Regression Coefficients with 95% CI for mass
-model_coefs <- tidy(mass_model, conf.int = TRUE)
-ggplot(model_coefs, aes(x = term, y = estimate, ymin = conf.low, ymax = conf.high)) +
-  geom_pointrange() +
-  coord_flip() +
-  theme_minimal() +
-  labs(title = "Regression Coefficients with 95% CI", 
-       x = "Predictors", y = "Estimate")
-
-# Calculate R² for the mass model
-install.packages("MuMIn")
-library(MuMIn)
-library(performance)
-r2(mass_model)
-
-# Find P-values for model
-install.packages("lmerTest")  # Install lmerTest if not already installed
-library(lmerTest)
 
             ####### MODELS FOR PREDICTING THE EFFECT OF VARIABLES ON DAYS TO META AND MASS ##########
 
@@ -923,6 +781,12 @@ p1 <- plot_model(days_model, type = "pred", terms = c("temp_max.std", "prcp_mean
 p1 <- p1 +
   geom_point(data = merged_with_weather_clean, aes(x = temp_max.std, y = Days.to.metamorphosis), shape = 1, color = "black", size = 1)
 p1
+
+# Stocking density vs days to meta
+SD_DTM <- plot_model(days_model, type = "pred", terms = c("Stocking.density.std[-2, 0, 2]"))
+SD_STM <- SD_DTM +
+  geom_point(data = merged_with_weather_clean, aes(x = Stocking.density.std, y = Days.to.metamorphosis), shape = 1, color = "black", size = 1)
+SD_DTM
 
 # GRAPH - variation of above graph showing on one graph with different lines for SD
 # Use a fixed value for temp_min.std (e.g., the mean of temp_min.std)
@@ -955,145 +819,106 @@ p1 <- ggplot(predict_data, aes(x = temp_max.std, y = Days.to.metamorphosis, colo
 print(p1)
 
 
- ## SAME CODE, ADDED CONFIDENCE INTERVALS ##
-# Use a fixed value for temp_min.std (e.g., the mean of temp_min.std)
-mean_temp_min <- mean(merged_with_weather_clean$temp_min.std, na.rm = TRUE)
-
-# Generate predictions manually for the plot
-predict_data <- expand.grid(
-  temp_min.std = mean_temp_min,  # Use the mean of temp_min.std
-  temp_max.std = seq(min(merged_with_weather_clean$temp_max.std), 
-                     max(merged_with_weather_clean$temp_max.std), length.out = 100),
-  prcp_mean.std = 3.683709,  # Set the value of prcp_mean.std
-  Stocking.density.std = c(-2, 0, 2)  # Different levels of Stocking.density.std
-)
-
-# Generate predicted values and standard errors, ignoring random effects
-predictions <- predict(days_model, newdata = predict_data, re.form = ~0, se.fit = TRUE)
-
-# Add the fitted values and standard errors to the prediction data
-predict_data$Days.to.metamorphosis <- predictions$fit
-predict_data$se <- predictions$se.fit
-
-# Calculate the confidence intervals (95% by default)
-predict_data$CI_lower <- predict_data$Days.to.metamorphosis - 1.96 * predict_data$se
-predict_data$CI_upper <- predict_data$Days.to.metamorphosis + 1.96 * predict_data$se
-
-# Plot the predictions with confidence intervals
-p1 <- ggplot(predict_data, aes(x = temp_max.std, y = Days.to.metamorphosis, color = factor(Stocking.density.std))) +
-  geom_line(size = 1) +  # Draw lines for each level of Stocking.density.std
-  geom_ribbon(aes(ymin = CI_lower, ymax = CI_upper, fill = factor(Stocking.density.std)), alpha = 0.2) +  # Add confidence intervals as shaded areas
-  scale_color_manual(values = c("red", "blue", "green")) +  # Customize the colors if needed
-  scale_fill_manual(values = c("red", "blue", "green")) +  # Same colors for the ribbons
-  geom_point(data = merged_with_weather_clean, aes(x = temp_max.std, y = Days.to.metamorphosis), 
-             shape = 1, color = "black", size = 1) +  # Scatter plot points
-  labs(color = "Stocking Density", fill = "Stocking Density") +  # Add a legend for color and fill
-  theme_minimal(base_size = 14) +
-  theme(plot.title = element_text(hjust = 0.5, face = "bold")) +
-  ggtitle("Effects of Weather and Stocking Density on Days to Metamorphosis")
-
-# Print the plot
-print(p1)
-
-
-
-
-
 ## Predict effects on mass at metamorphosis
 p2 <- plot_model(mass_model, type = "pred", terms = c("temp_max.std", "prcp_mean.std[3.683709]", "Stocking.density.std[-2, 0, 2]"))
 p2 <- p2 +
   geom_point(data = merged_with_weather_clean, aes(x = temp_max.std, y = Mass.g.metamorphosed), shape = 1, color = "black", size = 1)
 p2
 
-
+# Stocking density vs mass at meta
+SD_MM <- plot_model(mass_model, type = "pred", terms = c("Stocking.density.std[-2, 0, 2]"))
+SD_MM <- SD_MM +
+  geom_point(data = merged_with_weather_clean, aes(x = Stocking.density.std, y = Mass.g.metamorphosed), shape = 1, color = "black", size = 1)
+SD_MM
  ##  Plots for Stocking Density Ranges vs Days to Meta ##
 
-# 30, 50, 70, 100 #
-# Create density range categories
-subset_density_days <- merged_with_weather %>%
-  mutate(density_range = case_when(
-    Stocking.density >= 0 & Stocking.density <= 30 ~ "0-30",
-    Stocking.density >= 31 & Stocking.density <= 60 ~ "31-60",
-    Stocking.density >= 61 & Stocking.density <= 90 ~ "61-90",
-    Stocking.density >= 91 ~ "91+"
-  ))
-# Summary statistics by density range
-summary_stats <- subset_density_days %>%
-  group_by(density_range) %>%
-  summarize(
-    min_days = min(Days.to.metamorphosis, na.rm = TRUE),
-    max_days = max(Days.to.metamorphosis, na.rm = TRUE),
-    avg_days = mean(Days.to.metamorphosis, na.rm = TRUE)
-  ) %>%
-  arrange(density_range)
-print(summary_stats)
 
-ggplot(subset_density_days, aes(x = density_range, y = Days.to.metamorphosis)) +
-  geom_boxplot(fill = "lightblue", color = "black") +
+library(dplyr)
+
+# Summarize average Mass.g.metamorphosed by Stocking.density
+merged.Master.met <- merged.Master.met %>%
+  mutate(
+    Mass.g.metamorphosed = as.numeric(Mass.g.metamorphosed, na.rm = TRUE),
+    Days.to.metamorphosis = as.numeric(Days.to.metamorphosis, na.rm = TRUE)
+  )
+
+# Calculate summary statistics including min, max, and avg for Days.to.metamorphosis by Stocking.density
+summary_data_SD_mass <- merged.Master.met %>%
+  filter(Stocking.density %in% c(30, 50, 75, 100)) %>%
+  filter(!is.na(Mass.g.metamorphosed) & Mass.g.metamorphosed != 0) %>%  # Remove NA and 0 values
+  group_by(Stocking.density) %>%
+  summarise(
+    avg_mass = mean(Mass.g.metamorphosed, na.rm = TRUE),
+    min_mass = min(Mass.g.metamorphosed, na.rm = TRUE),
+    max_mass = max(Mass.g.metamorphosed, na.rm = TRUE)
+  ) %>%
+  mutate(
+    mass_range = paste(min_mass, "-", max_mass)  # Combine min and max days into a range
+  )
+
+# Reshape the data to long format for easier plotting
+summary_data_long_mass <- summary_data_SD_mass %>%
+  pivot_longer(cols = c(avg_mass), 
+               names_to = "Metric", 
+               values_to = "Value")
+# GRAPH - mass by SD
+ggplot(merged.Master.met %>% filter(Stocking.density %in% c(30, 50, 75, 100)), 
+       aes(x = factor(Stocking.density), y = Mass.g.metamorphosed)) +
+  geom_boxplot(outlier.colour = "red", outlier.shape = 16, fill = "pink") +
   labs(
-    title = "Days to Metamorphosis by Stocking Density Range",
-    x = "Stocking Density Range",
+    title = "Mass by Stocking Density",
+    x = "Stocking Density",
+    y = "Mass (g)"
+  ) +
+  theme_minimal() +
+  theme(
+    plot.title = element_text(hjust = 0.5, family = "serif"),
+    text = element_text(family = "serif")
+  )
+# View summary
+print(summary_data_SD_mass)
+
+## Summarize average Days to metamorphosis by Stocking.density ##
+
+# Calculate summary statistics including min, max, and avg for Days.to.metamorphosis by Stocking.density
+summary_data_SD_days <- merged.Master.met %>%
+  filter(Stocking.density %in% c(30, 50, 75, 100)) %>%
+  filter(!is.na(Days.to.metamorphosis) & Days.to.metamorphosis != 0) %>%  # Remove NA and 0 values
+  group_by(Stocking.density) %>%
+  summarise(
+    avg_days = mean(Days.to.metamorphosis, na.rm = TRUE),
+    min_days = min(Days.to.metamorphosis, na.rm = TRUE),
+    max_days = max(Days.to.metamorphosis, na.rm = TRUE)
+  ) %>%
+  mutate(
+    day_range = paste(min_days, "-", max_days)  # Combine min and max days into a range
+  )
+# Convert to long form for better graphing
+summary_data_long_days <- summary_data_SD_days %>%
+  pivot_longer(cols = c(avg_days), 
+               names_to = "Metric", 
+               values_to = "Value")
+
+# GRAPH - Days to meta by SD
+ggplot(merged.Master.met %>% filter(Stocking.density %in% c(30, 50, 75, 100)), 
+       aes(x = factor(Stocking.density), y = Days.to.metamorphosis)) +
+  geom_boxplot(outlier.colour = "red", outlier.shape = 16, fill= "lightblue") +
+  labs(
+    title = "Days to Metamorphosis by Stocking Density",
+    x = "Stocking Density",
     y = "Days to Metamorphosis"
   ) +
-  theme_minimal()
+  theme_minimal() +
+  theme(
+    plot.title = element_text(hjust = 0.5, family = "serif"),
+    text = element_text(family = "serif")
+  )
+
+print(summary_data_SD_days)
+
+
 
   ## Plot for SD ranges vs Mass at meta ##
-subset_density_mass <- merged_with_weather %>%
-  mutate(density_range = case_when(
-    Stocking.density >= 0 & Stocking.density <= 30 ~ "0-30",
-    Stocking.density >= 31 & Stocking.density <= 60 ~ "31-60",
-    Stocking.density >= 61 & Stocking.density <= 90 ~ "61-90",
-    Stocking.density >= 91 ~ "91+"
-  ))
-# Summary statistics by density range
-summary_stats <- subset_density_mass %>%
-  group_by(density_range) %>%
-  summarize(
-    min_mass = min(Mass.g.metamorphosed, na.rm = TRUE),
-    max_mass = max(Mass.g.metamorphosed, na.rm = TRUE),
-    avg_mass = mean(Mass.g.metamorphosed, na.rm = TRUE)
-  ) %>%
-  arrange(density_range)
-print(summary_stats)
-
-ggplot(subset_density_days, aes(x = density_range, y = Mass.g.metamorphosed)) +
-  geom_boxplot(fill = "pink", color = "black") +
-  labs(
-    title = "Mass at Metamorphosis by Stocking Density Range",
-    x = "Stocking Density Range",
-    y = "Mass at Metamorphosis (g)"
-  ) +
-  theme_minimal()
-
-plot1 <- ggplot(data = merged_with_weather, aes(x = temp_min, y = temp_max)) +
-  geom_point()
-
-
-
-
-## SD vs Survivorship
-library(ggplot2)
-# Create a scatter plot using Merged.master.met dataset
-ggplot(merged.Master.met, aes(x = Stocking.density, y = Surv.prop)) +
-  geom_point() +  # Add points
-  geom_smooth(method = "lm", se = FALSE, color = "blue") +  # Add a regression line
-  labs(
-    title = "Survivorship vs. Stocking Density",
-    x = "Stocking Density",
-    y = "Survivorship Proportion"
-  ) +
-  theme_minimal()
-
-
-
-
-
-
-
-
-
-
-sum(is.na(merged.Master.met$Surv.prop))  # Count NAs in Surv.prop
 
 
 
