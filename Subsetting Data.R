@@ -9,6 +9,7 @@ library(readr)
 library(dplyr)
 library(lubridate)
 
+
              ###### IMPORT AND CLEAN META DATA ######
 # Import 2009-2011 data set
 dat.meta20092011 <- read_csv("Rcapito_MetamorphLog_2009_2011_Final.csv")
@@ -544,6 +545,7 @@ weather_summary <- merged.Master.weather %>%
             ####### GRAPHING WEATHER DATA ########
 
 library (ggplot2)
+
 # Graphing temp stats per year
 ggplot(weather_summary, aes(x = year)) +
   geom_line(aes(y = temp_max, color = "Max", group = 1), size = 1, na.rm = TRUE) +
@@ -644,19 +646,6 @@ ggplot(met_summary_clean, aes(x = Year)) +
     plot.title = element_text(hjust = 0.5, family = "serif"),
     text = element_text(family = "serif"))
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 # Change variable types to characters
 merged.Master.met$Year <- as.character(merged.Master.met$Year)
 weather_summary$year <- as.character(weather_summary$year)
@@ -690,7 +679,7 @@ merged_with_weather <- merged_with_weather %>%
 
 # Compute the average days to metamorphosis and mass per year
 library(ggplot2)
-library(ggplot)
+
 merged_with_weather <- merged_with_weather %>%
   group_by(Year) %>%
   mutate(days_mean = mean(Days.to.metamorphosis, na.rm = TRUE)) %>%
@@ -748,13 +737,49 @@ merged_with_weather_clean <- merged_with_weather %>%
 
 # MODEL - Estimated effects of standardized variables on days to meta
 days_model <- lmer(Days.to.metamorphosis ~ temp_min.std + temp_max.std + prcp_mean.std + Stocking.density.std + (1 | Year) + (1|Tank.ID), data = merged_with_weather_clean)
-plot_model(days_model, 
-           title = "Effects of Weather and Stocking Density on Days to Metamorphosis") +
+plot_model(days_model,
+           title = "Effects of Weather and Stocking Density on Days to Metamorphosis",
+           show.values = FALSE,
+           show.p = FALSE,
+           axis.labels = c("Stocking Density",
+                           "Mean Precipitation (mm)",
+                           "Maximum Temp (°C)",
+                           "Minimum Temp (°C)")) +
   theme_minimal(base_size = 14) +
   theme(plot.title = element_text(hjust = 0.5, face = "bold"))
-summary(days_model)
 
 plot_model(days_model, type = "pred", c("std_Stocking.density"))
+summary(days_model)
+
+## Revise plot to show actual stocking densities
+
+# Step 1: Mean and SD of the original variable
+stocking_mean <- mean(merged_with_weather_clean$Stocking.density, na.rm = TRUE)
+stocking_sd <- sd(merged_with_weather_clean$Stocking.density, na.rm = TRUE)
+
+# Step 2: Define standard values shown in plot_model
+std_vals <- c(-2, -1, 0, 1, 2)
+
+# Step 3: Convert them back to actual stocking density values
+real_vals <- std_vals * stocking_sd + stocking_mean
+
+# Step 4: Plot with relabeled x-axis
+library(sjPlot)
+library(ggplot2)
+
+plot_model(days_model, 
+           type = "pred", 
+           terms = c("Stocking.density.std"),
+           title = "Effect of Stocking Density on Days to Metamorphosis") +
+  scale_x_continuous(
+    breaks = std_vals,
+    labels = round(real_vals, 1)  # rounded for prettier labels
+  ) +
+  xlab("Stocking Density") +
+  ylab("Predicted Days to Metamorphosis") +
+  theme_minimal(base_size = 14) +
+  theme(plot.title = element_text(hjust = 0.5, face = "bold"))
+
 
 # MODEL - Estimated effects of standardized variables on mass at meta
 mass_model <- lmer(Mass.g.metamorphosed ~ temp_min.std + temp_max.std + prcp_mean.std + Stocking.density.std + (1 | Year) + (1|Tank.ID), data = merged_with_weather_clean)
@@ -763,30 +788,177 @@ plot_model(mass_model,
   theme_minimal(base_size = 14) +
   theme(plot.title = element_text(hjust = 0.5, face = "bold"))
 
+plot_model(mass_model,
+           title = "Effects of Weather and Stocking Density on Mass at Metamorphosis",
+           show.values = FALSE,
+           show.p = FALSE,
+           axis.labels = c("Stocking Density",
+                           "Mean Precipitation (mm)",
+                           "Maximum Temp (°C)",
+                           "Minimum Temp (°C)")) +
+  theme_minimal(base_size = 14) +
+  theme(plot.title = element_text(hjust = 0.5, face = "bold"))
+
 plot_model(mass_model, type = "pred", c("std_Stocking.density"))
+
+# Step 1: Mean and SD of the original variable
+stocking_mean <- mean(merged_with_weather_clean$Stocking.density, na.rm = TRUE)
+stocking_sd <- sd(merged_with_weather_clean$Stocking.density, na.rm = TRUE)
+
+# Step 2: Define standard values shown in plot_model
+std_vals <- c(-2, -1, 0, 1, 2)
+
+# Step 3: Convert them back to actual stocking density values
+real_vals <- std_vals * stocking_sd + stocking_mean
+
+plot_model(mass_model, 
+           type = "pred", 
+           terms = c("Stocking.density.std"),
+           title = "Effect of Stocking Density on Mass at Metamorphosis") +
+  scale_x_continuous(
+    breaks = std_vals,
+    labels = round(real_vals, 1)  # rounded for prettier labels
+  ) +
+  xlab("Stocking Density") +
+  ylab("Predicted Mass at Metamorphosis (g)") +
+  theme_minimal(base_size = 14) +
+  theme(plot.title = element_text(hjust = 0.5, face = "bold"))
+
 
 # MODEL - Estimated effects of standardized variables on survivorship
 fate_model <- glmer(Fate ~ std_temp_min + std_temp_max + std_prcp_mean+ std_Stocking.density + 
                       (1 | Year) + (1 | Tank.ID), 
                     data = all.tadpoles, 
                     family = binomial)
-plot_model(fate_model)
+
+plot_model(fate_model,
+           title = "Effects of Weather and Stocking Density on Survivorship",
+           show.values = FALSE,
+           show.p = FALSE,
+           transform = NULL,
+           axis.title = "Estimates",
+           axis.labels = c("Stocking Density",
+                           "Mean Precipitation (mm)",
+                           "Maximum Temp (°C)",
+                           "Minimum Temp (°C)")) +
+  theme_minimal(base_size = 14) +
+  theme(plot.title = element_text(hjust = 0.5, face = "bold"))
 plot_model(fate_model, type = "pred", c("std_Stocking.density"))
+
+# This code transforms %survivorship into real numbers
+plot_model(fate_model, 
+           type = "pred", 
+           terms = c("std_Stocking.density"),
+           title = "Predicted Survivorship by Stocking Density") +
+  scale_y_continuous(labels = scales::number_format(accuracy = 0.01)) +  # 👈 real probabilities
+  xlab("Standardized Stocking Density") +
+  ylab("Predicted Probability of Survivorship") +
+  theme_minimal(base_size = 14) +
+  theme(plot.title = element_text(hjust = 0.5, face = "bold"))
+
+# Create real SD numbers
+# Step 1: Calculate mean and SD used in standardization
+stocking_mean <- mean(all.tadpoles$Stocking.density, na.rm = TRUE)
+stocking_sd <- sd(all.tadpoles$Stocking.density, na.rm = TRUE)
+
+# Step 2: Define the standardized values used by plot_model
+std_vals <- c(-2, -1, 0, 1, 2)  # or whatever range your model covers
+
+# Step 3: Convert those to actual values
+real_vals <- std_vals * stocking_sd + stocking_mean
+
+library(scales)
+
+plot_model(fate_model, 
+           type = "pred", 
+           terms = c("std_Stocking.density"),  # must match model variable name exactly
+           title = "Predicted Survivorship by Stocking Density") +
+  # Convert y-axis from % to raw probability
+  scale_y_continuous(labels = number_format(accuracy = 0.01)) +
+  # Convert x-axis from standardized to actual values
+  scale_x_continuous(
+    breaks = std_vals,
+    labels = round(real_vals, 1)
+  ) +
+  xlab("Stocking Density") +
+  ylab("Predicted Probability of Survivorship") +
+  theme_minimal(base_size = 14) +
+  theme(plot.title = element_text(hjust = 0.5, face = "bold"))
+
+#Predicted average survivorship
+# Step 1: Get mean and SD of stocking density used for standardization
+stocking_mean <- mean(all.tadpoles$Stocking.density, na.rm = TRUE)
+stocking_sd <- sd(all.tadpoles$Stocking.density, na.rm = TRUE)
+
+# Step 2: Specify actual stocking densities
+actual_densities <- c(50, 60, 75, 100)
+
+# Step 3: Standardize them to match model input
+std_densities <- (actual_densities - stocking_mean) / stocking_sd
+
+# Step 4: Create new data frame for prediction
+# You’ll need to supply mean values or fixed values for other predictors
+new_data <- data.frame(
+  std_Stocking.density = std_densities,
+  std_temp_min = mean(all.tadpoles$std_temp_min, na.rm = TRUE),
+  std_temp_max = mean(all.tadpoles$std_temp_max, na.rm = TRUE),
+  std_prcp_mean = mean(all.tadpoles$std_prcp_mean, na.rm = TRUE),
+  Year = NA,
+  Tank.ID = NA
+)
+
+# Step 5: Predict using your model
+new_data$predicted_survivorship <- predict(fate_model, newdata = new_data, type = "response", re.form = NA)
+
+# Step 6: Combine with actual densities for clarity
+new_data$actual_density <- actual_densities
+
+# View results
+new_data[, c("actual_density", "predicted_survivorship")]
+library(dplyr)
+
+all.tadpoles %>%
+  filter(Stocking.density %in% c(50, 60, 75, 100)) %>%
+  group_by(Stocking.density) %>%
+  summarise(
+    Mean_Survivorship = mean(Fate, na.rm = TRUE),
+    N = n()
+  )
+
+
+# Tab models to show predictors, CI, and p values
+library(sjPlot)
+tab_model(days_model, show.std = TRUE, show.p = TRUE)
+tab_model(mass_model, show.std = TRUE, show.p = TRUE)
+tab_model(fate_model, show.std = TRUE, show.p = TRUE)
+
+
+
+library(dplyr)
+all.tadpoles %>%
+  filter(Stocking.density == 75) %>%
+  summarise(count = n())
+
+tadpole_counts <- all.tadpoles %>%
+  group_by(Stocking.density) %>%
+  summarise(Count = n())
+
+print(tadpole_counts, n = Inf)
+
+library(gt)
+install.packages("gt")
+tadpole_counts %>%
+  gt() %>%
+  tab_header(
+    title = "Tadpole Counts by Stocking Density"
+  ) %>%
+  cols_label(
+    Stocking.density = "Stocking Density",
+    Count = "Number of Tadpoles"
+  )
 
 
             ####### MODELS FOR PREDICTING THE EFFECT OF VARIABLES ON DAYS TO META AND MASS ##########
-
-# GRAPH - Effects of weather and SD on days to metamorphosis
-p1 <- plot_model(days_model, type = "pred", terms = c("temp_max.std", "prcp_mean.std[3.683709]", "Stocking.density.std[-2, 0, 2]"))
-p1 <- p1 +
-  geom_point(data = merged_with_weather_clean, aes(x = temp_max.std, y = Days.to.metamorphosis), shape = 1, color = "black", size = 1)
-p1
-
-# Stocking density vs days to meta
-SD_DTM <- plot_model(days_model, type = "pred", terms = c("Stocking.density.std[-2, 0, 2]"))
-SD_STM <- SD_DTM +
-  geom_point(data = merged_with_weather_clean, aes(x = Stocking.density.std, y = Days.to.metamorphosis), shape = 1, color = "black", size = 1)
-SD_DTM
 
 # GRAPH - variation of above graph showing on one graph with different lines for SD
 # Use a fixed value for temp_min.std (e.g., the mean of temp_min.std)
@@ -818,18 +990,15 @@ p1 <- ggplot(predict_data, aes(x = temp_max.std, y = Days.to.metamorphosis, colo
 # Print the plot
 print(p1)
 
+# Converting standardized SD to real values
+mean_sd <- mean(merged_with_weather_clean$Stocking.density, na.rm = TRUE)
+sd_sd <- sd(merged_with_weather_clean$Stocking.density, na.rm = TRUE)
 
-## Predict effects on mass at metamorphosis
-p2 <- plot_model(mass_model, type = "pred", terms = c("temp_max.std", "prcp_mean.std[3.683709]", "Stocking.density.std[-2, 0, 2]"))
-p2 <- p2 +
-  geom_point(data = merged_with_weather_clean, aes(x = temp_max.std, y = Mass.g.metamorphosed), shape = 1, color = "black", size = 1)
-p2
+actual_values <- c(-2, 0, 2) * sd_sd + mean_sd
+actual_values
 
-# Stocking density vs mass at meta
-SD_MM <- plot_model(mass_model, type = "pred", terms = c("Stocking.density.std[-2, 0, 2]"))
-SD_MM <- SD_MM +
-  geom_point(data = merged_with_weather_clean, aes(x = Stocking.density.std, y = Mass.g.metamorphosed), shape = 1, color = "black", size = 1)
-SD_MM
+
+
  ##  Plots for Stocking Density Ranges vs Days to Meta ##
 
 
@@ -844,7 +1013,7 @@ merged.Master.met <- merged.Master.met %>%
 
 # Calculate summary statistics including min, max, and avg for Days.to.metamorphosis by Stocking.density
 summary_data_SD_mass <- merged.Master.met %>%
-  filter(Stocking.density %in% c(30, 50, 75, 100)) %>%
+  filter(Stocking.density %in% c(50, 60, 75, 100)) %>%
   filter(!is.na(Mass.g.metamorphosed) & Mass.g.metamorphosed != 0) %>%  # Remove NA and 0 values
   group_by(Stocking.density) %>%
   summarise(
@@ -856,13 +1025,60 @@ summary_data_SD_mass <- merged.Master.met %>%
     mass_range = paste(min_mass, "-", max_mass)  # Combine min and max days into a range
   )
 
+
+
+
+
+
+# Step 1: Add predicted values (fixed effects only) to the dataset
+merged.Master.met <- merged.Master.met %>%
+  mutate(predicted_mass = predict(mass_model, newdata = ., re.form = NA))
+
+# Step 2: Filter, summarize, and return results as a named list
+summary_list_SD_mass_pred <- merged.Master.met %>%
+  filter(Stocking.density %in% c(50, 60, 75, 100)) %>%
+  filter(!is.na(predicted_mass)) %>%
+  group_by(Stocking.density) %>%
+  summarise(
+    avg = mean(predicted_mass),
+    min = min(predicted_mass),
+    max = max(predicted_mass),
+    range = paste0(round(min(predicted_mass, 2)), " - ", round(max(predicted_mass, 2)))
+  ) %>%
+  split(.$Stocking.density)
+
+
+# Add predicted values (fixed effects only)
+merged_with_weather_clean <- merged_with_weather_clean %>%
+  mutate(predicted_mass = predict(mass_model, newdata = ., re.form = NA))
+
+# Summarize predicted values by stocking density
+summary_list_SD_mass_pred <- merged_with_weather_clean %>%
+  filter(Stocking.density %in% c(50, 60, 75, 100)) %>%
+  filter(!is.na(predicted_mass)) %>%
+  group_by(Stocking.density) %>%
+  summarise(
+    avg = mean(predicted_mass),
+    min = min(predicted_mass),
+    max = max(predicted_mass),
+    range = min(predicted_mass), " - ", max(predicted_mass)
+  ) %>%
+  split(.$Stocking.density)
+
+
+summary_list_SD_mass_pred[["50"]]
+summary_list_SD_mass_pred[["60"]]
+summary_list_SD_mass_pred[["75"]]
+summary_list_SD_mass_pred[["100"]]
+
+
 # Reshape the data to long format for easier plotting
 summary_data_long_mass <- summary_data_SD_mass %>%
   pivot_longer(cols = c(avg_mass), 
                names_to = "Metric", 
                values_to = "Value")
 # GRAPH - mass by SD
-ggplot(merged.Master.met %>% filter(Stocking.density %in% c(30, 50, 75, 100)), 
+ggplot(merged.Master.met %>% filter(Stocking.density %in% c(50, 60, 75, 100)), 
        aes(x = factor(Stocking.density), y = Mass.g.metamorphosed)) +
   geom_boxplot(outlier.colour = "red", outlier.shape = 16, fill = "pink") +
   labs(
@@ -880,19 +1096,83 @@ print(summary_data_SD_mass)
 
 ## Summarize average Days to metamorphosis by Stocking.density ##
 
+
+
+
+days_model <- lmer(Days.to.metamorphosis ~ temp_min.std + temp_max.std + prcp_mean.std + Stocking.density.std + 
+                     (1 | Year) + (1 | Tank.ID), data = merged_with_weather_clean)
+
+# Add fixed-effect predictions to a new column
+predicted_data <- merged_with_weather_clean %>%
+  mutate(predicted_days = predict(days_model, newdata = ., re.form = NA))
+summary_predicted_days <- predicted_data %>%
+  filter(!is.na(predicted_days)) %>%
+  group_by(Stocking.density) %>%
+  summarise(
+    avg_pred = mean(predicted_days),
+    min_pred = min(predicted_days),
+    max_pred = max(predicted_days),
+    range = paste0(round(min_pred, 1), " - ", round(max_pred, 1))
+  )
+print(summary_predicted_days)
+
+library(ggplot2)
+
+ggplot(predicted_data %>% filter(!is.na(predicted_days) & Stocking.density %in% c(50, 60, 75, 100)),
+       aes(x = factor(Stocking.density), y = predicted_days)) +
+  geom_boxplot(outlier.colour = "red", outlier.shape = 16) +
+  labs(
+    title = "Predicted Days to Metamorphosis by Stocking Density",
+    x = "Stocking Density",
+    y = "Predicted Days to Metamorphosis"
+  ) +
+  theme_minimal(base_size = 14) +
+  theme(plot.title = element_text(hjust = 0.5, face = "bold"))
+
+
+
+
+
+mass_model <- lmer(Mass.g.metamorphosed ~ temp_min.std + temp_max.std + prcp_mean.std + Stocking.density.std + 
+                     (1 | Year) + (1 | Tank.ID), data = merged_with_weather_clean)
+
+# Add fixed-effect predictions to a new column
+predicted_data_mass <- merged_with_weather_clean %>%
+  mutate(predicted_mass = predict(mass_model, newdata = ., re.form = NA))
+summary_predicted_mass <- predicted_data_mass %>%
+  filter(!is.na(predicted_mass)) %>%
+  group_by(Stocking.density) %>%
+  summarise(
+    avg_pred = mean(predicted_mass),
+    min_pred = min(predicted_mass),
+    max_pred = max(predicted_mass),
+    range = paste0(round(min_pred, 1), " - ", round(max_pred, 1))
+  )
+print(summary_predicted_mass)
+
+
+
+
+
+
+
+
+
 # Calculate summary statistics including min, max, and avg for Days.to.metamorphosis by Stocking.density
-summary_data_SD_days <- merged.Master.met %>%
-  filter(Stocking.density %in% c(30, 50, 75, 100)) %>%
+summary_data_SD_days <- days_model %>%
+  filter(Stocking.density %in% c(50, 60, 75, 100)) %>%
   filter(!is.na(Days.to.metamorphosis) & Days.to.metamorphosis != 0) %>%  # Remove NA and 0 values
   group_by(Stocking.density) %>%
   summarise(
-    avg_days = mean(Days.to.metamorphosis, na.rm = TRUE),
+    avg_days = median(Days.to.metamorphosis, na.rm = TRUE),
     min_days = min(Days.to.metamorphosis, na.rm = TRUE),
     max_days = max(Days.to.metamorphosis, na.rm = TRUE)
   ) %>%
   mutate(
     day_range = paste(min_days, "-", max_days)  # Combine min and max days into a range
   )
+
+print(summary_data_SD_days)
 # Convert to long form for better graphing
 summary_data_long_days <- summary_data_SD_days %>%
   pivot_longer(cols = c(avg_days), 
@@ -900,7 +1180,7 @@ summary_data_long_days <- summary_data_SD_days %>%
                values_to = "Value")
 
 # GRAPH - Days to meta by SD
-ggplot(merged.Master.met %>% filter(Stocking.density %in% c(30, 50, 75, 100)), 
+ggplot(merged.Master.met %>% filter(Stocking.density %in% c(50, 60, 75, 100)), 
        aes(x = factor(Stocking.density), y = Days.to.metamorphosis)) +
   geom_boxplot(outlier.colour = "red", outlier.shape = 16, fill= "lightblue") +
   labs(
@@ -917,6 +1197,47 @@ ggplot(merged.Master.met %>% filter(Stocking.density %in% c(30, 50, 75, 100)),
 print(summary_data_SD_days)
 
 
+
+
+## Survivorship averages
+
+summary_data_SD_fate <- all.tadpoles %>%
+  filter(Stocking.density %in% c(50, 60, 75, 100)) %>%
+  filter(!is.na(Fate)) %>%  # Remove NA 
+  group_by(Stocking.density) %>%
+  summarise(
+    avg_fate = mean(Fate, na.rm = TRUE),
+    min_fate = min(Fate, na.rm = TRUE),
+    max_fate = max(Fate, na.rm = TRUE)
+  ) %>%
+  mutate(
+    fate_range = paste(min_fate, "-", max_fate)  # Combine min and max days into a range
+  )
+
+print(summary_data_SD_fate)
+
+# GRAPH - mass by SD
+ggplot(all.tadpoles %>% filter(Stocking.density %in% c(50, 60, 75, 100)), 
+       aes(x = factor(Stocking.density), y = Fate)) +
+  geom_boxplot(outlier.colour = "red", outlier.shape = 16, fill = "lightgreen") +
+  labs(
+    title = "Fate by Stocking Density",
+    x = "Stocking Density",
+    y = "Fate"
+  ) +
+  theme_minimal() +
+  theme(
+    plot.title = element_text(hjust = 0.5, family = "serif"),
+    text = element_text(family = "serif")
+  )
+# View summary
+print(summary_data_SD_fate)
+
+
+
+
+citation("dplyr")
+citation("lubridate")
 
   ## Plot for SD ranges vs Mass at meta ##
 
@@ -965,3 +1286,26 @@ print(summary_data_SD_days)
 # Saving full merged master dataframe to source
 #write.csv(merged.Master, "merged.Master.csv", row.names = FALSE) 
 
+
+
+
+
+
+
+
+
+
+###
+#library(sjPlot)
+#library(ggplot2)
+## Predict effects on mass at metamorphosis
+#p2 <- plot_model(mass_model, type = "pred", terms = c("temp_max.std", "prcp_mean.std[3.683709]", "Stocking.density.std[-2, 0, 2]"))
+#p2 <- p2 +
+#  geom_point(data = merged_with_weather_clean, aes(x = temp_max.std, y = Mass.g.metamorphosed), shape = 1, color = "black", size = 1)
+#p2
+
+# Stocking density vs mass at meta
+#SD_MM <- plot_model(mass_model, type = "pred", terms = c("Stocking.density.std[-2, 0, 2]"))
+#SD_MM <- SD_MM +
+#  geom_point(data = merged_with_weather_clean, aes(x = Stocking.density.std, y = Mass.g.metamorphosed), shape = 1, color = "black", size = 1)
+#SD_MM
